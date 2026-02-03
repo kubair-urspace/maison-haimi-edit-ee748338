@@ -34,13 +34,13 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:pl-8"
           >
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide uppercase leading-tight mb-8">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-wide uppercase leading-tight mb-8">
               Dr. Eliza
               <br />
               Haimi
             </h2>
             
-            <div className="space-y-6 font-body text-muted-foreground leading-relaxed">
+            <div className="space-y-6 font-body text-charcoal/80 leading-relaxed text-base md:text-lg">
               <p>
                 Dr. Eliza Haimi is a leading general and cosmetic dentist in Great Neck, NY. She is 
                 highly recognized by her colleagues and patients for providing excellent dental care and 
