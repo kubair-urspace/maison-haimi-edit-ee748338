@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const GentleDentistrySection = () => {
   return (
-    <section className="section-padding bg-card">
+    <section className="relative z-10 section-padding bg-card">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
