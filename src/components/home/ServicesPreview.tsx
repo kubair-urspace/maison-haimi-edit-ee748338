@@ -41,10 +41,10 @@ const ServicesPreview = () => {
           className="text-center mb-16"
         >
           <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6 block">
-            The Atelier
+            Our Services
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground">
-            Our Craft
+            What We Offer
           </h2>
         </motion.div>
 

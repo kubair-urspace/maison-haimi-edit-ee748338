@@ -211,7 +211,7 @@ const Atelier = () => {
               transition={{ duration: 0.6 }}
               className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6 block"
             >
-              The Atelier
+              Our Services
             </motion.span>
 
             <motion.h1
@@ -220,7 +220,7 @@ const Atelier = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-8"
             >
-              Our Craft
+              What We Offer
             </motion.h1>
 
             <motion.p

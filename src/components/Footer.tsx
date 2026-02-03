@@ -24,7 +24,7 @@ const Footer = () => {
                 The Practice
               </Link>
               <Link to="/atelier" className="text-muted-foreground hover:text-gold transition-colors text-sm">
-                The Atelier
+                Services
               </Link>
               <Link to="/concierge" className="text-muted-foreground hover:text-gold transition-colors text-sm">
                 Book an Appointment

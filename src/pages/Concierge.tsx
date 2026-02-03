@@ -372,21 +372,25 @@ const Concierge = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Map Placeholder */}
+            {/* Google Map */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="aspect-square bg-secondary flex items-center justify-center grayscale"
+              className="aspect-square lg:aspect-auto lg:h-full min-h-[400px] grayscale hover:grayscale-0 transition-all duration-500"
             >
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                <p className="font-body text-sm text-muted-foreground">
-                  7 Bond St #1D<br />
-                  Great Neck, NY 11021
-                </p>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8847508430344!2d-73.72891542346864!3d40.78929987138292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c289d1c4b4c8d9%3A0x8d9b7f3c8e5c6d5a!2s7%20Bond%20St%20%231D%2C%20Great%20Neck%2C%20NY%2011021!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: '400px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Eliza Haimi DDS Location - 7 Bond St, Great Neck, NY"
+                className="w-full h-full"
+              />
             </motion.div>
 
             {/* Contact Info */}
