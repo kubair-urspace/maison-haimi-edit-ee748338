@@ -25,15 +25,10 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
 
       {/* Hero Content - First Screen */}
       <div className="relative z-10 min-h-screen flex flex-col">
-        {/* Split Layout Overlay */}
-        <div className="absolute inset-0 flex pointer-events-none">
-          {/* Cream Left Side */}
-          <div className="w-full lg:w-1/2 bg-background" />
-          {/* Transparent Right Side */}
-          <div className="hidden lg:block w-1/2" />
-        </div>
+        {/* Full-width cream background for first screen */}
+        <div className="absolute inset-0 bg-background/80 pointer-events-none" />
 
-        {/* Content */}
+        {/* Content - Centered */}
         <div className="relative z-20 min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24">
           {/* Main Brand Name */}
           <motion.h1
