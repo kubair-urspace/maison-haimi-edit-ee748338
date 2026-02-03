@@ -383,7 +383,7 @@ const Concierge = () => {
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                 <p className="font-body text-sm text-muted-foreground">
-                  7 Bond Street<br />
+                  7 Bond St #1D<br />
                   Great Neck, NY 11021
                 </p>
               </div>
@@ -410,7 +410,7 @@ const Concierge = () => {
                   <div>
                     <p className="font-body text-foreground font-medium">Address</p>
                     <p className="font-body text-muted-foreground">
-                      7 Bond Street, Great Neck, NY 11021
+                      7 Bond St #1D, Great Neck, NY 11021
                     </p>
                   </div>
                 </div>
@@ -449,6 +449,7 @@ const Concierge = () => {
                       <p>Monday & Tuesday: 8:00 AM – 5:00 PM</p>
                       <p>Wednesday: 8:00 AM – 1:00 PM</p>
                       <p>Thursday: 8:00 AM – 4:30 PM</p>
+                      <p>Friday – Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
