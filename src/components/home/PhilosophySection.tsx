@@ -34,10 +34,11 @@ const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-body text-muted-foreground editorial-text mb-10"
           >
-            At Maison Haimi, we believe in the art of conservative dentistry—preserving 
-            what nature gave you while enhancing your natural beauty. Dr. Eliza Haimi 
-            takes the time to understand your unique needs, creating personalized treatment 
-            plans that honor both your health and your aesthetic vision.
+            Dr. Eliza Haimi, DDS believes dentistry should be practiced conservatively, 
+            with personalized patient interactions at its core. A graduate of NYU's 
+            Aesthetic Honors program and recipient of the Excellence in Cosmetic Dentistry 
+            Award from the American Academy of Cosmetic Dentistry, she creates lifelong 
+            relationships with patients and their families.
           </motion.p>
 
           <motion.div

@@ -68,31 +68,43 @@ const Practice = () => {
                 Meet Dr. Haimi
               </span>
               <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
-                Dr. Eliza Haimi
+                Dr. Eliza Haimi, DDS
               </h2>
               <p className="font-body text-muted-foreground editorial-text mb-6">
-                With over 25 years of experience in family and cosmetic dentistry, 
-                Dr. Eliza Haimi has dedicated her career to the art of the conservative smile. 
-                Her philosophy centers on preserving natural tooth structure while achieving 
-                beautiful, lasting results.
+                Eliza Haimi grew up following in the footsteps of her father, a neurologist 
+                who worked tirelessly to help people in need. Lessons of humility and 
+                unconditional care were learned at an early age. Her love of science and 
+                passion for sculpting and drawing led her to the field of dentistry.
+              </p>
+              <p className="font-body text-muted-foreground editorial-text mb-6">
+                She received her Bachelor's degree in Chemistry and Psychology from Clark 
+                University in Massachusetts, then attended the prestigious New York University 
+                College of Dentistry. Due to her clear vocation, Eliza was invited to join the 
+                Aesthetic Honors program at NYU, graduating with honors in cosmetic dentistry.
               </p>
               <p className="font-body text-muted-foreground editorial-text mb-8">
-                Known for her gentle approach and attention to detail, Dr. Haimi creates 
-                a calm, welcoming environment where patients feel truly cared for. Her 
-                5-star reputation is built on trust, expertise, and genuine relationships 
-                with the families she serves.
+                With the belief that dentistry could be practiced more conservatively and that 
+                patient interactions should be more personalized, Dr. Haimi established her 
+                Cosmetic and General Dentistry practice in 2011. She resides in Great Neck 
+                with her husband and three children.
               </p>
-              <div className="flex gap-8">
+              <div className="flex flex-wrap gap-8">
                 <div>
-                  <p className="font-display text-3xl text-gold">25+</p>
+                  <p className="font-display text-3xl text-gold">NYU</p>
                   <p className="font-body text-xs tracking-wider text-muted-foreground uppercase mt-1">
-                    Years Experience
+                    Aesthetic Honors
                   </p>
                 </div>
                 <div>
-                  <p className="font-display text-3xl text-gold">5.0</p>
+                  <p className="font-display text-3xl text-gold">2007</p>
                   <p className="font-body text-xs tracking-wider text-muted-foreground uppercase mt-1">
-                    Star Rating
+                    Invisalign Certified
+                  </p>
+                </div>
+                <div>
+                  <p className="font-display text-3xl text-gold">AACD</p>
+                  <p className="font-body text-xs tracking-wider text-muted-foreground uppercase mt-1">
+                    Excellence Award
                   </p>
                 </div>
               </div>
