@@ -1,25 +1,31 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Sparkles, Heart, Shield } from "lucide-react";
+import { Sparkles, Heart, Shield, Zap } from "lucide-react";
 
 const services = [
   {
+    icon: Shield,
+    title: "Routine Dental Care",
+    description: "Cleanings, exams, root canals, and preventative care—the foundation of lasting oral health.",
+    link: "/atelier#routine",
+  },
+  {
     icon: Sparkles,
-    title: "The Aesthetic Gallery",
-    description: "Smile makeovers, porcelain veneers, whitening, and dental bonding—artistry for your smile.",
-    link: "/atelier#aesthetic",
+    title: "Cosmetic Dentistry",
+    description: "Smile makeovers, veneers, crowns, and dental bonding—artistry for your smile.",
+    link: "/atelier#cosmetic",
   },
   {
     icon: Heart,
-    title: "The Restoration Studio",
-    description: "Dental implants, crowns, bridges, and root canal therapy—rebuilding with precision.",
-    link: "/atelier#restoration",
+    title: "Implants & Dentures",
+    description: "Permanent implants and custom dentures—restoring function and beauty.",
+    link: "/atelier#implants",
   },
   {
-    icon: Shield,
-    title: "The Foundation",
-    description: "Dental checkups, cleanings, oral cancer screenings—the cornerstone of lasting oral health.",
-    link: "/atelier#foundation",
+    icon: Zap,
+    title: "Invisalign® & Emergencies",
+    description: "Clear aligners for straighter teeth and same-day emergency care when you need it most.",
+    link: "/atelier#invisalign",
   },
 ];
 
@@ -42,7 +48,7 @@ const ServicesPreview = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

@@ -6,90 +6,193 @@ import { Sparkles, Heart, Shield, Zap } from "lucide-react";
 
 const serviceCategories = [
   {
-    id: "aesthetic",
+    id: "routine",
+    icon: Shield,
+    title: "Routine Dental Care",
+    subtitle: "Preventative Excellence",
+    description: "The foundation of lasting oral health. Our preventative services focus on maintaining what nature gave you, catching concerns before they become problems.",
+    services: [
+      {
+        name: "Dental Cleaning & Examinations",
+        description: "Comprehensive examinations and thorough cleanings that go beyond the surface, ensuring your complete oral health."
+      },
+      {
+        name: "Dental Anxiety Support",
+        description: "We understand that visiting the dentist can feel overwhelming. Our gentle approach ensures every visit feels calm and comfortable."
+      },
+      {
+        name: "Root Canal Treatment",
+        description: "Gentle, effective treatment to save damaged teeth and eliminate pain, preserving your natural smile."
+      },
+      {
+        name: "Tooth Extraction",
+        description: "When necessary, we perform extractions with precision and care, ensuring your comfort throughout the process."
+      }
+    ]
+  },
+  {
+    id: "cosmetic",
     icon: Sparkles,
-    title: "The Aesthetic Gallery",
-    subtitle: "Cosmetic Excellence",
+    title: "Cosmetic Dental Services",
+    subtitle: "Aesthetic Excellence",
     description: "Where artistry meets dentistry. Our cosmetic services are designed to enhance your natural beauty, creating smiles that are both stunning and authentically you.",
     services: [
       {
-        name: "Smile Makeovers",
+        name: "Smile Makeover",
         description: "A comprehensive approach to transforming your smile, combining multiple treatments tailored to your unique vision and facial aesthetics."
       },
       {
-        name: "Porcelain Veneers",
+        name: "Dental Veneers",
         description: "Ultra-thin, custom-crafted shells that create a flawless appearance while preserving your natural tooth structure."
       },
       {
-        name: "Teeth Whitening",
-        description: "Professional whitening treatments that safely brighten your smile, revealing the natural radiance beneath."
+        name: "Dental Crowns",
+        description: "Custom restorations that seamlessly blend with your natural teeth, renewing strength and aesthetics."
       },
       {
         name: "Dental Bonding",
         description: "An artful technique to reshape and perfect individual teeth, addressing chips, gaps, and discoloration."
+      },
+      {
+        name: "Composite Fillings",
+        description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile."
       }
     ]
   },
   {
-    id: "restoration",
+    id: "implants",
     icon: Heart,
-    title: "The Restoration Studio",
-    subtitle: "Rebuilding with Precision",
-    description: "When teeth need repair or replacement, we approach each case with the precision of a master craftsman, restoring both function and beauty.",
+    title: "Dental Implant Services",
+    subtitle: "Permanent Solutions",
+    description: "When teeth need replacement, we approach each case with the precision of a master craftsman, restoring both function and beauty with permanent solutions.",
     services: [
       {
-        name: "Dental Implants",
+        name: "Dental Implants Overview",
         description: "Permanent tooth replacement that looks, feels, and functions like natural teeth—a lifetime solution."
       },
       {
-        name: "Crowns & Bridges",
-        description: "Custom restorations that seamlessly blend with your natural teeth, renewing strength and aesthetics."
+        name: "Am I a Candidate?",
+        description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation."
       },
       {
-        name: "Root Canal Therapy",
-        description: "Gentle, effective treatment to save damaged teeth and eliminate pain, preserving your natural smile."
+        name: "The Dental Implant Procedure",
+        description: "A detailed walkthrough of what to expect during your implant journey, from consultation to final restoration."
+      },
+      {
+        name: "Options for Replacing Missing Teeth",
+        description: "Explore all available options for tooth replacement, including implants, bridges, and dentures."
+      },
+      {
+        name: "Post-Op Care for Dental Implants",
+        description: "Guidance for optimal healing and long-term success of your dental implants."
       }
     ]
   },
   {
-    id: "foundation",
-    icon: Shield,
-    title: "The Foundation",
-    subtitle: "Preventative Care",
-    description: "The cornerstone of lasting oral health. Our preventative services focus on maintaining what nature gave you, catching concerns before they become problems.",
+    id: "dentures",
+    icon: Heart,
+    title: "Denture Services",
+    subtitle: "Restoring Smiles",
+    description: "Custom-crafted dentures that restore your smile's beauty and function, designed with precision for comfort and natural appearance.",
     services: [
       {
-        name: "Dental Checkups",
-        description: "Comprehensive examinations that go beyond the surface, ensuring your complete oral health."
+        name: "Dentures & Partial Dentures",
+        description: "Full and partial denture options crafted to fit comfortably and look completely natural."
       },
       {
-        name: "Professional Cleanings",
-        description: "Thorough, gentle cleanings that leave your mouth feeling refreshed and your smile gleaming."
+        name: "What to Expect When Getting Dentures",
+        description: "A comprehensive guide to the denture process, from initial consultation to final fitting."
       },
       {
-        name: "Oral Cancer Screenings",
-        description: "Early detection screenings as part of our commitment to your overall health and wellbeing."
+        name: "Adjusting to New Dentures",
+        description: "Tips and support for adapting to your new dentures with confidence and ease."
       },
       {
-        name: "Dental Sealants",
-        description: "Protective coatings that shield vulnerable teeth, especially beneficial for younger patients."
+        name: "Denture Care",
+        description: "Expert guidance on maintaining your dentures for lasting beauty and function."
+      },
+      {
+        name: "Denture Repairs",
+        description: "Quick and reliable repair services to keep your dentures in optimal condition."
       }
     ]
   },
   {
-    id: "specialty",
+    id: "invisalign",
     icon: Zap,
-    title: "Specialty Care",
-    subtitle: "Specialized Services",
-    description: "From clear aligners to urgent care, we offer specialized services to meet your unique needs with the same level of artistry and attention.",
+    title: "Invisalign® Clear Aligners",
+    subtitle: "Almost Invisible Braces",
+    description: "Straighten your teeth discreetly with Invisalign® clear aligners—the modern alternative to traditional braces.",
     services: [
       {
-        name: "Invisalign",
+        name: "Invisalign® Braces",
         description: "Clear aligner therapy for a straighter smile without traditional braces—discreet, comfortable, effective."
       },
       {
-        name: "Emergency Services",
-        description: "When dental emergencies arise, we're here with prompt, compassionate care to address your urgent needs."
+        name: "Invisalign® for Teens",
+        description: "A teen-friendly orthodontic solution that fits seamlessly into an active lifestyle."
+      },
+      {
+        name: "Does Invisalign® Really Work?",
+        description: "Learn about the proven results and success rates of Invisalign® treatment."
+      },
+      {
+        name: "Invisalign® vs Traditional Braces",
+        description: "Compare the benefits and considerations of clear aligners versus metal braces."
+      },
+      {
+        name: "Alternative to Braces for Teens",
+        description: "Modern orthodontic options that don't require the look of traditional metal braces."
+      }
+    ]
+  },
+  {
+    id: "whitening",
+    icon: Sparkles,
+    title: "Teeth Whitening Services",
+    subtitle: "Brilliant Smiles",
+    description: "Professional whitening treatments that safely brighten your smile, revealing the natural radiance beneath.",
+    services: [
+      {
+        name: "Professional Teeth Whitening",
+        description: "In-office whitening treatments that deliver dramatic results in a single visit."
+      },
+      {
+        name: "Teeth Whitening at Dentist",
+        description: "Safe, supervised whitening that achieves results beyond what over-the-counter products can offer."
+      },
+      {
+        name: "Improve Your Smile for Senior Pictures",
+        description: "Special whitening packages to ensure your smile looks its best for important milestones."
+      }
+    ]
+  },
+  {
+    id: "emergency",
+    icon: Zap,
+    title: "Emergency Dental Care",
+    subtitle: "When You Need Us Most",
+    description: "When dental emergencies arise, we're here with prompt, compassionate care to address your urgent needs.",
+    services: [
+      {
+        name: "Emergency Dentist",
+        description: "Same-day emergency appointments available for urgent dental issues."
+      },
+      {
+        name: "What Should I Do If I Chip My Tooth?",
+        description: "Immediate guidance and treatment options for chipped or broken teeth."
+      },
+      {
+        name: "Emergency Dentist vs. Emergency Room",
+        description: "Understanding when to seek dental emergency care versus hospital emergency care."
+      },
+      {
+        name: "Sports Mouth Guards",
+        description: "Custom-fitted mouth guards to protect your smile during athletic activities."
+      },
+      {
+        name: "Emergency Tooth Extraction",
+        description: "Prompt extraction services when teeth cannot be saved, performed with care and precision."
       }
     ]
   }
