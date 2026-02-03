@@ -41,39 +41,21 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
             HAIMI
           </motion.h1>
 
-          {/* Center Badge with Taglines */}
+          {/* Center Monogram */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex items-center justify-center gap-6 md:gap-10 mb-10"
+            className="flex flex-col items-center justify-center mb-10"
           >
-            {/* Left Text */}
-            <div className="text-right w-20 md:w-24">
-              <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
-                Dental
-              </p>
-              <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
-                Studio
-              </p>
-            </div>
-
-            {/* Center Monogram */}
             <div className="w-20 h-24 md:w-24 md:h-28 border-2 border-gold rounded-[50%] flex items-center justify-center bg-background/50">
               <span className="font-display text-2xl md:text-3xl text-gold tracking-wide" style={{ fontWeight: 500 }}>
                 EH
               </span>
             </div>
-
-            {/* Right Text */}
-            <div className="text-left w-20 md:w-24">
-              <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
-                Estd
-              </p>
-              <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
-                1999
-              </p>
-            </div>
+            <p className="font-body text-xs tracking-[0.3em] uppercase text-charcoal/70 mt-4">
+              Est. 2026
+            </p>
           </motion.div>
 
           {/* CTA Button */}
