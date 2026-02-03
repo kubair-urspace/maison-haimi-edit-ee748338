@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,86 +13,60 @@ const navLinks = [
 ];
 
 const Navigation = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
-      <header
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-          isScrolled
-            ? "bg-cream/98 backdrop-blur-md border-b border-border/50 shadow-sm py-2"
-            : "bg-transparent py-4"
-        )}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gold">
         <nav className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo - Hidden on homepage when not scrolled */}
+          <div className="flex items-center justify-between h-14 md:h-16">
+            {/* Logo with Monogram */}
             <Link
               to="/"
-              className={cn(
-                "font-display text-xl md:text-2xl tracking-widest text-charcoal hover:text-gold transition-all duration-300",
-                location.pathname === "/" && !isScrolled ? "opacity-0" : "opacity-100"
-              )}
+              className="flex items-center gap-3 text-white hover:opacity-80 transition-opacity duration-300"
             >
-              HAIMI
+              <span className="font-display text-xl md:text-2xl tracking-[0.2em]">
+                HAIMI
+              </span>
+              <div className="w-8 h-10 border border-white/60 rounded-[50%] flex items-center justify-center">
+                <span className="font-display text-xs text-white">EH</span>
+              </div>
             </Link>
 
-            {/* Desktop Navigation - Center */}
-            <div className="hidden lg:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={cn(
-                    "font-body text-xs tracking-[0.2em] uppercase transition-colors duration-300",
-                    location.pathname === link.path
-                      ? "text-gold"
-                      : isScrolled 
-                        ? "text-charcoal hover:text-gold"
-                        : "text-charcoal/80 hover:text-gold"
-                  )}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-
             {/* Desktop CTAs */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-3">
               <Button 
-                variant="luxury-gold-filled" 
+                variant="secondary"
                 size="sm" 
-                className="text-xs tracking-wider"
+                className="bg-white/20 hover:bg-white/30 text-white border-0 text-xs tracking-wider rounded-full px-5"
                 asChild
               >
                 <a href="tel:+15164664464">Call Now</a>
               </Button>
               <Button 
-                variant="luxury" 
+                variant="outline"
                 size="sm" 
-                className="text-xs tracking-wider"
+                className="bg-transparent hover:bg-white/10 text-white border-white/60 hover:border-white text-xs tracking-wider rounded-full px-5"
                 asChild
               >
                 <Link to="/concierge">Schedule Appointment</Link>
               </Button>
+              
+              {/* Desktop Menu Button */}
+              <button 
+                className="ml-2 p-2 text-white hover:opacity-80 transition-opacity"
+                onClick={() => setIsOpen(true)}
+                aria-label="Open menu"
+              >
+                <Menu className="h-5 w-5" />
+              </button>
             </div>
 
             {/* Mobile Menu */}
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
-                <Button variant="ghost" size="icon" aria-label="Open menu">
+                <Button variant="ghost" size="icon" className="text-white hover:bg-white/10" aria-label="Open menu">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
