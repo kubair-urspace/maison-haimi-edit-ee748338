@@ -32,8 +32,8 @@ const Navigation = () => {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           isScrolled
-            ? "bg-background/95 backdrop-blur-sm border-b border-border shadow-sm"
-            : "bg-transparent"
+            ? "bg-cream/98 backdrop-blur-md border-b border-border/50 shadow-sm py-2"
+            : "bg-cream/90 backdrop-blur-sm py-4"
         )}
       >
         <nav className="container mx-auto px-6 md:px-12 lg:px-24">
@@ -41,7 +41,7 @@ const Navigation = () => {
             {/* Logo */}
             <Link
               to="/"
-              className="font-display text-2xl md:text-3xl tracking-wide text-foreground hover:text-gold transition-colors duration-300"
+              className="font-display text-2xl md:text-3xl tracking-wide text-charcoal hover:text-gold transition-colors duration-300"
             >
               Maison Haimi
             </Link>
@@ -53,10 +53,10 @@ const Navigation = () => {
                   key={link.path}
                   to={link.path}
                   className={cn(
-                    "font-body text-sm tracking-widest uppercase transition-colors duration-300",
+                    "font-body text-sm tracking-widest uppercase transition-colors duration-300 font-normal",
                     location.pathname === link.path
                       ? "text-gold"
-                      : "text-foreground hover:text-gold"
+                      : "text-charcoal hover:text-gold"
                   )}
                 >
                   {link.name}
