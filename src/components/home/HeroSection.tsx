@@ -18,7 +18,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
       >
         <img
           src={heroImage}
-          alt="Maison Haimi - Luxury dental practice interior"
+          alt="Eliza Haimi DDS - Luxury dental practice interior"
           className="w-full h-full object-cover"
         />
         {/* Subtle overlay gradient */}

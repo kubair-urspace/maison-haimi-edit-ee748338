@@ -35,7 +35,7 @@ const Practice = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="font-body text-muted-foreground editorial-text max-w-2xl"
             >
-              At Maison Haimi, we believe exceptional dental care begins with understanding 
+              At Eliza Haimi DDS, we believe exceptional dental care begins with understanding 
               you—your concerns, your goals, and your vision for your smile.
             </motion.p>
           </div>
@@ -181,7 +181,7 @@ const Practice = () => {
             </h2>
             <p className="font-body text-muted-foreground editorial-text max-w-xl mx-auto mb-10">
               We invite you to experience dentistry reimagined. Schedule your consultation 
-              and discover the Maison Haimi difference.
+              and discover the Eliza Haimi DDS difference.
             </p>
             <Button variant="luxury" size="xl" asChild>
               <Link to="/concierge">Book Your Consultation</Link>

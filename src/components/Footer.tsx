@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="font-display text-2xl text-foreground">
-              Maison Haimi
+              Eliza Haimi DDS
             </Link>
             <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
               Bespoke family and cosmetic dentistry in the heart of Great Neck.
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-xs">
-              © {new Date().getFullYear()} Maison Haimi. All rights reserved.
+              © {new Date().getFullYear()} Eliza Haimi DDS. All rights reserved.
             </p>
             <p className="text-muted-foreground text-xs">
               Designed with care in Great Neck, NY
