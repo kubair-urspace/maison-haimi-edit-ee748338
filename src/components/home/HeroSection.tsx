@@ -55,7 +55,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
             className="font-body text-base md:text-lg text-muted-foreground leading-relaxed mb-10"
           >
             Bespoke family and cosmetic dentistry in the heart of Great Neck. 
-            Guided by Dr. Eliza Haimi, where every smile is treated as a work of art.
+            Guided by Dr. Eliza Haimi, DDS, where every smile is treated as a work of art.
           </motion.p>
 
           <motion.div
