@@ -27,7 +27,7 @@ const Footer = () => {
                 The Atelier
               </Link>
               <Link to="/concierge" className="text-muted-foreground hover:text-gold transition-colors text-sm">
-                Patient Concierge
+                Book an Appointment
               </Link>
             </nav>
           </div>

@@ -9,7 +9,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "The Practice", path: "/practice" },
   { name: "The Atelier", path: "/atelier" },
-  { name: "Concierge", path: "/concierge" },
+  { name: "Book an Appointment", path: "/concierge" },
 ];
 
 const Navigation = () => {
