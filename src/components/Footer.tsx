@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>7 Bond Street<br />Great Neck, NY 11021</span>
+                <span>7 Bond St #1D<br />Great Neck, NY 11021</span>
               </div>
             </div>
           </div>
@@ -58,9 +58,10 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p>Monday & Tuesday: 8am – 5pm</p>
-                  <p>Wednesday: 8am – 1pm</p>
-                  <p>Thursday: 8am – 4:30pm</p>
+                  <p>Monday & Tuesday: 8:00 AM – 5:00 PM</p>
+                  <p>Wednesday: 8:00 AM – 1:00 PM</p>
+                  <p>Thursday: 8:00 AM – 4:30 PM</p>
+                  <p>Friday – Sunday: Closed</p>
                 </div>
               </div>
             </div>
