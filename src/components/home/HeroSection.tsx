@@ -46,8 +46,8 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-gold tracking-[0.15em] text-center mb-8"
-          style={{ fontWeight: 400 }}
+          className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-charcoal tracking-[0.15em] text-center mb-8"
+          style={{ fontWeight: 500 }}
         >
           HAIMI
         </motion.h1>
@@ -61,27 +61,27 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
         >
           {/* Left Text */}
           <div className="text-right">
-            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-gold">
+            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
               Dental
             </p>
-            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-gold">
+            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
               Studio
             </p>
           </div>
 
           {/* Center Monogram */}
-          <div className="w-20 h-24 md:w-24 md:h-28 border border-gold/50 rounded-[50%] flex items-center justify-center">
-            <span className="font-display text-2xl md:text-3xl text-gold tracking-wide">
+          <div className="w-20 h-24 md:w-24 md:h-28 border-2 border-gold rounded-[50%] flex items-center justify-center bg-background/50">
+            <span className="font-display text-2xl md:text-3xl text-gold tracking-wide" style={{ fontWeight: 500 }}>
               EH
             </span>
           </div>
 
           {/* Right Text */}
           <div className="text-left">
-            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-gold">
+            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
               Estd
             </p>
-            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-gold">
+            <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
               1999
             </p>
           </div>
