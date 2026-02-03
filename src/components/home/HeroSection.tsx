@@ -11,7 +11,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
     <section className="relative">
       {/* Fixed Background Image - Parallax Effect */}
       <div 
-        className="fixed inset-0 z-0"
+        className="fixed inset-0 z-0 grayscale"
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: 'cover',
@@ -19,8 +19,8 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
           backgroundAttachment: 'fixed',
         }}
       >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-background/30" />
+        {/* Lighter overlay for better readability */}
+        <div className="absolute inset-0 bg-white/40" />
       </div>
 
       {/* Hero Content - First Screen */}
