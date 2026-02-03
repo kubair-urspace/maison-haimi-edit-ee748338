@@ -49,7 +49,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
             className="flex items-center justify-center gap-6 md:gap-10 mb-10"
           >
             {/* Left Text */}
-            <div className="text-right">
+            <div className="text-right w-20 md:w-24">
               <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
                 Dental
               </p>
@@ -66,7 +66,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
             </div>
 
             {/* Right Text */}
-            <div className="text-left">
+            <div className="text-left w-20 md:w-24">
               <p className="font-body text-xs md:text-sm tracking-[0.3em] uppercase text-charcoal/70">
                 Estd
               </p>
