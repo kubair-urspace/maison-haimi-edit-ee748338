@@ -8,11 +8,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="font-display text-2xl text-foreground">
-              Eliza Haimi DDS
+            <Link to="/" className="font-display text-3xl tracking-widest text-gold">
+              HAIMI
             </Link>
+            <p className="mt-2 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
+              Dental Studio
+            </p>
             <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
-              Bespoke family and cosmetic dentistry in the heart of Great Neck.
+              Comprehensive family and cosmetic dentistry in Great Neck, NY.
             </p>
           </div>
 

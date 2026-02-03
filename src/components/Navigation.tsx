@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -9,7 +9,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "The Practice", path: "/practice" },
   { name: "Services", path: "/atelier" },
-  { name: "Book an Appointment", path: "/concierge" },
+  { name: "Contact", path: "/concierge" },
 ];
 
 const Navigation = () => {
@@ -33,30 +33,35 @@ const Navigation = () => {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           isScrolled
             ? "bg-cream/98 backdrop-blur-md border-b border-border/50 shadow-sm py-2"
-            : "bg-cream/90 backdrop-blur-sm py-4"
+            : "bg-transparent py-4"
         )}
       >
         <nav className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="flex items-center justify-between h-20 md:h-24">
-            {/* Logo */}
+          <div className="flex items-center justify-between h-16 md:h-20">
+            {/* Logo - Hidden on homepage when not scrolled */}
             <Link
               to="/"
-              className="font-display text-2xl md:text-3xl tracking-wide text-charcoal hover:text-gold transition-colors duration-300"
+              className={cn(
+                "font-display text-xl md:text-2xl tracking-widest text-charcoal hover:text-gold transition-all duration-300",
+                location.pathname === "/" && !isScrolled ? "opacity-0" : "opacity-100"
+              )}
             >
-              Eliza Haimi DDS
+              HAIMI
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-10">
+            {/* Desktop Navigation - Center */}
+            <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   className={cn(
-                    "font-body text-sm tracking-widest uppercase transition-colors duration-300 font-normal",
+                    "font-body text-xs tracking-[0.2em] uppercase transition-colors duration-300",
                     location.pathname === link.path
                       ? "text-gold"
-                      : "text-charcoal hover:text-gold"
+                      : isScrolled 
+                        ? "text-charcoal hover:text-gold"
+                        : "text-charcoal/80 hover:text-gold"
                   )}
                 >
                   {link.name}
@@ -64,10 +69,23 @@ const Navigation = () => {
               ))}
             </div>
 
-            {/* Desktop CTA */}
-            <div className="hidden md:block">
-              <Button variant="luxury" size="lg" asChild>
-                <Link to="/concierge">Book Now</Link>
+            {/* Desktop CTAs */}
+            <div className="hidden md:flex items-center gap-4">
+              <Button 
+                variant="luxury-gold-filled" 
+                size="sm" 
+                className="text-xs tracking-wider"
+                asChild
+              >
+                <a href="tel:+15164664464">Call Now</a>
+              </Button>
+              <Button 
+                variant="luxury" 
+                size="sm" 
+                className="text-xs tracking-wider"
+                asChild
+              >
+                <Link to="/concierge">Schedule Appointment</Link>
               </Button>
             </div>
 
@@ -102,10 +120,13 @@ const Navigation = () => {
                     ))}
                   </div>
                   
-                  <div className="mt-auto pb-8">
+                  <div className="mt-auto pb-8 space-y-4">
+                    <Button variant="luxury-gold-filled" size="lg" className="w-full" asChild>
+                      <a href="tel:+15164664464">Call Now</a>
+                    </Button>
                     <Button variant="luxury" size="lg" className="w-full" asChild>
                       <Link to="/concierge" onClick={() => setIsOpen(false)}>
-                        Begin Your Journey
+                        Schedule Appointment
                       </Link>
                     </Button>
                   </div>
