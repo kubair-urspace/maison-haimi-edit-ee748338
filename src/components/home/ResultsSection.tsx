@@ -37,10 +37,10 @@ const ResultsSection = () => {
           <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
             Real
           </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground tracking-wide uppercase">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-wide uppercase">
             Results
           </h2>
-          <p className="font-body text-muted-foreground mt-6 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-body text-charcoal/70 mt-6 max-w-2xl mx-auto leading-relaxed text-base md:text-lg">
             Many Great Neck patients have achieved healthier, glowing smiles through cosmetic and 
             restorative oral procedures. Take a look through our gallery to envision the outcomes 
             we could create for you.
