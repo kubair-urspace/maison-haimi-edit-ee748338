@@ -2,12 +2,10 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Sparkles, Heart, Shield, Zap } from "lucide-react";
 
 const serviceCategories = [
   {
     id: "routine",
-    icon: Shield,
     title: "Routine Dental Care",
     subtitle: "Preventative Excellence",
     description: "The foundation of lasting oral health. Our preventative services focus on maintaining what nature gave you, catching concerns before they become problems.",
@@ -32,7 +30,6 @@ const serviceCategories = [
   },
   {
     id: "cosmetic",
-    icon: Sparkles,
     title: "Cosmetic Dental Services",
     subtitle: "Aesthetic Excellence",
     description: "Where artistry meets dentistry. Our cosmetic services are designed to enhance your natural beauty, creating smiles that are both stunning and authentically you.",
@@ -61,7 +58,6 @@ const serviceCategories = [
   },
   {
     id: "implants",
-    icon: Heart,
     title: "Dental Implant Services",
     subtitle: "Permanent Solutions",
     description: "When teeth need replacement, we approach each case with the precision of a master craftsman, restoring both function and beauty with permanent solutions.",
@@ -90,7 +86,6 @@ const serviceCategories = [
   },
   {
     id: "dentures",
-    icon: Heart,
     title: "Denture Services",
     subtitle: "Restoring Smiles",
     description: "Custom-crafted dentures that restore your smile's beauty and function, designed with precision for comfort and natural appearance.",
@@ -119,7 +114,6 @@ const serviceCategories = [
   },
   {
     id: "invisalign",
-    icon: Zap,
     title: "Invisalign® Clear Aligners",
     subtitle: "Almost Invisible Braces",
     description: "Straighten your teeth discreetly with Invisalign® clear aligners—the modern alternative to traditional braces.",
@@ -148,7 +142,6 @@ const serviceCategories = [
   },
   {
     id: "whitening",
-    icon: Sparkles,
     title: "Teeth Whitening Services",
     subtitle: "Brilliant Smiles",
     description: "Professional whitening treatments that safely brighten your smile, revealing the natural radiance beneath.",
@@ -169,7 +162,6 @@ const serviceCategories = [
   },
   {
     id: "emergency",
-    icon: Zap,
     title: "Emergency Dental Care",
     subtitle: "When You Need Us Most",
     description: "When dental emergencies arise, we're here with prompt, compassionate care to address your urgent needs.",
@@ -201,38 +193,55 @@ const serviceCategories = [
 const Atelier = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 section-padding bg-secondary">
-        <div className="container mx-auto">
-          <div className="max-w-4xl">
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6 block"
-            >
-              Our Services
-            </motion.span>
+      {/* Hero Section - Full Width Image */}
+      <section className="relative min-h-[70vh] flex items-end">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=1600&q=80)`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
+        </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-8"
-            >
-              What We Offer
-            </motion.h1>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
+          >
+            Our Dental Services
+          </motion.h1>
+          
+          {/* Breadcrumb */}
+          <motion.nav
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex items-center gap-2 font-body text-sm text-white/80"
+          >
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-white">Services</span>
+          </motion.nav>
+        </div>
+      </section>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-body text-muted-foreground editorial-text max-w-2xl"
+      {/* Section Header */}
+      <section className="relative z-10 py-12 bg-background border-b border-gold/20">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between">
+            <motion.h2
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="font-display text-2xl md:text-3xl text-gold/70 tracking-wide uppercase"
             >
-              From routine checkups to complete smile transformations, Dr. Eliza Haimi provides 
-              comprehensive dental care tailored to your unique needs. Explore our full range of 
-              services designed to keep your smile healthy, beautiful, and confident.
-            </motion.p>
+              Cutting-Edge Procedures
+            </motion.h2>
           </div>
         </div>
       </section>
@@ -242,72 +251,69 @@ const Atelier = () => {
         <section
           key={category.id}
           id={category.id}
-          className={`section-padding ${categoryIndex % 2 === 0 ? 'bg-background' : 'bg-card'}`}
+          className={`relative z-10 py-16 md:py-24 ${categoryIndex % 2 === 0 ? 'bg-background' : 'bg-cream'}`}
         >
-          <div className="container mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              {/* Category Header */}
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="lg:sticky lg:top-32 lg:self-start"
-              >
-                <category.icon className="h-10 w-10 text-gold mb-6" />
-                <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4 block">
-                  {category.subtitle}
-                </span>
-                <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
-                  {category.title}
-                </h2>
-                <p className="font-body text-muted-foreground editorial-text">
-                  {category.description}
-                </p>
-              </motion.div>
+          <div className="container mx-auto px-4">
+            {/* Category Title */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="mb-12"
+            >
+              <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-3 block">
+                {category.subtitle}
+              </span>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase">
+                {category.title}
+              </h2>
+              <p className="font-body text-charcoal/70 mt-4 max-w-2xl leading-relaxed">
+                {category.description}
+              </p>
+            </motion.div>
 
-              {/* Services List */}
-              <div className="space-y-12">
-                {category.services.map((service, serviceIndex) => (
-                  <motion.div
-                    key={service.name}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: serviceIndex * 0.1 }}
-                    className="border-l-2 border-gold/30 pl-8 py-2"
-                  >
-                    <h3 className="font-display text-2xl text-foreground mb-3">
-                      {service.name}
-                    </h3>
-                    <p className="font-body text-muted-foreground text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
+            {/* Services Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {category.services.map((service, serviceIndex) => (
+                <motion.div
+                  key={service.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: serviceIndex * 0.1 }}
+                  className="group p-6 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:bg-gold/5"
+                >
+                  <h3 className="font-display text-xl text-charcoal mb-3 group-hover:text-gold transition-colors">
+                    {service.name}
+                  </h3>
+                  <p className="font-body text-charcoal/60 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
       ))}
 
       {/* CTA Section */}
-      <section className="section-padding bg-secondary">
-        <div className="container mx-auto text-center">
+      <section className="relative z-10 py-20 md:py-32 bg-charcoal">
+        <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-white tracking-wide uppercase mb-6">
               Begin Your Transformation
             </h2>
-            <p className="font-body text-muted-foreground editorial-text max-w-xl mx-auto mb-10">
+            <p className="font-body text-white/70 max-w-xl mx-auto mb-10 leading-relaxed">
               Ready to explore how we can enhance your smile? Schedule a consultation 
               to discuss your goals and discover the possibilities.
             </p>
-            <Button variant="luxury" size="xl" asChild>
+            <Button variant="luxury-gold-filled" size="xl" asChild>
               <Link to="/concierge">Request a Consultation</Link>
             </Button>
           </motion.div>
