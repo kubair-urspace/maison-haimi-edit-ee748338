@@ -158,15 +158,16 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-center text-white drop-shadow-lg"
+              className="text-center text-white"
+              style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}
             >
-              <h3 className="font-display text-5xl xl:text-6xl tracking-widest mb-4">HAIMI</h3>
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <div className="w-16 h-20 border-2 border-white/80 rounded-[50%] flex items-center justify-center">
-                  <span className="font-display text-xl text-white">EH</span>
+              <h3 className="font-display text-7xl xl:text-8xl 2xl:text-9xl tracking-[0.2em] mb-6 font-medium">HAIMI</h3>
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="w-24 h-28 xl:w-28 xl:h-32 border-2 border-white/90 rounded-[50%] flex items-center justify-center">
+                  <span className="font-display text-2xl xl:text-3xl text-white font-medium">EH</span>
                 </div>
               </div>
-              <p className="font-display text-3xl xl:text-4xl italic">Made Me Smile</p>
+              <p className="font-display text-4xl xl:text-5xl 2xl:text-6xl italic">Made Me Smile</p>
             </motion.div>
           </div>
         </div>
