@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const PhilosophySection = () => {
   return (
-    <section className="section-padding bg-secondary">
+    <section className="relative z-10 section-padding bg-secondary">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center">
           <motion.span
