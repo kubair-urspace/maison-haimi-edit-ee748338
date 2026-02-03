@@ -43,7 +43,7 @@ const Navigation = () => {
               to="/"
               className="font-display text-2xl md:text-3xl tracking-wide text-charcoal hover:text-gold transition-colors duration-300"
             >
-              Maison Haimi
+              Eliza Haimi DDS
             </Link>
 
             {/* Desktop Navigation */}

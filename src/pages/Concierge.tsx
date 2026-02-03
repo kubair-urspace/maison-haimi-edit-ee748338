@@ -66,7 +66,7 @@ const Concierge = () => {
       placeholder: "(555) 123-4567",
     },
     {
-      title: "What brings you to Maison Haimi?",
+      title: "What brings you to Eliza Haimi DDS?",
       field: "service",
       type: "select",
       options: serviceOptions,
@@ -299,7 +299,7 @@ const Concierge = () => {
                 </h3>
                 <p className="font-body text-muted-foreground editorial-text mb-8">
                   Your appointment request has been received. Our team will contact you 
-                  shortly to confirm your visit to Maison Haimi.
+                  shortly to confirm your visit to Eliza Haimi DDS.
                 </p>
                 <Button variant="luxury" onClick={() => {
                   setCurrentStep(0);

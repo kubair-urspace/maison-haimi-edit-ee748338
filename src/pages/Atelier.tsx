@@ -126,7 +126,7 @@ const Atelier = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="font-body text-muted-foreground editorial-text max-w-2xl"
             >
-              Every service at Maison Haimi is performed with the precision and care of an artisan. 
+              Every service at Eliza Haimi DDS is performed with the precision and care of an artisan. 
               We don't just treat teeth—we craft smiles that enhance your natural beauty and confidence.
             </motion.p>
           </div>
