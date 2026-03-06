@@ -42,8 +42,8 @@ const serviceCategories = [
       {
         name: "Same-Day Crowns",
         description: "Custom digital crowns designed, milled, and placed in one visit using advanced CAD/CAM technology.",
-        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        beforeImage: "https://images.unsplash.com/photo-1468493858157-0dfb5ab23948?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1581585090561-56e01b4e01f7?w=800&q=80",
       },
       {
         name: "Onlays & Inlays",
@@ -52,8 +52,8 @@ const serviceCategories = [
       {
         name: "Full Mouth Reconstruction",
         description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics.",
-        beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
+        beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=800&q=80",
       }
     ]
   },
@@ -66,8 +66,8 @@ const serviceCategories = [
       {
         name: "Surgical Implant Placement",
         description: "Precise surgical placement of dental implants using advanced diagnostic imaging and guided surgery techniques.",
-        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        beforeImage: "https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
       },
       {
         name: "Implant Restoration",
@@ -92,8 +92,8 @@ const serviceCategories = [
       {
         name: "Invisalign® Treatment",
         description: "Clear aligner therapy for a straighter smile without traditional braces—discreet, comfortable, effective.",
-        beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
+        beforeImage: "https://images.unsplash.com/photo-1495556650867-99590cea3657?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1570612861542-284f4c12e75f?w=800&q=80",
       },
       {
         name: "Invisalign® for Teens",
@@ -134,8 +134,8 @@ const serviceCategories = [
       {
         name: "Professional Teeth Whitening",
         description: "In-office whitening treatments that deliver dramatic results in a single visit.",
-        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        beforeImage: "https://images.unsplash.com/photo-1445527815600-1e60b84c8c50?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
       },
       {
         name: "Custom Whitening Plans",
