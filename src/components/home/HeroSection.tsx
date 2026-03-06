@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import haimiLogo from "@/assets/haimi-logo.png";
+import haimiLogomark from "@/assets/haimi-logomark.png";
 
 interface HeroSectionProps {
   heroImage: string;
@@ -116,16 +117,10 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="text-center text-white"
-              style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}
+              className="flex flex-col items-center"
             >
-              <h3 className="font-display text-7xl xl:text-8xl 2xl:text-9xl tracking-[0.2em] mb-6 font-medium">HAIMI</h3>
-              <div className="flex items-center justify-center gap-4 mb-6">
-                <div className="w-24 h-28 xl:w-28 xl:h-32 border-2 border-white/90 rounded-[50%] flex items-center justify-center">
-                  <span className="font-display text-2xl xl:text-3xl text-white font-medium">EH</span>
-                </div>
-              </div>
-              <p className="font-display text-4xl xl:text-5xl 2xl:text-6xl italic">Made Me Smile</p>
+              <img src={haimiLogomark} alt="Haimi" className="w-28 xl:w-36 2xl:w-44 brightness-0 invert drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] mb-6" />
+              <p className="font-display text-4xl xl:text-5xl 2xl:text-6xl italic text-white" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}>Made Me Smile</p>
             </motion.div>
           </div>
         </div>
