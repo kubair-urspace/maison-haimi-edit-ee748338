@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import haimiLogo from "@/assets/haimi-logo.png";
+import haimiLogomark from "@/assets/haimi-logomark.png";
 
 interface HeroSectionProps {
   heroImage: string;
