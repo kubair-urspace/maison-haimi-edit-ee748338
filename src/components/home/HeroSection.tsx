@@ -119,7 +119,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
               transition={{ duration: 1, delay: 0.3 }}
               className="flex flex-col items-center"
             >
-              <img src={haimiLogomark} alt="Haimi" className="w-28 xl:w-36 2xl:w-44 brightness-0 invert drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)] mb-6" />
+              <img src={haimiLogomark} alt="Haimi" className="w-28 xl:w-36 2xl:w-44 brightness-0 invert drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]" />
               <p className="font-display text-4xl xl:text-5xl 2xl:text-6xl italic text-white" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3)' }}>Made Me Smile</p>
             </motion.div>
           </div>
