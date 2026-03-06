@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Practice from "./pages/Practice";
 import Atelier from "./pages/Atelier";
 import Concierge from "./pages/Concierge";
+import BeforeAfter from "./pages/BeforeAfter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/atelier" element={<Atelier />} />
+          <Route path="/before-after" element={<BeforeAfter />} />
           <Route path="/concierge" element={<Concierge />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
