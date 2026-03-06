@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { useState, useRef } from "react";
 
 const ResultsSection = () => {
@@ -112,6 +114,17 @@ const ResultsSection = () => {
               className="h-full bg-gold transition-all duration-100"
               style={{ width: `${sliderPosition}%` }}
             />
+          </div>
+
+          {/* See More Button */}
+          <div className="mt-8 text-center">
+            <Link
+              to="/atelier"
+              className="inline-flex items-center gap-2 font-body text-xs tracking-[0.2em] uppercase text-gold hover:text-gold-dark transition-colors duration-300 group"
+            >
+              See More Transformations
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </Link>
           </div>
         </motion.div>
       </div>
