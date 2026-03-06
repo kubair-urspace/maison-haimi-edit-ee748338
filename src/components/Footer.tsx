@@ -44,19 +44,23 @@ const Footer = () => {
               <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
                 Premium cosmetic and aesthetic dentistry in Great Neck, NY.
               </p>
-              {/* Social Media Icons */}
-              <div className="mt-5 flex gap-3">
-                <a href="https://instagram.com/drelizahaimi" target="_blank" rel="noopener noreferrer" className="w-9 h-9 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+              {/* Social Media Buttons */}
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a href="https://instagram.com/drelizahaimi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold/10 hover:bg-gold text-gold hover:text-white border border-gold/30 hover:border-gold rounded-full text-xs font-body tracking-widest uppercase transition-all duration-300">
                   <Instagram className="h-4 w-4" />
+                  Instagram
                 </a>
-                <a href="https://facebook.com/ElizaHaimiDDS" target="_blank" rel="noopener noreferrer" className="w-9 h-9 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+                <a href="https://facebook.com/ElizaHaimiDDS" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold/10 hover:bg-gold text-gold hover:text-white border border-gold/30 hover:border-gold rounded-full text-xs font-body tracking-widest uppercase transition-all duration-300">
                   <Facebook className="h-4 w-4" />
+                  Facebook
                 </a>
-                <a href="#" className="w-9 h-9 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+                <a href="#" className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold/10 hover:bg-gold text-gold hover:text-white border border-gold/30 hover:border-gold rounded-full text-xs font-body tracking-widest uppercase transition-all duration-300">
                   <Youtube className="h-4 w-4" />
+                  YouTube
                 </a>
-                <a href="#" className="w-9 h-9 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+                <a href="#" className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold/10 hover:bg-gold text-gold hover:text-white border border-gold/30 hover:border-gold rounded-full text-xs font-body tracking-widest uppercase transition-all duration-300">
                   <Twitter className="h-4 w-4" />
+                  Twitter
                 </a>
               </div>
             </div>
