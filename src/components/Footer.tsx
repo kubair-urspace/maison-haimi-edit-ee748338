@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import haimiWordmark from "@/assets/haimi-wordmark.png";
 
 const Footer = () => {
   return (
@@ -41,12 +42,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Brand */}
             <div className="lg:col-span-1">
-              <Link to="/" className="font-display text-3xl tracking-widest text-gold">
-                HAIMI
+              <Link to="/">
+                <img src={haimiWordmark} alt="Haimi Dental Aesthetics" className="h-14" />
               </Link>
-              <p className="mt-2 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
-                Dental Aesthetics
-              </p>
               <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
                 Premium cosmetic and aesthetic dentistry in Great Neck, NY.
               </p>
