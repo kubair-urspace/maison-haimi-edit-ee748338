@@ -35,7 +35,7 @@ const Practice = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="font-body text-muted-foreground editorial-text max-w-2xl"
             >
-              At Eliza Haimi DDS, we believe exceptional dental care begins with understanding 
+              At Haimi Dental Aesthetics, we believe exceptional dental care begins with understanding 
               you—your concerns, your goals, and your vision for your smile.
             </motion.p>
           </div>
@@ -70,41 +70,45 @@ const Practice = () => {
               <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
                 Dr. Eliza Haimi, DDS
               </h2>
-              <p className="font-body text-muted-foreground editorial-text mb-6">
-                Eliza Haimi grew up following in the footsteps of her father, a neurologist 
-                who worked tirelessly to help people in need. Lessons of humility and 
-                unconditional care were learned at an early age. Her love of science and 
-                passion for sculpting and drawing led her to the field of dentistry.
+              <p className="font-body text-muted-foreground editorial-text mb-4 italic font-medium">
+                "I don't practice dentistry for production. I practice it for mastery."
               </p>
               <p className="font-body text-muted-foreground editorial-text mb-6">
-                She received her Bachelor's degree in Chemistry and Psychology from Clark 
-                University in Massachusetts, then attended the prestigious New York University 
-                College of Dentistry. Due to her clear vocation, Eliza was invited to join the 
-                Aesthetic Honors program at NYU, graduating with honors in cosmetic dentistry.
+                Dr. Haimi's philosophy is built on a less-is-more approach: we treatment-plan 
+                comprehensively to prevent surprises, preserve natural structure whenever possible, 
+                and use the most advanced diagnostic and digital technology available.
+              </p>
+              <p className="font-body text-muted-foreground editorial-text mb-6">
+                A graduate of NYU College of Dentistry's Apa Aesthetic Honors Program and recipient 
+                of the AACD Award in Aesthetic Dentistry, Dr. Haimi currently serves as an Adjunct 
+                Clinical Instructor in the Apa Aesthetic Honors Program at NYU, mentoring the next 
+                generation of aesthetic dentists.
+              </p>
+              <p className="font-body text-muted-foreground editorial-text mb-6">
+                With 18 years of Invisalign experience and qualifications in Dental Sleep Medicine, 
+                she brings a uniquely comprehensive perspective to every patient's care. Dr. Haimi 
+                is a proud member of the AACD, Spear Education, and the AADSM.
               </p>
               <p className="font-body text-muted-foreground editorial-text mb-8">
-                With the belief that dentistry could be practiced more conservatively and that 
-                patient interactions should be more personalized, Dr. Haimi established her 
-                Cosmetic and General Dentistry practice in 2011. She resides in Great Neck 
-                with her husband and three children.
+                Dr. Haimi resides with her husband and three children in Great Neck.
               </p>
               <div className="flex flex-wrap gap-8">
                 <div>
                   <p className="font-display text-3xl text-gold">NYU</p>
                   <p className="font-body text-xs tracking-wider text-muted-foreground uppercase mt-1">
-                    Aesthetic Honors
+                    Apa Aesthetic Honors
                   </p>
                 </div>
                 <div>
-                  <p className="font-display text-3xl text-gold">2007</p>
+                  <p className="font-display text-3xl text-gold">18yr</p>
                   <p className="font-body text-xs tracking-wider text-muted-foreground uppercase mt-1">
-                    Invisalign Certified
+                    Invisalign Experience
                   </p>
                 </div>
                 <div>
                   <p className="font-display text-3xl text-gold">AACD</p>
                   <p className="font-body text-xs tracking-wider text-muted-foreground uppercase mt-1">
-                    Excellence Award
+                    Aesthetic Award
                   </p>
                 </div>
               </div>
@@ -133,7 +137,7 @@ const Practice = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-8"
             >
-              7 Bond Street
+              233 East Shore Road
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -181,7 +185,7 @@ const Practice = () => {
             </h2>
             <p className="font-body text-muted-foreground editorial-text max-w-xl mx-auto mb-10">
               We invite you to experience dentistry reimagined. Schedule your consultation 
-              and discover the Eliza Haimi DDS difference.
+              and discover the Haimi Dental Aesthetics difference.
             </p>
             <Button variant="luxury" size="xl" asChild>
               <Link to="/concierge">Book Your Consultation</Link>

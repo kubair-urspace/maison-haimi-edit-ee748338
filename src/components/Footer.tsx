@@ -12,11 +12,19 @@ const Footer = () => {
               HAIMI
             </Link>
             <p className="mt-2 font-body text-xs tracking-[0.2em] uppercase text-muted-foreground">
-              Dental Studio
+              Dental Aesthetics
             </p>
             <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
-              Comprehensive family and cosmetic dentistry in Great Neck, NY.
+              Premium cosmetic and aesthetic dentistry in Great Neck, NY.
             </p>
+            <div className="mt-4 flex gap-4">
+              <a href="https://instagram.com/drelizahaimi" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors text-sm">
+                Instagram
+              </a>
+              <a href="https://facebook.com/ElizaHaimiDDS" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-gold transition-colors text-sm">
+                Facebook
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -43,13 +51,13 @@ const Footer = () => {
                 <Phone className="h-4 w-4" />
                 (516) 466-4464
               </a>
-              <a href="mailto:info@maisonhaimi.com" className="flex items-center gap-3 text-muted-foreground hover:text-gold transition-colors text-sm">
+              <a href="mailto:info@haimidental.com" className="flex items-center gap-3 text-muted-foreground hover:text-gold transition-colors text-sm">
                 <Mail className="h-4 w-4" />
-                info@maisonhaimi.com
+                info@haimidental.com
               </a>
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>7 Bond St #1D<br />Great Neck, NY 11021</span>
+                <span>233 East Shore Rd, Suite 111<br />Great Neck, NY 11023</span>
               </div>
             </div>
           </div>
@@ -62,9 +70,9 @@ const Footer = () => {
                 <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <div>
                   <p>Monday & Tuesday: 8:00 AM – 5:00 PM</p>
-                  <p>Wednesday: 8:00 AM – 1:00 PM</p>
-                  <p>Thursday: 8:00 AM – 4:30 PM</p>
-                  <p>Friday – Sunday: Closed</p>
+                   <p>Wednesday: 8:00 AM – 1:00 PM</p>
+                   <p>Thursday: 8:00 AM – 3:00 PM</p>
+                   <p>Friday – Sunday: Closed</p>
                 </div>
               </div>
             </div>

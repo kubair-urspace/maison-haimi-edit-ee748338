@@ -17,11 +17,13 @@ interface FormData {
 }
 
 const serviceOptions = [
-  "Smile Makeover Consultation",
-  "General Checkup & Cleaning",
-  "Cosmetic Consultation",
+  "Cosmetic/Aesthetic Dentistry",
+  "Veneers or Same-Day Crowns",
+  "Full Mouth Reconstruction",
+  "Dental Implants",
   "Invisalign Consultation",
-  "Emergency Care",
+  "Dental Sleep Medicine",
+  "In-Office Teeth Whitening",
   "Other",
 ];
 
@@ -66,7 +68,7 @@ const Concierge = () => {
       placeholder: "(555) 123-4567",
     },
     {
-      title: "What brings you to Eliza Haimi DDS?",
+      title: "What brings you to Haimi Dental Aesthetics?",
       field: "service",
       type: "select",
       options: serviceOptions,
@@ -299,7 +301,7 @@ const Concierge = () => {
                 </h3>
                 <p className="font-body text-muted-foreground editorial-text mb-8">
                   Your appointment request has been received. Our team will contact you 
-                  shortly to confirm your visit to Eliza Haimi DDS.
+                  shortly to confirm your visit to Haimi Dental Aesthetics.
                 </p>
                 <Button variant="luxury" onClick={() => {
                   setCurrentStep(0);
@@ -381,14 +383,14 @@ const Concierge = () => {
               className="aspect-square lg:aspect-auto lg:h-full min-h-[400px] grayscale hover:grayscale-0 transition-all duration-500"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8847508430344!2d-73.72891542346864!3d40.78929987138292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c289d1c4b4c8d9%3A0x8d9b7f3c8e5c6d5a!2s7%20Bond%20St%20%231D%2C%20Great%20Neck%2C%20NY%2011021!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8!2d-73.728!3d40.789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s233%20East%20Shore%20Rd%2C%20Great%20Neck%2C%20NY%2011023!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '400px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Eliza Haimi DDS Location - 7 Bond St, Great Neck, NY"
+                title="Haimi Dental Aesthetics - 233 East Shore Rd, Great Neck, NY"
                 className="w-full h-full"
               />
             </motion.div>
@@ -414,7 +416,7 @@ const Concierge = () => {
                   <div>
                     <p className="font-body text-foreground font-medium">Address</p>
                     <p className="font-body text-muted-foreground">
-                      7 Bond St #1D, Great Neck, NY 11021
+                      233 East Shore Rd, Suite 111, Great Neck, NY 11023
                     </p>
                   </div>
                 </div>
@@ -437,10 +439,10 @@ const Concierge = () => {
                   <div>
                     <p className="font-body text-foreground font-medium">Email</p>
                     <a
-                      href="mailto:info@maisonhaimi.com"
+                      href="mailto:info@haimidental.com"
                       className="font-body text-muted-foreground hover:text-gold transition-colors"
                     >
-                      info@maisonhaimi.com
+                      info@haimidental.com
                     </a>
                   </div>
                 </div>
@@ -452,7 +454,7 @@ const Concierge = () => {
                     <div className="font-body text-muted-foreground">
                       <p>Monday & Tuesday: 8:00 AM – 5:00 PM</p>
                       <p>Wednesday: 8:00 AM – 1:00 PM</p>
-                      <p>Thursday: 8:00 AM – 4:30 PM</p>
+                      <p>Thursday: 8:00 AM – 3:00 PM</p>
                       <p>Friday – Sunday: Closed</p>
                     </div>
                   </div>
