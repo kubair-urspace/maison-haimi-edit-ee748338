@@ -119,7 +119,7 @@ const ResultsSection = () => {
           {/* See More Button */}
           <div className="mt-8 text-center">
             <Link
-              to="/atelier"
+              to="/before-after"
               className="inline-flex items-center gap-2 font-body text-xs tracking-[0.2em] uppercase text-gold hover:text-gold-dark transition-colors duration-300 group"
             >
               See More Transformations
