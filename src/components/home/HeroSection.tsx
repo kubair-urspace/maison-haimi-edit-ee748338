@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import haimiLogo from "@/assets/haimi-logo.png";
-import haimiLogomark from "@/assets/haimi-logomark.png";
+import haimiFullLogo from "@/assets/haimi-full-logo.png";
 
 interface HeroSectionProps {
   heroImage: string;
@@ -119,8 +119,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
               transition={{ duration: 1, delay: 0.3 }}
               className="flex flex-col items-center"
             >
-              <img src={haimiLogomark} alt="Haimi" className="w-28 xl:w-36 2xl:w-44 brightness-0 invert drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]" />
-              
+              <img src={haimiFullLogo} alt="Haimi Dental Aesthetics" className="w-64 xl:w-80 2xl:w-96 brightness-0 invert drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]" />
             </motion.div>
           </div>
         </div>
