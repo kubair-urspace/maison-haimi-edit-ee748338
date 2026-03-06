@@ -31,32 +31,13 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
 
         {/* Content - Centered */}
         <div className="relative z-20 min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24">
-          {/* Main Brand Name */}
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-charcoal tracking-[0.15em] text-center mb-8"
-            style={{ fontWeight: 500 }}
+            className="flex items-center justify-center mb-10"
           >
-            HAIMI
-          </motion.h1>
-
-          {/* Center Monogram */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="flex flex-col items-center justify-center mb-10"
-          >
-            <div className="w-20 h-24 md:w-24 md:h-28 border-2 border-gold rounded-[50%] flex items-center justify-center bg-background/50">
-              <span className="font-display text-2xl md:text-3xl text-gold tracking-wide" style={{ fontWeight: 500 }}>
-                EH
-              </span>
-            </div>
-            <p className="font-body text-xs tracking-[0.3em] uppercase text-charcoal/70 mt-4">
-              Est. 2026
-            </p>
+            <img src={haimiLogo} alt="Haimi Dental Aesthetics" className="h-48 sm:h-56 md:h-64 lg:h-72" />
           </motion.div>
 
           {/* CTA Button */}
