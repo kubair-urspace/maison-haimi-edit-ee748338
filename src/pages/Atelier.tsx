@@ -26,10 +26,14 @@ const serviceCategories = [
       {
         name: "Dental Bonding",
         description: "An artful technique to reshape and perfect individual teeth, addressing chips, gaps, and discoloration.",
+        beforeImage: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
       },
       {
         name: "Composite Fillings",
         description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile.",
+        beforeImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1559757148-5c688a2b1088?w=800&q=80",
       }
     ]
   },
@@ -48,6 +52,8 @@ const serviceCategories = [
       {
         name: "Onlays & Inlays",
         description: "Conservative restorations that preserve natural tooth structure while restoring strength and aesthetics.",
+        beforeImage: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?w=800&q=80",
       },
       {
         name: "Full Mouth Reconstruction",
@@ -72,14 +78,20 @@ const serviceCategories = [
       {
         name: "Implant Restoration",
         description: "Custom-crafted crowns and prosthetics that attach to your implants, completing your smile with natural-looking results.",
+        beforeImage: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
       },
       {
         name: "Am I a Candidate?",
         description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation.",
+        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
       },
       {
         name: "Options for Replacing Missing Teeth",
         description: "Explore all available options for tooth replacement, including implants, bridges, and dentures.",
+        beforeImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1626735698273-1571605f07b8?w=800&q=80",
       }
     ]
   },
@@ -98,10 +110,14 @@ const serviceCategories = [
       {
         name: "Invisalign® for Teens",
         description: "A teen-friendly orthodontic solution that fits seamlessly into an active lifestyle.",
+        beforeImage: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
       },
       {
         name: "Invisalign® vs Traditional Braces",
         description: "Compare the benefits and considerations of clear aligners versus metal braces.",
+        beforeImage: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
       }
     ]
   },
@@ -114,14 +130,20 @@ const serviceCategories = [
       {
         name: "Sleep Apnea Treatment",
         description: "Custom oral appliance therapy as an alternative to CPAP for mild to moderate obstructive sleep apnea.",
+        beforeImage: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1515894203077-3c3d8a0bb228?w=800&q=80",
       },
       {
         name: "Snoring Solutions",
         description: "Effective dental solutions to reduce or eliminate snoring for better sleep quality.",
+        beforeImage: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
       },
       {
         name: "Sleep Assessment",
         description: "Comprehensive evaluation of your sleep health and personalized treatment recommendations.",
+        beforeImage: "https://images.unsplash.com/photo-1455732063391-5f1c8261b2f0?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=80",
       }
     ]
   },
@@ -140,6 +162,8 @@ const serviceCategories = [
       {
         name: "Custom Whitening Plans",
         description: "Personalized whitening protocols designed for your specific needs and sensitivity levels.",
+        beforeImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
       }
     ]
   }
