@@ -5,6 +5,7 @@ import ServicesPreview from "@/components/home/ServicesPreview";
 import ResultsSection from "@/components/home/ResultsSection";
 import AboutSection from "@/components/home/AboutSection";
 import GentleDentistrySection from "@/components/home/GentleDentistrySection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
 import heroImage from "@/assets/hero-lifestyle.jpg";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <ResultsSection />
       <AboutSection />
       <GentleDentistrySection />
+      <TestimonialsSection />
     </Layout>
   );
 };
