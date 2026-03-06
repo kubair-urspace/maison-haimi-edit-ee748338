@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
+import haimiWordmark from "@/assets/haimi-wordmark.png";
 
 const Footer = () => {
   return (
