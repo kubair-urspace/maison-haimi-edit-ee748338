@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary">
       {/* Map Section */}
-      <div className="w-full h-[300px] grayscale hover:grayscale-0 transition-all duration-500">
+      <div className="relative w-full h-[50vh] md:h-[60vh]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8!2d-73.728!3d40.789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s233%20East%20Shore%20Rd%2C%20Great%20Neck%2C%20NY%2011023!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
           width="100%"
@@ -17,6 +17,16 @@ const Footer = () => {
           title="Haimi Dental Aesthetics - 233 East Shore Rd, Great Neck, NY"
           className="w-full h-full"
         />
+        {/* Get Directions Button */}
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=233+East+Shore+Rd+Suite+111+Great+Neck+NY+11023"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-gold hover:bg-gold-dark text-white font-body text-xs tracking-[0.2em] uppercase px-8 py-3 shadow-lg transition-colors duration-300 flex items-center gap-2"
+        >
+          <MapPin className="h-4 w-4" />
+          Get Directions
+        </a>
       </div>
 
       {/* Footer Content */}
