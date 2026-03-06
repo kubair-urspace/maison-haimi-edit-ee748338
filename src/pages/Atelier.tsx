@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import ServiceCard from "@/components/services/ServiceCard";
 
 const serviceCategories = [
   {
@@ -12,19 +13,23 @@ const serviceCategories = [
     services: [
       {
         name: "Smile Makeover",
-        description: "A comprehensive approach to transforming your smile, combining multiple treatments tailored to your unique vision and facial aesthetics."
+        description: "A comprehensive approach to transforming your smile, combining multiple treatments tailored to your unique vision and facial aesthetics.",
+        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
       },
       {
         name: "Dental Veneers",
-        description: "Ultra-thin, custom-crafted shells that create a flawless appearance while preserving your natural tooth structure."
+        description: "Ultra-thin, custom-crafted shells that create a flawless appearance while preserving your natural tooth structure.",
+        beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
       },
       {
         name: "Dental Bonding",
-        description: "An artful technique to reshape and perfect individual teeth, addressing chips, gaps, and discoloration."
+        description: "An artful technique to reshape and perfect individual teeth, addressing chips, gaps, and discoloration.",
       },
       {
         name: "Composite Fillings",
-        description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile."
+        description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile.",
       }
     ]
   },
@@ -36,15 +41,19 @@ const serviceCategories = [
     services: [
       {
         name: "Same-Day Crowns",
-        description: "Custom digital crowns designed, milled, and placed in one visit using advanced CAD/CAM technology."
+        description: "Custom digital crowns designed, milled, and placed in one visit using advanced CAD/CAM technology.",
+        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
       },
       {
         name: "Onlays & Inlays",
-        description: "Conservative restorations that preserve natural tooth structure while restoring strength and aesthetics."
+        description: "Conservative restorations that preserve natural tooth structure while restoring strength and aesthetics.",
       },
       {
         name: "Full Mouth Reconstruction",
-        description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics."
+        description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics.",
+        beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
       }
     ]
   },
@@ -56,19 +65,21 @@ const serviceCategories = [
     services: [
       {
         name: "Surgical Implant Placement",
-        description: "Precise surgical placement of dental implants using advanced diagnostic imaging and guided surgery techniques."
+        description: "Precise surgical placement of dental implants using advanced diagnostic imaging and guided surgery techniques.",
+        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
       },
       {
         name: "Implant Restoration",
-        description: "Custom-crafted crowns and prosthetics that attach to your implants, completing your smile with natural-looking results."
+        description: "Custom-crafted crowns and prosthetics that attach to your implants, completing your smile with natural-looking results.",
       },
       {
         name: "Am I a Candidate?",
-        description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation."
+        description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation.",
       },
       {
         name: "Options for Replacing Missing Teeth",
-        description: "Explore all available options for tooth replacement, including implants, bridges, and dentures."
+        description: "Explore all available options for tooth replacement, including implants, bridges, and dentures.",
       }
     ]
   },
@@ -80,15 +91,17 @@ const serviceCategories = [
     services: [
       {
         name: "Invisalign® Treatment",
-        description: "Clear aligner therapy for a straighter smile without traditional braces—discreet, comfortable, effective."
+        description: "Clear aligner therapy for a straighter smile without traditional braces—discreet, comfortable, effective.",
+        beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
       },
       {
         name: "Invisalign® for Teens",
-        description: "A teen-friendly orthodontic solution that fits seamlessly into an active lifestyle."
+        description: "A teen-friendly orthodontic solution that fits seamlessly into an active lifestyle.",
       },
       {
         name: "Invisalign® vs Traditional Braces",
-        description: "Compare the benefits and considerations of clear aligners versus metal braces."
+        description: "Compare the benefits and considerations of clear aligners versus metal braces.",
       }
     ]
   },
@@ -100,15 +113,15 @@ const serviceCategories = [
     services: [
       {
         name: "Sleep Apnea Treatment",
-        description: "Custom oral appliance therapy as an alternative to CPAP for mild to moderate obstructive sleep apnea."
+        description: "Custom oral appliance therapy as an alternative to CPAP for mild to moderate obstructive sleep apnea.",
       },
       {
         name: "Snoring Solutions",
-        description: "Effective dental solutions to reduce or eliminate snoring for better sleep quality."
+        description: "Effective dental solutions to reduce or eliminate snoring for better sleep quality.",
       },
       {
         name: "Sleep Assessment",
-        description: "Comprehensive evaluation of your sleep health and personalized treatment recommendations."
+        description: "Comprehensive evaluation of your sleep health and personalized treatment recommendations.",
       }
     ]
   },
@@ -120,11 +133,13 @@ const serviceCategories = [
     services: [
       {
         name: "Professional Teeth Whitening",
-        description: "In-office whitening treatments that deliver dramatic results in a single visit."
+        description: "In-office whitening treatments that deliver dramatic results in a single visit.",
+        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
       },
       {
         name: "Custom Whitening Plans",
-        description: "Personalized whitening protocols designed for your specific needs and sensitivity levels."
+        description: "Personalized whitening protocols designed for your specific needs and sensitivity levels.",
       }
     ]
   }
@@ -216,21 +231,14 @@ const Atelier = () => {
             {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {category.services.map((service, serviceIndex) => (
-                <motion.div
+                <ServiceCard
                   key={service.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: serviceIndex * 0.1 }}
-                  className="group p-6 border border-gold/20 hover:border-gold/40 transition-all duration-300 hover:bg-gold/5"
-                >
-                  <h3 className="font-display text-xl text-charcoal mb-3 group-hover:text-gold transition-colors">
-                    {service.name}
-                  </h3>
-                  <p className="font-body text-charcoal/60 text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </motion.div>
+                  name={service.name}
+                  description={service.description}
+                  beforeImage={service.beforeImage}
+                  afterImage={service.afterImage}
+                  index={serviceIndex}
+                />
               ))}
             </div>
           </div>
