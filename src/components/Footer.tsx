@@ -3,9 +3,9 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube, Twitter } fro
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary">
+    <footer className="relative z-10 bg-secondary">
       {/* Map Section */}
-      <div className="relative w-full h-[50vh] md:h-[60vh]">
+      <div className="relative w-full h-[50vh] md:h-[60vh] bg-background">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.8!2d-73.728!3d40.789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s233%20East%20Shore%20Rd%2C%20Great%20Neck%2C%20NY%2011023!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
           width="100%"
