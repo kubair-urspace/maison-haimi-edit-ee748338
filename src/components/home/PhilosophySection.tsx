@@ -34,10 +34,10 @@ const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-body text-muted-foreground editorial-text mb-10"
           >
-            Dr. Eliza Haimi, DDS believes dentistry should be practiced conservatively, 
-            with personalized patient interactions at its core. A graduate of NYU's 
-            Aesthetic Honors program and recipient of the Excellence in Cosmetic Dentistry 
-            Award from the American Academy of Cosmetic Dentistry, she creates lifelong 
+            "I don't practice dentistry for production. I practice it for mastery." 
+            Dr. Eliza Haimi, DDS brings 18 years of experience, an AACD Award in Aesthetic 
+            Dentistry, and a deep commitment to preserving natural structure. As an Adjunct 
+            Clinical Instructor at NYU's Apa Aesthetic Honors Program, she creates lifelong 
             relationships with patients and their families.
           </motion.p>
 

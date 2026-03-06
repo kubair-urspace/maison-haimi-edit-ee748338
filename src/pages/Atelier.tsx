@@ -5,34 +5,10 @@ import { Link } from "react-router-dom";
 
 const serviceCategories = [
   {
-    id: "routine",
-    title: "Routine Dental Care",
-    subtitle: "Preventative Excellence",
-    description: "The foundation of lasting oral health. Our preventative services focus on maintaining what nature gave you, catching concerns before they become problems.",
-    services: [
-      {
-        name: "Dental Cleaning & Examinations",
-        description: "Comprehensive examinations and thorough cleanings that go beyond the surface, ensuring your complete oral health."
-      },
-      {
-        name: "Dental Anxiety Support",
-        description: "We understand that visiting the dentist can feel overwhelming. Our gentle approach ensures every visit feels calm and comfortable."
-      },
-      {
-        name: "Root Canal Treatment",
-        description: "Gentle, effective treatment to save damaged teeth and eliminate pain, preserving your natural smile."
-      },
-      {
-        name: "Tooth Extraction",
-        description: "When necessary, we perform extractions with precision and care, ensuring your comfort throughout the process."
-      }
-    ]
-  },
-  {
     id: "cosmetic",
-    title: "Cosmetic Dental Services",
+    title: "Cosmetic & Aesthetic Dentistry",
     subtitle: "Aesthetic Excellence",
-    description: "Where artistry meets dentistry. Our cosmetic services are designed to enhance your natural beauty, creating smiles that are both stunning and authentically you.",
+    description: "Where artistry meets mastery. Our aesthetic services are designed to enhance your natural beauty, creating smiles that are both stunning and authentically you.",
     services: [
       {
         name: "Smile Makeover",
@@ -41,10 +17,6 @@ const serviceCategories = [
       {
         name: "Dental Veneers",
         description: "Ultra-thin, custom-crafted shells that create a flawless appearance while preserving your natural tooth structure."
-      },
-      {
-        name: "Dental Crowns",
-        description: "Custom restorations that seamlessly blend with your natural teeth, renewing strength and aesthetics."
       },
       {
         name: "Dental Bonding",
@@ -57,69 +29,57 @@ const serviceCategories = [
     ]
   },
   {
+    id: "crowns",
+    title: "Same-Day Crowns & Restorations",
+    subtitle: "Advanced Technology",
+    description: "Using the most advanced digital technology available, we craft precision restorations in a single visit—no temporaries, no second appointments.",
+    services: [
+      {
+        name: "Same-Day Crowns",
+        description: "Custom digital crowns designed, milled, and placed in one visit using advanced CAD/CAM technology."
+      },
+      {
+        name: "Onlays & Inlays",
+        description: "Conservative restorations that preserve natural tooth structure while restoring strength and aesthetics."
+      },
+      {
+        name: "Full Mouth Reconstruction",
+        description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics."
+      }
+    ]
+  },
+  {
     id: "implants",
     title: "Dental Implant Services",
     subtitle: "Permanent Solutions",
-    description: "When teeth need replacement, we approach each case with the precision of a master craftsman, restoring both function and beauty with permanent solutions.",
+    description: "From surgical placement to final restoration, we approach each implant case with the precision of a master craftsman, restoring both function and beauty.",
     services: [
       {
-        name: "Dental Implants Overview",
-        description: "Permanent tooth replacement that looks, feels, and functions like natural teeth—a lifetime solution."
+        name: "Surgical Implant Placement",
+        description: "Precise surgical placement of dental implants using advanced diagnostic imaging and guided surgery techniques."
+      },
+      {
+        name: "Implant Restoration",
+        description: "Custom-crafted crowns and prosthetics that attach to your implants, completing your smile with natural-looking results."
       },
       {
         name: "Am I a Candidate?",
         description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation."
       },
       {
-        name: "The Dental Implant Procedure",
-        description: "A detailed walkthrough of what to expect during your implant journey, from consultation to final restoration."
-      },
-      {
         name: "Options for Replacing Missing Teeth",
         description: "Explore all available options for tooth replacement, including implants, bridges, and dentures."
-      },
-      {
-        name: "Post-Op Care for Dental Implants",
-        description: "Guidance for optimal healing and long-term success of your dental implants."
-      }
-    ]
-  },
-  {
-    id: "dentures",
-    title: "Denture Services",
-    subtitle: "Restoring Smiles",
-    description: "Custom-crafted dentures that restore your smile's beauty and function, designed with precision for comfort and natural appearance.",
-    services: [
-      {
-        name: "Dentures & Partial Dentures",
-        description: "Full and partial denture options crafted to fit comfortably and look completely natural."
-      },
-      {
-        name: "What to Expect When Getting Dentures",
-        description: "A comprehensive guide to the denture process, from initial consultation to final fitting."
-      },
-      {
-        name: "Adjusting to New Dentures",
-        description: "Tips and support for adapting to your new dentures with confidence and ease."
-      },
-      {
-        name: "Denture Care",
-        description: "Expert guidance on maintaining your dentures for lasting beauty and function."
-      },
-      {
-        name: "Denture Repairs",
-        description: "Quick and reliable repair services to keep your dentures in optimal condition."
       }
     ]
   },
   {
     id: "invisalign",
     title: "Invisalign® Clear Aligners",
-    subtitle: "Almost Invisible Braces",
-    description: "Straighten your teeth discreetly with Invisalign® clear aligners—the modern alternative to traditional braces.",
+    subtitle: "18 Years of Experience",
+    description: "With 18 years of Invisalign experience, Dr. Haimi offers expert clear aligner therapy—the modern alternative to traditional braces.",
     services: [
       {
-        name: "Invisalign® Braces",
+        name: "Invisalign® Treatment",
         description: "Clear aligner therapy for a straighter smile without traditional braces—discreet, comfortable, effective."
       },
       {
@@ -127,64 +87,44 @@ const serviceCategories = [
         description: "A teen-friendly orthodontic solution that fits seamlessly into an active lifestyle."
       },
       {
-        name: "Does Invisalign® Really Work?",
-        description: "Learn about the proven results and success rates of Invisalign® treatment."
-      },
-      {
         name: "Invisalign® vs Traditional Braces",
         description: "Compare the benefits and considerations of clear aligners versus metal braces."
+      }
+    ]
+  },
+  {
+    id: "sleep",
+    title: "Dental Sleep Medicine",
+    subtitle: "Rest Better",
+    description: "As a qualified dentist in sleep medicine, Dr. Haimi offers solutions for sleep-disordered breathing, helping you achieve better rest and improved quality of life.",
+    services: [
+      {
+        name: "Sleep Apnea Treatment",
+        description: "Custom oral appliance therapy as an alternative to CPAP for mild to moderate obstructive sleep apnea."
       },
       {
-        name: "Alternative to Braces for Teens",
-        description: "Modern orthodontic options that don't require the look of traditional metal braces."
+        name: "Snoring Solutions",
+        description: "Effective dental solutions to reduce or eliminate snoring for better sleep quality."
+      },
+      {
+        name: "Sleep Assessment",
+        description: "Comprehensive evaluation of your sleep health and personalized treatment recommendations."
       }
     ]
   },
   {
     id: "whitening",
-    title: "Teeth Whitening Services",
+    title: "In-Office Teeth Whitening",
     subtitle: "Brilliant Smiles",
-    description: "Professional whitening treatments that safely brighten your smile, revealing the natural radiance beneath.",
+    description: "Professional in-office whitening treatments that safely brighten your smile, revealing the natural radiance beneath.",
     services: [
       {
         name: "Professional Teeth Whitening",
         description: "In-office whitening treatments that deliver dramatic results in a single visit."
       },
       {
-        name: "Teeth Whitening at Dentist",
-        description: "Safe, supervised whitening that achieves results beyond what over-the-counter products can offer."
-      },
-      {
-        name: "Improve Your Smile for Senior Pictures",
-        description: "Special whitening packages to ensure your smile looks its best for important milestones."
-      }
-    ]
-  },
-  {
-    id: "emergency",
-    title: "Emergency Dental Care",
-    subtitle: "When You Need Us Most",
-    description: "When dental emergencies arise, we're here with prompt, compassionate care to address your urgent needs.",
-    services: [
-      {
-        name: "Emergency Dentist",
-        description: "Same-day emergency appointments available for urgent dental issues."
-      },
-      {
-        name: "What Should I Do If I Chip My Tooth?",
-        description: "Immediate guidance and treatment options for chipped or broken teeth."
-      },
-      {
-        name: "Emergency Dentist vs. Emergency Room",
-        description: "Understanding when to seek dental emergency care versus hospital emergency care."
-      },
-      {
-        name: "Sports Mouth Guards",
-        description: "Custom-fitted mouth guards to protect your smile during athletic activities."
-      },
-      {
-        name: "Emergency Tooth Extraction",
-        description: "Prompt extraction services when teeth cannot be saved, performed with care and precision."
+        name: "Custom Whitening Plans",
+        description: "Personalized whitening protocols designed for your specific needs and sensitivity levels."
       }
     ]
   }

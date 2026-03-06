@@ -42,41 +42,27 @@ const AboutSection = () => {
             </h2>
             
             <div className="space-y-6 font-body text-charcoal/80 leading-relaxed text-base md:text-lg">
-              <p>
-                Eliza Haimi grew up to follow in the footsteps of her father, a neurologist who worked 
-                tirelessly to help people in need. Lessons of humility and unconditional care were learned 
-                at an early age. Throughout Eliza's studies, the love of science and her passion for 
-                sculpting and drawing led her to the field of dentistry.
+              <p className="italic text-charcoal font-medium text-lg md:text-xl">
+                "I don't practice dentistry for production. I practice it for mastery."
               </p>
               <p>
-                She received her Bachelors degree in Chemistry and Psychology from Clark University in 
-                Massachusetts. Not only did Eliza volunteer in different dental practices throughout high 
-                school, but she also managed a dental practice while in college. Her enjoyment of dentistry 
-                motivated her to attend dental school at the prestigious New York University.
+                Dr. Eliza Haimi's philosophy is rooted in a less-is-more approach: comprehensive treatment 
+                planning to prevent surprises, preserving natural structure whenever possible, and using the 
+                most advanced diagnostic and digital technology available.
               </p>
               <p>
-                Due to her clear vocation, Eliza was asked to join the Aesthetic Honors program at NYU and 
-                she subsequently graduated with honors in this field. Dr. Eliza Haimi has been the recipient 
-                of the Excellence in Cosmetic Dentistry Award from the American Academy of Cosmetic Dentistry.
+                A graduate of NYU College of Dentistry's prestigious Apa Aesthetic Honors Program, Dr. Haimi 
+                has been recognized with the AACD Award in Aesthetic Dentistry. She currently serves as an 
+                Adjunct Clinical Instructor in the Apa Aesthetic Honors Program at NYU, mentoring the next 
+                generation of aesthetic dentists.
               </p>
               <p>
-                While raising her children, Dr. Haimi worked as an associate in different dental practices. 
-                She used this as an opportunity to learn as much as she could about the profession. However, 
-                during these years, it became apparent to her that what she truly desired was her own practice. 
-                With the belief that dentistry could be practiced much more conservatively and that patient 
-                interactions should be more personalized, Dr. Haimi established her Cosmetic and General 
-                Dentistry practice in 2011.
-              </p>
-              <p>
-                In an effort to practice conservative dentistry, Dr. Haimi has incorporated Invisalign into 
-                her treatment planning in order to align teeth without unnecessary cutting of the enamel. 
-                Dr. Haimi has been a certified Invisalign provider since 2007 and Invisalign's Preferred 
-                Provider since 2011. In a constant effort to stay up-to-date and improve her techniques, 
-                Dr. Haimi's absolute love for her work has led her to gain hundreds of hours of continuing 
-                education yearly.
+                With 18 years of Invisalign experience and additional qualifications in Dental Sleep Medicine, 
+                Dr. Haimi brings a uniquely comprehensive perspective to every patient's care. She is a proud 
+                member of the AACD, Spear Education, and the AADSM.
               </p>
               <p className="font-medium text-charcoal">
-                Dr. Haimi currently resides with her husband and three children in Great Neck.
+                Dr. Haimi resides with her husband and three children in Great Neck.
               </p>
             </div>
 

@@ -109,18 +109,17 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
                 Welcome To
               </span>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide mb-8">
-                HAIMI DENTAL
+                HAIMI DENTAL AESTHETICS
               </h2>
               <p className="font-body text-muted-foreground leading-relaxed mb-6">
-                Haimi Dental Studio is a premier dental practice located in the heart of Great Neck. 
-                We are a practice whose core values are centered around treating our patients with 
-                integrity and compassion. We pride ourselves on treating every patient as a member 
-                of our family and providing an experience that will surpass expectations.
+                Haimi Dental Aesthetics is a premier boutique dental practice in the heart of Great Neck. 
+                We believe less is more—our core values center on mastery over production, comprehensive 
+                treatment planning to prevent surprises, and preserving natural structure whenever possible.
               </p>
               <p className="font-body text-muted-foreground leading-relaxed mb-8">
-                From general dental treatments to cosmetic dental procedures, like veneers, 
-                Invisalign® clear aligners, and full-mouth rehabilitation. Our scientifically proven, 
-                evidence-based dentistry utilizes the most advanced technology available.
+                From cosmetic and aesthetic dentistry to same-day crowns, veneers, full mouth 
+                reconstruction, and Invisalign®—we use the most advanced diagnostic and digital 
+                technology available to deliver exceptional results.
               </p>
               <Button variant="luxury" size="lg" asChild>
                 <Link to="/practice">About Us</Link>
