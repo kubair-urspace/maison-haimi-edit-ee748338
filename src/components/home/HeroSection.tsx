@@ -94,15 +94,17 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide mb-8">
                 HAIMI DENTAL AESTHETICS
               </h2>
-              <p className="font-body text-muted-foreground leading-relaxed mb-6">
-                Haimi Dental Aesthetics is a premier boutique dental practice in the heart of Great Neck. 
-                We believe less is more—our core values center on mastery over production, comprehensive 
-                treatment planning to prevent surprises, and preserving natural structure whenever possible.
+              <p className="font-body text-muted-foreground leading-relaxed mb-5">
+                At Haimi Dental Aesthetics, dentistry is guided by precision, preservation, and thoughtful care. This boutique practice is intentionally designed to provide a personalized experience, where every patient receives attentive, unhurried treatment.
               </p>
-              <p className="font-body text-muted-foreground leading-relaxed mb-8">
-                From cosmetic and aesthetic dentistry to same-day crowns, veneers, full mouth 
-                reconstruction, and Invisalign®—we use the most advanced diagnostic and digital 
-                technology available to deliver exceptional results.
+              <p className="font-body text-muted-foreground leading-relaxed mb-5">
+                Whenever possible, natural tooth structure is preserved. The healthiest dentistry is often the least invasive, and treatment recommendations are made with long-term health, function, and aesthetics in mind.
+              </p>
+              <p className="font-body text-muted-foreground leading-relaxed mb-5">
+                Advanced technology and the highest quality materials are used to create results that are natural, beautiful, and enduring. Patients are never rushed. Options are explained clearly, questions are welcomed, and decisions are made together with the patients.
+              </p>
+              <p className="font-body text-muted-foreground leading-relaxed italic mb-8">
+                Exceptional dentistry is not about doing more — it is about doing what is right, at the right time.
               </p>
               <Button variant="luxury" size="lg" asChild>
                 <Link to="/practice">About Us</Link>
