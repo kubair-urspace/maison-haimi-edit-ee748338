@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone } from "lucide-react";
-import haimiLogo from "@/assets/haimi-logo.png";
+import haimiNavLogo from "@/assets/haimi-logo-nav.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
