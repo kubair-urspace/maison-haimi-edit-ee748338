@@ -28,7 +28,7 @@ const Navigation = () => {
               to="/"
               className="flex items-center hover:opacity-80 transition-opacity duration-300"
             >
-              <img src={haimiLogo} alt="Haimi Dental Aesthetics" className="h-10 md:h-12" />
+              <img src={haimiLogo} alt="Haimi Dental Aesthetics" className="h-10 md:h-12 brightness-0 invert" />
             </Link>
 
             {/* Desktop CTAs */}
