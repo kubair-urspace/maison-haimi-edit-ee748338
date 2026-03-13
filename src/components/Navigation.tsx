@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone } from "lucide-react";
-import haimiLogo from "@/assets/haimi-logo.png";
+import haimiNavLogo from "@/assets/haimi-logo-nav.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -28,7 +28,7 @@ const Navigation = () => {
               to="/"
               className="flex items-center hover:opacity-80 transition-opacity duration-300"
             >
-              <img src={haimiLogo} alt="Haimi Dental Aesthetics" className="h-10 md:h-12 brightness-0 invert" />
+              <img src={haimiNavLogo} alt="Haimi Dental Aesthetics" className="h-10 md:h-12" />
             </Link>
 
             {/* Desktop CTAs */}
