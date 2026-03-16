@@ -8,6 +8,7 @@ import Practice from "./pages/Practice";
 import Atelier from "./pages/Atelier";
 import Concierge from "./pages/Concierge";
 import BeforeAfter from "./pages/BeforeAfter";
+import MeetUs from "./pages/MeetUs";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
