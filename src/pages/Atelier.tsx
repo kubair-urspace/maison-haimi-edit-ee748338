@@ -260,12 +260,24 @@ const serviceCategories = [
         description: "In-office whitening treatments that deliver dramatic results in a single visit.",
         beforeImage: "https://images.unsplash.com/photo-1445527815600-1e60b84c8c50?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+        transformationDetails: {
+          procedure: "Professional-grade hydrogen peroxide whitening applied under controlled conditions for safe, dramatic brightening.",
+          technique: "Light-activated whitening gel applied in multiple short sessions during a single visit for even results.",
+          duration: "Single visit, approximately 90 minutes",
+          result: "Teeth brightened up to 8 shades in one session, with a noticeably whiter, more youthful smile.",
+        },
       },
       {
         name: "Custom Whitening Plans",
         description: "Personalized whitening protocols designed for your specific needs and sensitivity levels.",
         beforeImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+        transformationDetails: {
+          procedure: "Tailored whitening plan combining in-office treatment with custom take-home trays for sustained results.",
+          technique: "Custom-molded trays with professional-grade gel calibrated to your sensitivity level and whitening goals.",
+          duration: "Initial visit plus 1–2 weeks of at-home use",
+          result: "Gradual, comfortable whitening that reaches your ideal shade with minimal sensitivity.",
+        },
       }
     ]
   }
