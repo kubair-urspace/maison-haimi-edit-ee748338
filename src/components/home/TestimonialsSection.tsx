@@ -8,25 +8,83 @@ const testimonials = [
   },
   {
     name: "James R.",
-    treatment: "Porcelain Veneers",
+    treatment: "Dental Veneers",
     quote: "I was nervous about getting veneers, but the process was seamless. My new smile looks completely natural—people can't believe they're veneers.",
   },
   {
     name: "Michelle T.",
-    treatment: "Invisalign® Alignment",
+    treatment: "Invisalign® Treatment",
     quote: "The discreet aligners fit perfectly into my lifestyle. In just months, my teeth were straighter than I ever thought possible. Truly life-changing.",
+  },
+  {
+    name: "David L.",
+    treatment: "Dental Bonding",
+    quote: "A small chip on my front tooth had bothered me for years. Dr. Haimi fixed it in one visit—you can't even tell it was ever there.",
+  },
+  {
+    name: "Karen W.",
+    treatment: "Composite Fillings",
+    quote: "I needed several fillings replaced and Dr. Haimi matched them perfectly to my natural teeth. No one can tell the difference.",
+  },
+  {
+    name: "Robert P.",
+    treatment: "Same-Day Crowns",
+    quote: "Getting a crown done in one visit was incredible. The technology they use is amazing, and the fit was perfect from day one.",
+  },
+  {
+    name: "Angela D.",
+    treatment: "Onlays & Inlays",
+    quote: "Dr. Haimi took a conservative approach and saved as much of my natural tooth as possible. I appreciate the honesty and craftsmanship.",
+  },
+  {
+    name: "Thomas K.",
+    treatment: "Full Mouth Reconstruction",
+    quote: "After years of dental issues, Dr. Haimi rebuilt my entire smile. The transformation has changed my life—I can eat, speak, and smile with confidence again.",
+  },
+  {
+    name: "Patricia N.",
+    treatment: "Surgical Implant Placement",
+    quote: "The implant procedure was far less intimidating than I imagined. Dr. Haimi's precision and care made the entire process comfortable.",
+  },
+  {
+    name: "Steven H.",
+    treatment: "Implant Restoration",
+    quote: "My implant crown looks and feels exactly like a real tooth. I forget it's even there. Absolutely worth the investment.",
+  },
+  {
+    name: "Lisa C.",
+    treatment: "Invisalign® for Teens",
+    quote: "My daughter loved that no one at school could tell she was wearing aligners. Her smile transformation has been wonderful for her confidence.",
+  },
+  {
+    name: "Michael B.",
+    treatment: "Sleep Apnea Treatment",
+    quote: "The custom oral appliance changed everything. I finally sleep through the night and wake up refreshed. My wife says I don't snore anymore either.",
+  },
+  {
+    name: "Jennifer A.",
+    treatment: "Snoring Solutions",
+    quote: "I was skeptical that a dental device could help with snoring, but it worked from the very first night. My partner and I both sleep better now.",
+  },
+  {
+    name: "Christopher G.",
+    treatment: "Professional Teeth Whitening",
+    quote: "One visit and my teeth were several shades brighter. The results were dramatic and immediate—I couldn't stop smiling all day.",
   },
 ];
 
+// Duplicate for seamless loop
+const doubledTestimonials = [...testimonials, ...testimonials];
+
 const TestimonialsSection = () => {
   return (
-    <section className="relative z-10 py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="relative z-10 py-16 md:py-24 bg-background overflow-hidden">
+      <div className="container mx-auto px-4 mb-14">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="text-center"
         >
           <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
             Patient
@@ -35,16 +93,19 @@ const TestimonialsSection = () => {
             Testimonials
           </h2>
         </motion.div>
+      </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {testimonials.map((testimonial, i) => (
-            <motion.div
+      {/* Marquee container */}
+      <div className="relative w-full">
+        {/* Fade edges */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none" />
+
+        <div className="flex animate-marquee hover:[animation-play-state:paused]">
+          {doubledTestimonials.map((testimonial, i) => (
+            <div
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="border border-border bg-card p-8 flex flex-col"
+              className="flex-shrink-0 w-[320px] md:w-[360px] border border-border bg-card p-8 flex flex-col mx-3"
             >
               <div className="flex gap-0.5 mb-4">
                 {Array.from({ length: 5 }).map((_, j) => (
@@ -62,7 +123,7 @@ const TestimonialsSection = () => {
                   {testimonial.treatment}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
