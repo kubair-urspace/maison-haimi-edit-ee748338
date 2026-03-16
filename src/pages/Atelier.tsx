@@ -216,18 +216,36 @@ const serviceCategories = [
         description: "Custom oral appliance therapy as an alternative to CPAP for mild to moderate obstructive sleep apnea.",
         beforeImage: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1515894203077-3c3d8a0bb228?w=800&q=80",
+        transformationDetails: {
+          procedure: "Custom-fitted mandibular advancement device (MAD) that repositions the jaw to maintain an open airway during sleep.",
+          technique: "Digital impressions for precise appliance fabrication, with titration adjustments for optimal positioning.",
+          duration: "2–3 visits for fitting and adjustment",
+          result: "Significant reduction in apnea events, improved oxygen levels, and restful sleep without a CPAP machine.",
+        },
       },
       {
         name: "Snoring Solutions",
         description: "Effective dental solutions to reduce or eliminate snoring for better sleep quality.",
         beforeImage: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+        transformationDetails: {
+          procedure: "Custom oral appliance designed to gently advance the lower jaw and prevent airway collapse during sleep.",
+          technique: "Precision-molded device with micro-adjustable settings for comfort and effectiveness.",
+          duration: "2 visits for fitting and follow-up",
+          result: "Dramatically reduced or eliminated snoring, leading to better sleep for both the patient and their partner.",
+        },
       },
       {
         name: "Sleep Assessment",
         description: "Comprehensive evaluation of your sleep health and personalized treatment recommendations.",
         beforeImage: "https://images.unsplash.com/photo-1455732063391-5f1c8261b2f0?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=800&q=80",
+        transformationDetails: {
+          procedure: "Thorough evaluation of sleep patterns, airway anatomy, and risk factors for sleep-disordered breathing.",
+          technique: "Clinical examination combined with validated screening questionnaires and optional home sleep testing.",
+          duration: "Single assessment visit, approximately 45 minutes",
+          result: "A clear diagnosis and personalized treatment roadmap for better sleep and improved overall health.",
+        },
       }
     ]
   },
