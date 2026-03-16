@@ -172,18 +172,36 @@ const serviceCategories = [
         description: "Clear aligner therapy for a straighter smile without traditional braces—discreet, comfortable, effective.",
         beforeImage: "https://images.unsplash.com/photo-1495556650867-99590cea3657?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1570612861542-284f4c12e75f?w=800&q=80",
+        transformationDetails: {
+          procedure: "Sequential clear aligners that gradually shift teeth into ideal alignment without metal brackets or wires.",
+          technique: "ClinCheck® 3D treatment planning with custom-fabricated aligners changed every 1–2 weeks.",
+          duration: "6–18 months depending on complexity",
+          result: "A beautifully aligned smile achieved discreetly, with minimal impact on daily life.",
+        },
       },
       {
         name: "Invisalign® for Teens",
         description: "A teen-friendly orthodontic solution that fits seamlessly into an active lifestyle.",
         beforeImage: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
+        transformationDetails: {
+          procedure: "Teen-specific Invisalign with compliance indicators and eruption tabs for developing smiles.",
+          technique: "Age-appropriate treatment planning with built-in features to accommodate growing jaws and emerging teeth.",
+          duration: "12–18 months on average",
+          result: "Straighter teeth and improved confidence without the social stigma of traditional metal braces.",
+        },
       },
       {
         name: "Invisalign® vs Traditional Braces",
         description: "Compare the benefits and considerations of clear aligners versus metal braces.",
         beforeImage: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+        transformationDetails: {
+          procedure: "Educational consultation comparing Invisalign and traditional braces for your specific orthodontic needs.",
+          technique: "Digital simulation showing projected outcomes with both treatment approaches for informed decision-making.",
+          duration: "Single consultation visit",
+          result: "Complete clarity on which orthodontic approach will deliver the best results for your unique case.",
+        },
       }
     ]
   },
