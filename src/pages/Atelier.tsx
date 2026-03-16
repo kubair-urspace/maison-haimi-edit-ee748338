@@ -16,24 +16,48 @@ const serviceCategories = [
         description: "A comprehensive approach to transforming your smile, combining multiple treatments tailored to your unique vision and facial aesthetics.",
         beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        transformationDetails: {
+          procedure: "Full smile makeover combining porcelain veneers, professional whitening, and gum contouring for a harmonious result.",
+          technique: "Digital Smile Design (DSD) planning with wax-up previews, followed by minimally invasive preparation and custom layered ceramics.",
+          duration: "3–5 visits over 4–6 weeks",
+          result: "A naturally radiant smile that complements facial features, with improved symmetry, shade, and proportion.",
+        },
       },
       {
         name: "Dental Veneers",
         description: "Ultra-thin, custom-crafted shells that create a flawless appearance while preserving your natural tooth structure.",
         beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
+        transformationDetails: {
+          procedure: "Custom porcelain veneers bonded to the front surface of teeth to correct color, shape, and alignment.",
+          technique: "Ultra-thin prep or no-prep veneers crafted from premium feldspathic porcelain for lifelike translucency.",
+          duration: "2 visits over 2–3 weeks",
+          result: "A flawless, camera-ready smile that looks completely natural—indistinguishable from real teeth.",
+        },
       },
       {
         name: "Dental Bonding",
         description: "An artful technique to reshape and perfect individual teeth, addressing chips, gaps, and discoloration.",
         beforeImage: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+        transformationDetails: {
+          procedure: "Composite resin applied and sculpted directly onto the tooth to repair chips, close gaps, or reshape contours.",
+          technique: "Freehand artistry using layered composite matched to the patient's exact tooth shade and texture.",
+          duration: "Single visit, 30–60 minutes per tooth",
+          result: "Seamless repair that blends invisibly with the surrounding teeth for an instantly improved smile.",
+        },
       },
       {
         name: "Composite Fillings",
         description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile.",
         beforeImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1559757148-5c688a2b1088?w=800&q=80",
+        transformationDetails: {
+          procedure: "Removal of decay and replacement with tooth-colored composite resin that bonds directly to the tooth.",
+          technique: "Incremental layering technique with precise shade matching and polishing for an invisible restoration.",
+          duration: "Single visit, 20–45 minutes per filling",
+          result: "A strong, natural-looking restoration that preserves tooth structure and is virtually undetectable.",
+        },
       }
     ]
   },
