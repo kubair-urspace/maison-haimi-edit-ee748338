@@ -375,6 +375,7 @@ const Atelier = () => {
                   description={service.description}
                   beforeImage={service.beforeImage}
                   afterImage={service.afterImage}
+                  transformationDetails={service.transformationDetails}
                   index={serviceIndex}
                 />
               ))}
