@@ -41,41 +41,8 @@ const Practice = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 section-padding bg-secondary">
-        <div className="container mx-auto">
-          <div className="max-w-4xl">
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6 block"
-            >
-              The Practice
-            </motion.span>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-8"
-            >
-              A Relationship-First<br />
-              <span className="italic">Approach</span>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-body text-muted-foreground editorial-text max-w-2xl"
-            >
-              At Haimi Dental Aesthetics, we believe exceptional dental care begins with understanding 
-              you—your concerns, your goals, and your vision for your smile.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
+      {/* Spacer for fixed nav */}
+      <div className="pt-14 md:pt-16" />
 
 
       {/* Facility Showcase */}
