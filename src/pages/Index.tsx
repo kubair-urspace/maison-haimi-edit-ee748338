@@ -16,7 +16,7 @@ const Index = () => {
       <ServicesPreview />
       <ResultsSection />
       <AboutSection />
-      <GentleDentistrySection />
+      
       <TestimonialsSection />
     </Layout>
   );
