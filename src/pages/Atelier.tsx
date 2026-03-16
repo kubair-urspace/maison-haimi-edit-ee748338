@@ -72,18 +72,36 @@ const serviceCategories = [
         description: "Custom digital crowns designed, milled, and placed in one visit using advanced CAD/CAM technology.",
         beforeImage: "https://images.unsplash.com/photo-1468493858157-0dfb5ab23948?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1581585090561-56e01b4e01f7?w=800&q=80",
+        transformationDetails: {
+          procedure: "Digital impression, CAD/CAM design, and in-office milling of a precision ceramic crown—all in one appointment.",
+          technique: "CEREC technology with 3D scanning, computer-aided design, and chairside milling from a single block of ceramic.",
+          duration: "Single visit, approximately 2 hours",
+          result: "A perfectly fitted, natural-looking crown with no temporary and no return visit required.",
+        },
       },
       {
         name: "Onlays & Inlays",
         description: "Conservative restorations that preserve natural tooth structure while restoring strength and aesthetics.",
         beforeImage: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?w=800&q=80",
+        transformationDetails: {
+          procedure: "Custom ceramic restorations that replace only the damaged portion of the tooth, preserving healthy structure.",
+          technique: "Precision-milled porcelain or composite bonded with advanced adhesive protocols for maximum longevity.",
+          duration: "1–2 visits over 1–2 weeks",
+          result: "A conservative, long-lasting restoration that strengthens the tooth while maintaining a completely natural appearance.",
+        },
       },
       {
         name: "Full Mouth Reconstruction",
         description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics.",
         beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=800&q=80",
+        transformationDetails: {
+          procedure: "Multi-phase treatment combining crowns, veneers, implants, and/or orthodontics to fully restore oral health and aesthetics.",
+          technique: "Comprehensive diagnostic workup with wax-ups, guided surgery, and phased treatment for predictable outcomes.",
+          duration: "Multiple phases over 6–12 months",
+          result: "Complete restoration of function, comfort, and beauty—a new foundation for lifelong oral health.",
+        },
       }
     ]
   },
