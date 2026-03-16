@@ -116,24 +116,48 @@ const serviceCategories = [
         description: "Precise surgical placement of dental implants using advanced diagnostic imaging and guided surgery techniques.",
         beforeImage: "https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+        transformationDetails: {
+          procedure: "Titanium implant surgically placed into the jawbone to serve as a permanent root for a replacement tooth.",
+          technique: "3D CBCT-guided surgery with digitally planned implant positioning for optimal angulation and depth.",
+          duration: "Single surgical visit, 3–6 months healing before restoration",
+          result: "A stable, permanent foundation that looks, feels, and functions like a natural tooth root.",
+        },
       },
       {
         name: "Implant Restoration",
         description: "Custom-crafted crowns and prosthetics that attach to your implants, completing your smile with natural-looking results.",
         beforeImage: "https://images.unsplash.com/photo-1504439468489-c8920d796a29?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+        transformationDetails: {
+          procedure: "Custom abutment and ceramic crown fabricated and placed on a fully healed implant to complete the restoration.",
+          technique: "Digital impressions with CAD/CAM-designed restorations for a precise, comfortable fit.",
+          duration: "2 visits over 2–3 weeks",
+          result: "A beautiful, fully functional tooth replacement that is indistinguishable from natural teeth.",
+        },
       },
       {
         name: "Am I a Candidate?",
         description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation.",
         beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
+        transformationDetails: {
+          procedure: "Full diagnostic evaluation including 3D imaging, bone density assessment, and medical history review.",
+          technique: "CBCT scans combined with clinical examination to assess bone volume, gum health, and overall candidacy.",
+          duration: "Single consultation, approximately 1 hour",
+          result: "A clear, personalized treatment plan outlining your options and expected outcomes.",
+        },
       },
       {
         name: "Options for Replacing Missing Teeth",
         description: "Explore all available options for tooth replacement, including implants, bridges, and dentures.",
         beforeImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1626735698273-1571605f07b8?w=800&q=80",
+        transformationDetails: {
+          procedure: "Comparative consultation exploring implants, bridges, and removable prosthetics tailored to your needs.",
+          technique: "Side-by-side analysis of longevity, aesthetics, cost, and maintenance for each replacement option.",
+          duration: "Single consultation visit",
+          result: "Confidence in choosing the best tooth replacement solution for your lifestyle and goals.",
+        },
       }
     ]
   },
