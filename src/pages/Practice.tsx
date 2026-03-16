@@ -10,7 +10,35 @@ import facilityTreatment from "@/assets/facility-treatment.jpg";
 import facilityLounge from "@/assets/facility-lounge.jpg";
 import facilityTechnology from "@/assets/facility-technology.jpg";
 
+const facilityImages = [
+  {
+    src: facilityReception,
+    title: "Reception",
+    subtitle: "A Warm Welcome",
+    description: "Our reception area sets the tone for your visit—marble finishes, soft lighting, and a curated atmosphere designed to put you at ease from the moment you arrive.",
+  },
+  {
+    src: facilityTreatment,
+    title: "Treatment Suite",
+    subtitle: "Precision & Comfort",
+    description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light—creating an environment where advanced care meets total comfort.",
+  },
+  {
+    src: facilityLounge,
+    title: "Patient Lounge",
+    subtitle: "Relaxation Redefined",
+    description: "Our patient lounge offers a tranquil retreat with designer furnishings, curated reading, and a calming ambiance that feels more like a private club than a dental office.",
+  },
+  {
+    src: facilityTechnology,
+    title: "Technology",
+    subtitle: "State of the Art",
+    description: "From 3D digital scanning to advanced CAD/CAM systems, we invest in the finest technology to ensure precise diagnostics and exceptional results for every patient.",
+  },
+];
+
 const Practice = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
   return (
     <Layout>
       {/* Hero Section */}
