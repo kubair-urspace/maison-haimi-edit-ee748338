@@ -1,17 +1,24 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Sparkles } from "lucide-react";
 
 interface ServiceCardProps {
   name: string;
   description: string;
   beforeImage?: string;
   afterImage?: string;
+  transformationDetails?: {
+    procedure: string;
+    technique: string;
+    duration: string;
+    result: string;
+  };
   index: number;
 }
 
-const ServiceCard = ({ name, description, beforeImage, afterImage, index }: ServiceCardProps) => {
+const ServiceCard = ({ name, description, beforeImage, afterImage, transformationDetails, index }: ServiceCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
   const [sliderPos, setSliderPos] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
 
@@ -144,6 +151,84 @@ const ServiceCard = ({ name, description, beforeImage, afterImage, index }: Serv
                   </div>
                 </motion.div>
               </motion.div>
+
+              {/* See the Transformation Button */}
+              {transformationDetails && (
+                <motion.button
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.35 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowDetails(!showDetails);
+                  }}
+                  className="w-full mt-4 py-3 px-4 border border-gold/30 hover:border-gold/60 bg-transparent hover:bg-gold/5 transition-all duration-500 flex items-center justify-center gap-2 group/btn"
+                >
+                  <Sparkles className="h-3.5 w-3.5 text-gold transition-transform duration-500 group-hover/btn:scale-110" />
+                  <span className="font-body text-[10px] tracking-[0.25em] uppercase text-gold">
+                    {showDetails ? "Hide Details" : "See the Transformation"}
+                  </span>
+                  <motion.div
+                    animate={{ rotate: showDetails ? 180 : 0 }}
+                    transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                  >
+                    <ChevronDown className="h-3.5 w-3.5 text-gold" />
+                  </motion.div>
+                </motion.button>
+              )}
+
+              {/* Transformation Details Panel */}
+              <AnimatePresence initial={false}>
+                {showDetails && transformationDetails && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{
+                      height: { duration: 0.5, ease: [0.23, 1, 0.32, 1] },
+                      opacity: { duration: 0.4, delay: 0.1 },
+                    }}
+                    className="overflow-hidden"
+                  >
+                    <motion.div
+                      initial={{ y: 15 }}
+                      animate={{ y: 0 }}
+                      exit={{ y: 15 }}
+                      transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                      className="mt-4 border border-border bg-card p-5 space-y-4"
+                    >
+                      {[
+                        { label: "Procedure", value: transformationDetails.procedure },
+                        { label: "Technique", value: transformationDetails.technique },
+                        { label: "Duration", value: transformationDetails.duration },
+                        { label: "Result", value: transformationDetails.result },
+                      ].map((item, i) => (
+                        <motion.div
+                          key={item.label}
+                          initial={{ opacity: 0, x: -10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.4, delay: 0.15 + i * 0.08 }}
+                        >
+                          <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mb-1">
+                            {item.label}
+                          </p>
+                          <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                            {item.value}
+                          </p>
+                          {i < 3 && (
+                            <motion.div
+                              initial={{ scaleX: 0 }}
+                              animate={{ scaleX: 1 }}
+                              transition={{ duration: 0.5, delay: 0.3 + i * 0.08 }}
+                              className="mt-3 h-px bg-gradient-to-r from-border via-gold/20 to-border origin-left"
+                            />
+                          )}
+                        </motion.div>
+                      ))}
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
 
               {/* Gold accent bar */}
               <motion.div
