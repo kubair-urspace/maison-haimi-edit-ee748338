@@ -8,10 +8,11 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "The Practice", path: "/practice" },
+  { name: "Meet Us", path: "/meet-us" },
   { name: "Services", path: "/atelier" },
+  { name: "The Practice", path: "/practice" },
   { name: "Before & After", path: "/before-after" },
-  { name: "Contact", path: "/concierge" },
+  { name: "Contact Us", path: "/concierge" },
 ];
 
 const Navigation = () => {

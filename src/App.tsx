@@ -8,6 +8,7 @@ import Practice from "./pages/Practice";
 import Atelier from "./pages/Atelier";
 import Concierge from "./pages/Concierge";
 import BeforeAfter from "./pages/BeforeAfter";
+import MeetUs from "./pages/MeetUs";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -22,6 +23,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/meet-us" element={<MeetUs />} />
           <Route path="/practice" element={<Practice />} />
           <Route path="/atelier" element={<Atelier />} />
           <Route path="/before-after" element={<BeforeAfter />} />
