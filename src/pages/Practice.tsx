@@ -1,8 +1,14 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { X } from "lucide-react";
 import drHaimiPortrait from "@/assets/dr-haimi-portrait.png";
+import facilityReception from "@/assets/facility-reception.jpg";
+import facilityTreatment from "@/assets/facility-treatment.jpg";
+import facilityLounge from "@/assets/facility-lounge.jpg";
+import facilityTechnology from "@/assets/facility-technology.jpg";
 
 const Practice = () => {
   return (
