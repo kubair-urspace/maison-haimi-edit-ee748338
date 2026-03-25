@@ -6,25 +6,57 @@ import ServiceCard from "@/components/services/ServiceCard";
 
 const serviceCategories = [
   {
-    id: "cosmetic",
-    title: "Cosmetic & Aesthetic Dentistry",
-    subtitle: "Aesthetic Excellence",
-    description: "Where artistry meets mastery. Our aesthetic services are designed to enhance your natural beauty, creating smiles that are both stunning and authentically you.",
+    id: "preventative",
+    title: "Preventative Dentistry",
+    subtitle: "Foundation of Care",
+    description: "Protecting your smile starts with prevention. Our comprehensive preventative care keeps your teeth and gums healthy for a lifetime.",
     services: [
       {
-        name: "Smile Makeover",
-        description: "A comprehensive approach to transforming your smile, combining multiple treatments tailored to your unique vision and facial aesthetics.",
-        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        name: "Comprehensive Exams & Cleanings",
+        description: "Thorough evaluations and professional cleanings to maintain optimal oral health and catch issues early.",
+        beforeImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
         transformationDetails: {
-          procedure: "Full smile makeover combining porcelain veneers, professional whitening, and gum contouring for a harmonious result.",
-          technique: "Digital Smile Design (DSD) planning with wax-up previews, followed by minimally invasive preparation and custom layered ceramics.",
-          duration: "3–5 visits over 4–6 weeks",
-          result: "A naturally radiant smile that complements facial features, with improved symmetry, shade, and proportion.",
+          procedure: "Full oral examination with digital X-rays, oral cancer screening, and professional prophylaxis cleaning.",
+          technique: "Advanced diagnostic imaging combined with meticulous hand and ultrasonic scaling.",
+          duration: "Single visit, approximately 60–90 minutes",
+          result: "A clean, healthy mouth with early detection of any developing concerns.",
         },
       },
       {
-        name: "Dental Veneers",
+        name: "Digital X-Rays & Diagnostics",
+        description: "State-of-the-art digital imaging for precise diagnosis with significantly reduced radiation exposure.",
+        beforeImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        transformationDetails: {
+          procedure: "Digital radiography and intraoral camera imaging for comprehensive diagnostic evaluation.",
+          technique: "Low-radiation digital sensors providing instant, high-resolution images for accurate analysis.",
+          duration: "15–20 minutes as part of your exam",
+          result: "Crystal-clear diagnostic images that allow for precise treatment planning and early intervention.",
+        },
+      },
+      {
+        name: "Oral Cancer Screening",
+        description: "Early detection screenings that could save your life—quick, painless, and essential.",
+        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+        transformationDetails: {
+          procedure: "Visual and tactile examination of oral tissues, including advanced screening technology.",
+          technique: "Systematic evaluation of all oral soft tissues with adjunctive screening aids for enhanced detection.",
+          duration: "5–10 minutes as part of your regular exam",
+          result: "Peace of mind through early detection, dramatically improving treatment outcomes if needed.",
+        },
+      },
+    ],
+  },
+  {
+    id: "veneers",
+    title: "Veneers & Smile Design",
+    subtitle: "Artful Transformation",
+    description: "Custom-crafted porcelain veneers and digital smile design—where artistry meets precision for your dream smile.",
+    services: [
+      {
+        name: "Porcelain Veneers",
         description: "Ultra-thin, custom-crafted shells that create a flawless appearance while preserving your natural tooth structure.",
         beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
@@ -35,6 +67,26 @@ const serviceCategories = [
           result: "A flawless, camera-ready smile that looks completely natural—indistinguishable from real teeth.",
         },
       },
+      {
+        name: "Digital Smile Design",
+        description: "Preview your new smile before treatment begins with cutting-edge digital planning technology.",
+        beforeImage: "https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1581585090272-e9376a29e81e?w=800&q=80",
+        transformationDetails: {
+          procedure: "Digital photography and software analysis to design your ideal smile proportions and aesthetics.",
+          technique: "DSD protocol with facial analysis, digital mockups, and wax-up previews for patient approval.",
+          duration: "1–2 planning visits before treatment",
+          result: "Complete visualization of your future smile, ensuring your expectations are met before any work begins.",
+        },
+      },
+    ],
+  },
+  {
+    id: "aesthetic",
+    title: "Aesthetic Dentistry",
+    subtitle: "Aesthetic Excellence",
+    description: "Where artistry meets mastery. Our aesthetic services are designed to enhance your natural beauty, creating smiles that are both stunning and authentically you.",
+    services: [
       {
         name: "Dental Bonding",
         description: "An artful technique to reshape and perfect individual teeth, addressing chips, gaps, and discoloration.",
@@ -48,22 +100,34 @@ const serviceCategories = [
         },
       },
       {
-        name: "Composite Fillings",
-        description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile.",
+        name: "Professional Teeth Whitening",
+        description: "In-office whitening treatments that deliver dramatic results in a single visit.",
+        beforeImage: "https://images.unsplash.com/photo-1445527815600-1e60b84c8c50?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+        transformationDetails: {
+          procedure: "Professional-grade hydrogen peroxide whitening applied under controlled conditions for safe, dramatic brightening.",
+          technique: "Light-activated whitening gel applied in multiple short sessions during a single visit for even results.",
+          duration: "Single visit, approximately 90 minutes",
+          result: "Teeth brightened up to 8 shades in one session, with a noticeably whiter, more youthful smile.",
+        },
+      },
+      {
+        name: "Gum Contouring",
+        description: "Reshaping the gumline to reveal more tooth structure and create a balanced, harmonious smile.",
         beforeImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1559757148-5c688a2b1088?w=800&q=80",
         transformationDetails: {
-          procedure: "Removal of decay and replacement with tooth-colored composite resin that bonds directly to the tooth.",
-          technique: "Incremental layering technique with precise shade matching and polishing for an invisible restoration.",
-          duration: "Single visit, 20–45 minutes per filling",
-          result: "A strong, natural-looking restoration that preserves tooth structure and is virtually undetectable.",
+          procedure: "Precise removal or reshaping of excess gum tissue to improve smile proportions.",
+          technique: "Laser-assisted soft tissue recontouring for minimal discomfort and rapid healing.",
+          duration: "Single visit, 30–60 minutes",
+          result: "A more balanced, symmetrical smile with ideal tooth-to-gum proportions.",
         },
-      }
-    ]
+      },
+    ],
   },
   {
     id: "crowns",
-    title: "Same-Day Crowns & Restorations",
+    title: "Same-Day Inlays, Onlays & Crowns",
     subtitle: "Advanced Technology",
     description: "Using the most advanced digital technology available, we craft precision restorations in a single visit—no temporaries, no second appointments.",
     services: [
@@ -91,23 +155,99 @@ const serviceCategories = [
           result: "A conservative, long-lasting restoration that strengthens the tooth while maintaining a completely natural appearance.",
         },
       },
+    ],
+  },
+  {
+    id: "restorative",
+    title: "Restorative Dentistry",
+    subtitle: "Rebuilding Smiles",
+    description: "Rebuilding form, function, and beauty with lasting dental restorations that look and feel like your natural teeth.",
+    services: [
       {
-        name: "Full Mouth Reconstruction",
-        description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics.",
+        name: "Composite Fillings",
+        description: "Tooth-colored fillings that restore function while maintaining the natural appearance of your smile.",
+        beforeImage: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1559757148-5c688a2b1088?w=800&q=80",
+        transformationDetails: {
+          procedure: "Removal of decay and replacement with tooth-colored composite resin that bonds directly to the tooth.",
+          technique: "Incremental layering technique with precise shade matching and polishing for an invisible restoration.",
+          duration: "Single visit, 20–45 minutes per filling",
+          result: "A strong, natural-looking restoration that preserves tooth structure and is virtually undetectable.",
+        },
+      },
+      {
+        name: "Dental Bridges",
+        description: "Fixed prosthetics that bridge the gap left by missing teeth, restoring your smile and bite.",
         beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=800&q=80",
         transformationDetails: {
-          procedure: "Multi-phase treatment combining crowns, veneers, implants, and/or orthodontics to fully restore oral health and aesthetics.",
-          technique: "Comprehensive diagnostic workup with wax-ups, guided surgery, and phased treatment for predictable outcomes.",
-          duration: "Multiple phases over 6–12 months",
-          result: "Complete restoration of function, comfort, and beauty—a new foundation for lifelong oral health.",
+          procedure: "Custom porcelain bridge anchored to adjacent teeth to replace one or more missing teeth.",
+          technique: "Precision-crafted ceramics designed to match your natural teeth in color, shape, and translucency.",
+          duration: "2 visits over 2–3 weeks",
+          result: "A seamless, permanent restoration that fills the gap and restores full chewing function.",
         },
-      }
-    ]
+      },
+      {
+        name: "Root Canal Therapy",
+        description: "Gentle, modern root canal treatment to save infected teeth and relieve pain.",
+        beforeImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        transformationDetails: {
+          procedure: "Removal of infected pulp tissue, thorough cleaning of root canals, and sealing to prevent reinfection.",
+          technique: "Rotary endodontic instruments with electronic apex locators for precise, efficient treatment.",
+          duration: "1–2 visits, 60–90 minutes each",
+          result: "A saved natural tooth, free from infection and pain, preserved for years of continued function.",
+        },
+      },
+    ],
+  },
+  {
+    id: "periodontics",
+    title: "Periodontics & Surgeries",
+    subtitle: "Gum Health Specialists",
+    description: "Specialized periodontal care from Dr. Ahladiotis, with over two decades of experience in advanced gum treatments and surgical procedures.",
+    services: [
+      {
+        name: "Deep Cleaning (Scaling & Root Planing)",
+        description: "Thorough below-the-gumline cleaning to treat gum disease and restore periodontal health.",
+        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        transformationDetails: {
+          procedure: "Non-surgical deep cleaning to remove plaque and tartar from below the gumline and smooth root surfaces.",
+          technique: "Ultrasonic and hand instrumentation with local anesthesia for patient comfort.",
+          duration: "1–2 visits, 60–90 minutes per quadrant",
+          result: "Reduced pocket depths, eliminated infection, and a foundation for gum tissue to heal and reattach.",
+        },
+      },
+      {
+        name: "Gum Grafting",
+        description: "Soft tissue grafting to restore receding gums and protect exposed tooth roots.",
+        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
+        transformationDetails: {
+          procedure: "Connective tissue or free gingival graft to cover exposed roots and rebuild gum volume.",
+          technique: "Microsurgical technique with donor tissue from the palate or AlloDerm for minimal discomfort.",
+          duration: "Single surgical visit, 1–2 hours",
+          result: "Restored gumline coverage, reduced sensitivity, and improved aesthetics around affected teeth.",
+        },
+      },
+      {
+        name: "Periodontal Surgery",
+        description: "Advanced surgical treatments for complex periodontal conditions requiring expert intervention.",
+        beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+        transformationDetails: {
+          procedure: "Surgical intervention to access and clean deep periodontal pockets and regenerate lost bone.",
+          technique: "Flap surgery with bone grafting and guided tissue regeneration for predictable outcomes.",
+          duration: "Single surgical visit, 1–3 hours depending on extent",
+          result: "Arrested periodontal disease, regenerated bone support, and a stable foundation for long-term oral health.",
+        },
+      },
+    ],
   },
   {
     id: "implants",
-    title: "Dental Implant Services",
+    title: "Implant Dentistry",
     subtitle: "Permanent Solutions",
     description: "From surgical placement to final restoration, we approach each implant case with the precision of a master craftsman, restoring both function and beauty.",
     services: [
@@ -136,34 +276,22 @@ const serviceCategories = [
         },
       },
       {
-        name: "Am I a Candidate?",
-        description: "Comprehensive evaluation to determine if dental implants are the right solution for your unique situation.",
-        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
-        transformationDetails: {
-          procedure: "Full diagnostic evaluation including 3D imaging, bone density assessment, and medical history review.",
-          technique: "CBCT scans combined with clinical examination to assess bone volume, gum health, and overall candidacy.",
-          duration: "Single consultation, approximately 1 hour",
-          result: "A clear, personalized treatment plan outlining your options and expected outcomes.",
-        },
-      },
-      {
-        name: "Options for Replacing Missing Teeth",
-        description: "Explore all available options for tooth replacement, including implants, bridges, and dentures.",
+        name: "All-on-4 / All-on-6 Implants",
+        description: "Full-arch restoration supported by just 4–6 strategically placed implants for a complete new smile.",
         beforeImage: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=800&q=80",
         afterImage: "https://images.unsplash.com/photo-1626735698273-1571605f07b8?w=800&q=80",
         transformationDetails: {
-          procedure: "Comparative consultation exploring implants, bridges, and removable prosthetics tailored to your needs.",
-          technique: "Side-by-side analysis of longevity, aesthetics, cost, and maintenance for each replacement option.",
-          duration: "Single consultation visit",
-          result: "Confidence in choosing the best tooth replacement solution for your lifestyle and goals.",
+          procedure: "Strategic placement of 4–6 implants to support a full-arch prosthesis replacing all teeth.",
+          technique: "Angled posterior implants maximize bone contact, often eliminating the need for bone grafting.",
+          duration: "Surgical placement with same-day temporary prosthesis, final restoration in 3–6 months",
+          result: "A complete, fixed set of teeth that restores full function and a confident, natural-looking smile.",
         },
-      }
-    ]
+      },
+    ],
   },
   {
     id: "invisalign",
-    title: "Invisalign® Clear Aligners",
+    title: "Invisalign®",
     subtitle: "18 Years of Experience",
     description: "With 18 years of Invisalign experience, Dr. Haimi offers expert clear aligner therapy—the modern alternative to traditional braces.",
     services: [
@@ -191,23 +319,43 @@ const serviceCategories = [
           result: "Straighter teeth and improved confidence without the social stigma of traditional metal braces.",
         },
       },
+    ],
+  },
+  {
+    id: "fullmouth",
+    title: "Full Mouth Rehabilitation & Smile Makeover",
+    subtitle: "Complete Transformation",
+    description: "Comprehensive transformations combining multiple disciplines—cosmetic, restorative, and surgical—for total smile renewal.",
+    services: [
       {
-        name: "Invisalign® vs Traditional Braces",
-        description: "Compare the benefits and considerations of clear aligners versus metal braces.",
-        beforeImage: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+        name: "Full Mouth Reconstruction",
+        description: "Comprehensive treatment planning to rebuild and restore complete oral function and aesthetics.",
+        beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=800&q=80",
         transformationDetails: {
-          procedure: "Educational consultation comparing Invisalign and traditional braces for your specific orthodontic needs.",
-          technique: "Digital simulation showing projected outcomes with both treatment approaches for informed decision-making.",
-          duration: "Single consultation visit",
-          result: "Complete clarity on which orthodontic approach will deliver the best results for your unique case.",
+          procedure: "Multi-phase treatment combining crowns, veneers, implants, and/or orthodontics to fully restore oral health and aesthetics.",
+          technique: "Comprehensive diagnostic workup with wax-ups, guided surgery, and phased treatment for predictable outcomes.",
+          duration: "Multiple phases over 6–12 months",
+          result: "Complete restoration of function, comfort, and beauty—a new foundation for lifelong oral health.",
         },
-      }
-    ]
+      },
+      {
+        name: "Smile Makeover",
+        description: "A comprehensive approach to transforming your smile, combining multiple treatments tailored to your unique vision.",
+        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        transformationDetails: {
+          procedure: "Full smile makeover combining porcelain veneers, professional whitening, and gum contouring for a harmonious result.",
+          technique: "Digital Smile Design (DSD) planning with wax-up previews, followed by minimally invasive preparation and custom layered ceramics.",
+          duration: "3–5 visits over 4–6 weeks",
+          result: "A naturally radiant smile that complements facial features, with improved symmetry, shade, and proportion.",
+        },
+      },
+    ],
   },
   {
     id: "sleep",
-    title: "Dental Sleep Medicine",
+    title: "Sleep Apnea & Snoring",
     subtitle: "Rest Better",
     description: "As a qualified dentist in sleep medicine, Dr. Haimi offers solutions for sleep-disordered breathing, helping you achieve better rest and improved quality of life.",
     services: [
@@ -246,41 +394,85 @@ const serviceCategories = [
           duration: "Single assessment visit, approximately 45 minutes",
           result: "A clear diagnosis and personalized treatment roadmap for better sleep and improved overall health.",
         },
-      }
-    ]
+      },
+    ],
   },
   {
-    id: "whitening",
-    title: "In-Office Teeth Whitening",
-    subtitle: "Brilliant Smiles",
-    description: "Professional in-office whitening treatments that safely brighten your smile, revealing the natural radiance beneath.",
+    id: "botox",
+    title: "Facial Aesthetics & Therapeutic Botox",
+    subtitle: "Beyond the Smile",
+    description: "Non-surgical facial rejuvenation and therapeutic treatments for TMJ disorders, migraines, and facial pain—enhancing both beauty and comfort.",
     services: [
       {
-        name: "Professional Teeth Whitening",
-        description: "In-office whitening treatments that deliver dramatic results in a single visit.",
-        beforeImage: "https://images.unsplash.com/photo-1445527815600-1e60b84c8c50?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+        name: "Therapeutic Botox for TMJ & Migraines",
+        description: "Targeted Botox injections to relieve chronic jaw pain, tension headaches, and TMJ disorders.",
+        beforeImage: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
         transformationDetails: {
-          procedure: "Professional-grade hydrogen peroxide whitening applied under controlled conditions for safe, dramatic brightening.",
-          technique: "Light-activated whitening gel applied in multiple short sessions during a single visit for even results.",
-          duration: "Single visit, approximately 90 minutes",
-          result: "Teeth brightened up to 8 shades in one session, with a noticeably whiter, more youthful smile.",
+          procedure: "Precise Botox injections into the masseter and temporalis muscles to reduce clenching and relieve pain.",
+          technique: "Anatomically guided injection technique targeting overactive muscles causing pain and dysfunction.",
+          duration: "Single visit, 15–30 minutes",
+          result: "Significant reduction in jaw pain, headaches, and teeth grinding within 1–2 weeks.",
         },
       },
       {
-        name: "Custom Whitening Plans",
-        description: "Personalized whitening protocols designed for your specific needs and sensitivity levels.",
-        beforeImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+        name: "Cosmetic Facial Rejuvenation",
+        description: "Subtle, natural-looking facial enhancements that complement your smile transformation.",
+        beforeImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
         transformationDetails: {
-          procedure: "Tailored whitening plan combining in-office treatment with custom take-home trays for sustained results.",
-          technique: "Custom-molded trays with professional-grade gel calibrated to your sensitivity level and whitening goals.",
-          duration: "Initial visit plus 1–2 weeks of at-home use",
-          result: "Gradual, comfortable whitening that reaches your ideal shade with minimal sensitivity.",
+          procedure: "Strategic Botox and dermal filler placement to smooth fine lines and restore youthful facial volume.",
+          technique: "Conservative, dentist-guided approach leveraging deep knowledge of facial anatomy for natural results.",
+          duration: "Single visit, 30–45 minutes",
+          result: "A refreshed, natural appearance that beautifully complements your dental work.",
         },
-      }
-    ]
-  }
+      },
+    ],
+  },
+  {
+    id: "sedation",
+    title: "Sedation & Comfort-Focused Dentistry",
+    subtitle: "Anxiety-Free Care",
+    description: "We understand dental anxiety. Our comfort-focused approach ensures every patient feels safe, relaxed, and cared for throughout their visit.",
+    services: [
+      {
+        name: "Oral Sedation",
+        description: "Gentle oral sedation for patients who experience moderate anxiety, allowing you to relax completely during treatment.",
+        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
+        transformationDetails: {
+          procedure: "Prescription oral sedative taken before your appointment to induce a calm, deeply relaxed state.",
+          technique: "Carefully dosed medication tailored to your weight, anxiety level, and medical history.",
+          duration: "Effects last 2–4 hours; a companion is required for transportation",
+          result: "A stress-free dental experience with little to no memory of the procedure.",
+        },
+      },
+      {
+        name: "Nitrous Oxide (Laughing Gas)",
+        description: "Mild, fast-acting sedation that eases anxiety while keeping you fully conscious and responsive.",
+        beforeImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+        transformationDetails: {
+          procedure: "Inhaled nitrous oxide delivered through a comfortable nose mask during your dental procedure.",
+          technique: "Adjustable flow rate allows precise control of sedation level throughout treatment.",
+          duration: "Effects wear off within minutes of removing the mask",
+          result: "Immediate relaxation during treatment with a quick recovery—you can drive yourself home afterward.",
+        },
+      },
+      {
+        name: "Comfort Amenities",
+        description: "Premium comfort amenities including noise-canceling headphones, weighted blankets, and aromatherapy.",
+        beforeImage: "https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=800&q=80",
+        afterImage: "https://images.unsplash.com/photo-1515894203077-3c3d8a0bb228?w=800&q=80",
+        transformationDetails: {
+          procedure: "A curated suite of comfort amenities designed to transform your dental visit into a spa-like experience.",
+          technique: "Noise-canceling headphones, weighted blankets, aromatherapy, and a calming environment.",
+          duration: "Available throughout every visit at no additional charge",
+          result: "A completely reimagined dental experience that patients actually look forward to.",
+        },
+      },
+    ],
+  },
 ];
 
 const Atelier = () => {
