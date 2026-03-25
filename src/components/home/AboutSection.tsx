@@ -143,6 +143,67 @@ const AboutSection = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Sandra Barone */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mt-24 md:mt-32">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+            <div className="aspect-[3/4] overflow-hidden bg-secondary flex items-center justify-center">
+              <span className="font-body text-sm text-muted-foreground tracking-wider uppercase">
+                Sandra Barone Portrait
+              </span>
+            </div>
+            <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold/30 -z-10" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="lg:pl-8"
+          >
+            <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase leading-tight mb-8">
+              Sandra Barone
+              <br />
+              <span className="text-gold">R.D.H.</span>
+            </h3>
+
+            <div className="space-y-5 font-body text-charcoal/80 leading-relaxed text-base md:text-lg">
+              <p>
+                Sandra Barone, R.D.H., has over 25 years of experience in the dental field and joined 
+                our team in 2023. She earned her degree in Dental Hygiene from the New York University 
+                College of Dentistry, where she was honored as the 2005 recipient of the prestigious 
+                NYU Hu-Friedy Golden Scaler Award.
+              </p>
+              <p>
+                Passionate about oral health, Sandy is dedicated to educating her patients on maintaining 
+                optimal periodontal health. She ensures that she stays up to date with the latest treatments 
+                and technology in preventive dentistry by completing numerous continuing education courses 
+                each year, and is an active member of the American Dental Hygienists' Association.
+              </p>
+              <p>
+                Patients value Sandy's exceptionally gentle touch and thorough, attentive care. She 
+                prioritizes patient comfort at every visit, creating a calm and reassuring experience, 
+                especially for those who may feel anxious about dental treatment. Sandy also brings 
+                advanced experience in periodontal therapy, including deep cleanings, scaling, and root 
+                planing, helping patients achieve and maintain healthier gums through a personalized 
+                and compassionate approach.
+              </p>
+            </div>
+
+            <div className="mt-10">
+              <Button variant="luxury-gold-filled" size="lg" asChild>
+                <Link to="/practice">Learn More</Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
