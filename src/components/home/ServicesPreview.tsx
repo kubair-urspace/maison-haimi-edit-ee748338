@@ -3,22 +3,46 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    title: "Cosmetic Dentistry",
-    description: "Veneers, smile makeovers, and aesthetic transformations—artistry for your smile.",
-    link: "/atelier#cosmetic",
+    title: "Preventative Dentistry",
+    description: "Comprehensive care to protect your smile and prevent future dental issues.",
+    link: "/atelier#preventative",
+    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+  },
+  {
+    title: "Veneers & Smile Design",
+    description: "Custom-crafted porcelain veneers designed to create your ideal smile.",
+    link: "/atelier#veneers",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=80",
   },
   {
-    title: "Same-Day Crowns",
-    description: "Custom restorations crafted and placed in a single visit with advanced digital technology.",
-    link: "/atelier#crowns",
+    title: "Aesthetic Dentistry",
+    description: "Artistry and precision for naturally beautiful, confidence-inspiring results.",
+    link: "/atelier#aesthetic",
     image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80",
   },
   {
-    title: "Dental Implants",
+    title: "Same-Day Inlays, Onlays & Crowns",
+    description: "Custom restorations crafted and placed in a single visit with advanced digital technology.",
+    link: "/atelier#crowns",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+  },
+  {
+    title: "Restorative Dentistry",
+    description: "Rebuilding form, function, and beauty with lasting dental restorations.",
+    link: "/atelier#restorative",
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+  },
+  {
+    title: "Periodontics & Surgeries",
+    description: "Specialized gum care and surgical treatments for optimal oral health.",
+    link: "/atelier#periodontics",
+    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+  },
+  {
+    title: "Implant Dentistry",
     description: "Surgical placement and restoration—permanent solutions that look and feel natural.",
     link: "/atelier#implants",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
   },
   {
     title: "Invisalign®",
@@ -27,16 +51,28 @@ const services = [
     image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
   },
   {
-    title: "Sleep Medicine",
+    title: "Full Mouth Rehabilitation & Smile Makeover",
+    description: "Comprehensive transformations combining multiple disciplines for total smile renewal.",
+    link: "/atelier#fullmouth",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+  },
+  {
+    title: "Sleep Apnea & Snoring",
     description: "Dental sleep medicine solutions for better rest and improved quality of life.",
     link: "/atelier#sleep",
     image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80",
   },
   {
-    title: "Teeth Whitening",
-    description: "Professional in-office whitening for a brighter, more radiant smile.",
-    link: "/atelier#whitening",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+    title: "Facial Aesthetics & Therapeutic Botox",
+    description: "Non-surgical facial rejuvenation and therapeutic treatments for TMJ and migraine relief.",
+    link: "/atelier#botox",
+    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80",
+  },
+  {
+    title: "Sedation & Comfort-Focused Dentistry",
+    description: "Relaxed, anxiety-free care tailored for patients who value comfort above all.",
+    link: "/atelier#sedation",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
   },
 ];
 
