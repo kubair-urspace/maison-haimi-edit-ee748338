@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import periodonticsImage from "@/assets/periodontics-service.jpg";
 
 const services = [
   {
@@ -36,7 +37,7 @@ const services = [
     title: "Periodontics & Surgeries",
     description: "Specialized gum care and surgical treatments for optimal oral health.",
     link: "/atelier#periodontics",
-    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&q=80",
+    image: periodonticsImage,
   },
   {
     title: "Implant Dentistry",
