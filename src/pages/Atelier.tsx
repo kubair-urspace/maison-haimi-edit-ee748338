@@ -635,7 +635,7 @@ const Atelier = () => {
                 {category.description}
               </p>
               {category.detailedPoints && (
-                <DetailedPointsSection points={category.detailedPoints} />
+                <DetailedPointsSection points={category.detailedPoints} intro={category.detailedPointsIntro} />
               )}
             </motion.div>
 
