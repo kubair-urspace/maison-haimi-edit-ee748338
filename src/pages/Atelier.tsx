@@ -529,65 +529,7 @@ const Atelier = () => {
         </div>
       </section>
 
-const DetailedPointsSection = ({ points }: { points: string[] }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="mt-6 max-w-2xl">
-      <div className="flex items-center gap-4">
-        <p className="font-body text-xs tracking-[0.2em] uppercase text-gold">
-          At every check up visit our patients benefit from:
-        </p>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-1.5 px-4 py-1.5 border border-gold/30 hover:border-gold/60 hover:bg-gold/5 transition-all duration-300 group"
-        >
-          <span className="font-body text-[10px] tracking-[0.2em] uppercase text-gold">
-            {isOpen ? "See Less" : "See More"}
-          </span>
-          <motion.div
-            animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <ChevronDown className="h-3.5 w-3.5 text-gold" />
-          </motion.div>
-        </button>
-      </div>
-
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{
-              height: { duration: 0.5, ease: [0.23, 1, 0.32, 1] },
-              opacity: { duration: 0.3, delay: 0.1 },
-            }}
-            className="overflow-hidden"
-          >
-            <ul className="space-y-3 mt-4">
-              {points.map((point, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, delay: i * 0.05 }}
-                  className="flex items-start gap-3 font-body text-sm text-charcoal/70 leading-relaxed"
-                >
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                  {point}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-};
-
-
+      {/* Section Header */}
       <section className="relative z-10 py-12 bg-background border-b border-gold/20">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
