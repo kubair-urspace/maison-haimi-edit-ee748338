@@ -495,14 +495,14 @@ const serviceCategories = [
   },
 ];
 
-const DetailedPointsSection = ({ points }: { points: string[] }) => {
+const DetailedPointsSection = ({ points, intro }: { points: string[]; intro?: string }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="mt-6 max-w-2xl">
       <div className="flex items-center gap-4">
         <p className="font-body text-xs tracking-[0.2em] uppercase text-gold">
-          At every check up visit our patients benefit from:
+          {intro || "At every check up visit our patients benefit from:"}
         </p>
         <button
           onClick={() => setIsOpen(!isOpen)}
