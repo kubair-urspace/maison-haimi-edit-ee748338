@@ -1,4 +1,6 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -569,32 +571,7 @@ const Atelier = () => {
                 {category.description}
               </p>
               {category.detailedPoints && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="mt-6 max-w-2xl"
-                >
-                  <p className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-4">
-                    At every check up visit our patients benefit from:
-                  </p>
-                  <ul className="space-y-3">
-                    {category.detailedPoints.map((point, i) => (
-                      <motion.li
-                        key={i}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-                        className="flex items-start gap-3 font-body text-sm text-charcoal/70 leading-relaxed"
-                      >
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                        {point}
-                      </motion.li>
-                    ))}
-                  </ul>
-                </motion.div>
+                <DetailedPointsSection points={category.detailedPoints} />
               )}
             </motion.div>
 
