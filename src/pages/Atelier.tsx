@@ -9,7 +9,19 @@ const serviceCategories = [
     id: "preventative",
     title: "Preventative Dentistry",
     subtitle: "Foundation of Care",
-    description: "Protecting your smile starts with prevention. Our comprehensive preventative care keeps your teeth and gums healthy for a lifetime.",
+    description: "Preventive dentistry and long-term health go hand in hand in our practice. Every visit is designed to look beyond the present, supporting your oral health for years to come.",
+    detailedPoints: [
+      "Our signature gentle yet extremely thorough dental cleaning",
+      "Comprehensive evaluations, including oral health and cancer screening",
+      "Detailed teeth and gum analysis",
+      "Careful consideration of TMJ function and bruxism",
+      "Sleep and airway assessment",
+      "Orthodontic evaluation",
+      "When appropriate, adjunctive treatments such as fluoride therapy are available to further strengthen and protect the teeth",
+      "When indicated, therapies such as full mouth debridement, deep cleanings, scaling and root planing become part of our preventative approach to address and stabilize periodontal health",
+      "Our experienced hygienists focus on maintaining health in patients who are already stable, while thoughtfully guiding others toward that same level of balance and stability",
+      "At every check up and cleaning visit we provide our patients with the suitable toothbrush, toothpaste, floss etc, to encourage continuation of healthy oral hygiene",
+    ],
     services: [
       {
         name: "Comprehensive Exams & Cleanings",
