@@ -9,7 +9,19 @@ const serviceCategories = [
     id: "preventative",
     title: "Preventative Dentistry",
     subtitle: "Foundation of Care",
-    description: "Protecting your smile starts with prevention. Our comprehensive preventative care keeps your teeth and gums healthy for a lifetime.",
+    description: "Preventive dentistry and long-term health go hand in hand in our practice. Every visit is designed to look beyond the present, supporting your oral health for years to come.",
+    detailedPoints: [
+      "Our signature gentle yet extremely thorough dental cleaning",
+      "Comprehensive evaluations, including oral health and cancer screening",
+      "Detailed teeth and gum analysis",
+      "Careful consideration of TMJ function and bruxism",
+      "Sleep and airway assessment",
+      "Orthodontic evaluation",
+      "When appropriate, adjunctive treatments such as fluoride therapy are available to further strengthen and protect the teeth",
+      "When indicated, therapies such as full mouth debridement, deep cleanings, scaling and root planing become part of our preventative approach to address and stabilize periodontal health",
+      "Our experienced hygienists focus on maintaining health in patients who are already stable, while thoughtfully guiding others toward that same level of balance and stability",
+      "At every check up and cleaning visit we provide our patients with the suitable toothbrush, toothpaste, floss etc, to encourage continuation of healthy oral hygiene",
+    ],
     services: [
       {
         name: "Comprehensive Exams & Cleanings",
@@ -556,6 +568,34 @@ const Atelier = () => {
               <p className="font-body text-charcoal/70 mt-4 max-w-2xl leading-relaxed">
                 {category.description}
               </p>
+              {category.detailedPoints && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="mt-6 max-w-2xl"
+                >
+                  <p className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-4">
+                    At every check up visit our patients benefit from:
+                  </p>
+                  <ul className="space-y-3">
+                    {category.detailedPoints.map((point, i) => (
+                      <motion.li
+                        key={i}
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
+                        className="flex items-start gap-3 font-body text-sm text-charcoal/70 leading-relaxed"
+                      >
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                        {point}
+                      </motion.li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )}
             </motion.div>
 
             {/* Services Grid */}
