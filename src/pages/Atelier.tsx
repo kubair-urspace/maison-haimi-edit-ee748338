@@ -67,7 +67,13 @@ const serviceCategories = [
     id: "veneers",
     title: "Veneers & Smile Design",
     subtitle: "Artful Transformation",
-    description: "Custom-crafted porcelain veneers and digital smile design—where artistry meets precision for your dream smile.",
+    description: "Dr. Haimi's approach to veneers and smile design is rooted in one core principle: preserve as much natural tooth structure as possible. Patients seek her out for her conservative, minimally invasive philosophy, whether enhancing a single tooth or creating a complete smile transformation.",
+    detailedPoints: [
+      "As a clinical instructor in the prestigious Aesthetic Honors Program at NYU College of Dentistry, Dr. Haimi teaches the same principles she practices daily: thoughtful planning and minimally invasive porcelain veneer treatments. Every case is meticulously designed in advance before any treatment begins. Only the highest quality materials are selected, and every veneer is crafted with intention, artistry, and longevity in mind.",
+      "Dr. Haimi works in close partnership with master ceramists, collaborating on every case with precision and intention. She often visits the lab personally—and when appropriate, alongside the patient—to ensure every detail aligns with both her standards and the patient's vision before anything is finalized.",
+      "If you've been considering improving your smile but are concerned about unnecessary tooth reduction, a consultation with Dr. Haimi may offer a different, more conservative approach.",
+    ],
+    detailedPointsIntro: "Why patients choose Dr. Haimi for smile design:",
     services: [
       {
         name: "Porcelain Veneers",
