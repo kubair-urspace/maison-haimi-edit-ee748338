@@ -393,7 +393,20 @@ const serviceCategories = [
     id: "fullmouth",
     title: "Full Mouth Rehabilitation & Smile Makeover",
     subtitle: "Complete Transformation",
-    description: "Comprehensive transformations combining multiple disciplines—cosmetic, restorative, and surgical—for total smile renewal.",
+    description: "A smile makeover or full mouth reconstruction is one of the most comprehensive and transformative treatments in dentistry. In our practice, it is never approached as simply \"changing the way teeth look,\" but as a carefully planned process that restores function, health, and natural aesthetics in harmony. No two cases are the same. Each treatment is planned in advance in collaboration with the lab and the patient, aligning clinical needs with the patient's goals, preferences, and vision for their smile. A core principle in our approach is preservation of natural tooth structure—ensuring strength, longevity, and a natural result that does not appear overdone.",
+    detailedPoints: [
+      "Comfortable, stable occlusion",
+      "TMJ health and joint function",
+      "Muscular balance and function",
+      "Airway and sleep considerations",
+      "Facial aesthetics and overall harmony",
+      "Tooth wear and structural integrity",
+      "Bone support and height",
+      "Gum levels and symmetry",
+      "Lip structure and smile line",
+      "Missing teeth and replacement options",
+    ],
+    detailedPointsIntro: "Every case begins with a deep understanding of the individual patient, considering:",
     services: [
       {
         name: "Full Mouth Reconstruction",
