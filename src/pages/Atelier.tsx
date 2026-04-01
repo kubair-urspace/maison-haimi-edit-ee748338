@@ -159,7 +159,14 @@ const serviceCategories = [
     id: "crowns",
     title: "Same-Day Inlays, Onlays & Crowns",
     subtitle: "Advanced Technology",
-    description: "Using the most advanced digital technology available, we craft precision restorations in a single visit—no temporaries, no second appointments.",
+    description: "Inlays, onlays, and crowns are all crafted from the same high-quality materials—the difference lies in how much of the natural tooth needs to be reshaped to support them. Dr. Haimi's philosophy has always centered on preserving as much natural tooth structure as possible. With over 20 years of experience, she avoids full crowns whenever a more conservative option can achieve the same—or better—long-term result.",
+    detailedPoints: [
+      "Through meticulous planning and advanced techniques, Dr. Haimi has helped thousands of patients avoid crowns by restoring teeth with inlays and onlays instead. These conservative restorations allow us to remove only what is damaged—decay and compromised fillings—while preserving the healthy portions of the tooth.",
+      "Inlays and onlays are precisely designed to fit the exact contours of your tooth and are bonded in place, reinforcing the remaining structure while delivering beautiful, natural aesthetics. In many cases, this approach can even help prevent the need for future root canal treatment.",
+      "For added convenience, our office offers same-day fabrication using advanced in-house technology. Your restoration is designed, created, and placed in a single visit—eliminating the need for temporaries or multiple appointments.",
+      "There is something uniquely precise about having your restoration designed and crafted by the same doctor who prepared your tooth—ensuring a level of fit, detail, and care that is simply unmatched.",
+    ],
+    detailedPointsIntro: "What sets our approach apart:",
     services: [
       {
         name: "Same-Day Crowns",
