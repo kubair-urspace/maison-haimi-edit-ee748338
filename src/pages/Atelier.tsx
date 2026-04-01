@@ -199,6 +199,16 @@ const serviceCategories = [
     title: "Restorative Dentistry",
     subtitle: "Rebuilding Smiles",
     description: "Rebuilding form, function, and beauty with lasting dental restorations that look and feel like your natural teeth.",
+    detailedPoints: [
+      "Direct Restorations: Composite (tooth-colored) fillings, dental bondings, core buildup (after root canal treatment)",
+      "Indirect Restorations: Inlays, onlays, crowns (full coverage)",
+      "Tooth Replacements: Dental implants, implant-supported bridges & dentures, fixed bridges, cantilever bridges, Maryland bridges",
+      "Removable Prosthetics: Partial dentures, complete dentures",
+      "Endodontic-Related Restorations: Post and core, build-ups after root canal",
+      "Occlusal / Functional Restorations: Full mouth rehabilitation, bite reconstruction, occlusal equilibration (adjustments)",
+      "Repair & Maintenance: Replacement of old restorations, repair of fractured teeth, repair of existing crowns, bridges, veneers",
+    ],
+    detailedPointsIntro: "Our restorative services include:",
     services: [
       {
         name: "Composite Fillings",
