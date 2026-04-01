@@ -250,9 +250,23 @@ const serviceCategories = [
   },
   {
     id: "periodontics",
-    title: "Periodontics & Surgeries",
+    title: "Periodontics, Dental & Implant Surgeries",
     subtitle: "Gum Health Specialists",
-    description: "Specialized periodontal care from Dr. Ahladiotis, with over two decades of experience in advanced gum treatments and surgical procedures.",
+    description: "A few years ago, Dr. Haimi made a deliberate decision to bring surgical care in-house—allowing for a level of collaboration, precision, and continuity that cannot be achieved when treatment is performed across multiple locations. Having previously worked closely alongside Dr. Ahladiotis (Dr. Effie), Dr. Haimi welcomed the opportunity to integrate her into the practice. In our new location, Dr. Effie practices in a dedicated, state-of-the-art surgical suite designed specifically for advanced periodontal and implant procedures. Every surgical case is approached collaboratively. Dr. Haimi and Dr. Effie plan and execute treatment together—ensuring that both the health and the aesthetics of the final result are thoughtfully considered from the very beginning.",
+    detailedPoints: [
+      "Gum contouring and aesthetic gum lifts (for gummy smiles)",
+      "Crown lengthening (functional and aesthetic)",
+      "Soft tissue grafting (gum grafts)",
+      "Bone grafting and ridge augmentation",
+      "Guided tissue regeneration",
+      "Extractions",
+      "Dental implant placements",
+      "Peri-implant disease treatment",
+      "Treatment of periodontal (gum) disease",
+      "Frenectomy",
+      "Biopsy and management of oral lesions",
+    ],
+    detailedPointsIntro: "Our periodontal and surgical services include:",
     services: [
       {
         name: "Deep Cleaning (Scaling & Root Planing)",
