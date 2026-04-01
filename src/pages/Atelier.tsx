@@ -69,8 +69,9 @@ const serviceCategories = [
     subtitle: "Artful Transformation",
     description: "Dr. Haimi's approach to veneers and smile design is rooted in one core principle: preserve as much natural tooth structure as possible. Patients seek her out for her conservative, minimally invasive philosophy, whether enhancing a single tooth or creating a complete smile transformation.",
     detailedPoints: [
-      "As a clinical instructor in the prestigious Aesthetic Honors Program at NYU College of Dentistry, Dr. Haimi teaches the same principles she practices daily: thoughtful planning and minimally invasive porcelain veneer treatments. Every case is meticulously designed in advance before any treatment begins. Only the highest quality materials are selected, and every veneer is crafted with intention, artistry, and longevity in mind.",
-      "Dr. Haimi works in close partnership with master ceramists, collaborating on every case with precision and intention. She often visits the lab personally—and when appropriate, alongside the patient—to ensure every detail aligns with both her standards and the patient's vision before anything is finalized.",
+      "As a clinical instructor in the prestigious Aesthetic Honors Program at NYU College of Dentistry, Dr. Haimi teaches the same principles she practices daily: thoughtful planning, precision, and minimally invasive treatments. Every case is meticulously designed in advance before any treatment begins.",
+      "Dr. Haimi has a very close relationship with the Ceramist and is always collaborating closely with master ceramists, often visiting the lab herself, and when appropriate, alongside the patient, to ensure that every detail meets both her standards and the patient's vision before anything is finalized.",
+      "Only the highest quality materials are selected, and every veneer is crafted with intention, artistry, and longevity in mind.",
       "If you've been considering improving your smile but are concerned about unnecessary tooth reduction, a consultation with Dr. Haimi may offer a different, more conservative approach.",
     ],
     detailedPointsIntro: "Why patients choose Dr. Haimi for smile design:",
@@ -105,16 +106,16 @@ const serviceCategories = [
     id: "aesthetic",
     title: "Aesthetic Dentistry",
     subtitle: "Aesthetic Excellence",
-    description: "\"Aesthetic dentistry\" is simply the closest term, but in our practice, it's inherent in everything we do. With Dr. Haimi's artistic and sculpting background, every treatment—from a tooth-colored filling on a back molar to veneers on the front teeth—is approached with an aesthetic eye. That said, function and longevity are always the foundation. Aesthetics are never an afterthought—they are a given.",
+    description: "\"Aesthetic dentistry\" is simply the closest term—but in our practice, it's not a category, it's a standard. With Dr. Haimi's background in art and sculpting, every treatment is approached with an aesthetic eye—from a tooth-colored filling on a back molar to a single veneer or a full smile design. That said, aesthetics are never placed above function. Longevity, structural integrity, and overall oral health are always the foundation—because when those are done correctly, beauty naturally follows.",
     detailedPoints: [
-      "KöR professional whitening",
-      "At-home whitening with custom, same-day fabricated trays",
-      "Treatment of white spot (decalcification) lesions",
-      "Tetracycline stain correction",
+      "KöR Whitening",
+      "At-home whitening with same-day custom trays",
+      "Removal of white spot lesions (calcification)",
+      "Tetracycline stain treatment",
       "Invisalign®",
-      "Complimentary cosmetic contouring following Invisalign treatment",
+      "Complimentary cosmetic contouring after every Invisalign case",
     ],
-    detailedPointsIntro: "In addition to restorative aesthetic treatments, we offer:",
+    detailedPointsIntro: "In addition to restorative aesthetic treatments, we also offer:",
     services: [
       {
         name: "Dental Bonding",
@@ -158,7 +159,14 @@ const serviceCategories = [
     id: "crowns",
     title: "Same-Day Inlays, Onlays & Crowns",
     subtitle: "Advanced Technology",
-    description: "Using the most advanced digital technology available, we craft precision restorations in a single visit—no temporaries, no second appointments.",
+    description: "Inlays, onlays, and crowns are all crafted from the same high-quality materials—the difference lies in how much of the natural tooth needs to be reshaped to support them. Dr. Haimi's philosophy has always centered on preserving as much natural tooth structure as possible. With over 20 years of experience, she avoids full crowns whenever a more conservative option can achieve the same—or better—long-term result.",
+    detailedPoints: [
+      "Through meticulous planning and advanced techniques, Dr. Haimi has helped thousands of patients avoid crowns by restoring teeth with inlays and onlays instead. These conservative restorations allow us to remove only what is damaged—decay and compromised fillings—while preserving the healthy portions of the tooth.",
+      "Inlays and onlays are precisely designed to fit the exact contours of your tooth and are bonded in place, reinforcing the remaining structure while delivering beautiful, natural aesthetics. In many cases, this approach can even help prevent the need for future root canal treatment.",
+      "For added convenience, our office offers same-day fabrication using advanced in-house technology. Your restoration is designed, created, and placed in a single visit—eliminating the need for temporaries or multiple appointments.",
+      "There is something uniquely precise about having your restoration designed and crafted by the same doctor who prepared your tooth—ensuring a level of fit, detail, and care that is simply unmatched.",
+    ],
+    detailedPointsIntro: "What sets our approach apart:",
     services: [
       {
         name: "Same-Day Crowns",
@@ -191,6 +199,16 @@ const serviceCategories = [
     title: "Restorative Dentistry",
     subtitle: "Rebuilding Smiles",
     description: "Rebuilding form, function, and beauty with lasting dental restorations that look and feel like your natural teeth.",
+    detailedPoints: [
+      "Direct Restorations: Composite (tooth-colored) fillings, dental bondings, core buildup (after root canal treatment)",
+      "Indirect Restorations: Inlays, onlays, crowns (full coverage)",
+      "Tooth Replacements: Dental implants, implant-supported bridges & dentures, fixed bridges, cantilever bridges, Maryland bridges",
+      "Removable Prosthetics: Partial dentures, complete dentures",
+      "Endodontic-Related Restorations: Post and core, build-ups after root canal",
+      "Occlusal / Functional Restorations: Full mouth rehabilitation, bite reconstruction, occlusal equilibration (adjustments)",
+      "Repair & Maintenance: Replacement of old restorations, repair of fractured teeth, repair of existing crowns, bridges, veneers",
+    ],
+    detailedPointsIntro: "Our restorative services include:",
     services: [
       {
         name: "Composite Fillings",
@@ -232,9 +250,23 @@ const serviceCategories = [
   },
   {
     id: "periodontics",
-    title: "Periodontics & Surgeries",
+    title: "Periodontics, Dental & Implant Surgeries",
     subtitle: "Gum Health Specialists",
-    description: "Specialized periodontal care from Dr. Ahladiotis, with over two decades of experience in advanced gum treatments and surgical procedures.",
+    description: "A few years ago, Dr. Haimi made a deliberate decision to bring surgical care in-house—allowing for a level of collaboration, precision, and continuity that cannot be achieved when treatment is performed across multiple locations. Having previously worked closely alongside Dr. Ahladiotis (Dr. Effie), Dr. Haimi welcomed the opportunity to integrate her into the practice. In our new location, Dr. Effie practices in a dedicated, state-of-the-art surgical suite designed specifically for advanced periodontal and implant procedures. Every surgical case is approached collaboratively. Dr. Haimi and Dr. Effie plan and execute treatment together—ensuring that both the health and the aesthetics of the final result are thoughtfully considered from the very beginning.",
+    detailedPoints: [
+      "Gum contouring and aesthetic gum lifts (for gummy smiles)",
+      "Crown lengthening (functional and aesthetic)",
+      "Soft tissue grafting (gum grafts)",
+      "Bone grafting and ridge augmentation",
+      "Guided tissue regeneration",
+      "Extractions",
+      "Dental implant placements",
+      "Peri-implant disease treatment",
+      "Treatment of periodontal (gum) disease",
+      "Frenectomy",
+      "Biopsy and management of oral lesions",
+    ],
+    detailedPointsIntro: "Our periodontal and surgical services include:",
     services: [
       {
         name: "Deep Cleaning (Scaling & Root Planing)",
@@ -321,8 +353,15 @@ const serviceCategories = [
   {
     id: "invisalign",
     title: "Invisalign®",
-    subtitle: "18 Years of Experience",
-    description: "With 18 years of Invisalign experience, Dr. Haimi offers expert clear aligner therapy—the modern alternative to traditional braces.",
+    subtitle: "Over 15 Years of Experience",
+    description: "Invisalign treatment is a modern, precise way to align teeth using a series of custom clear aligners, designed to gradually move teeth into their ideal position. In our practice, Invisalign is not approached as a quick cosmetic fix, but as part of a comprehensive treatment plan focused on function, health, and longevity. Proper alignment allows for a more balanced bite, reduces uneven wear, and helps preserve the natural tooth structure over time.",
+    detailedPoints: [
+      "Dr. Haimi has been providing Invisalign treatment for over 15 years, bringing a depth of experience that allows for thoughtful, highly individualized care.",
+      "Every case is carefully planned by Dr. Haimi. While advanced digital technology is used as a tool, Dr. Haimi never relies on software alone to determine treatment. Each case is personally measured, designed, and refined based on a deep understanding of occlusion, facial aesthetics, and long-term stability.",
+      "From the initial digital setup (ClinCheck) to the placement of every attachment, Dr. Haimi personally oversees and executes each step, ensuring that tooth movement is intentional, precise, and fully customized to the individual patient.",
+      "While Invisalign plays an essential role in improving function, it also creates the foundation for natural aesthetics. As part of our approach, we include complimentary cosmetic contouring after every Invisalign treatment, refining the final shape and edges of the teeth so the result is not only healthy, but beautifully balanced and harmonious.",
+    ],
+    detailedPointsIntro: "What makes our Invisalign approach unique:",
     services: [
       {
         name: "Invisalign® Treatment",
@@ -354,7 +393,20 @@ const serviceCategories = [
     id: "fullmouth",
     title: "Full Mouth Rehabilitation & Smile Makeover",
     subtitle: "Complete Transformation",
-    description: "Comprehensive transformations combining multiple disciplines—cosmetic, restorative, and surgical—for total smile renewal.",
+    description: "A smile makeover or full mouth reconstruction is one of the most comprehensive and transformative treatments in dentistry. In our practice, it is never approached as simply \"changing the way teeth look,\" but as a carefully planned process that restores function, health, and natural aesthetics in harmony. No two cases are the same. Each treatment is planned in advance in collaboration with the lab and the patient, aligning clinical needs with the patient's goals, preferences, and vision for their smile. A core principle in our approach is preservation of natural tooth structure—ensuring strength, longevity, and a natural result that does not appear overdone.",
+    detailedPoints: [
+      "Comfortable, stable occlusion",
+      "TMJ health and joint function",
+      "Muscular balance and function",
+      "Airway and sleep considerations",
+      "Facial aesthetics and overall harmony",
+      "Tooth wear and structural integrity",
+      "Bone support and height",
+      "Gum levels and symmetry",
+      "Lip structure and smile line",
+      "Missing teeth and replacement options",
+    ],
+    detailedPointsIntro: "Every case begins with a deep understanding of the individual patient, considering:",
     services: [
       {
         name: "Full Mouth Reconstruction",
@@ -386,7 +438,16 @@ const serviceCategories = [
     id: "sleep",
     title: "Sleep Apnea & Snoring",
     subtitle: "Rest Better",
-    description: "As a qualified dentist in sleep medicine, Dr. Haimi offers solutions for sleep-disordered breathing, helping you achieve better rest and improved quality of life.",
+    description: "Dr. Haimi is a Diplomate of the American Board of Dental Sleep Medicine, the highest level of training in dental sleep medicine, allowing for comprehensive evaluation and management of airway-related sleep disorders. She is also one of a very small number of cosmetic dentists who integrates sleep medicine into everyday dental care, recognizing that airway, function, and aesthetics are closely connected. Snoring and sleep apnea are part of sleep-disordered breathing—conditions that affect not only sleep quality, but overall health, daily function, and long-term well-being.",
+    detailedPoints: [
+      "When breathing is disrupted during sleep, oxygen levels drop and the body is repeatedly aroused from deep sleep—often without the patient realizing it. This can lead to chronic fatigue, brain fog, memory issues, mood changes, anxiety, and non-restorative sleep.",
+      "Patients with sleep apnea are 2–3 times more likely to be involved in motor vehicle accidents, with hundreds of thousands of crashes each year in the U.S. linked to sleep-disordered breathing.",
+      "Untreated sleep apnea has been associated with high blood pressure, heart disease, stroke, diabetes, anxiety, depression, memory loss, cognitive decline, and increased risk of Alzheimer's disease.",
+      "Trained dentists are often the first to recognize signs: clenching and grinding (bruxism), worn or fractured teeth, TMJ discomfort, and bite instability.",
+      "Sleep apnea affects men, women, and children. Many patients are not overweight. Women are frequently underdiagnosed, often presenting with insomnia, fatigue, and anxiety rather than loud snoring.",
+      "CPAP therapy is the gold standard, but not all patients tolerate it. Custom oral appliance therapy is an effective alternative for many patients.",
+    ],
+    detailedPointsIntro: "Why sleep health matters:",
     services: [
       {
         name: "Sleep Apnea Treatment",
