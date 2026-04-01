@@ -353,8 +353,15 @@ const serviceCategories = [
   {
     id: "invisalign",
     title: "Invisalign®",
-    subtitle: "18 Years of Experience",
-    description: "With 18 years of Invisalign experience, Dr. Haimi offers expert clear aligner therapy—the modern alternative to traditional braces.",
+    subtitle: "Over 15 Years of Experience",
+    description: "Invisalign treatment is a modern, precise way to align teeth using a series of custom clear aligners, designed to gradually move teeth into their ideal position. In our practice, Invisalign is not approached as a quick cosmetic fix, but as part of a comprehensive treatment plan focused on function, health, and longevity. Proper alignment allows for a more balanced bite, reduces uneven wear, and helps preserve the natural tooth structure over time.",
+    detailedPoints: [
+      "Dr. Haimi has been providing Invisalign treatment for over 15 years, bringing a depth of experience that allows for thoughtful, highly individualized care.",
+      "Every case is carefully planned by Dr. Haimi. While advanced digital technology is used as a tool, Dr. Haimi never relies on software alone to determine treatment. Each case is personally measured, designed, and refined based on a deep understanding of occlusion, facial aesthetics, and long-term stability.",
+      "From the initial digital setup (ClinCheck) to the placement of every attachment, Dr. Haimi personally oversees and executes each step, ensuring that tooth movement is intentional, precise, and fully customized to the individual patient.",
+      "While Invisalign plays an essential role in improving function, it also creates the foundation for natural aesthetics. As part of our approach, we include complimentary cosmetic contouring after every Invisalign treatment, refining the final shape and edges of the teeth so the result is not only healthy, but beautifully balanced and harmonious.",
+    ],
+    detailedPointsIntro: "What makes our Invisalign approach unique:",
     services: [
       {
         name: "Invisalign® Treatment",
