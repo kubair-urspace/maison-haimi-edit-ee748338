@@ -438,7 +438,16 @@ const serviceCategories = [
     id: "sleep",
     title: "Sleep Apnea & Snoring",
     subtitle: "Rest Better",
-    description: "As a qualified dentist in sleep medicine, Dr. Haimi offers solutions for sleep-disordered breathing, helping you achieve better rest and improved quality of life.",
+    description: "Dr. Haimi is a Diplomate of the American Board of Dental Sleep Medicine, the highest level of training in dental sleep medicine, allowing for comprehensive evaluation and management of airway-related sleep disorders. She is also one of a very small number of cosmetic dentists who integrates sleep medicine into everyday dental care, recognizing that airway, function, and aesthetics are closely connected. Snoring and sleep apnea are part of sleep-disordered breathing—conditions that affect not only sleep quality, but overall health, daily function, and long-term well-being.",
+    detailedPoints: [
+      "When breathing is disrupted during sleep, oxygen levels drop and the body is repeatedly aroused from deep sleep—often without the patient realizing it. This can lead to chronic fatigue, brain fog, memory issues, mood changes, anxiety, and non-restorative sleep.",
+      "Patients with sleep apnea are 2–3 times more likely to be involved in motor vehicle accidents, with hundreds of thousands of crashes each year in the U.S. linked to sleep-disordered breathing.",
+      "Untreated sleep apnea has been associated with high blood pressure, heart disease, stroke, diabetes, anxiety, depression, memory loss, cognitive decline, and increased risk of Alzheimer's disease.",
+      "Trained dentists are often the first to recognize signs: clenching and grinding (bruxism), worn or fractured teeth, TMJ discomfort, and bite instability.",
+      "Sleep apnea affects men, women, and children. Many patients are not overweight. Women are frequently underdiagnosed, often presenting with insomnia, fatigue, and anxiety rather than loud snoring.",
+      "CPAP therapy is the gold standard, but not all patients tolerate it. Custom oral appliance therapy is an effective alternative for many patients.",
+    ],
+    detailedPointsIntro: "Why sleep health matters:",
     services: [
       {
         name: "Sleep Apnea Treatment",
