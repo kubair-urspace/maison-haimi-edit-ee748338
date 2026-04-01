@@ -106,16 +106,16 @@ const serviceCategories = [
     id: "aesthetic",
     title: "Aesthetic Dentistry",
     subtitle: "Aesthetic Excellence",
-    description: "\"Aesthetic dentistry\" is simply the closest term, but in our practice, it's inherent in everything we do. With Dr. Haimi's artistic and sculpting background, every treatment—from a tooth-colored filling on a back molar to veneers on the front teeth—is approached with an aesthetic eye. That said, function and longevity are always the foundation. Aesthetics are never an afterthought—they are a given.",
+    description: "\"Aesthetic dentistry\" is simply the closest term—but in our practice, it's not a category, it's a standard. With Dr. Haimi's background in art and sculpting, every treatment is approached with an aesthetic eye—from a tooth-colored filling on a back molar to a single veneer or a full smile design. That said, aesthetics are never placed above function. Longevity, structural integrity, and overall oral health are always the foundation—because when those are done correctly, beauty naturally follows.",
     detailedPoints: [
-      "KöR professional whitening",
-      "At-home whitening with custom, same-day fabricated trays",
-      "Treatment of white spot (decalcification) lesions",
-      "Tetracycline stain correction",
+      "KöR Whitening",
+      "At-home whitening with same-day custom trays",
+      "Removal of white spot lesions (calcification)",
+      "Tetracycline stain treatment",
       "Invisalign®",
-      "Complimentary cosmetic contouring following Invisalign treatment",
+      "Complimentary cosmetic contouring after every Invisalign case",
     ],
-    detailedPointsIntro: "In addition to restorative aesthetic treatments, we offer:",
+    detailedPointsIntro: "In addition to restorative aesthetic treatments, we also offer:",
     services: [
       {
         name: "Dental Bonding",
