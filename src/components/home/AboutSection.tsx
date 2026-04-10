@@ -64,13 +64,23 @@ const AboutSection = () => {
               </p>
               <p>
                 In 2010, Dr. Haimi established her practice in Great Neck, New York with the vision of 
-                providing personalized, thoughtful dentistry in an unhurried setting. She structured her 
-                practice so that clinical decisions would always be guided by what is best for each patient.
+                providing personalized, thoughtful dentistry in an unhurried setting, rather than high-volume 
+                care. From the beginning, she structured her practice so that clinical decisions would always 
+                be guided by what is best for each patient, rather than by the limitations often imposed by 
+                insurance plans.
               </p>
               <p>
-                She is sought out by patients from Long Island, New York City, and across the country for 
-                her conservative approach to smile makeovers, full-mouth reconstructions, veneers and her 
-                advanced training in dental sleep medicine, implant rehabilitation, and Invisalign.
+                Dr. Haimi serves as an Adjunct Clinical Instructor at the New York University College of 
+                Dentistry in the Aesthetic Honors Program.
+              </p>
+              <p>
+                She is a Diplomate of the American Board of Dental Sleep Medicine.
+              </p>
+              <p>
+                Dr. Haimi is sought out by patients for her conservative veneer preparations, full-mouth 
+                reconstructions, and her advanced training in dental sleep medicine, implant rehabilitation, 
+                Invisalign, and therapeutic Botox. She is known for her meticulous planning and design of 
+                natural and functional smile transformations tailored to each individual patient.
               </p>
               <p className="font-medium text-charcoal">
                 Outside of dentistry, Dr. Haimi enjoys reading, drawing, cooking, and practicing Pilates. 
