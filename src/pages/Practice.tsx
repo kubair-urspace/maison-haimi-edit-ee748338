@@ -3,49 +3,139 @@ import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import facilityReception from "@/assets/facility-reception.jpg";
 import facilityTreatment from "@/assets/facility-treatment.jpg";
 import facilityLounge from "@/assets/facility-lounge.jpg";
 import facilityTechnology from "@/assets/facility-technology.jpg";
+import facilityTechnology2 from "@/assets/facility-technology-2.jpg";
 
-const facilityImages = [
+interface FacilityItem {
+  images: string[];
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
+const facilityItems: FacilityItem[] = [
   {
-    src: facilityReception,
+    images: [facilityReception],
     title: "Reception",
     subtitle: "A Warm Welcome",
     description: "Our reception area sets the tone for your visit—marble finishes, soft lighting, and a curated atmosphere designed to put you at ease from the moment you arrive.",
   },
   {
-    src: facilityTreatment,
+    images: [facilityTreatment],
     title: "Treatment Suite",
     subtitle: "Precision & Comfort",
     description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light—creating an environment where advanced care meets total comfort.",
   },
   {
-    src: facilityLounge,
+    images: [facilityLounge],
     title: "Patient Lounge",
     subtitle: "Relaxation Redefined",
     description: "Our patient lounge offers a tranquil retreat with designer furnishings, curated reading, and a calming ambiance that feels more like a private club than a dental office.",
   },
   {
-    src: facilityTechnology,
+    images: [facilityTechnology, facilityTechnology2],
     title: "Technology",
     subtitle: "State of the Art",
     description: "From 3D digital scanning to advanced CAD/CAM systems, we invest in the finest technology to ensure precise diagnostics and exceptional results for every patient.",
   },
 ];
 
+const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: number; onClick: () => void }) => {
+  const [imageIndex, setImageIndex] = useState(0);
+  const hasMultiple = item.images.length > 1;
+
+  return (
+    <motion.div
+      key={item.title}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: index * 0.15 }}
+      className="group relative cursor-pointer overflow-hidden"
+      onClick={onClick}
+    >
+      <div className="aspect-[4/3] overflow-hidden relative">
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={imageIndex}
+            src={item.images[imageIndex]}
+            alt={`${item.title} ${imageIndex + 1}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+        </AnimatePresence>
+
+        {hasMultiple && (
+          <>
+            <button
+              onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev - 1 + item.images.length) % item.images.length); }}
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-background/70 backdrop-blur-sm rounded-full flex items-center justify-center text-foreground hover:bg-background transition-colors opacity-0 group-hover:opacity-100"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              onClick={(e) => { e.stopPropagation(); setImageIndex((prev) => (prev + 1) % item.images.length); }}
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 bg-background/70 backdrop-blur-sm rounded-full flex items-center justify-center text-foreground hover:bg-background transition-colors opacity-0 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity md:opacity-100">
+              {item.images.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={(e) => { e.stopPropagation(); setImageIndex(i); }}
+                  className={`w-2 h-2 rounded-full transition-colors ${i === imageIndex ? "bg-gold" : "bg-cream/50"}`}
+                  aria-label={`View image ${i + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 md:p-8 pointer-events-none">
+        <span className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-2">
+          {item.subtitle}
+        </span>
+        <h3 className="font-display text-2xl md:text-3xl text-cream">
+          {item.title}
+        </h3>
+      </div>
+      {/* Always-visible label on mobile */}
+      <div className="md:hidden absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/80 to-transparent p-4 pointer-events-none">
+        <span className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-1 block">
+          {item.subtitle}
+        </span>
+        <h3 className="font-display text-xl text-cream">
+          {item.title}
+        </h3>
+      </div>
+    </motion.div>
+  );
+};
+
 const Practice = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [lightboxImageIndex, setLightboxImageIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setSelectedImage(index);
+    setLightboxImageIndex(0);
+  };
+
   return (
     <Layout>
-      {/* Hero Section */}
-      {/* Spacer for fixed nav */}
       <div className="pt-14 md:pt-16" />
 
-
-      {/* Facility Showcase */}
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-16">
@@ -80,44 +170,9 @@ const Practice = () => {
             </motion.p>
           </div>
 
-          {/* Image Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {facilityImages.map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: index * 0.15 }}
-                className="group relative cursor-pointer overflow-hidden"
-                onClick={() => setSelectedImage(index)}
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={item.src}
-                    alt={item.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 md:p-8">
-                  <span className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-2">
-                    {item.subtitle}
-                  </span>
-                  <h3 className="font-display text-2xl md:text-3xl text-cream">
-                    {item.title}
-                  </h3>
-                </div>
-                {/* Always-visible label on mobile */}
-                <div className="md:hidden absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal/80 to-transparent p-4">
-                  <span className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-1 block">
-                    {item.subtitle}
-                  </span>
-                  <h3 className="font-display text-xl text-cream">
-                    {item.title}
-                  </h3>
-                </div>
-              </motion.div>
+            {facilityItems.map((item, index) => (
+              <FacilityCard key={item.title} item={item} index={index} onClick={() => openLightbox(index)} />
             ))}
           </div>
         </div>
@@ -150,22 +205,50 @@ const Practice = () => {
                 <X className="h-5 w-5" />
               </button>
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="aspect-[4/3] lg:aspect-auto lg:h-full">
+                <div className="aspect-[4/3] lg:aspect-auto lg:h-full relative">
                   <img
-                    src={facilityImages[selectedImage].src}
-                    alt={facilityImages[selectedImage].title}
+                    src={facilityItems[selectedImage].images[lightboxImageIndex]}
+                    alt={facilityItems[selectedImage].title}
                     className="w-full h-full object-cover"
                   />
+                  {facilityItems[selectedImage].images.length > 1 && (
+                    <>
+                      <button
+                        onClick={() => setLightboxImageIndex((prev) => (prev - 1 + facilityItems[selectedImage!].images.length) % facilityItems[selectedImage!].images.length)}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-background/70 backdrop-blur-sm rounded-full flex items-center justify-center text-foreground hover:bg-background transition-colors"
+                        aria-label="Previous image"
+                      >
+                        <ChevronLeft className="h-5 w-5" />
+                      </button>
+                      <button
+                        onClick={() => setLightboxImageIndex((prev) => (prev + 1) % facilityItems[selectedImage!].images.length)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-background/70 backdrop-blur-sm rounded-full flex items-center justify-center text-foreground hover:bg-background transition-colors"
+                        aria-label="Next image"
+                      >
+                        <ChevronRight className="h-5 w-5" />
+                      </button>
+                      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+                        {facilityItems[selectedImage].images.map((_, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setLightboxImageIndex(i)}
+                            className={`w-2.5 h-2.5 rounded-full transition-colors ${i === lightboxImageIndex ? "bg-gold" : "bg-cream/50"}`}
+                            aria-label={`View image ${i + 1}`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4 block">
-                    {facilityImages[selectedImage].subtitle}
+                    {facilityItems[selectedImage].subtitle}
                   </span>
                   <h3 className="font-display text-3xl md:text-4xl text-foreground mb-6">
-                    {facilityImages[selectedImage].title}
+                    {facilityItems[selectedImage].title}
                   </h3>
                   <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
-                    {facilityImages[selectedImage].description}
+                    {facilityItems[selectedImage].description}
                   </p>
                 </div>
               </div>
