@@ -12,6 +12,12 @@ import facilityTechnology2 from "@/assets/facility-technology-2.jpg";
 import facilityTechnology3 from "@/assets/facility-technology-3.jpg";
 import facilityTechnology4 from "@/assets/facility-technology-4.jpg";
 import facilityTechnology5 from "@/assets/facility-technology-5.jpg";
+import facilityTreatment2 from "@/assets/facility-treatment-2.jpg";
+import facilityTreatment3 from "@/assets/facility-treatment-3.jpg";
+import facilityTreatment4 from "@/assets/facility-treatment-4.jpg";
+import facilityTreatment5 from "@/assets/facility-treatment-5.jpg";
+import facilityTreatment6 from "@/assets/facility-treatment-6.jpg";
+import facilityTreatment7 from "@/assets/facility-treatment-7.jpg";
 
 interface FacilityItem {
   images: string[];
@@ -28,7 +34,7 @@ const facilityItems: FacilityItem[] = [
     description: "Our reception area sets the tone for your visit—marble finishes, soft lighting, and a curated atmosphere designed to put you at ease from the moment you arrive.",
   },
   {
-    images: [facilityTreatment],
+    images: [facilityTreatment, facilityTreatment2, facilityTreatment3, facilityTreatment4, facilityTreatment5, facilityTreatment6, facilityTreatment7],
     title: "Treatment Suite",
     subtitle: "Precision & Comfort",
     description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light—creating an environment where advanced care meets total comfort.",
