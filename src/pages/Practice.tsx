@@ -9,6 +9,9 @@ import facilityTreatment from "@/assets/facility-treatment.jpg";
 import facilityLounge from "@/assets/facility-lounge.jpg";
 import facilityTechnology from "@/assets/facility-technology.jpg";
 import facilityTechnology2 from "@/assets/facility-technology-2.jpg";
+import facilityTechnology3 from "@/assets/facility-technology-3.jpg";
+import facilityTechnology4 from "@/assets/facility-technology-4.jpg";
+import facilityTechnology5 from "@/assets/facility-technology-5.jpg";
 
 interface FacilityItem {
   images: string[];
@@ -37,7 +40,7 @@ const facilityItems: FacilityItem[] = [
     description: "Our patient lounge offers a tranquil retreat with designer furnishings, curated reading, and a calming ambiance that feels more like a private club than a dental office.",
   },
   {
-    images: [facilityTechnology, facilityTechnology2],
+    images: [facilityTechnology, facilityTechnology2, facilityTechnology3, facilityTechnology4, facilityTechnology5],
     title: "Technology",
     subtitle: "State of the Art",
     description: "From 3D digital scanning to advanced CAD/CAM systems, we invest in the finest technology to ensure precise diagnostics and exceptional results for every patient.",
