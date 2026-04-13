@@ -4,7 +4,32 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
 
-const serviceCategories = [
+interface ServiceCategory {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  detailedPoints?: string[];
+  detailedPointsIntro?: string;
+  additionalContent?: {
+    heading: string;
+    paragraphs: string[];
+  };
+  services: {
+    name: string;
+    description: string;
+    beforeImage?: string;
+    afterImage?: string;
+    transformationDetails?: {
+      procedure: string;
+      technique: string;
+      duration: string;
+      result: string;
+    };
+  }[];
+}
+
+const serviceCategories: ServiceCategory[] = [
   {
     id: "preventative",
     title: "Preventative Dentistry",
