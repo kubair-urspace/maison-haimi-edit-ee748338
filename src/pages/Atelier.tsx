@@ -47,44 +47,15 @@ const serviceCategories: ServiceCategory[] = [
       "Our experienced hygienists focus on maintaining health in patients who are already stable, while thoughtfully guiding others toward that same level of balance and stability",
       "At every check up and cleaning visit we provide our patients with the suitable toothbrush, toothpaste, floss etc, to encourage continuation of healthy oral hygiene",
     ],
-    services: [
-      {
-        name: "Comprehensive Exams & Cleanings",
-        description: "Thorough evaluations and professional cleanings to maintain optimal oral health and catch issues early.",
-        beforeImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
-        transformationDetails: {
-          procedure: "Full oral examination with digital X-rays, oral cancer screening, and professional prophylaxis cleaning.",
-          technique: "Advanced diagnostic imaging combined with meticulous hand and ultrasonic scaling.",
-          duration: "Single visit, approximately 60–90 minutes",
-          result: "A clean, healthy mouth with early detection of any developing concerns.",
-        },
-      },
-      {
-        name: "Digital X-Rays & Diagnostics",
-        description: "State-of-the-art digital imaging for precise diagnosis with significantly reduced radiation exposure.",
-        beforeImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        transformationDetails: {
-          procedure: "Digital radiography and intraoral camera imaging for comprehensive diagnostic evaluation.",
-          technique: "Low-radiation digital sensors providing instant, high-resolution images for accurate analysis.",
-          duration: "15–20 minutes as part of your exam",
-          result: "Crystal-clear diagnostic images that allow for precise treatment planning and early intervention.",
-        },
-      },
-      {
-        name: "Oral Cancer Screening",
-        description: "Early detection screenings that could save your life—quick, painless, and essential.",
-        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
-        transformationDetails: {
-          procedure: "Visual and tactile examination of oral tissues, including advanced screening technology.",
-          technique: "Systematic evaluation of all oral soft tissues with adjunctive screening aids for enhanced detection.",
-          duration: "5–10 minutes as part of your regular exam",
-          result: "Peace of mind through early detection, dramatically improving treatment outcomes if needed.",
-        },
-      },
-    ],
+    additionalContent: {
+      heading: "Advanced Digital & 3D Imaging",
+      paragraphs: [
+        "At our practice, imaging is used thoughtfully, only when it adds value to your diagnosis and care. We utilize low-dose digital X-rays that can be precisely adjusted based on each patient's size, age, and the specific area being evaluated. This allows us to limit radiation exposure to the smallest amount necessary while still capturing clear, diagnostic-quality images.",
+        "For more complex evaluations, we incorporate advanced 3D imaging (CBCT). This technology allows us to visualize teeth, bone, and surrounding anatomy with exceptional precision. It is especially valuable in surgical planning—helping us evaluate bone levels, identify important anatomical structures, and guide procedures such as extractions and implant placement with greater accuracy and safety.",
+        "Our goal is always the same: to gather the information we need while keeping exposure as low as reasonably possible—and to use that information to plan care that is precise, conservative, and long-lasting.",
+      ],
+    },
+    services: [],
   },
   {
     id: "veneers",
