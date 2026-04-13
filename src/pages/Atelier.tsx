@@ -596,22 +596,45 @@ const Atelier = () => {
               {category.detailedPoints && (
                 <DetailedPointsSection points={category.detailedPoints} intro={category.detailedPointsIntro} />
               )}
+              {category.additionalContent && (
+                <div className="mt-8 max-w-2xl">
+                  <h3 className="font-display text-xl md:text-2xl text-charcoal tracking-wide uppercase mb-4">
+                    {category.additionalContent.heading}
+                  </h3>
+                  <div className="space-y-4">
+                    {category.additionalContent.paragraphs.map((paragraph, i) => (
+                      <motion.p
+                        key={i}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: i * 0.05 }}
+                        className="font-body text-sm text-charcoal/70 leading-relaxed"
+                      >
+                        {paragraph}
+                      </motion.p>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
 
             {/* Services Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {category.services.map((service, serviceIndex) => (
-                <ServiceCard
-                  key={service.name}
-                  name={service.name}
-                  description={service.description}
-                  beforeImage={service.beforeImage}
-                  afterImage={service.afterImage}
-                  transformationDetails={service.transformationDetails}
-                  index={serviceIndex}
-                />
-              ))}
-            </div>
+            {category.services.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {category.services.map((service, serviceIndex) => (
+                  <ServiceCard
+                    key={service.name}
+                    name={service.name}
+                    description={service.description}
+                    beforeImage={service.beforeImage}
+                    afterImage={service.afterImage}
+                    transformationDetails={service.transformationDetails}
+                    index={serviceIndex}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </section>
       ))}
