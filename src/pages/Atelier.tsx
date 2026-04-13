@@ -484,9 +484,6 @@ const serviceCategories: ServiceCategory[] = [
       ],
     },
     services: [],
-  },
-    ],
-  },
 ];
 
 const DetailedPointsSection = ({ points, intro }: { points: string[]; intro?: string }) => {
