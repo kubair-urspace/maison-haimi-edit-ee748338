@@ -4,7 +4,32 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
 
-const serviceCategories = [
+interface ServiceCategory {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  detailedPoints?: string[];
+  detailedPointsIntro?: string;
+  additionalContent?: {
+    heading: string;
+    paragraphs: string[];
+  };
+  services: {
+    name: string;
+    description: string;
+    beforeImage?: string;
+    afterImage?: string;
+    transformationDetails?: {
+      procedure: string;
+      technique: string;
+      duration: string;
+      result: string;
+    };
+  }[];
+}
+
+const serviceCategories: ServiceCategory[] = [
   {
     id: "preventative",
     title: "Preventative Dentistry",
@@ -22,44 +47,15 @@ const serviceCategories = [
       "Our experienced hygienists focus on maintaining health in patients who are already stable, while thoughtfully guiding others toward that same level of balance and stability",
       "At every check up and cleaning visit we provide our patients with the suitable toothbrush, toothpaste, floss etc, to encourage continuation of healthy oral hygiene",
     ],
-    services: [
-      {
-        name: "Comprehensive Exams & Cleanings",
-        description: "Thorough evaluations and professional cleanings to maintain optimal oral health and catch issues early.",
-        beforeImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
-        transformationDetails: {
-          procedure: "Full oral examination with digital X-rays, oral cancer screening, and professional prophylaxis cleaning.",
-          technique: "Advanced diagnostic imaging combined with meticulous hand and ultrasonic scaling.",
-          duration: "Single visit, approximately 60–90 minutes",
-          result: "A clean, healthy mouth with early detection of any developing concerns.",
-        },
-      },
-      {
-        name: "Digital X-Rays & Diagnostics",
-        description: "State-of-the-art digital imaging for precise diagnosis with significantly reduced radiation exposure.",
-        beforeImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        transformationDetails: {
-          procedure: "Digital radiography and intraoral camera imaging for comprehensive diagnostic evaluation.",
-          technique: "Low-radiation digital sensors providing instant, high-resolution images for accurate analysis.",
-          duration: "15–20 minutes as part of your exam",
-          result: "Crystal-clear diagnostic images that allow for precise treatment planning and early intervention.",
-        },
-      },
-      {
-        name: "Oral Cancer Screening",
-        description: "Early detection screenings that could save your life—quick, painless, and essential.",
-        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
-        transformationDetails: {
-          procedure: "Visual and tactile examination of oral tissues, including advanced screening technology.",
-          technique: "Systematic evaluation of all oral soft tissues with adjunctive screening aids for enhanced detection.",
-          duration: "5–10 minutes as part of your regular exam",
-          result: "Peace of mind through early detection, dramatically improving treatment outcomes if needed.",
-        },
-      },
-    ],
+    additionalContent: {
+      heading: "Advanced Digital & 3D Imaging",
+      paragraphs: [
+        "At our practice, imaging is used thoughtfully, only when it adds value to your diagnosis and care. We utilize low-dose digital X-rays that can be precisely adjusted based on each patient's size, age, and the specific area being evaluated. This allows us to limit radiation exposure to the smallest amount necessary while still capturing clear, diagnostic-quality images.",
+        "For more complex evaluations, we incorporate advanced 3D imaging (CBCT). This technology allows us to visualize teeth, bone, and surrounding anatomy with exceptional precision. It is especially valuable in surgical planning—helping us evaluate bone levels, identify important anatomical structures, and guide procedures such as extractions and implant placement with greater accuracy and safety.",
+        "Our goal is always the same: to gather the information we need while keeping exposure as low as reasonably possible—and to use that information to plan care that is precise, conservative, and long-lasting.",
+      ],
+    },
+    services: [],
   },
   {
     id: "veneers",
@@ -265,44 +261,15 @@ const serviceCategories = [
       "Biopsy and management of oral lesions",
     ],
     detailedPointsIntro: "Our periodontal and surgical services include:",
-    services: [
-      {
-        name: "Deep Cleaning (Scaling & Root Planing)",
-        description: "Thorough below-the-gumline cleaning to treat gum disease and restore periodontal health.",
-        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
-        transformationDetails: {
-          procedure: "Non-surgical deep cleaning to remove plaque and tartar from below the gumline and smooth root surfaces.",
-          technique: "Ultrasonic and hand instrumentation with local anesthesia for patient comfort.",
-          duration: "1–2 visits, 60–90 minutes per quadrant",
-          result: "Reduced pocket depths, eliminated infection, and a foundation for gum tissue to heal and reattach.",
-        },
-      },
-      {
-        name: "Gum Grafting",
-        description: "Soft tissue grafting to restore receding gums and protect exposed tooth roots.",
-        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
-        transformationDetails: {
-          procedure: "Connective tissue or free gingival graft to cover exposed roots and rebuild gum volume.",
-          technique: "Microsurgical technique with donor tissue from the palate or AlloDerm for minimal discomfort.",
-          duration: "Single surgical visit, 1–2 hours",
-          result: "Restored gumline coverage, reduced sensitivity, and improved aesthetics around affected teeth.",
-        },
-      },
-      {
-        name: "Periodontal Surgery",
-        description: "Advanced surgical treatments for complex periodontal conditions requiring expert intervention.",
-        beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
-        transformationDetails: {
-          procedure: "Surgical intervention to access and clean deep periodontal pockets and regenerate lost bone.",
-          technique: "Flap surgery with bone grafting and guided tissue regeneration for predictable outcomes.",
-          duration: "Single surgical visit, 1–3 hours depending on extent",
-          result: "Arrested periodontal disease, regenerated bone support, and a stable foundation for long-term oral health.",
-        },
-      },
-    ],
+    additionalContent: {
+      heading: "Periodontics & Implant Surgery",
+      paragraphs: [
+        "We use only the highest quality materials available for all surgical procedures—including implants, bone grafting, and gum grafting. We do not compromise when it comes to the materials that support healing, stability, and long-term success.",
+        "All extractions and implant placements are carefully planned using advanced 3D imaging (CBCT). This allows us to evaluate bone, anatomy, and surrounding structures in detail before treatment, improving accuracy and helping us approach each case with greater safety and predictability.",
+        "Our focus is on doing things the right way from the start—using the best materials and thorough planning to support optimal outcomes.",
+      ],
+    },
+    services: [],
   },
   {
     id: "implants",
@@ -489,77 +456,34 @@ const serviceCategories = [
     id: "botox",
     title: "Facial Aesthetics & Therapeutic Botox",
     subtitle: "Beyond the Smile",
-    description: "Non-surgical facial rejuvenation and therapeutic treatments for TMJ disorders, migraines, and facial pain—enhancing both beauty and comfort.",
-    services: [
-      {
-        name: "Therapeutic Botox for TMJ & Migraines",
-        description: "Targeted Botox injections to relieve chronic jaw pain, tension headaches, and TMJ disorders.",
-        beforeImage: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
-        transformationDetails: {
-          procedure: "Precise Botox injections into the masseter and temporalis muscles to reduce clenching and relieve pain.",
-          technique: "Anatomically guided injection technique targeting overactive muscles causing pain and dysfunction.",
-          duration: "Single visit, 15–30 minutes",
-          result: "Significant reduction in jaw pain, headaches, and teeth grinding within 1–2 weeks.",
-        },
-      },
-      {
-        name: "Cosmetic Facial Rejuvenation",
-        description: "Subtle, natural-looking facial enhancements that complement your smile transformation.",
-        beforeImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
-        transformationDetails: {
-          procedure: "Strategic Botox and dermal filler placement to smooth fine lines and restore youthful facial volume.",
-          technique: "Conservative, dentist-guided approach leveraging deep knowledge of facial anatomy for natural results.",
-          duration: "Single visit, 30–45 minutes",
-          result: "A refreshed, natural appearance that beautifully complements your dental work.",
-        },
-      },
-    ],
+    description: "What many patients don't realize is that dentists receive extensive medical training in full-body anatomy—including far beyond the head and neck—before going on to focus even more deeply on the muscles, nerves, and function of the face and jaw.",
+    additionalContent: {
+      heading: "Botox",
+      paragraphs: [
+        "At our practice, Botox is used thoughtfully to help with concerns like clenching, jaw tension, and muscle discomfort. This approach is further guided by Dr. Haimi's background as a Diplomate of the American Board of Dental Sleep Medicine, along with her training in occlusion and full-mouth rehabilitation—where understanding muscle function and balance is essential. Incorporating Botox into care was a natural extension of this philosophy.",
+        "Because of our understanding of how these muscles function together, treatments are precise, conservative, and always focused on comfort and balance.",
+        "And while the primary goal is therapeutic, an understanding of facial aesthetics naturally guides every treatment—ensuring results feel as good as they look, without ever appearing overdone.",
+        "Our goal is simple—to help you feel better, more relaxed, and completely at ease with your care.",
+      ],
+    },
+    services: [],
   },
   {
     id: "sedation",
     title: "Sedation & Comfort-Focused Dentistry",
     subtitle: "Anxiety-Free Care",
-    description: "We understand dental anxiety. Our comfort-focused approach ensures every patient feels safe, relaxed, and cared for throughout their visit.",
-    services: [
-      {
-        name: "Oral Sedation",
-        description: "Gentle oral sedation for patients who experience moderate anxiety, allowing you to relax completely during treatment.",
-        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
-        transformationDetails: {
-          procedure: "Prescription oral sedative taken before your appointment to induce a calm, deeply relaxed state.",
-          technique: "Carefully dosed medication tailored to your weight, anxiety level, and medical history.",
-          duration: "Effects last 2–4 hours; a companion is required for transportation",
-          result: "A stress-free dental experience with little to no memory of the procedure.",
-        },
-      },
-      {
-        name: "Nitrous Oxide (Laughing Gas)",
-        description: "Mild, fast-acting sedation that eases anxiety while keeping you fully conscious and responsive.",
-        beforeImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
-        transformationDetails: {
-          procedure: "Inhaled nitrous oxide delivered through a comfortable nose mask during your dental procedure.",
-          technique: "Adjustable flow rate allows precise control of sedation level throughout treatment.",
-          duration: "Effects wear off within minutes of removing the mask",
-          result: "Immediate relaxation during treatment with a quick recovery—you can drive yourself home afterward.",
-        },
-      },
-      {
-        name: "Comfort Amenities",
-        description: "Premium comfort amenities including noise-canceling headphones, weighted blankets, and aromatherapy.",
-        beforeImage: "https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1515894203077-3c3d8a0bb228?w=800&q=80",
-        transformationDetails: {
-          procedure: "A curated suite of comfort amenities designed to transform your dental visit into a spa-like experience.",
-          technique: "Noise-canceling headphones, weighted blankets, aromatherapy, and a calming environment.",
-          duration: "Available throughout every visit at no additional charge",
-          result: "A completely reimagined dental experience that patients actually look forward to.",
-        },
-      },
-    ],
+    description: "Our office was intentionally designed to feel more like a home than a clinical setting. The reception area resembles a comfortable living room, where patients are welcomed with calming teas and light refreshments to help ease into their visit.",
+    additionalContent: {
+      heading: "Sedation & Comfort-Focused Dentistry",
+      paragraphs: [
+        "Each treatment room is equipped with thoughtful amenities—comfortable chairs, TVs, and music—creating a more relaxed, distraction-friendly environment throughout your care.",
+        "Dr. Haimi has spent years building not only clinical expertise, but also a strong foundation in patient communication—taking the time to talk through treatments, answer questions, and ensure patients feel informed and at ease before anything begins.",
+        "Dr. Haimi's calm, reassuring demeanor is rooted in both experience and intention. Her Bachelors in psychology, combined with years of treating anxious patients, has shaped an approach centered on understanding, patience, and trust.",
+        "For those who would like additional support, we also offer nitrous oxide (laughing gas), a safe and effective option to help you relax during treatment.",
+        "Over time, our goal is not just to make visits comfortable—but to change the way you feel about dentistry altogether. Many of our patients who once felt anxious now come in feeling calm and at ease, having replaced old fears with a new, more positive experience.",
+      ],
+    },
+    services: [],
   },
 ];
 
@@ -672,22 +596,45 @@ const Atelier = () => {
               {category.detailedPoints && (
                 <DetailedPointsSection points={category.detailedPoints} intro={category.detailedPointsIntro} />
               )}
+              {category.additionalContent && (
+                <div className="mt-8 max-w-2xl">
+                  <h3 className="font-display text-xl md:text-2xl text-charcoal tracking-wide uppercase mb-4">
+                    {category.additionalContent.heading}
+                  </h3>
+                  <div className="space-y-4">
+                    {category.additionalContent.paragraphs.map((paragraph, i) => (
+                      <motion.p
+                        key={i}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: i * 0.05 }}
+                        className="font-body text-sm text-charcoal/70 leading-relaxed"
+                      >
+                        {paragraph}
+                      </motion.p>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
 
             {/* Services Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {category.services.map((service, serviceIndex) => (
-                <ServiceCard
-                  key={service.name}
-                  name={service.name}
-                  description={service.description}
-                  beforeImage={service.beforeImage}
-                  afterImage={service.afterImage}
-                  transformationDetails={service.transformationDetails}
-                  index={serviceIndex}
-                />
-              ))}
-            </div>
+            {category.services.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {category.services.map((service, serviceIndex) => (
+                  <ServiceCard
+                    key={service.name}
+                    name={service.name}
+                    description={service.description}
+                    beforeImage={service.beforeImage}
+                    afterImage={service.afterImage}
+                    transformationDetails={service.transformationDetails}
+                    index={serviceIndex}
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </section>
       ))}
