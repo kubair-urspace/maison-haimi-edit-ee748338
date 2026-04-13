@@ -261,44 +261,15 @@ const serviceCategories: ServiceCategory[] = [
       "Biopsy and management of oral lesions",
     ],
     detailedPointsIntro: "Our periodontal and surgical services include:",
-    services: [
-      {
-        name: "Deep Cleaning (Scaling & Root Planing)",
-        description: "Thorough below-the-gumline cleaning to treat gum disease and restore periodontal health.",
-        beforeImage: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
-        transformationDetails: {
-          procedure: "Non-surgical deep cleaning to remove plaque and tartar from below the gumline and smooth root surfaces.",
-          technique: "Ultrasonic and hand instrumentation with local anesthesia for patient comfort.",
-          duration: "1–2 visits, 60–90 minutes per quadrant",
-          result: "Reduced pocket depths, eliminated infection, and a foundation for gum tissue to heal and reattach.",
-        },
-      },
-      {
-        name: "Gum Grafting",
-        description: "Soft tissue grafting to restore receding gums and protect exposed tooth roots.",
-        beforeImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=800&q=80",
-        transformationDetails: {
-          procedure: "Connective tissue or free gingival graft to cover exposed roots and rebuild gum volume.",
-          technique: "Microsurgical technique with donor tissue from the palate or AlloDerm for minimal discomfort.",
-          duration: "Single surgical visit, 1–2 hours",
-          result: "Restored gumline coverage, reduced sensitivity, and improved aesthetics around affected teeth.",
-        },
-      },
-      {
-        name: "Periodontal Surgery",
-        description: "Advanced surgical treatments for complex periodontal conditions requiring expert intervention.",
-        beforeImage: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
-        afterImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
-        transformationDetails: {
-          procedure: "Surgical intervention to access and clean deep periodontal pockets and regenerate lost bone.",
-          technique: "Flap surgery with bone grafting and guided tissue regeneration for predictable outcomes.",
-          duration: "Single surgical visit, 1–3 hours depending on extent",
-          result: "Arrested periodontal disease, regenerated bone support, and a stable foundation for long-term oral health.",
-        },
-      },
-    ],
+    additionalContent: {
+      heading: "Periodontics & Implant Surgery",
+      paragraphs: [
+        "We use only the highest quality materials available for all surgical procedures—including implants, bone grafting, and gum grafting. We do not compromise when it comes to the materials that support healing, stability, and long-term success.",
+        "All extractions and implant placements are carefully planned using advanced 3D imaging (CBCT). This allows us to evaluate bone, anatomy, and surrounding structures in detail before treatment, improving accuracy and helping us approach each case with greater safety and predictability.",
+        "Our focus is on doing things the right way from the start—using the best materials and thorough planning to support optimal outcomes.",
+      ],
+    },
+    services: [],
   },
   {
     id: "implants",
