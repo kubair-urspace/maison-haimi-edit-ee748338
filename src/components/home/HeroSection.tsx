@@ -53,7 +53,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
               className="tracking-[0.2em] uppercase text-xs px-10 py-6"
               asChild
             >
-              <Link to="/concierge">Book Now</Link>
+              <Link to="/concierge">Schedule Appointment</Link>
             </Button>
           </motion.div>
 
