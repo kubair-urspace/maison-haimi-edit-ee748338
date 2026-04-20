@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import haimiWordmark from "@/assets/haimi-wordmark.png";
-import abdsmSeal from "@/assets/abdsm-diplomate-seal.gif";
+import abdsmSeal from "@/assets/abdsm-diplomate-seal.png";
 
 const Footer = () => {
   return (
@@ -54,7 +54,7 @@ const Footer = () => {
                 <img
                   src={abdsmSeal}
                   alt="Diplomate, American Board of Dental Sleep Medicine"
-                  className="h-16 w-16 opacity-80"
+                  className="h-16 w-16 opacity-70 invert"
                 />
               </div>
               {/* Social Media */}
