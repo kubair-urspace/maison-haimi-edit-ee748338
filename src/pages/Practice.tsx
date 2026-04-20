@@ -159,6 +159,7 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
 const Practice = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [lightboxImageIndex, setLightboxImageIndex] = useState(0);
+  const [featuredIndex, setFeaturedIndex] = useState(1);
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
