@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import haimiWordmark from "@/assets/haimi-wordmark.png";
+import abdsmSeal from "@/assets/abdsm-diplomate-seal.gif";
 
 const Footer = () => {
   return (
@@ -48,6 +49,14 @@ const Footer = () => {
               <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
                 Premium cosmetic and aesthetic dentistry in Great Neck, NY.
               </p>
+              {/* ABDSM Diplomate Seal */}
+              <div className="mt-5">
+                <img
+                  src={abdsmSeal}
+                  alt="Diplomate, American Board of Dental Sleep Medicine"
+                  className="h-16 w-16 opacity-80"
+                />
+              </div>
               {/* Social Media */}
               <div className="mt-5 flex gap-3">
                 <a href="https://instagram.com/drelizahaimi" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
