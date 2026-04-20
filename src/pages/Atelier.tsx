@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
+import servicesHero from "@/assets/services-hero.jpg";
 
 interface ServiceCategory {
   id: string;
@@ -613,7 +614,7 @@ const Atelier = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80)`,
+            backgroundImage: `url(${servicesHero})`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
