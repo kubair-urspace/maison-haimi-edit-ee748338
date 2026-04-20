@@ -159,6 +159,7 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
 const Practice = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [lightboxImageIndex, setLightboxImageIndex] = useState(0);
+  const [featuredIndex, setFeaturedIndex] = useState(1);
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -206,15 +207,23 @@ const Practice = () => {
           {/* Asymmetric magazine grid: large feature on the left, two stacked on the right */}
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 lg:h-[720px]">
             {facilityItems.map((item, index) => {
-              // Treatment Suite (the second item with multiple images) becomes the large feature
-              const isFeature = index === 1;
+              const isFeature = index === featuredIndex;
               const cellClass = isFeature
                 ? "lg:col-span-2 lg:row-span-2 aspect-[4/3] lg:aspect-auto"
                 : "lg:col-span-1 lg:row-span-1 aspect-[4/3] lg:aspect-auto";
               return (
-                <div key={item.title} className={cellClass}>
-                  <FacilityCard item={item} index={index} onClick={() => openLightbox(index)} />
-                </div>
+                <motion.div
+                  key={item.title}
+                  layout
+                  transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+                  className={cellClass}
+                >
+                  <FacilityCard
+                    item={item}
+                    index={index}
+                    onClick={() => isFeature ? openLightbox(index) : setFeaturedIndex(index)}
+                  />
+                </motion.div>
               );
             })}
           </div>
