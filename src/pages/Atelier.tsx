@@ -9,11 +9,13 @@ interface ServiceCategory {
   title: string;
   subtitle: string;
   description: string;
+  keyPoints?: string[];
   detailedPoints?: string[];
   detailedPointsIntro?: string;
   additionalContent?: {
     heading: string;
     paragraphs: string[];
+    keyPoints?: string[];
   };
   services: {
     name: string;
