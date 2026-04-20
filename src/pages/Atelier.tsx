@@ -10,6 +10,7 @@ interface ServiceCategory {
   title: string;
   subtitle: string;
   description: string;
+  heroImage?: string;
   keyPoints?: string[];
   detailedPoints?: string[];
   detailedPointsIntro?: string;
@@ -38,6 +39,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Preventative Dentistry",
     subtitle: "Foundation of Care",
     description: "Preventive dentistry and long-term health go hand in hand in our practice. Every visit is designed to look beyond the present, supporting your oral health for years to come.",
+    heroImage: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1600&q=80",
     keyPoints: [
       "Preventive care + long-term health, together",
       "Visits designed to look beyond the present",
