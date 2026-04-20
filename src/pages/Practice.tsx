@@ -53,11 +53,19 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
   const hasMultiple = item.images.length > 1;
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  // Preload all images so transitions never reveal a half-loaded frame
+  useEffect(() => {
+    item.images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [item.images]);
+
   useEffect(() => {
     if (isHovered && hasMultiple) {
       intervalRef.current = setInterval(() => {
         setImageIndex((prev) => (prev + 1) % item.images.length);
-      }, 2000);
+      }, 5000);
     }
     return () => {
       if (intervalRef.current) {
@@ -74,22 +82,26 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: index * 0.15 }}
-      className="group relative cursor-pointer overflow-hidden"
+      className="group relative cursor-pointer overflow-hidden h-full"
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="aspect-[4/3] overflow-hidden relative">
-        <AnimatePresence mode="wait">
+      <div className="overflow-hidden relative h-full w-full">
+        <AnimatePresence mode="sync">
           <motion.img
             key={imageIndex}
             src={item.images[imageIndex]}
             alt={`${item.title} ${imageIndex + 1}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            initial={{ opacity: 0, filter: "blur(18px)", scale: 1.04 }}
+            animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
+            exit={{ opacity: 0, filter: "blur(18px)", scale: 1.02 }}
+            transition={{
+              opacity: { duration: 1.2, ease: [0.4, 0, 0.2, 1] },
+              filter: { duration: 1.2, ease: [0.4, 0, 0.2, 1] },
+              scale: { duration: 1.4, ease: [0.4, 0, 0.2, 1] },
+            }}
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </AnimatePresence>
 
