@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import drHaimiPortrait from "@/assets/dr-haimi-portrait.jpg";
+import drAhladiotisPortrait from "@/assets/dr-ahladiotis-portrait.jpg";
 
 const AboutSection = () => {
   return (
@@ -105,10 +106,12 @@ const AboutSection = () => {
             transition={{ duration: 0.8 }}
             className="relative lg:order-2"
           >
-            <div className="aspect-[3/4] overflow-hidden bg-secondary flex items-center justify-center">
-              <span className="font-body text-sm text-muted-foreground tracking-wider uppercase">
-                Dr. Ahladiotis Portrait
-              </span>
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src={drAhladiotisPortrait}
+                alt="Dr. Effie Ahladiotis"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -top-4 -right-4 w-full h-full border-2 border-gold/30 -z-10" />
           </motion.div>
