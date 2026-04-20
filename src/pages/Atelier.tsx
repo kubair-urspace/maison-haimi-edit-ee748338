@@ -37,6 +37,11 @@ const serviceCategories: ServiceCategory[] = [
     title: "Preventative Dentistry",
     subtitle: "Foundation of Care",
     description: "Preventive dentistry and long-term health go hand in hand in our practice. Every visit is designed to look beyond the present, supporting your oral health for years to come.",
+    keyPoints: [
+      "Preventive care + long-term health, together",
+      "Visits designed to look beyond the present",
+      "Supporting oral health for years to come",
+    ],
     detailedPoints: [
       "Our signature gentle yet extremely thorough dental cleaning",
       "Comprehensive evaluations, including oral health and cancer screening",
@@ -56,6 +61,12 @@ const serviceCategories: ServiceCategory[] = [
         "For more complex evaluations, we incorporate advanced 3D imaging (CBCT). This technology allows us to visualize teeth, bone, and surrounding anatomy with exceptional precision. It is especially valuable in surgical planning—helping us evaluate bone levels, identify important anatomical structures, and guide procedures such as extractions and implant placement with greater accuracy and safety.",
         "Our goal is always the same: to gather the information we need while keeping exposure as low as reasonably possible—and to use that information to plan care that is precise, conservative, and long-lasting.",
       ],
+      keyPoints: [
+        "Imaging used only when it adds value",
+        "Low-dose digital X-rays, precisely adjusted",
+        "3D CBCT for surgical planning precision",
+        "Exposure kept as low as reasonably possible",
+      ],
     },
     services: [],
   },
@@ -64,6 +75,11 @@ const serviceCategories: ServiceCategory[] = [
     title: "Veneers & Smile Design",
     subtitle: "Artful Transformation",
     description: "Dr. Haimi's approach to veneers and smile design is rooted in one core principle: preserve as much natural tooth structure as possible. Patients seek her out for her conservative, minimally invasive philosophy, whether enhancing a single tooth or creating a complete smile transformation.",
+    keyPoints: [
+      "Preserve as much natural tooth structure as possible",
+      "Conservative, minimally invasive philosophy",
+      "From a single tooth to a complete transformation",
+    ],
     detailedPoints: [
       "As a clinical instructor in the prestigious Aesthetic Honors Program at NYU College of Dentistry, Dr. Haimi teaches the same principles she practices daily: thoughtful planning, precision, and minimally invasive treatments. Every case is meticulously designed in advance before any treatment begins.",
       "Dr. Haimi has a very close relationship with the Ceramist and is always collaborating closely with master ceramists, often visiting the lab herself, and when appropriate, alongside the patient, to ensure that every detail meets both her standards and the patient's vision before anything is finalized.",
@@ -103,6 +119,12 @@ const serviceCategories: ServiceCategory[] = [
     title: "Aesthetic Dentistry",
     subtitle: "Aesthetic Excellence",
     description: "\"Aesthetic dentistry\" is simply the closest term—but in our practice, it's not a category, it's a standard. With Dr. Haimi's background in art and sculpting, every treatment is approached with an aesthetic eye—from a tooth-colored filling on a back molar to a single veneer or a full smile design. That said, aesthetics are never placed above function. Longevity, structural integrity, and overall oral health are always the foundation—because when those are done correctly, beauty naturally follows.",
+    keyPoints: [
+      "Not a category, a standard",
+      "Background in art and sculpting informs every treatment",
+      "Function and longevity always come first",
+      "Beauty naturally follows when done correctly",
+    ],
     detailedPoints: [
       "KöR Whitening",
       "At-home whitening with same-day custom trays",
@@ -156,6 +178,12 @@ const serviceCategories: ServiceCategory[] = [
     title: "Same-Day Inlays, Onlays & Crowns",
     subtitle: "Advanced Technology",
     description: "Inlays, onlays, and crowns are all crafted from the same high-quality materials—the difference lies in how much of the natural tooth needs to be reshaped to support them. Dr. Haimi's philosophy has always centered on preserving as much natural tooth structure as possible. With over 20 years of experience, she avoids full crowns whenever a more conservative option can achieve the same—or better—long-term result.",
+    keyPoints: [
+      "Same high-quality materials for inlays, onlays & crowns",
+      "Preserve as much natural tooth structure as possible",
+      "20+ years of experience favoring conservative options",
+      "Full crowns avoided whenever possible",
+    ],
     detailedPoints: [
       "Through meticulous planning and advanced techniques, Dr. Haimi has helped thousands of patients avoid crowns by restoring teeth with inlays and onlays instead. These conservative restorations allow us to remove only what is damaged—decay and compromised fillings—while preserving the healthy portions of the tooth.",
       "Inlays and onlays are precisely designed to fit the exact contours of your tooth and are bonded in place, reinforcing the remaining structure while delivering beautiful, natural aesthetics. In many cases, this approach can even help prevent the need for future root canal treatment.",
@@ -195,6 +223,11 @@ const serviceCategories: ServiceCategory[] = [
     title: "Restorative Dentistry",
     subtitle: "Rebuilding Smiles",
     description: "Rebuilding form, function, and beauty with lasting dental restorations that look and feel like your natural teeth.",
+    keyPoints: [
+      "Rebuilding form, function, and beauty",
+      "Lasting restorations that feel natural",
+      "Look and feel like your own teeth",
+    ],
     detailedPoints: [
       "Direct Restorations: Composite (tooth-colored) fillings, dental bondings, core buildup (after root canal treatment)",
       "Indirect Restorations: Inlays, onlays, crowns (full coverage)",
@@ -249,6 +282,12 @@ const serviceCategories: ServiceCategory[] = [
     title: "Periodontics, Dental & Implant Surgeries",
     subtitle: "Gum Health Specialists",
     description: "A few years ago, Dr. Haimi made a deliberate decision to bring surgical care in-house—allowing for a level of collaboration, precision, and continuity that cannot be achieved when treatment is performed across multiple locations. Having previously worked closely alongside Dr. Ahladiotis (Dr. Effie), Dr. Haimi welcomed the opportunity to integrate her into the practice. In our new location, Dr. Effie practices in a dedicated, state-of-the-art surgical suite designed specifically for advanced periodontal and implant procedures. Every surgical case is approached collaboratively. Dr. Haimi and Dr. Effie plan and execute treatment together—ensuring that both the health and the aesthetics of the final result are thoughtfully considered from the very beginning.",
+    keyPoints: [
+      "Surgical care brought in-house for continuity",
+      "Dedicated, state-of-the-art surgical suite",
+      "Dr. Haimi and Dr. Effie collaborate on every case",
+      "Health and aesthetics planned from the start",
+    ],
     detailedPoints: [
       "Gum contouring and aesthetic gum lifts (for gummy smiles)",
       "Crown lengthening (functional and aesthetic)",
@@ -270,6 +309,12 @@ const serviceCategories: ServiceCategory[] = [
         "All extractions and implant placements are carefully planned using advanced 3D imaging (CBCT). This allows us to evaluate bone, anatomy, and surrounding structures in detail before treatment, improving accuracy and helping us approach each case with greater safety and predictability.",
         "Our focus is on doing things the right way from the start—using the best materials and thorough planning to support optimal outcomes.",
       ],
+      keyPoints: [
+        "Only the highest quality surgical materials",
+        "No compromise on healing and stability",
+        "Every case planned with 3D CBCT imaging",
+        "Done the right way from the start",
+      ],
     },
     services: [],
   },
@@ -278,6 +323,11 @@ const serviceCategories: ServiceCategory[] = [
     title: "Implant Dentistry",
     subtitle: "Permanent Solutions",
     description: "From surgical placement to final restoration, we approach each implant case with the precision of a master craftsman, restoring both function and beauty.",
+    keyPoints: [
+      "From surgical placement to final restoration",
+      "Precision of a master craftsman",
+      "Restoring both function and beauty",
+    ],
     services: [
       {
         name: "Surgical Implant Placement",
@@ -322,6 +372,12 @@ const serviceCategories: ServiceCategory[] = [
     title: "Invisalign®",
     subtitle: "Over 15 Years of Experience",
     description: "Invisalign treatment is a modern, precise way to align teeth using a series of custom clear aligners, designed to gradually move teeth into their ideal position. In our practice, Invisalign is not approached as a quick cosmetic fix, but as part of a comprehensive treatment plan focused on function, health, and longevity. Proper alignment allows for a more balanced bite, reduces uneven wear, and helps preserve the natural tooth structure over time.",
+    keyPoints: [
+      "Custom clear aligners for precise tooth movement",
+      "Not a quick fix—part of a comprehensive plan",
+      "Focused on function, health, and longevity",
+      "Balanced bite, reduced wear, preserved structure",
+    ],
     detailedPoints: [
       "Dr. Haimi has been providing Invisalign treatment for over 15 years, bringing a depth of experience that allows for thoughtful, highly individualized care.",
       "Every case is carefully planned by Dr. Haimi. While advanced digital technology is used as a tool, Dr. Haimi never relies on software alone to determine treatment. Each case is personally measured, designed, and refined based on a deep understanding of occlusion, facial aesthetics, and long-term stability.",
@@ -361,6 +417,12 @@ const serviceCategories: ServiceCategory[] = [
     title: "Full Mouth Rehabilitation & Smile Makeover",
     subtitle: "Complete Transformation",
     description: "A smile makeover or full mouth reconstruction is one of the most comprehensive and transformative treatments in dentistry. In our practice, it is never approached as simply \"changing the way teeth look,\" but as a carefully planned process that restores function, health, and natural aesthetics in harmony. No two cases are the same. Each treatment is planned in advance in collaboration with the lab and the patient, aligning clinical needs with the patient's goals, preferences, and vision for their smile. A core principle in our approach is preservation of natural tooth structure—ensuring strength, longevity, and a natural result that does not appear overdone.",
+    keyPoints: [
+      "More than changing how teeth look",
+      "Restores function, health, and aesthetics in harmony",
+      "Planned in collaboration with lab and patient",
+      "Preserves natural tooth structure for a natural result",
+    ],
     detailedPoints: [
       "Comfortable, stable occlusion",
       "TMJ health and joint function",
@@ -406,6 +468,12 @@ const serviceCategories: ServiceCategory[] = [
     title: "Sleep Apnea & Snoring",
     subtitle: "Rest Better",
     description: "Dr. Haimi is a Diplomate of the American Board of Dental Sleep Medicine, the highest level of training in dental sleep medicine, allowing for comprehensive evaluation and management of airway-related sleep disorders. She is also one of a very small number of cosmetic dentists who integrates sleep medicine into everyday dental care, recognizing that airway, function, and aesthetics are closely connected. Snoring and sleep apnea are part of sleep-disordered breathing—conditions that affect not only sleep quality, but overall health, daily function, and long-term well-being.",
+    keyPoints: [
+      "Diplomate, American Board of Dental Sleep Medicine",
+      "Highest level of training in dental sleep medicine",
+      "One of few cosmetic dentists integrating sleep medicine",
+      "Airway, function & aesthetics are connected",
+    ],
     detailedPoints: [
       "When breathing is disrupted during sleep, oxygen levels drop and the body is repeatedly aroused from deep sleep—often without the patient realizing it. This can lead to chronic fatigue, brain fog, memory issues, mood changes, anxiety, and non-restorative sleep.",
       "Patients with sleep apnea are 2–3 times more likely to be involved in motor vehicle accidents, with hundreds of thousands of crashes each year in the U.S. linked to sleep-disordered breathing.",
@@ -459,6 +527,10 @@ const serviceCategories: ServiceCategory[] = [
     title: "Facial Aesthetics & Therapeutic Botox",
     subtitle: "Beyond the Smile",
     description: "What many patients don't realize is that dentists receive extensive medical training in full-body anatomy—including far beyond the head and neck—before going on to focus even more deeply on the muscles, nerves, and function of the face and jaw.",
+    keyPoints: [
+      "Extensive medical training in full-body anatomy",
+      "Deep focus on muscles, nerves & function of face and jaw",
+    ],
     additionalContent: {
       heading: "Botox",
       paragraphs: [
@@ -466,6 +538,12 @@ const serviceCategories: ServiceCategory[] = [
         "Because of our understanding of how these muscles function together, treatments are precise, conservative, and always focused on comfort and balance.",
         "And while the primary goal is therapeutic, an understanding of facial aesthetics naturally guides every treatment—ensuring results feel as good as they look, without ever appearing overdone.",
         "Our goal is simple—to help you feel better, more relaxed, and completely at ease with your care.",
+      ],
+      keyPoints: [
+        "Used for clenching, jaw tension & muscle discomfort",
+        "Guided by training in occlusion & sleep medicine",
+        "Precise, conservative, never overdone",
+        "Therapeutic first—aesthetic results follow",
       ],
     },
     services: [],
@@ -475,6 +553,11 @@ const serviceCategories: ServiceCategory[] = [
     title: "Sedation & Comfort-Focused Dentistry",
     subtitle: "Anxiety-Free Care",
     description: "Our office was intentionally designed to feel more like a home than a clinical setting. The reception area resembles a comfortable living room, where patients are welcomed with calming teas and light refreshments to help ease into their visit.",
+    keyPoints: [
+      "Designed to feel like a home, not a clinic",
+      "Reception feels like a comfortable living room",
+      "Welcomed with calming teas and light refreshments",
+    ],
     additionalContent: {
       heading: "Sedation & Comfort-Focused Dentistry",
       paragraphs: [
@@ -483,6 +566,13 @@ const serviceCategories: ServiceCategory[] = [
         "Dr. Haimi's calm, reassuring demeanor is rooted in both experience and intention. Her Bachelors in psychology, combined with years of treating anxious patients, has shaped an approach centered on understanding, patience, and trust.",
         "For those who would like additional support, we also offer nitrous oxide (laughing gas), a safe and effective option to help you relax during treatment.",
         "Over time, our goal is not just to make visits comfortable—but to change the way you feel about dentistry altogether. Many of our patients who once felt anxious now come in feeling calm and at ease, having replaced old fears with a new, more positive experience.",
+      ],
+      keyPoints: [
+        "Comfortable chairs, TVs & music in every room",
+        "Communication that leaves patients informed & at ease",
+        "Background in psychology shapes a calm approach",
+        "Nitrous oxide (laughing gas) available for extra support",
+        "Changing how you feel about dentistry, over time",
       ],
     },
     services: [],
