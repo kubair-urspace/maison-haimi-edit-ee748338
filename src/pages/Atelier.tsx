@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
 import servicesHero from "@/assets/services-hero.jpg";
 
@@ -606,6 +606,17 @@ const DetailedPointsSection = ({ points, intro }: { points: string[]; intro?: st
 };
 
 const Atelier = () => {
+  const { serviceId } = useParams();
+  const isSingleService = Boolean(serviceId);
+  const matchedCategory = serviceId
+    ? serviceCategories.find((c) => c.id === serviceId)
+    : undefined;
+  const categoriesToRender =
+    isSingleService && matchedCategory ? [matchedCategory] : serviceCategories;
+
+  // If a serviceId was provided but doesn't match, fall back to the full list.
+  const heroTitle = matchedCategory ? matchedCategory.title : "Our Dental Services";
+
   return (
     <Layout>
       {/* Hero Section - Full Width Image */}
@@ -628,7 +639,7 @@ const Atelier = () => {
             transition={{ duration: 0.8 }}
             className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
           >
-            Our Dental Services
+            {heroTitle}
           </motion.h1>
           
           {/* Breadcrumb */}
@@ -640,26 +651,36 @@ const Atelier = () => {
           >
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-white">Services</span>
+            {matchedCategory ? (
+              <>
+                <Link to="/services" className="hover:text-white transition-colors">Services</Link>
+                <span>/</span>
+                <span className="text-white">{matchedCategory.title}</span>
+              </>
+            ) : (
+              <span className="text-white">Services</span>
+            )}
           </motion.nav>
         </div>
       </section>
 
       {/* Section Header */}
-      <section className="relative z-10 py-12 bg-background border-b border-gold/20">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <motion.h2
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="font-display text-2xl md:text-3xl text-gold/70 tracking-wide uppercase"
-            >
-              Cutting-Edge Procedures
-            </motion.h2>
+      {!isSingleService && (
+        <section className="relative z-10 py-12 bg-background border-b border-gold/20">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center justify-between">
+              <motion.h2
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="font-display text-2xl md:text-3xl text-gold/70 tracking-wide uppercase"
+              >
+                Cutting-Edge Procedures
+              </motion.h2>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Service Categories */}
       {serviceCategories.map((category, categoryIndex) => (
