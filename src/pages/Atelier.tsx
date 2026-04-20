@@ -33,6 +33,21 @@ interface ServiceCategory {
   }[];
 }
 
+const PLACEHOLDER_IMAGE = "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80";
+
+const placeholderServices = [1, 2, 3].map((n) => ({
+  name: `Placeholder ${n}`,
+  description: "Placeholder description — content coming soon.",
+  beforeImage: PLACEHOLDER_IMAGE,
+  afterImage: PLACEHOLDER_IMAGE,
+  transformationDetails: {
+    procedure: "Placeholder",
+    technique: "Placeholder",
+    duration: "Placeholder",
+    result: "Placeholder",
+  },
+}));
+
 const serviceCategories: ServiceCategory[] = [
   {
     id: "preventative",
