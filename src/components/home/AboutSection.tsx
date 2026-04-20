@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import drHaimiPortrait from "@/assets/dr-haimi-portrait.png";
+import drHaimiPortrait from "@/assets/dr-haimi-portrait.jpg";
 
 const AboutSection = () => {
   return (
