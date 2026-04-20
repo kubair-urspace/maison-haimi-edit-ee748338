@@ -1,16 +1,19 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Practice from "./pages/Practice";
-import Atelier from "./pages/Atelier";
-import Concierge from "./pages/Concierge";
-import BeforeAfter from "./pages/BeforeAfter";
-import MeetUs from "./pages/MeetUs";
-import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
+
+// Code-split secondary routes so the initial load only ships the homepage bundle
+const Practice = lazy(() => import("./pages/Practice"));
+const Atelier = lazy(() => import("./pages/Atelier"));
+const Concierge = lazy(() => import("./pages/Concierge"));
+const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
+const MeetUs = lazy(() => import("./pages/MeetUs"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -21,17 +24,19 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/meet-us" element={<MeetUs />} />
-          <Route path="/practice" element={<Practice />} />
-          <Route path="/services" element={<Atelier />} />
-          <Route path="/services/:serviceId" element={<Atelier />} />
-          <Route path="/before-after" element={<BeforeAfter />} />
-          <Route path="/concierge" element={<Concierge />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<div className="min-h-screen bg-background" />}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/meet-us" element={<MeetUs />} />
+            <Route path="/practice" element={<Practice />} />
+            <Route path="/services" element={<Atelier />} />
+            <Route path="/services/:serviceId" element={<Atelier />} />
+            <Route path="/before-after" element={<BeforeAfter />} />
+            <Route path="/concierge" element={<Concierge />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
