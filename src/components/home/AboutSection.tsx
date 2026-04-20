@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import drHaimiPortrait from "@/assets/dr-haimi-portrait.jpg";
 import drAhladiotisPortrait from "@/assets/dr-ahladiotis-portrait.jpg";
+import sandraBaronePortrait from "@/assets/sandra-barone-portrait.jpg";
 
 const AboutSection = () => {
   return (
@@ -166,10 +167,12 @@ const AboutSection = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[3/4] overflow-hidden bg-secondary flex items-center justify-center">
-              <span className="font-body text-sm text-muted-foreground tracking-wider uppercase">
-                Sandra Barone Portrait
-              </span>
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src={sandraBaronePortrait}
+                alt="Sandra Barone, R.D.H."
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold/30 -z-10" />
           </motion.div>
