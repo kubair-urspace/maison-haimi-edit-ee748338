@@ -682,30 +682,83 @@ const Atelier = () => {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase">
                 {category.title}
               </h2>
-              <p className="font-body text-charcoal/70 mt-4 max-w-2xl leading-relaxed">
-                {category.description}
-              </p>
+
+              {/* Two-column: description on left, key points on right */}
+              <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                <div className="lg:col-span-7">
+                  <p className="font-body text-charcoal/70 leading-relaxed">
+                    {category.description}
+                  </p>
+                </div>
+                {category.keyPoints && category.keyPoints.length > 0 && (
+                  <div className="lg:col-span-5 lg:border-l lg:border-gold/20 lg:pl-8">
+                    <p className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-4">
+                      Key Points
+                    </p>
+                    <ul className="space-y-3">
+                      {category.keyPoints.map((point, i) => (
+                        <motion.li
+                          key={i}
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.4, delay: i * 0.05 }}
+                          className="flex items-start gap-3 font-body text-sm text-charcoal/80 leading-relaxed"
+                        >
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                          {point}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+
               {category.detailedPoints && (
                 <DetailedPointsSection points={category.detailedPoints} intro={category.detailedPointsIntro} />
               )}
               {category.additionalContent && (
-                <div className="mt-8 max-w-2xl">
-                  <h3 className="font-display text-xl md:text-2xl text-charcoal tracking-wide uppercase mb-4">
+                <div className="mt-12 pt-12 border-t border-gold/20">
+                  <h3 className="font-display text-xl md:text-2xl text-charcoal tracking-wide uppercase mb-6">
                     {category.additionalContent.heading}
                   </h3>
-                  <div className="space-y-4">
-                    {category.additionalContent.paragraphs.map((paragraph, i) => (
-                      <motion.p
-                        key={i}
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.4, delay: i * 0.05 }}
-                        className="font-body text-sm text-charcoal/70 leading-relaxed"
-                      >
-                        {paragraph}
-                      </motion.p>
-                    ))}
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                    <div className="lg:col-span-7 space-y-4">
+                      {category.additionalContent.paragraphs.map((paragraph, i) => (
+                        <motion.p
+                          key={i}
+                          initial={{ opacity: 0, y: 10 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.4, delay: i * 0.05 }}
+                          className="font-body text-sm text-charcoal/70 leading-relaxed"
+                        >
+                          {paragraph}
+                        </motion.p>
+                      ))}
+                    </div>
+                    {category.additionalContent.keyPoints && category.additionalContent.keyPoints.length > 0 && (
+                      <div className="lg:col-span-5 lg:border-l lg:border-gold/20 lg:pl-8">
+                        <p className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-4">
+                          Key Points
+                        </p>
+                        <ul className="space-y-3">
+                          {category.additionalContent.keyPoints.map((point, i) => (
+                            <motion.li
+                              key={i}
+                              initial={{ opacity: 0, x: -10 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.4, delay: i * 0.05 }}
+                              className="flex items-start gap-3 font-body text-sm text-charcoal/80 leading-relaxed"
+                            >
+                              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                              {point}
+                            </motion.li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
