@@ -54,7 +54,7 @@ const AboutSection = () => {
             <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase leading-tight mb-8">
               Eliza Haimi
               <br />
-              <span className="text-gold">DDS</span>
+              <span className="text-gold">DDS, D.ABDSM</span>
             </h3>
 
             <div className="space-y-5 font-body text-charcoal/80 leading-relaxed text-base md:text-lg">
