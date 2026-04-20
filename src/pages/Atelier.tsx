@@ -618,6 +618,7 @@ const Atelier = () => {
 
   // If a serviceId was provided but doesn't match, fall back to the full list.
   const heroTitle = matchedCategory ? matchedCategory.title : "Our Dental Services";
+  const heroBackground = matchedCategory?.heroImage || servicesHero;
 
   return (
     <Layout>
@@ -627,7 +628,7 @@ const Atelier = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(${servicesHero})`,
+            backgroundImage: `url(${heroBackground})`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
