@@ -683,7 +683,7 @@ const Atelier = () => {
       )}
 
       {/* Service Categories */}
-      {serviceCategories.map((category, categoryIndex) => (
+      {categoriesToRender.map((category, categoryIndex) => (
         <section
           key={category.id}
           id={category.id}
@@ -805,6 +805,33 @@ const Atelier = () => {
           </div>
         </section>
       ))}
+
+      {/* Additional Services CTA — only on single-service view */}
+      {isSingleService && matchedCategory && (
+        <section className="relative z-10 py-16 md:py-20 bg-cream border-t border-gold/20">
+          <div className="container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4 block">
+                Explore More
+              </span>
+              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-charcoal tracking-wide uppercase mb-6">
+                Discover Our Full Range of Services
+              </h2>
+              <p className="font-body text-charcoal/70 max-w-xl mx-auto mb-8 leading-relaxed">
+                Browse every treatment we offer—from preventative care to full smile transformations.
+              </p>
+              <Button variant="luxury-gold-filled" size="xl" asChild>
+                <Link to="/services">Additional Services</Link>
+              </Button>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className="relative z-10 py-20 md:py-32 bg-charcoal">
