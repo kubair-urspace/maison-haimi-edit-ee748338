@@ -53,13 +53,13 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
   const hasMultiple = item.images.length > 1;
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Preload all images so transitions never reveal a half-loaded frame
+  // Preload only the next image so transitions stay smooth without blocking initial load
   useEffect(() => {
-    item.images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  }, [item.images]);
+    if (!hasMultiple) return;
+    const nextSrc = item.images[(imageIndex + 1) % item.images.length];
+    const img = new Image();
+    img.src = nextSrc;
+  }, [imageIndex, hasMultiple, item.images]);
 
   useEffect(() => {
     if (isHovered && hasMultiple) {
@@ -93,6 +93,8 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
             key={imageIndex}
             src={item.images[imageIndex]}
             alt={`${item.title} ${imageIndex + 1}`}
+            loading="lazy"
+            decoding="async"
             initial={{ opacity: 0, filter: "blur(18px)", scale: 1.04 }}
             animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
             exit={{ opacity: 0, filter: "blur(18px)", scale: 1.02 }}
