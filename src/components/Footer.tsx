@@ -54,7 +54,7 @@ const Footer = () => {
                 <img
                   src={abdsmSeal}
                   alt="Diplomate, American Board of Dental Sleep Medicine"
-                  className="h-16 w-16 opacity-70 invert"
+                  className="h-16 w-16"
                 />
               </div>
               {/* Social Media */}
