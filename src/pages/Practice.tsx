@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import facilityReception from "@/assets/facility-reception.jpg";
 import facilityTreatment from "@/assets/facility-treatment.jpg";
-import facilityLounge from "@/assets/facility-lounge.jpg";
+
 import facilityTechnology from "@/assets/facility-technology.jpg";
 import facilityTechnology2 from "@/assets/facility-technology-2.jpg";
 import facilityTechnology3 from "@/assets/facility-technology-3.jpg";
@@ -40,12 +40,6 @@ const facilityItems: FacilityItem[] = [
     description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light—creating an environment where advanced care meets total comfort.",
   },
   {
-    images: [facilityLounge],
-    title: "Patient Lounge",
-    subtitle: "Relaxation Redefined",
-    description: "Our patient lounge offers a tranquil retreat with designer furnishings, curated reading, and a calming ambiance that feels more like a private club than a dental office.",
-  },
-  {
     images: [facilityTechnology, facilityTechnology2, facilityTechnology3, facilityTechnology4, facilityTechnology5],
     title: "Technology",
     subtitle: "State of the Art",
@@ -55,7 +49,23 @@ const facilityItems: FacilityItem[] = [
 
 const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: number; onClick: () => void }) => {
   const [imageIndex, setImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
   const hasMultiple = item.images.length > 1;
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    if (isHovered && hasMultiple) {
+      intervalRef.current = setInterval(() => {
+        setImageIndex((prev) => (prev + 1) % item.images.length);
+      }, 2000);
+    }
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [isHovered, hasMultiple, item.images.length]);
 
   return (
     <motion.div
@@ -66,6 +76,8 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
       transition={{ duration: 0.7, delay: index * 0.15 }}
       className="group relative cursor-pointer overflow-hidden"
       onClick={onClick}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="aspect-[4/3] overflow-hidden relative">
         <AnimatePresence mode="wait">
