@@ -53,11 +53,19 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
   const hasMultiple = item.images.length > 1;
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  // Preload all images so transitions never reveal a half-loaded frame
+  useEffect(() => {
+    item.images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [item.images]);
+
   useEffect(() => {
     if (isHovered && hasMultiple) {
       intervalRef.current = setInterval(() => {
         setImageIndex((prev) => (prev + 1) % item.images.length);
-      }, 2000);
+      }, 5000);
     }
     return () => {
       if (intervalRef.current) {
@@ -74,22 +82,26 @@ const FacilityCard = ({ item, index, onClick }: { item: FacilityItem; index: num
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7, delay: index * 0.15 }}
-      className="group relative cursor-pointer overflow-hidden"
+      className="group relative cursor-pointer overflow-hidden h-full"
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="aspect-[4/3] overflow-hidden relative">
-        <AnimatePresence mode="wait">
+      <div className="overflow-hidden relative h-full w-full">
+        <AnimatePresence mode="sync">
           <motion.img
             key={imageIndex}
             src={item.images[imageIndex]}
             alt={`${item.title} ${imageIndex + 1}`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            initial={{ opacity: 0, filter: "blur(18px)", scale: 1.04 }}
+            animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
+            exit={{ opacity: 0, filter: "blur(18px)", scale: 1.02 }}
+            transition={{
+              opacity: { duration: 1.2, ease: [0.4, 0, 0.2, 1] },
+              filter: { duration: 1.2, ease: [0.4, 0, 0.2, 1] },
+              scale: { duration: 1.4, ease: [0.4, 0, 0.2, 1] },
+            }}
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </AnimatePresence>
 
@@ -191,10 +203,20 @@ const Practice = () => {
             </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {facilityItems.map((item, index) => (
-              <FacilityCard key={item.title} item={item} index={index} onClick={() => openLightbox(index)} />
-            ))}
+          {/* Asymmetric magazine grid: large feature on the left, two stacked on the right */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 lg:h-[720px]">
+            {facilityItems.map((item, index) => {
+              // Treatment Suite (the second item with multiple images) becomes the large feature
+              const isFeature = index === 1;
+              const cellClass = isFeature
+                ? "lg:col-span-2 lg:row-span-2 aspect-[4/3] lg:aspect-auto"
+                : "lg:col-span-1 lg:row-span-1 aspect-[4/3] lg:aspect-auto";
+              return (
+                <div key={item.title} className={cellClass}>
+                  <FacilityCard item={item} index={index} onClick={() => openLightbox(index)} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
