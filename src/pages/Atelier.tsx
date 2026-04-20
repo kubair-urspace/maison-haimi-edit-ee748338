@@ -86,7 +86,7 @@ const serviceCategories: ServiceCategory[] = [
         "Exposure kept as low as reasonably possible",
       ],
     },
-    services: [],
+    services: placeholderServices,
   },
   {
     id: "veneers",
@@ -334,7 +334,7 @@ const serviceCategories: ServiceCategory[] = [
         "Done the right way from the start",
       ],
     },
-    services: [],
+    services: placeholderServices,
   },
   {
     id: "implants",
@@ -564,7 +564,7 @@ const serviceCategories: ServiceCategory[] = [
         "Therapeutic first—aesthetic results follow",
       ],
     },
-    services: [],
+    services: placeholderServices,
   },
   {
     id: "sedation",
@@ -593,7 +593,7 @@ const serviceCategories: ServiceCategory[] = [
         "Changing how you feel about dentistry, over time",
       ],
     },
-    services: [],
+    services: placeholderServices,
   },
 ];
 
