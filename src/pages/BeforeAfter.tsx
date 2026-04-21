@@ -1,9 +1,7 @@
-import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const cases = [
   {
@@ -138,11 +136,6 @@ const BeforeAfterSlider = ({
 };
 
 const BeforeAfter = () => {
-  const [activeCase, setActiveCase] = useState(0);
-
-  const nextCase = () => setActiveCase((prev) => (prev + 1) % cases.length);
-  const prevCase = () => setActiveCase((prev) => (prev - 1 + cases.length) % cases.length);
-
   return (
     <Layout>
       {/* Hero */}
