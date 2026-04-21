@@ -177,7 +177,7 @@ const BeforeAfter = () => {
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Intro + Placeholder */}
       <section className="relative z-10 py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
@@ -199,133 +199,36 @@ const BeforeAfter = () => {
             </p>
           </motion.div>
 
-          {/* Featured Case Viewer */}
+          {/* Placeholder before & after */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-5xl mx-auto"
+            className="max-w-4xl mx-auto"
           >
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeCase}
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.98 }}
-                transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-              >
-                {/* Category Badge */}
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-body text-[10px] tracking-[0.3em] uppercase text-gold">
-                    {cases[activeCase].category}
-                  </span>
-                  <span className="font-body text-xs text-muted-foreground">
-                    {activeCase + 1} / {cases.length}
-                  </span>
-                </div>
-
-                {/* Slider */}
-                <BeforeAfterSlider
-                  beforeImage={cases[activeCase].beforeImage}
-                  afterImage={cases[activeCase].afterImage}
-                />
-
-                {/* Case Info */}
-                <div className="mt-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
-                  <div>
-                    <h3 className="font-display text-2xl md:text-3xl text-foreground mb-2">
-                      {cases[activeCase].title}
-                    </h3>
-                    <p className="font-body text-muted-foreground text-sm leading-relaxed max-w-xl">
-                      {cases[activeCase].description}
-                    </p>
-                  </div>
-
-                  {/* Navigation Arrows */}
-                  <div className="flex items-center gap-3 flex-shrink-0">
-                    <button
-                      onClick={prevCase}
-                      className="w-12 h-12 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300"
-                      aria-label="Previous case"
-                    >
-                      <ChevronLeft className="h-5 w-5" />
-                    </button>
-                    <button
-                      onClick={nextCase}
-                      className="w-12 h-12 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300"
-                      aria-label="Next case"
-                    >
-                      <ChevronRight className="h-5 w-5" />
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-
-            {/* Progress dots */}
-            <div className="flex items-center justify-center gap-2 mt-10">
-              {cases.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActiveCase(i)}
-                  className={`h-1.5 rounded-full transition-all duration-500 ${
-                    i === activeCase
-                      ? "w-8 bg-gold"
-                      : "w-1.5 bg-border hover:bg-gold/40"
-                  }`}
-                  aria-label={`View case ${i + 1}`}
-                />
-              ))}
+            <div className="relative aspect-[16/10] overflow-hidden bg-charcoal flex items-center justify-center">
+              <span className="font-body text-xs tracking-[0.3em] uppercase text-cream/60">
+                Before & After — image coming soon
+              </span>
             </div>
           </motion.div>
-        </div>
-      </section>
 
-      {/* Thumbnail Grid */}
-      <section className="relative z-10 py-16 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4">
-          <motion.h3
+          {/* Curating note */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-2xl md:text-3xl text-foreground tracking-wide uppercase text-center mb-12"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-3xl mx-auto mt-16 text-center"
           >
-            All Cases
-          </motion.h3>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {cases.map((c, i) => (
-              <motion.button
-                key={c.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                onClick={() => {
-                  setActiveCase(i);
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className={`relative aspect-square overflow-hidden group border-2 transition-all duration-300 ${
-                  i === activeCase ? "border-gold" : "border-transparent hover:border-gold/40"
-                }`}
-              >
-                <div
-                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
-                  style={{ backgroundImage: `url(${c.afterImage})` }}
-                />
-                <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/40 transition-colors duration-300" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="font-display text-lg text-white text-center px-2">
-                    {c.title}
-                  </span>
-                  <span className="font-body text-[9px] tracking-[0.2em] uppercase text-white/70 mt-1">
-                    {c.category}
-                  </span>
-                </div>
-              </motion.button>
-            ))}
-          </div>
+            <div className="border-t border-b border-gold/30 py-10 px-6">
+              <p className="font-display text-2xl md:text-3xl lg:text-4xl text-charcoal italic leading-snug">
+                We're curating our best results — check back soon for an
+                incredible collection of before &amp; afters!
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
