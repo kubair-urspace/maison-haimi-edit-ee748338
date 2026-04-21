@@ -15,6 +15,12 @@ const navLinks = [
   { name: "Contact Us", path: "/concierge" },
 ];
 
+const desktopPrimaryLinks = [
+  { name: "Services", path: "/services" },
+  { name: "The Practice", path: "/practice" },
+  { name: "Before & After", path: "/before-after" },
+];
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -34,6 +40,24 @@ const Navigation = () => {
 
             {/* Desktop CTAs */}
             <div className="hidden md:flex items-center gap-3">
+              {/* Primary nav links */}
+              <div className="hidden lg:flex items-center gap-6 mr-4">
+                {desktopPrimaryLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={cn(
+                      "font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300",
+                      location.pathname === link.path
+                        ? "text-white"
+                        : "text-white/80 hover:text-white"
+                    )}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+
               <Button 
                 variant="secondary"
                 size="sm" 
