@@ -54,28 +54,11 @@ const ServiceCard = ({ name, description, beforeImage, afterImage, transformatio
           </div>
         </div>
 
-        {/* Expand Arrow */}
-        {hasImages && (
-          <motion.div
-            className="flex items-center justify-center mt-4 pt-3 border-t border-border"
-          >
-            <motion.div
-              animate={{ rotate: isExpanded ? 180 : 0 }}
-              transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
-              className="flex items-center gap-2 text-muted-foreground group-hover:text-gold transition-colors duration-300"
-            >
-              <span className="font-body text-[10px] tracking-[0.25em] uppercase">
-                {isExpanded ? "Close" : "View Results"}
-              </span>
-              <ChevronDown className="h-4 w-4" />
-            </motion.div>
-          </motion.div>
-        )}
       </div>
 
-      {/* Expandable Before/After Section */}
+      {/* Expandable Before/After Section (disabled — View Results removed) */}
       <AnimatePresence initial={false}>
-        {isExpanded && hasImages && (
+        {false && isExpanded && hasImages && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
