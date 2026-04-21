@@ -26,19 +26,19 @@ const AboutSection = () => {
         </motion.div>
 
         {/* Dr. Haimi */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-24 md:mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start mb-24 md:mb-32">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative lg:col-span-5 max-w-sm mx-auto lg:mx-0"
           >
             <div className="aspect-[3/4] overflow-hidden">
               <img
                 src={drHaimiPortrait}
                 alt="Dr. Eliza Haimi"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center scale-90"
               />
             </div>
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold/30 -z-10" />
@@ -49,10 +49,10 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:pl-8"
+            className="lg:col-span-7 lg:pl-8"
           >
             <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase leading-tight mb-8">
-              Eliza Haimi
+              Eliza Haimi,
               <br />
               <span className="text-gold">DDS, D.ABDSM</span>
             </h3>
@@ -84,7 +84,7 @@ const AboutSection = () => {
                 Invisalign, and therapeutic Botox. She is known for her meticulous planning and design of 
                 natural and functional smile transformations tailored to each individual patient.
               </p>
-              <p className="font-medium text-charcoal">
+              <p>
                 Outside of dentistry, Dr. Haimi enjoys reading, drawing, cooking, and practicing Pilates. 
                 She resides in Great Neck with her husband and their three children.
               </p>
@@ -111,7 +111,7 @@ const AboutSection = () => {
               <img
                 src={drAhladiotisPortrait}
                 alt="Dr. Effie Ahladiotis"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center scale-90"
               />
             </div>
             <div className="absolute -top-4 -right-4 w-full h-full border-2 border-gold/30 -z-10" />

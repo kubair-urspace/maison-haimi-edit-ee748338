@@ -15,6 +15,12 @@ const navLinks = [
   { name: "Contact Us", path: "/concierge" },
 ];
 
+const desktopPrimaryLinks = [
+  { name: "Services", path: "/services" },
+  { name: "The Practice", path: "/practice" },
+  { name: "Before & After", path: "/before-after" },
+];
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
