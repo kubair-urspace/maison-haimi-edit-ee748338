@@ -57,12 +57,12 @@ const Footer = () => {
                   className="h-16 w-16"
                 />
               </div>
-              {/* Social Media */}
+              {/* Social Media — placeholder URLs, replace when provided */}
               <div className="mt-5 flex gap-3">
-                <a href="https://instagram.com/drelizahaimi" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+                <a href="#" aria-label="Instagram (link coming soon)" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
                   <Instagram className="h-4 w-4" />
                 </a>
-                <a href="https://facebook.com/ElizaHaimiDDS" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+                <a href="#" aria-label="Facebook (link coming soon)" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
                   <Facebook className="h-4 w-4" />
                 </a>
               </div>
