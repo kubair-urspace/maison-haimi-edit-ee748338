@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
               {/* Social Media — placeholder URLs, replace when provided */}
               <div className="mt-5 flex gap-3">
-                <a href="#" aria-label="Instagram (link coming soon)" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
+                <a href="https://www.instagram.com/drelizahaimi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
                   <Instagram className="h-4 w-4" />
                 </a>
                 <a href="#" aria-label="Facebook (link coming soon)" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
