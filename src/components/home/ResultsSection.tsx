@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import BeforeAfterComparison from "@/components/BeforeAfterComparison";
+import smileVeneerImage from "@/assets/before-after-smile-veneer.jpeg";
 
 const ResultsSection = () => {
   return (
@@ -19,7 +21,7 @@ const ResultsSection = () => {
           </h2>
         </motion.div>
 
-        {/* Single Before & After Placeholder */}
+        {/* Single Before & After Slider */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,11 +29,7 @@ const ResultsSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="relative aspect-[16/10] overflow-hidden bg-charcoal flex items-center justify-center">
-            <span className="font-body text-xs tracking-[0.3em] uppercase text-cream/60">
-              Before & After — image coming soon
-            </span>
-          </div>
+          <BeforeAfterComparison image={smileVeneerImage} alt="Dental smile transformation" split="vertical" />
 
           <p className="mt-6 text-center font-body text-sm md:text-base text-charcoal/70 italic leading-relaxed">
             More amazing before &amp; afters coming soon — stay tuned!
