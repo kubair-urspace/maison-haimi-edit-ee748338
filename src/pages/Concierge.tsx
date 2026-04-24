@@ -340,53 +340,6 @@ const Concierge = () => {
         </div>
       </section>
 
-      {/* New Patient Section */}
-      <section className="section-padding bg-card">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6 block"
-            >
-              New Patients
-            </motion.span>
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-display text-3xl md:text-4xl text-foreground mb-8"
-            >
-              Prepare for Your Visit
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-body text-muted-foreground editorial-text mb-10"
-            >
-              To make your first visit as seamless as possible, you may complete our 
-              intake forms in advance. We partner with leading insurance providers and 
-              offer curated financing solutions to ensure your care is never compromised.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <Button variant="luxury" size="lg">
-                Access Digital Intake
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Location & Hours */}
       <section className="section-padding">
         <div className="container mx-auto">
