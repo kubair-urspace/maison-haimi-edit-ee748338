@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
-import smileVeneerImage from "@/assets/before-after-smile-veneer.jpeg";
 import smileVeneerImage2 from "@/assets/before-after-smile-2.jpg";
 
 const ResultsSection = () => {
@@ -22,30 +21,19 @@ const ResultsSection = () => {
           </h2>
         </motion.div>
 
-        {/* Before & After Sliders */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <BeforeAfterComparison image={smileVeneerImage} alt="Dental smile transformation" split="vertical" />
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-4xl mx-auto"
+        >
+          <BeforeAfterComparison image={smileVeneerImage2} alt="Dental veneer transformation" split="vertical" />
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <BeforeAfterComparison image={smileVeneerImage2} alt="Dental veneer transformation" split="vertical" />
-          </motion.div>
-        </div>
-
-        <p className="mt-6 text-center font-body text-sm md:text-base text-charcoal/70 italic leading-relaxed">
-          More amazing before &amp; afters coming soon — stay tuned!
-        </p>
+          <p className="mt-6 text-center font-body text-sm md:text-base text-charcoal/70 italic leading-relaxed">
+            More amazing before &amp; afters coming soon — stay tuned!
+          </p>
+        </motion.div>
       </div>
     </section>
   );
