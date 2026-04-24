@@ -107,11 +107,27 @@ const Concierge = () => {
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
-    
-    // Simulate form submission (replace with actual edge function call later)
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
+
+    const { error } = await supabase.from("appointment_requests").insert({
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      phone: formData.phone.trim(),
+      service: formData.service,
+      preferred_time: formData.preferredTime,
+      message: formData.message.trim() || null,
+    });
+
     setIsSubmitting(false);
+
+    if (error) {
+      toast({
+        title: "Submission failed",
+        description: "We couldn't send your request. Please try again or call us directly.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitted(true);
     toast({
       title: "Request Received",
