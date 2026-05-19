@@ -113,7 +113,17 @@ const BeforeAfter = () => {
 
           {/* Curating note */}
           <motion.div
-...
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-3xl mx-auto mt-16 text-center"
+          >
+            <div className="border-t border-b border-gold/30 py-10 px-6">
+              <p className="font-display text-2xl md:text-3xl lg:text-4xl text-charcoal italic leading-snug">
+                We're curating our best results — check back soon for an
+                incredible collection of before &amp; afters!
+              </p>
             </div>
           </motion.div>
         </div>
