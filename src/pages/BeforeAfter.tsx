@@ -101,10 +101,10 @@ const BeforeAfter = () => {
                 <span className="font-body text-[10px] tracking-[0.3em] uppercase text-gold mb-3">
                   Coming Soon
                 </span>
-                <p className="font-display text-xl md:text-2xl italic text-charcoal/60 leading-snug">
+                <p className="font-display text-xl md:text-2xl italic text-charcoal/80 leading-snug">
                   Before &amp; After
                 </p>
-                <p className="font-body text-xs text-charcoal/40 mt-2">
+                <p className="font-body text-xs text-charcoal/70 mt-2">
                   Photography in progress
                 </p>
               </motion.div>
