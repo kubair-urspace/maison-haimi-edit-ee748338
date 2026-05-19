@@ -13,7 +13,7 @@
   :root {
     /* Primary: Cream/Parchment */
     --background: 40 33% 97%;
-    --foreground: 0 0% 20%;
+    --foreground: 0 0% 12%;
 
     /* Card: Soft Sand */
     --card: 40 20% 94%;
@@ -33,7 +33,7 @@
 
     /* Muted */
     --muted: 40 15% 90%;
-    --muted-foreground: 0 0% 40%;
+    --muted-foreground: 0 0% 28%;
 
     /* Accent: Brushed Champagne Gold */
     --accent: 30 30% 60%;
@@ -53,7 +53,7 @@
     /* Custom Maison Haimi tokens */
     --cream: 40 33% 97%;
     --sand: 40 20% 94%;
-    --charcoal: 0 0% 20%;
+    --charcoal: 0 0% 12%;
     --gold: 30 30% 60%;
     --gold-light: 30 35% 70%;
     --gold-dark: 30 25% 50%;
@@ -116,12 +116,17 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 17px;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+  }
+
+  p {
+    @apply text-base md:text-[17px];
   }
 
   h1, h2, h3, h4, h5, h6 {
