@@ -50,13 +50,8 @@ const serviceCategories: ServiceCategory[] = [
     detailedPoints: [
       "Gentle yet thorough dental cleanings",
       "Oral health & cancer screenings",
-      "Detailed teeth and gum analysis",
       "TMJ and bruxism evaluation",
       "Sleep and airway assessment",
-      "Orthodontic evaluation",
-      "Fluoride therapy when appropriate",
-      "Deep cleanings and scaling when needed",
-      "Hygienists focused on long-term stability",
       "Personalized at-home care kits provided",
     ],
     additionalContent: {
