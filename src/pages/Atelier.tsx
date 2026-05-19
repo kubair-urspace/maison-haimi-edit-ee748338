@@ -113,13 +113,9 @@ const serviceCategories: ServiceCategory[] = [
     ],
     detailedPoints: [
       "KöR Whitening & custom at-home trays",
-      "Removal of white spot lesions",
-      "Tetracycline stain treatment",
       "Composite (tooth-colored) fillings & bonding",
       "Inlays, onlays & full-coverage crowns",
       "Same-day digital crowns (CAD/CAM)",
-      "Fixed bridges & Maryland bridges",
-      "Partial & complete dentures",
       "Full mouth rehabilitation & bite reconstruction",
       "Repair of fractured teeth, crowns, bridges & veneers",
     ],
