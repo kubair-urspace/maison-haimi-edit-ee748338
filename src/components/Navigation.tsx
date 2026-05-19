@@ -40,7 +40,7 @@ const Navigation = () => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-gold">
-        <nav className="container mx-auto px-6 md:px-12 lg:px-24">
+        <nav className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="flex items-center justify-between h-14 md:h-16">
             {/* Logo with Monogram */}
             <Link
@@ -61,7 +61,7 @@ const Navigation = () => {
                         <Link
                           to={link.path}
                           className={cn(
-                            "flex items-center gap-1 font-body text-sm tracking-[0.15em] uppercase transition-colors duration-300 py-4",
+                            "flex items-center gap-1 font-body text-sm tracking-[0.15em] uppercase whitespace-nowrap transition-colors duration-300 py-4",
                             location.pathname.startsWith("/services")
                               ? "text-white"
                               : "text-white/90 hover:text-white"
@@ -92,7 +92,7 @@ const Navigation = () => {
                       key={link.path}
                       to={link.path}
                       className={cn(
-                        "font-body text-sm tracking-[0.15em] uppercase transition-colors duration-300",
+                        "font-body text-sm tracking-[0.15em] uppercase whitespace-nowrap transition-colors duration-300",
                         location.pathname === link.path
                           ? "text-white"
                           : "text-white/90 hover:text-white"
