@@ -61,7 +61,7 @@ const Navigation = () => {
                         <Link
                           to={link.path}
                           className={cn(
-                            "flex items-center gap-1 font-body text-sm tracking-[0.15em] uppercase transition-colors duration-300 py-4",
+                            "flex items-center gap-1 font-body text-sm tracking-[0.15em] uppercase whitespace-nowrap transition-colors duration-300 py-4",
                             location.pathname.startsWith("/services")
                               ? "text-white"
                               : "text-white/90 hover:text-white"
