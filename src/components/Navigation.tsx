@@ -171,8 +171,11 @@ const Navigation = () => {
                   </div>
 
                   <div className="mt-auto pb-8 space-y-4">
-                    <Button variant="luxury-gold-filled" size="lg" className="w-full" asChild>
-                      <a href="tel:+15164664464">Call Us 📞</a>
+                    <Button variant="luxury-gold-filled" size="lg" className="w-full gap-2" asChild>
+                      <a href="tel:+15164664464">
+                        <Phone className="h-4 w-4" />
+                        Call Us
+                      </a>
                     </Button>
                     <Button variant="luxury" size="lg" className="w-full" asChild>
                       <Link to="/concierge" onClick={() => setIsOpen(false)}>
