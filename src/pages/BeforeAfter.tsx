@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
@@ -16,6 +17,11 @@ const beforeAfterCases = [
 const BeforeAfter = () => {
   return (
     <Layout>
+      <SEO
+        title="Before & After Gallery — Haimi Dental"
+        description="Real smile transformations from Haimi Dental Aesthetics: veneers, whitening, and restorative results in Great Neck, NY."
+        path="/before-after"
+      />
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-end">
         <div

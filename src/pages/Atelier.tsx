@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link, useParams } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
@@ -385,6 +386,11 @@ const Atelier = () => {
 
   return (
     <Layout>
+      <SEO
+        title={matchedCategory ? `${matchedCategory.title} — Haimi Dental` : "Dental Services — Haimi Dental Aesthetics"}
+        description={matchedCategory?.description?.slice(0, 155) || "Explore cosmetic, restorative, and preventive dental services at Haimi Dental Aesthetics in Great Neck, NY."}
+        path={matchedCategory ? `/services/${matchedCategory.id}` : "/services"}
+      />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-end">
         <div
