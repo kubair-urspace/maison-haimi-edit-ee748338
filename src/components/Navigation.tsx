@@ -92,7 +92,7 @@ const Navigation = () => {
                       key={link.path}
                       to={link.path}
                       className={cn(
-                        "font-body text-sm tracking-[0.15em] uppercase transition-colors duration-300",
+                        "font-body text-sm tracking-[0.15em] uppercase whitespace-nowrap transition-colors duration-300",
                         location.pathname === link.path
                           ? "text-white"
                           : "text-white/90 hover:text-white"
