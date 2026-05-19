@@ -87,21 +87,33 @@ const BeforeAfter = () => {
                 />
               </motion.div>
             ))}
+
+            {/* Placeholder slots — photos coming soon */}
+            {Array.from({ length: 6 }).map((_, i) => (
+              <motion.div
+                key={`placeholder-${i}`}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (beforeAfterCases.length + i) * 0.05 }}
+                className="aspect-[4/3] border border-dashed border-gold/40 bg-sand/40 flex flex-col items-center justify-center text-center p-6"
+              >
+                <span className="font-body text-[10px] tracking-[0.3em] uppercase text-gold mb-3">
+                  Coming Soon
+                </span>
+                <p className="font-display text-xl md:text-2xl italic text-charcoal/60 leading-snug">
+                  Before &amp; After
+                </p>
+                <p className="font-body text-xs text-charcoal/40 mt-2">
+                  Photography in progress
+                </p>
+              </motion.div>
+            ))}
           </div>
 
           {/* Curating note */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-3xl mx-auto mt-16 text-center"
-          >
-            <div className="border-t border-b border-gold/30 py-10 px-6">
-              <p className="font-display text-2xl md:text-3xl lg:text-4xl text-charcoal italic leading-snug">
-                We're curating our best results — check back soon for an
-                incredible collection of before &amp; afters!
-              </p>
+...
             </div>
           </motion.div>
         </div>
@@ -127,19 +139,19 @@ const BeforeAfter = () => {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               {
-                name: "Sarah M.",
-                treatment: "Smile Makeover",
-                quote: "Dr. Haimi and his team gave me the confidence to smile again. The entire experience was gentle, luxurious, and the results exceeded my expectations.",
+                name: "Andrea Rothman",
+                treatment: "via Facebook",
+                quote: "Best dentist ever! Dr. Haimi is a caring and highly competent professional at the height of her career. Her work on my teeth, and on my children's teeth, is outstanding.",
               },
               {
-                name: "James R.",
-                treatment: "Porcelain Veneers",
-                quote: "I was nervous about getting veneers, but the process was seamless. My new smile looks completely natural—people can't believe they're veneers.",
+                name: "Jeanne Naclerio Pugliese",
+                treatment: "via Facebook",
+                quote: "Dr. Haimi is wonderful as is her entire staff! I trust her for everything related to my dental health. Highly recommend!",
               },
               {
-                name: "Michelle T.",
-                treatment: "Invisalign® Alignment",
-                quote: "The discreet aligners fit perfectly into my lifestyle. In just months, my teeth were straighter than I ever thought possible. Truly life-changing.",
+                name: "Joanne Horak",
+                treatment: "via Facebook",
+                quote: "Always so pleasant and professional. I have been going there for three years having major work done and I would never go anywhere else. Dr. Haimi is awesome.",
               },
             ].map((testimonial, i) => (
               <motion.div
