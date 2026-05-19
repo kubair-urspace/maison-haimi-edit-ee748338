@@ -82,9 +82,9 @@ const serviceCategories: ServiceCategory[] = [
       "From a single tooth to a full smile",
     ],
     detailedPoints: [
-      "Clinical instructor in NYU's Aesthetic Honors Program — teaching the same principles she practices",
-      "Close collaboration with master ceramists, often visiting the lab alongside patients",
-      "Only the highest quality materials, crafted with intention and longevity",
+      "Clinical instructor in NYU's Aesthetic Honors Program",
+      "Close collaboration with master ceramists",
+      "Only the highest quality materials",
       "A conservative alternative for patients worried about unnecessary tooth reduction",
     ],
     detailedPointsIntro: "Why patients choose Dr. Haimi for smile design:",
