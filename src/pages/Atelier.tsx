@@ -211,12 +211,9 @@ const serviceCategories: ServiceCategory[] = [
     detailedPoints: [
       "Comfortable, stable occlusion",
       "TMJ health & joint function",
-      "Muscular balance",
       "Airway & sleep considerations",
       "Facial aesthetics & harmony",
-      "Tooth wear & structural integrity",
       "Bone support & gum symmetry",
-      "Lip structure & smile line",
       "Missing teeth & replacement options",
     ],
     detailedPointsIntro: "Every case considers:",
