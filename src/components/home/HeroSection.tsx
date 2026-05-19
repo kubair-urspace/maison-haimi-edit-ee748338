@@ -38,7 +38,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
             transition={{ duration: 1, delay: 0.2 }}
             className="flex items-center justify-center mb-10"
           >
-            <img src={haimiLogo} alt="Haimi Dental Aesthetics" className="h-48 sm:h-56 md:h-64 lg:h-72" />
+            <img src={haimiLogo} alt="Haimi Dental Aesthetics" width="576" height="576" fetchPriority="high" decoding="async" className="h-48 sm:h-56 md:h-64 lg:h-72 w-auto" />
           </motion.div>
 
           {/* CTA Button */}
