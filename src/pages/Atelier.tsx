@@ -271,11 +271,9 @@ const serviceCategories: ServiceCategory[] = [
       "Airway, function & aesthetics connected",
     ],
     detailedPoints: [
-      "Disrupted breathing drops oxygen and prevents deep sleep — causing fatigue, brain fog, and mood changes",
-      "Sleep apnea increases the risk of motor vehicle accidents 2–3x",
-      "Untreated sleep apnea is linked to heart disease, stroke, diabetes, and cognitive decline",
+      "Disrupted breathing drops oxygen and prevents deep sleep",
+      "Untreated sleep apnea is linked to heart disease, stroke, and cognitive decline",
       "Dentists often spot the first signs: clenching, worn teeth, TMJ issues",
-      "Affects men, women, and children — many patients are not overweight",
       "CPAP is the gold standard, but oral appliances are an effective alternative",
     ],
     detailedPointsIntro: "Why sleep health matters:",
