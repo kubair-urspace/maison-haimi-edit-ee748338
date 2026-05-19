@@ -1,0 +1,23 @@
+# Eliza Haimi DDS
+
+> Bespoke family and cosmetic dentistry in Great Neck, New York. Conservative smile makeovers, Invisalign, porcelain veneers, and gentle dentistry guided by Dr. Eliza Haimi, DDS.
+
+Eliza Haimi DDS is a luxury dental practice located at 7 Bond Street, Suite 1D in Great Neck, NY. The practice offers conservative, personalized dental care with an emphasis on aesthetics and long-term oral health. Led by Dr. Eliza Haimi, the team provides services ranging from preventive care and Invisalign to full-mouth rehabilitation and dental implants.
+
+## Pages
+
+- [Home](/): Overview of the practice, services, philosophy, and patient testimonials.
+- [Meet Us](/meet-us): Meet Dr. Eliza Haimi, Dr. Nicholas Ahladiotis, and the dental team.
+- [The Practice](/practice): Office gallery, technology, and the patient experience.
+- [Services](/services): Complete overview of dental services including smile design, veneers, implants, restorative care, and sleep apnea treatment.
+- [Before & After](/before-after): Smile transformation gallery with patient results.
+- [Appointments](/concierge): Request an appointment or consultation online.
+
+## Optional
+
+- [Oral Health and Longevity](/services/oral-health-and-longevity): Preventive dentistry and hygiene services.
+- [Porcelain Veneers & Smile Design](/services/porcelain-veneers-and-smile-design): Custom veneer design and cosmetic smile enhancement.
+- [Aesthetic and Restorative Dentistry](/services/aesthetic-and-restorative-dentistry): Crowns, bridges, bonding, and aesthetic restorations.
+- [Implant and Surgical Dentistry](/services/implant-and-surgical-dentistry): Dental implants, bone grafting, and oral surgery.
+- [Full Mouth Rehabilitation](/services/full-mouth-rehabilitation): Comprehensive reconstruction for complex dental needs.
+- [Sleep Apnea](/services/sleep-apnea): Oral appliance therapy for snoring and obstructive sleep apnea.
