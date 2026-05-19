@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -141,6 +142,11 @@ const Concierge = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Request an Appointment — Haimi Dental"
+        description="Book a consultation with Dr. Eliza Haimi. Personalized cosmetic, restorative, and preventive dental care in Great Neck, NY."
+        path="/concierge"
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-8 md:pt-40 md:pb-16 section-padding bg-secondary">
         <div className="container mx-auto">
