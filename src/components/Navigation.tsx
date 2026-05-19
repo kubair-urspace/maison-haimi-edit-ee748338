@@ -105,30 +105,23 @@ const Navigation = () => {
               </div>
 
               <Button
-                variant="secondary"
+                variant="ghost"
                 size="sm"
-                className="bg-white/20 hover:bg-white/30 text-white border-0 text-xs tracking-wider rounded-full px-5"
+                className="text-white hover:bg-white/10 hover:text-white text-xs tracking-[0.15em] uppercase rounded-full px-4 gap-2"
                 asChild
               >
-                <a href="tel:+15164664464">Call Us 📞</a>
+                <a href="tel:+15164664464">
+                  <Phone className="h-3.5 w-3.5" />
+                  Call Us
+                </a>
               </Button>
               <Button
-                variant="outline"
                 size="sm"
-                className="bg-transparent hover:bg-white/10 text-white border-white/60 hover:border-white text-xs tracking-wider rounded-full px-5"
+                className="bg-white text-gold hover:bg-white/90 border-0 text-xs tracking-[0.15em] uppercase rounded-full px-5"
                 asChild
               >
                 <Link to="/concierge">Schedule Appointment</Link>
               </Button>
-
-              {/* Desktop Menu Button */}
-              <button
-                className="ml-2 p-2 text-white hover:opacity-80 transition-opacity"
-                onClick={() => setIsOpen(true)}
-                aria-label="Open menu"
-              >
-                <Menu className="h-5 w-5" />
-              </button>
             </div>
 
             {/* Mobile Menu */}
