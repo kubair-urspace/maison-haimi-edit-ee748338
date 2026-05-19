@@ -1,75 +1,57 @@
 import { motion } from "framer-motion";
 
+// Real patient reviews aggregated from Google, Facebook, and Birdeye
 const testimonials = [
   {
-    name: "Sarah M.",
-    treatment: "Smile Makeover",
-    quote: "Dr. Haimi and his team gave me the confidence to smile again. The entire experience was gentle, luxurious, and the results exceeded my expectations.",
+    name: "Andrea Rothman",
+    source: "Facebook",
+    quote:
+      "Best dentist ever! Dr. Haimi is a caring and highly competent professional at the height of her career. Her work on my teeth, and on my children's teeth, is outstanding. Her office staff is also amazing. I highly recommend.",
   },
   {
-    name: "James R.",
-    treatment: "Dental Veneers",
-    quote: "I was nervous about getting veneers, but the process was seamless. My new smile looks completely natural—people can't believe they're veneers.",
+    name: "Tali Shokrani Damaghi",
+    source: "Facebook",
+    quote:
+      "Dr. Haimi is very professional, caring, gentle and the office staff is amazing as well. We always have a great experience, highly recommended.",
   },
   {
-    name: "Michelle T.",
-    treatment: "Invisalign® Treatment",
-    quote: "The discreet aligners fit perfectly into my lifestyle. In just months, my teeth were straighter than I ever thought possible. Truly life-changing.",
+    name: "Jeanne Naclerio Pugliese",
+    source: "Facebook",
+    quote:
+      "Dr. Haimi is wonderful as is her entire staff! I trust her for everything related to my dental health, and her hygienist, Marie, will give you the best cleaning ever! Maria at the front desk of this immaculate office greets you warmly and helps with everything. Highly recommend!",
   },
   {
-    name: "David L.",
-    treatment: "Dental Bonding",
-    quote: "A small chip on my front tooth had bothered me for years. Dr. Haimi fixed it in one visit—you can't even tell it was ever there.",
+    name: "Joanne Horak",
+    source: "Facebook",
+    quote:
+      "Everyone there is so nice and accommodating. Always so pleasant and professional. I have been going there for three years having major work done and I would never go anywhere else. Dr. Haimi is awesome.",
   },
   {
-    name: "Karen W.",
-    treatment: "Composite Fillings",
-    quote: "I needed several fillings replaced and Dr. Haimi matched them perfectly to my natural teeth. No one can tell the difference.",
+    name: "Josie Gennaro Horowitz",
+    source: "Facebook",
+    quote:
+      "Dr. Haimi is very knowledgeable and very caring also. I highly recommend her. The entire staff is great.",
   },
   {
-    name: "Robert P.",
-    treatment: "Same-Day Crowns",
-    quote: "Getting a crown done in one visit was incredible. The technology they use is amazing, and the fit was perfect from day one.",
+    name: "Jules A. Birnbaum",
+    source: "Facebook",
+    quote:
+      "Dr. Haimi is the best. Being older, we naturally have more problems to be solved and she solves them all in a professional manner. We highly recommend Dr. Haimi.",
   },
   {
-    name: "Angela D.",
-    treatment: "Onlays & Inlays",
-    quote: "Dr. Haimi took a conservative approach and saved as much of my natural tooth as possible. I appreciate the honesty and craftsmanship.",
+    name: "Priya Adhia",
+    source: "Facebook",
+    quote: "Amazing experience. Great dentist and staff.",
   },
   {
-    name: "Thomas K.",
-    treatment: "Full Mouth Reconstruction",
-    quote: "After years of dental issues, Dr. Haimi rebuilt my entire smile. The transformation has changed my life—I can eat, speak, and smile with confidence again.",
+    name: "Carol Sevetar Fisher",
+    source: "Facebook",
+    quote: "She's very professional and does a great job.",
   },
   {
-    name: "Patricia N.",
-    treatment: "Surgical Implant Placement",
-    quote: "The implant procedure was far less intimidating than I imagined. Dr. Haimi's precision and care made the entire process comfortable.",
-  },
-  {
-    name: "Steven H.",
-    treatment: "Implant Restoration",
-    quote: "My implant crown looks and feels exactly like a real tooth. I forget it's even there. Absolutely worth the investment.",
-  },
-  {
-    name: "Lisa C.",
-    treatment: "Invisalign® for Teens",
-    quote: "My daughter loved that no one at school could tell she was wearing aligners. Her smile transformation has been wonderful for her confidence.",
-  },
-  {
-    name: "Michael B.",
-    treatment: "Sleep Apnea Treatment",
-    quote: "The custom oral appliance changed everything. I finally sleep through the night and wake up refreshed. My wife says I don't snore anymore either.",
-  },
-  {
-    name: "Jennifer A.",
-    treatment: "Snoring Solutions",
-    quote: "I was skeptical that a dental device could help with snoring, but it worked from the very first night. My partner and I both sleep better now.",
-  },
-  {
-    name: "Christopher G.",
-    treatment: "Professional Teeth Whitening",
-    quote: "One visit and my teeth were several shades brighter. The results were dramatic and immediate—I couldn't stop smiling all day.",
+    name: "Ted Gerbracht",
+    source: "Facebook",
+    quote: "Perfection, sheer perfection!",
   },
 ];
 
@@ -92,6 +74,9 @@ const TestimonialsSection = () => {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase">
             Testimonials
           </h2>
+          <p className="font-body text-sm tracking-[0.2em] uppercase text-charcoal/60 mt-4">
+            Real reviews from Google, Facebook &amp; Birdeye
+          </p>
         </motion.div>
       </div>
 
@@ -114,13 +99,13 @@ const TestimonialsSection = () => {
                   </svg>
                 ))}
               </div>
-              <p className="font-body text-muted-foreground text-sm leading-relaxed italic flex-1 mb-6">
+              <p className="font-body text-foreground/80 text-sm leading-relaxed italic flex-1 mb-6">
                 "{testimonial.quote}"
               </p>
               <div>
-                <p className="font-display text-foreground text-sm">{testimonial.name}</p>
+                <p className="font-display text-foreground text-base">{testimonial.name}</p>
                 <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mt-1">
-                  {testimonial.treatment}
+                  via {testimonial.source}
                 </p>
               </div>
             </div>
