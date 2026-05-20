@@ -189,7 +189,7 @@ const BeforeAfter = () => {
                   "{testimonial.quote}"
                 </p>
                 <div>
-                  <p className="font-display text-foreground text-sm">{testimonial.name}</p>
+                  <p className="font-display text-foreground text-sm">{(() => { const p = testimonial.name.trim().split(/\s+/); return p.length > 1 ? `${p[0]} ${p[p.length-1][0]}.` : p[0]; })()}</p>
                   <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mt-1">
                     {testimonial.treatment}
                   </p>
