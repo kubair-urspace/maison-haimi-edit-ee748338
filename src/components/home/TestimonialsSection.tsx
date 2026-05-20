@@ -103,7 +103,14 @@ const TestimonialsSection = () => {
                 "{testimonial.quote}"
               </p>
               <div>
-                <p className="font-display text-foreground text-base">{testimonial.name}</p>
+                <p className="font-display text-foreground text-base">
+                  {(() => {
+                    const parts = testimonial.name.trim().split(/\s+/);
+                    return parts.length > 1
+                      ? `${parts[0]} ${parts[parts.length - 1][0]}.`
+                      : parts[0];
+                  })()}
+                </p>
                 <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mt-1">
                   via {testimonial.source}
                 </p>
