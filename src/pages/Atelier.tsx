@@ -485,7 +485,7 @@ const Atelier = () => {
                     {category.additionalContent.heading}
                   </h3>
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-                    <div className="lg:col-span-7 space-y-4">
+                    <div className="lg:col-span-12 space-y-4">
                       {category.additionalContent.paragraphs.map((paragraph, i) => (
                         <p
                           key={i}
@@ -495,24 +495,6 @@ const Atelier = () => {
                         </p>
                       ))}
                     </div>
-                    {category.additionalContent.keyPoints && category.additionalContent.keyPoints.length > 0 && (
-                      <div className="lg:col-span-5 lg:border-l lg:border-gold/20 lg:pl-8">
-                        <p className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-4">
-                          Key Points
-                        </p>
-                        <ul className="space-y-3">
-                          {category.additionalContent.keyPoints.map((point, i) => (
-                            <li
-                              key={i}
-                              className="flex items-start gap-3 font-body text-sm md:text-base text-foreground/90 leading-relaxed"
-                            >
-                              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
-                              {point}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
                   </div>
                 </div>
               )}
