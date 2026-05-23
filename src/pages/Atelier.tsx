@@ -140,25 +140,49 @@ const serviceCategories: ServiceCategory[] = [
   },
   {
     id: "aesthetic-restorative",
-    title: "Aesthetic and Restorative Dentistry",
+    title: "Aesthetic & Restorative Dentistry",
     subtitle: "Aesthetic Excellence",
-    description:
-      "In our practice, aesthetics aren't a category — they're a standard. Every treatment, from a tooth-colored filling on a back molar to a full smile design, is approached with an artistic eye. But beauty never comes before function. Longevity, structural integrity, and oral health are always the foundation — and when those are done correctly, beauty follows.",
-    keyPoints: [
-      "Not a category — a standard",
-      "Artist's eye on every treatment",
-      "Function and longevity first",
-      "Beauty follows naturally",
+    description: [
+      "Beautiful dentistry should do more than improve appearance. It should strengthen, preserve, and support the long-term health of your smile.",
+      "At Haimi Dental Aesthetics, our approach to restorative dentistry is rooted in a minimally invasive philosophy that prioritizes both aesthetics and longevity. Every restoration is carefully designed to blend naturally with your smile while preserving as much healthy tooth structure as possible.",
+      "Whether treating worn teeth, replacing failing dental work, repairing damage, or enhancing the overall appearance of your smile, we believe dentistry should look natural, feel comfortable, and function beautifully.",
     ],
-    detailedPoints: [
-      "KöR Whitening & custom at-home trays",
-      "Composite (tooth-colored) fillings & bonding",
-      "Inlays, onlays & full-coverage crowns",
-      "Same-day digital crowns (CAD/CAM)",
-      "Full mouth rehabilitation & bite reconstruction",
-      "Repair of fractured teeth, crowns, bridges & veneers",
+    contentSections: [
+      {
+        heading: "Conservative dentistry with an aesthetic standard",
+        paragraphs: [
+          "Aesthetics is not treated as a final step, it is the standard every step is held to.",
+          "Whenever possible, we choose conservative solutions that preserve healthy enamel and strengthen teeth without unnecessarily aggressive treatment. In many cases, teeth that traditionally may have been treated with full crowns can instead be restored more conservatively with bonded porcelain restorations such as inlays or onlays.",
+        ],
+      },
+      {
+        heading: "Services may include",
+        paragraphs: [],
+        listItems: [
+          "Tooth-colored composite restorations or bonding",
+          "Replacing old or failing amalgam (silver/black) fillings",
+          "Same-day CAD/CAM restorations, such as porcelain inlays, onlays and crowns",
+          "Repair of chipped, worn, or fractured teeth",
+          "Whitening",
+          "Treatment of white spots on enamel",
+          "Tetracycline stain treatment",
+          "Cosmetic contouring and enamel reshaping",
+        ],
+      },
+      {
+        heading: "Designed with precision and intention",
+        paragraphs: [
+          "Every smile is unique. Treatment is carefully customized based on facial aesthetics, tooth proportions, bite function, gum architecture, and long-term structural health.",
+          "Using advanced digital technology, high-quality materials, and detailed treatment planning, we are able to deliver restorations that are highly aesthetic while also supporting durability and function.",
+        ],
+      },
+      {
+        heading: "A biomimetic philosophy",
+        paragraphs: [
+          "We believe the healthiest dentistry often mimics nature as closely as possible. By preserving healthy tooth structure and restoring teeth in a way that respects their original form and biomechanics, we can often improve both aesthetics and longevity while minimizing unnecessary treatment.",
+        ],
+      },
     ],
-    detailedPointsIntro: "Our aesthetic & restorative services include:",
     services: [
       {
         name: "Dental Bonding",
