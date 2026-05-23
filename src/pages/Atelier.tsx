@@ -11,7 +11,7 @@ interface ServiceCategory {
   id: string;
   title: string;
   subtitle: string;
-  description: string;
+  description: string | string[];
   heroImage?: string;
   keyPoints?: string[];
   detailedPoints?: string[];
@@ -21,6 +21,11 @@ interface ServiceCategory {
     paragraphs: string[];
     keyPoints?: string[];
   };
+  contentSections?: {
+    heading: string;
+    paragraphs: string[];
+    listItems?: string[];
+  }[];
   services: {
     name: string;
     description: string;
@@ -38,37 +43,70 @@ interface ServiceCategory {
 const serviceCategories: ServiceCategory[] = [
   {
     id: "preventative",
-    title: "Oral Health and Longevity",
+    title: "Oral Health & Longevity",
     subtitle: "Foundation of Care",
-    description:
-      "Preventive dentistry and long-term health go hand in hand in our practice. Every visit is designed to look beyond the present, supporting your oral health for years to come.",
+    description: [
+      "Your oral health is deeply connected to your overall health, comfort, confidence, and quality of life. At Haimi Dental Aesthetics, we believe preventive and comprehensive dental care should do more than simply \"check for cavities.\" Every visit is an opportunity to protect your long-term health, preserve your natural teeth, and identify issues before they become more complex.",
+      "Our approach combines modern technology, detailed diagnostics, and personalized care in a calm, boutique environment where patients are never rushed and every detail matters.",
+    ],
     heroImage: preventativeHero,
-    keyPoints: [
-      "Preventive care + long-term health",
-      "Visits that look beyond the present",
-      "Oral health that lasts for years",
+    contentSections: [
+      {
+        heading: "The connection between oral health and overall health",
+        paragraphs: [
+          "The mouth is not separate from the rest of the body. Chronic inflammation, untreated gum disease, oral infections, poor sleep, and destructive bite forces can all impact overall wellness and quality of life.",
+          "Research has shown associations between periodontal disease and systemic conditions such as cardiovascular disease, diabetes, respiratory disease, pregnancy complications, and certain neurodegenerative conditions. Chronic inflammation and oral bacteria may contribute to inflammatory burden throughout the body, which is one reason preventive dental care is so important.",
+          "Because of this, our examinations go beyond simply checking teeth for cavities. We routinely evaluate:",
+        ],
+        listItems: [
+          "Gum and periodontal health",
+          "Signs of inflammation or infection",
+          "Clenching, grinding, and bite instability",
+          "Sleep-disordered breathing and airway concerns",
+          "TMJ health and muscle strain",
+          "Wear patterns and structural breakdown",
+          "Oral cancer and soft tissue abnormalities",
+        ],
+      },
+      {
+        heading: "Our philosophy",
+        paragraphs: [
+          "Healthy dentistry is often the most conservative dentistry. Whenever possible, we focus on preserving healthy tooth structure, maintaining stability, and preventing future breakdown rather than waiting until problems become more extensive.",
+          "We believe aesthetics, function, structure, and biology should always work together to support long-lasting oral health.",
+        ],
+      },
+      {
+        heading: "Comprehensive preventive care includes",
+        paragraphs: [],
+        listItems: [
+          "Professional cleanings and periodontal maintenance",
+          "Comprehensive dental examinations",
+          "Oral cancer screenings",
+          "Low-radiation digital X-rays when indicated",
+          "3D imaging when indicated",
+          "Evaluation of bite function and tooth wear",
+          "TMJ and clenching/grinding assessment",
+          "Sleep-disordered breathing and airway screening",
+          "Fluoride treatments and enamel protection",
+          "Early detection of cracked, weakened, or failing teeth",
+          "Personalized preventive recommendations based on your needs and risk factors",
+          "Complimentary at-home care kits provided",
+        ],
+      },
+      {
+        heading: "Prevention with a long-term mindset",
+        paragraphs: [
+          "Our goal is not simply to treat problems as they arise, but to help patients maintain strong, functional, healthy smiles for decades to come. By identifying issues early and approaching care conservatively, we can often minimize future dental treatment and preserve more of your natural teeth over time.",
+        ],
+      },
+      {
+        heading: "A more personalized experience",
+        paragraphs: [
+          "We understand that dental visits can feel stressful for many patients. Our office was designed to feel welcoming, calm, and comfortable — with a patient experience centered around clear communication, individualized care, and attention to detail.",
+          "Whether you are maintaining a healthy smile or rebuilding your oral health after years of wear or neglect, we are committed to helping you achieve long-lasting health, function, and aesthetics through thoughtful, comprehensive care.",
+        ],
+      },
     ],
-    detailedPoints: [
-      "Gentle yet thorough dental cleanings",
-      "Oral health & cancer screenings",
-      "TMJ and bruxism evaluation",
-      "Sleep and airway assessment",
-      "Personalized at-home care kits provided",
-    ],
-    additionalContent: {
-      heading: "Advanced Digital & 3D Imaging",
-      paragraphs: [
-        "Imaging is used thoughtfully — only when it adds value to your diagnosis. Our low-dose digital X-rays are adjusted to each patient's size, age, and the area being evaluated, keeping exposure to the smallest amount necessary.",
-        "For complex cases, advanced 3D imaging (CBCT) gives us exceptional precision for surgical planning — evaluating bone, anatomy, and structures before extractions or implant placement.",
-        "Our goal: gather the information we need, keep exposure as low as reasonably possible, and use it to plan care that is precise and long-lasting.",
-      ],
-      keyPoints: [
-        "Imaging only when it adds value",
-        "Low-dose, precisely adjusted X-rays",
-        "3D CBCT for surgical precision",
-        "Exposure kept as low as possible",
-      ],
-    },
     services: [],
   },
   {
