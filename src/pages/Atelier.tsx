@@ -548,6 +548,37 @@ const Atelier = () => {
                   </div>
                 </div>
               )}
+              {category.contentSections?.map((section, i) => (
+                <div key={i} className="mt-12 pt-12 border-t border-gold/20">
+                  <h3 className="font-display text-xl md:text-2xl text-charcoal tracking-wide uppercase mb-6">
+                    {section.heading}
+                  </h3>
+                  <div className="space-y-4">
+                    {section.paragraphs.map((paragraph, j) => (
+                      <p key={j} className="font-body text-base text-foreground/85 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
+                    {section.listItems && section.listItems.length > 0 && (
+                      <ul className="space-y-3 mt-4">
+                        {section.listItems.map((item, k) => (
+                          <motion.li
+                            key={k}
+                            initial={{ opacity: 0, x: -10 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.4, delay: k * 0.05 }}
+                            className="flex items-start gap-3 font-body text-sm md:text-base text-foreground/85 leading-relaxed"
+                          >
+                            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+                            {item}
+                          </motion.li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              ))}
             </motion.div>
 
             {category.services.length > 0 && (
