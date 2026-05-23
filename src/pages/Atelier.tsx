@@ -511,10 +511,18 @@ const Atelier = () => {
               </h2>
 
               <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-                <div className="lg:col-span-12">
-                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
-                    {category.description}
-                  </p>
+                <div className="lg:col-span-12 space-y-4">
+                  {Array.isArray(category.description) ? (
+                    category.description.map((paragraph, i) => (
+                      <p key={i} className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))
+                  ) : (
+                    <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                      {category.description}
+                    </p>
+                  )}
                 </div>
               </div>
 
