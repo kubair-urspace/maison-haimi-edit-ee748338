@@ -426,7 +426,11 @@ const Atelier = () => {
     <Layout>
       <SEO
         title={matchedCategory ? `${matchedCategory.title} — Haimi Dental` : "Dental Services — Haimi Dental Aesthetics"}
-        description={matchedCategory?.description?.slice(0, 155) || "Explore cosmetic, restorative, and preventive dental services at Haimi Dental Aesthetics in Great Neck, NY."}
+        description={(() => {
+          const desc = matchedCategory?.description;
+          const text = Array.isArray(desc) ? desc[0] : desc;
+          return text?.slice(0, 155) || "Explore cosmetic, restorative, and preventive dental services at Haimi Dental Aesthetics in Great Neck, NY.";
+        })()}
         path={matchedCategory ? `/services/${matchedCategory.id}` : "/services"}
       />
       {/* Hero Section */}
