@@ -146,21 +146,21 @@ const missingTeethCases = [
 ];
 
 const restorativeCases = [
-  { image: rest1.url, alt: "Gum recontouring and aesthetic restoration before and after", split: "horizontal" as const },
-  { image: rest2.url, alt: "Anterior veneer restoration before and after", split: "horizontal" as const },
-  { image: rest3.url, alt: "Lower arch restoration and alignment before and after", split: "horizontal" as const },
-  { image: rest4.url, alt: "Amalgam removal and tooth-colored restoration before and after", split: "horizontal" as const },
-  { image: rest5.url, alt: "Full smile restoration before and after", split: "horizontal" as const },
-  { image: rest6.url, alt: "Discolored tooth restoration and aesthetic correction before and after", split: "horizontal" as const },
-  { image: rest7.url, alt: "Deep decay treatment and full crown restoration before and after", split: "horizontal" as const },
-  { image: rest8.url, alt: "Chipped front tooth seamless composite restoration before and after", split: "horizontal" as const },
-  { image: rest9.url, alt: "Dark tooth aesthetic restoration and color matching before and after", split: "horizontal" as const },
-  { image: rest10.url, alt: "Amalgam filling replacement with tooth-colored restoration before and after", split: "horizontal" as const },
-  { image: rest11.url, alt: "Edge bonding and smile refinement before and after", split: "horizontal" as const },
-  { image: rest12.url, alt: "Full smile aesthetic restoration before and after", split: "vertical" as const },
-  { image: rest13.url, alt: "Worn dentition restoration and bite rehabilitation before and after", split: "horizontal" as const },
-  { image: rest14.url, alt: "Anterior teeth aesthetic restoration and reshaping before and after", split: "horizontal" as const },
-  { image: rest15.url, alt: "Diastema closure with composite restoration before and after", split: "horizontal" as const },
+  { image: rest1.url, alt: "Gum recontouring and aesthetic restoration before and after", split: "vertical" as const },
+  { image: rest2.url, alt: "Anterior veneer restoration before and after", split: "vertical" as const },
+  { image: rest3.url, alt: "Lower arch restoration and alignment before and after", split: "vertical" as const },
+  { image: rest4.url, alt: "Amalgam removal and tooth-colored restoration before and after", split: "vertical" as const },
+  { image: rest5.url, alt: "Full smile restoration before and after", split: "vertical" as const },
+  { image: rest6.url, alt: "Discolored tooth restoration and aesthetic correction before and after", split: "vertical" as const },
+  { image: rest7.url, alt: "Deep decay treatment and full crown restoration before and after", split: "vertical" as const },
+  { image: rest8.url, alt: "Chipped front tooth seamless composite restoration before and after", split: "vertical" as const },
+  { image: rest9.url, alt: "Dark tooth aesthetic restoration and color matching before and after", split: "vertical" as const },
+  { image: rest10.url, alt: "Amalgam filling replacement with tooth-colored restoration before and after", split: "vertical" as const },
+  { image: rest11.url, alt: "Edge bonding and smile refinement before and after", split: "vertical" as const },
+  { image: rest12.url, alt: "Full smile aesthetic restoration before and after", split: "horizontal" as const },
+  { image: rest13.url, alt: "Worn dentition restoration and bite rehabilitation before and after", split: "vertical" as const },
+  { image: rest14.url, alt: "Anterior teeth aesthetic restoration and reshaping before and after", split: "vertical" as const },
+  { image: rest15.url, alt: "Diastema closure with composite restoration before and after", split: "vertical" as const },
 ];
 
 const beforeAfterCases = [
