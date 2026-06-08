@@ -360,7 +360,7 @@ const BeforeAfter = () => {
                 <BeforeAfterComparison
                   image={caseItem.image}
                   alt={caseItem.alt}
-                  split="horizontal"
+                  split={caseItem.split}
                   className="border border-border"
                 />
               </motion.div>
