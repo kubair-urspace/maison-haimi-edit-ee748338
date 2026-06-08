@@ -27,6 +27,16 @@ import invG from "@/assets/invisalign-gallery/IMG_4802.jpg.asset.json";
 import invH from "@/assets/invisalign-gallery/IMG_4764.jpg.asset.json";
 import invI from "@/assets/invisalign-gallery/IMG_4763.jpg.asset.json";
 import invJ from "@/assets/invisalign-gallery/IMG_9455.jpg.asset.json";
+import invK from "@/assets/invisalign/invisalign-11.jpg.asset.json";
+import invL from "@/assets/invisalign/invisalign-12.jpg.asset.json";
+import invM from "@/assets/invisalign/invisalign-13.jpg.asset.json";
+import invN from "@/assets/invisalign/invisalign-14.jpg.asset.json";
+import invO from "@/assets/invisalign/invisalign-15.jpg.asset.json";
+import invP from "@/assets/invisalign/invisalign-16.jpg.asset.json";
+import invQ from "@/assets/invisalign/invisalign-17.jpg.asset.json";
+import invR from "@/assets/invisalign/invisalign-18.jpg.asset.json";
+import invS from "@/assets/invisalign/invisalign-19.jpg.asset.json";
+import invT from "@/assets/invisalign/invisalign-20.jpg.asset.json";
 
 const beforeAfterCases = [
   { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
@@ -55,6 +65,16 @@ const invisalignCases = [
   { image: invH.url, alt: "Invisalign smile transformation before and after" },
   { image: invI.url, alt: "Invisalign anterior reshaping before and after" },
   { image: invJ.url, alt: "Invisalign lower occlusal before and after" },
+  { image: invK.url, alt: "Invisalign smile alignment before and after" },
+  { image: invL.url, alt: "Invisalign anterior restoration before and after" },
+  { image: invM.url, alt: "Invisalign full arch correction before and after" },
+  { image: invN.url, alt: "Invisalign bite realignment before and after" },
+  { image: invO.url, alt: "Invisalign upper anterior alignment before and after" },
+  { image: invP.url, alt: "Invisalign palatal arch correction before and after" },
+  { image: invQ.url, alt: "Invisalign comprehensive smile transformation before and after" },
+  { image: invR.url, alt: "Invisalign lower anterior alignment before and after" },
+  { image: invS.url, alt: "Invisalign upper and lower alignment before and after" },
+  { image: invT.url, alt: "Invisalign aesthetic smile enhancement before and after" },
 ];
 
 
