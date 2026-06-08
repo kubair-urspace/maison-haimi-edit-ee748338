@@ -37,6 +37,19 @@ import invQ from "@/assets/invisalign/invisalign-17.jpg.asset.json";
 import invR from "@/assets/invisalign/invisalign-18.jpg.asset.json";
 import invS from "@/assets/invisalign/invisalign-19.jpg.asset.json";
 import invT from "@/assets/invisalign/invisalign-20.jpg.asset.json";
+import rest1 from "@/assets/restorative/rest1.jpg.asset.json";
+import rest2 from "@/assets/restorative/rest2.jpg.asset.json";
+import rest3 from "@/assets/restorative/rest3.jpg.asset.json";
+import rest4 from "@/assets/restorative/rest4.jpg.asset.json";
+import rest5 from "@/assets/restorative/rest5.jpg.asset.json";
+
+const restorativeCases = [
+  { image: rest1.url, alt: "Gum recontouring and aesthetic restoration before and after" },
+  { image: rest2.url, alt: "Anterior veneer restoration before and after" },
+  { image: rest3.url, alt: "Lower arch restoration and alignment before and after" },
+  { image: rest4.url, alt: "Amalgam removal and tooth-colored restoration before and after" },
+  { image: rest5.url, alt: "Full smile restoration before and after" },
+];
 
 const beforeAfterCases = [
   { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
@@ -241,6 +254,51 @@ const BeforeAfter = () => {
           </div>
         </div>
       </section>
+
+      {/* Restorative Dentistry Before & After */}
+      <section className="relative z-10 py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
+              Restorative
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase mb-6">
+              Restorative Dentistry
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
+              Minimally invasive, biomimetic restorations designed to preserve natural
+              tooth structure while restoring health, function, and beauty.
+            </p>
+          </motion.div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {restorativeCases.map((caseItem, index) => (
+              <motion.div
+                key={caseItem.alt}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (index % 3) * 0.1 }}
+              >
+                <BeforeAfterComparison
+                  image={caseItem.image}
+                  alt={caseItem.alt}
+                  split="horizontal"
+                  className="border border-border"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
 
 
