@@ -42,6 +42,16 @@ import rest2 from "@/assets/restorative/rest2.jpg.asset.json";
 import rest3 from "@/assets/restorative/rest3.jpg.asset.json";
 import rest4 from "@/assets/restorative/rest4.jpg.asset.json";
 import rest5 from "@/assets/restorative/rest5.jpg.asset.json";
+import rest6 from "@/assets/restorative/rest6.jpg.asset.json";
+import rest7 from "@/assets/restorative/rest7.jpg.asset.json";
+import rest8 from "@/assets/restorative/rest8.jpg.asset.json";
+import rest9 from "@/assets/restorative/rest9.jpg.asset.json";
+import rest10 from "@/assets/restorative/rest10.jpg.asset.json";
+import rest11 from "@/assets/restorative/rest11.jpg.asset.json";
+import rest12 from "@/assets/restorative/rest12.jpg.asset.json";
+import rest13 from "@/assets/restorative/rest13.jpg.asset.json";
+import rest14 from "@/assets/restorative/rest14.jpg.asset.json";
+import rest15 from "@/assets/restorative/rest15.jpg.asset.json";
 import mt1 from "@/assets/missing-teeth/mt1.jpg.asset.json";
 import mt2 from "@/assets/missing-teeth/mt2.jpg.asset.json";
 import mt3 from "@/assets/missing-teeth/mt3.jpg.asset.json";
@@ -95,11 +105,21 @@ const missingTeethCases = [
 ];
 
 const restorativeCases = [
-  { image: rest1.url, alt: "Gum recontouring and aesthetic restoration before and after" },
-  { image: rest2.url, alt: "Anterior veneer restoration before and after" },
-  { image: rest3.url, alt: "Lower arch restoration and alignment before and after" },
-  { image: rest4.url, alt: "Amalgam removal and tooth-colored restoration before and after" },
-  { image: rest5.url, alt: "Full smile restoration before and after" },
+  { image: rest1.url, alt: "Gum recontouring and aesthetic restoration before and after", split: "horizontal" as const },
+  { image: rest2.url, alt: "Anterior veneer restoration before and after", split: "horizontal" as const },
+  { image: rest3.url, alt: "Lower arch restoration and alignment before and after", split: "horizontal" as const },
+  { image: rest4.url, alt: "Amalgam removal and tooth-colored restoration before and after", split: "horizontal" as const },
+  { image: rest5.url, alt: "Full smile restoration before and after", split: "horizontal" as const },
+  { image: rest6.url, alt: "Discolored tooth restoration and aesthetic correction before and after", split: "horizontal" as const },
+  { image: rest7.url, alt: "Deep decay treatment and full crown restoration before and after", split: "horizontal" as const },
+  { image: rest8.url, alt: "Chipped front tooth seamless composite restoration before and after", split: "horizontal" as const },
+  { image: rest9.url, alt: "Dark tooth aesthetic restoration and color matching before and after", split: "horizontal" as const },
+  { image: rest10.url, alt: "Amalgam filling replacement with tooth-colored restoration before and after", split: "horizontal" as const },
+  { image: rest11.url, alt: "Edge bonding and smile refinement before and after", split: "horizontal" as const },
+  { image: rest12.url, alt: "Full smile aesthetic restoration before and after", split: "vertical" as const },
+  { image: rest13.url, alt: "Worn dentition restoration and bite rehabilitation before and after", split: "horizontal" as const },
+  { image: rest14.url, alt: "Anterior teeth aesthetic restoration and reshaping before and after", split: "horizontal" as const },
+  { image: rest15.url, alt: "Diastema closure with composite restoration before and after", split: "horizontal" as const },
 ];
 
 const beforeAfterCases = [
@@ -340,7 +360,7 @@ const BeforeAfter = () => {
                 <BeforeAfterComparison
                   image={caseItem.image}
                   alt={caseItem.alt}
-                  split="horizontal"
+                  split={caseItem.split}
                   className="border border-border"
                 />
               </motion.div>
