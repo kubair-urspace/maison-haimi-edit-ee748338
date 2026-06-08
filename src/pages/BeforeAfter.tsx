@@ -7,11 +7,34 @@ import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import smileVeneerImage from "@/assets/before-after-smile-veneer.jpeg";
 import restorationImage from "@/assets/before-after-restoration.jpg";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
+import inv1 from "@/assets/invisalign/inv1.jpg.asset.json";
+import inv2 from "@/assets/invisalign/inv2.jpg.asset.json";
+import inv3 from "@/assets/invisalign/inv3.jpg.asset.json";
+import inv4 from "@/assets/invisalign/inv4.jpg.asset.json";
+import inv5 from "@/assets/invisalign/inv5.jpg.asset.json";
+import inv6 from "@/assets/invisalign/inv6.jpg.asset.json";
+import inv7 from "@/assets/invisalign/inv7.jpg.asset.json";
+import inv8 from "@/assets/invisalign/inv8.jpg.asset.json";
+import inv9 from "@/assets/invisalign/inv9.jpg.asset.json";
+import inv10 from "@/assets/invisalign/inv10.jpg.asset.json";
 
 const beforeAfterCases = [
   { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
   { image: restorationImage, alt: "Tooth restoration before and after", split: "horizontal" as const },
   { image: whiteningImage, alt: "Smile whitening before and after", split: "vertical" as const },
+];
+
+const invisalignCases = [
+  { image: inv1.url, alt: "Invisalign occlusal alignment before and after" },
+  { image: inv2.url, alt: "Invisalign anterior alignment before and after" },
+  { image: inv3.url, alt: "Invisalign overbite correction before and after" },
+  { image: inv4.url, alt: "Invisalign smile alignment before and after" },
+  { image: inv5.url, alt: "Invisalign upper arch before and after" },
+  { image: inv6.url, alt: "Invisalign lateral bite before and after" },
+  { image: inv7.url, alt: "Invisalign side profile before and after" },
+  { image: inv8.url, alt: "Invisalign midline alignment before and after" },
+  { image: inv9.url, alt: "Invisalign crowding correction before and after" },
+  { image: inv10.url, alt: "Invisalign spacing correction before and after" },
 ];
 
 const BeforeAfter = () => {
