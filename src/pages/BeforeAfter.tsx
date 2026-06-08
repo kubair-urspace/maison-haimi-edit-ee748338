@@ -86,6 +86,15 @@ import fmr7 from "@/assets/full-mouth/fmr7.jpg.asset.json";
 import fmr8 from "@/assets/full-mouth/fmr8.jpg.asset.json";
 import fmr9 from "@/assets/full-mouth/fmr9.jpg.asset.json";
 import fmr10 from "@/assets/full-mouth/fmr10.jpg.asset.json";
+import fmr11 from "@/assets/full-mouth/fmr11.jpg.asset.json";
+import fmr12 from "@/assets/full-mouth/fmr12.jpg.asset.json";
+import fmr13 from "@/assets/full-mouth/fmr13.jpg.asset.json";
+import fmr14 from "@/assets/full-mouth/fmr14.jpg.asset.json";
+import fmr15 from "@/assets/full-mouth/fmr15.jpg.asset.json";
+import fmr16 from "@/assets/full-mouth/fmr16.jpg.asset.json";
+import fmr17 from "@/assets/full-mouth/fmr17.jpg.asset.json";
+import fmr18 from "@/assets/full-mouth/fmr18.jpg.asset.json";
+import fmr19 from "@/assets/full-mouth/fmr19.jpg.asset.json";
 
 const fullMouthCases = [
   { image: fmr1.url, alt: "Full mouth reconstruction with implant-supported restoration before and after", split: "horizontal" as const },
@@ -98,6 +107,15 @@ const fullMouthCases = [
   { image: fmr8.url, alt: "Full mouth aesthetic reconstruction before and after", split: "horizontal" as const },
   { image: fmr9.url, alt: "Worn dentition full mouth rehabilitation before and after", split: "horizontal" as const },
   { image: fmr10.url, alt: "Complete smile transformation with full mouth reconstruction before and after", split: "horizontal" as const },
+  { image: fmr11.url, alt: "Worn and chipped teeth restored with full mouth veneers and crowns before and after", split: "horizontal" as const },
+  { image: fmr12.url, alt: "Full mouth rehabilitation with upper and lower arch restoration before and after", split: "horizontal" as const },
+  { image: fmr13.url, alt: "Full facial smile transformation with comprehensive dental reconstruction before and after", split: "vertical" as const },
+  { image: fmr14.url, alt: "Severely broken and missing teeth restored with full mouth reconstruction before and after", split: "horizontal" as const },
+  { image: fmr15.url, alt: "Failing dentition rebuilt with full arch implant restoration before and after", split: "horizontal" as const },
+  { image: fmr16.url, alt: "Complete smile makeover with full mouth porcelain restoration before and after", split: "horizontal" as const },
+  { image: fmr17.url, alt: "Decayed and damaged teeth restored with full arch reconstruction before and after", split: "horizontal" as const },
+  { image: fmr18.url, alt: "Aged dentition rejuvenated with full mouth rehabilitation before and after", split: "horizontal" as const },
+  { image: fmr19.url, alt: "Missing and decayed teeth restored with full arch fixed bridge before and after", split: "horizontal" as const },
 ];
 
 const missingTeethCases = [
