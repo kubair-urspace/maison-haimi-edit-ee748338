@@ -76,6 +76,29 @@ import mt21 from "@/assets/missing-teeth/mt21.jpg.asset.json";
 import mt22 from "@/assets/missing-teeth/mt22.jpg.asset.json";
 import mt23 from "@/assets/missing-teeth/mt23.jpg.asset.json";
 import mt24 from "@/assets/missing-teeth/mt24.jpg.asset.json";
+import fmr1 from "@/assets/full-mouth/fmr1.jpg.asset.json";
+import fmr2 from "@/assets/full-mouth/fmr2.jpg.asset.json";
+import fmr3 from "@/assets/full-mouth/fmr3.jpg.asset.json";
+import fmr4 from "@/assets/full-mouth/fmr4.jpg.asset.json";
+import fmr5 from "@/assets/full-mouth/fmr5.jpg.asset.json";
+import fmr6 from "@/assets/full-mouth/fmr6.jpg.asset.json";
+import fmr7 from "@/assets/full-mouth/fmr7.jpg.asset.json";
+import fmr8 from "@/assets/full-mouth/fmr8.jpg.asset.json";
+import fmr9 from "@/assets/full-mouth/fmr9.jpg.asset.json";
+import fmr10 from "@/assets/full-mouth/fmr10.jpg.asset.json";
+
+const fullMouthCases = [
+  { image: fmr1.url, alt: "Full mouth reconstruction with implant-supported restoration before and after", split: "horizontal" as const },
+  { image: fmr2.url, alt: "Complete smile rehabilitation with full arch restoration before and after", split: "horizontal" as const },
+  { image: fmr3.url, alt: "Full mouth rehabilitation and bite restoration before and after", split: "horizontal" as const },
+  { image: fmr4.url, alt: "Comprehensive full mouth reconstruction before and after", split: "horizontal" as const },
+  { image: fmr5.url, alt: "Full mouth aesthetic and functional reconstruction before and after", split: "horizontal" as const },
+  { image: fmr6.url, alt: "Full arch restoration and smile rehabilitation before and after", split: "horizontal" as const },
+  { image: fmr7.url, alt: "Full mouth restoration with crowns and veneers before and after", split: "horizontal" as const },
+  { image: fmr8.url, alt: "Full mouth aesthetic reconstruction before and after", split: "horizontal" as const },
+  { image: fmr9.url, alt: "Worn dentition full mouth rehabilitation before and after", split: "horizontal" as const },
+  { image: fmr10.url, alt: "Complete smile transformation with full mouth reconstruction before and after", split: "horizontal" as const },
+];
 
 const missingTeethCases = [
   { image: mt1.url, alt: "Missing front tooth replacement before and after", split: "horizontal" as const },
@@ -411,6 +434,50 @@ const BeforeAfter = () => {
           </div>
         </div>
       </section>
+
+      {/* Full Mouth Reconstruction Before & After */}
+      <section className="relative z-10 py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
+              Comprehensive
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase mb-6">
+              Full Mouth Reconstruction
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
+              Complete rehabilitation of form, function, and aesthetics — meticulously
+              planned restorations that rebuild the entire smile with lasting beauty.
+            </p>
+          </motion.div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {fullMouthCases.map((caseItem, index) => (
+              <motion.div
+                key={caseItem.alt}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (index % 3) * 0.1 }}
+              >
+                <BeforeAfterComparison
+                  image={caseItem.image}
+                  alt={caseItem.alt}
+                  split={caseItem.split}
+                  className="border border-border"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
 
 
