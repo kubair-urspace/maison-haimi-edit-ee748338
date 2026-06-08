@@ -65,6 +65,16 @@ const invisalignCases = [
   { image: invH.url, alt: "Invisalign smile transformation before and after" },
   { image: invI.url, alt: "Invisalign anterior reshaping before and after" },
   { image: invJ.url, alt: "Invisalign lower occlusal before and after" },
+  { image: invK.url, alt: "Invisalign smile alignment before and after" },
+  { image: invL.url, alt: "Invisalign anterior restoration before and after" },
+  { image: invM.url, alt: "Invisalign full arch correction before and after" },
+  { image: invN.url, alt: "Invisalign bite realignment before and after" },
+  { image: invO.url, alt: "Invisalign upper anterior alignment before and after" },
+  { image: invP.url, alt: "Invisalign palatal arch correction before and after" },
+  { image: invQ.url, alt: "Invisalign comprehensive smile transformation before and after" },
+  { image: invR.url, alt: "Invisalign lower anterior alignment before and after" },
+  { image: invS.url, alt: "Invisalign upper and lower alignment before and after" },
+  { image: invT.url, alt: "Invisalign aesthetic smile enhancement before and after" },
 ];
 
 
