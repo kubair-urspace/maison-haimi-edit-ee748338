@@ -42,6 +42,29 @@ import rest2 from "@/assets/restorative/rest2.jpg.asset.json";
 import rest3 from "@/assets/restorative/rest3.jpg.asset.json";
 import rest4 from "@/assets/restorative/rest4.jpg.asset.json";
 import rest5 from "@/assets/restorative/rest5.jpg.asset.json";
+import mt1 from "@/assets/missing-teeth/mt1.jpg.asset.json";
+import mt2 from "@/assets/missing-teeth/mt2.jpg.asset.json";
+import mt3 from "@/assets/missing-teeth/mt3.jpg.asset.json";
+import mt4 from "@/assets/missing-teeth/mt4.jpg.asset.json";
+import mt5 from "@/assets/missing-teeth/mt5.jpg.asset.json";
+import mt6 from "@/assets/missing-teeth/mt6.jpg.asset.json";
+import mt7 from "@/assets/missing-teeth/mt7.jpg.asset.json";
+import mt8 from "@/assets/missing-teeth/mt8.jpg.asset.json";
+import mt9 from "@/assets/missing-teeth/mt9.jpg.asset.json";
+import mt10 from "@/assets/missing-teeth/mt10.jpg.asset.json";
+
+const missingTeethCases = [
+  { image: mt1.url, alt: "Missing front tooth replacement before and after", split: "horizontal" as const },
+  { image: mt2.url, alt: "Multiple missing teeth full restoration before and after", split: "horizontal" as const },
+  { image: mt3.url, alt: "Front tooth implant smile restoration before and after", split: "vertical" as const },
+  { image: mt4.url, alt: "Missing lateral incisor smile restoration before and after", split: "vertical" as const },
+  { image: mt5.url, alt: "Missing posterior tooth replacement before and after", split: "horizontal" as const },
+  { image: mt6.url, alt: "Bridge restoration for missing teeth before and after", split: "horizontal" as const },
+  { image: mt7.url, alt: "Multiple missing teeth implant rehabilitation before and after", split: "horizontal" as const },
+  { image: mt8.url, alt: "Single tooth implant restoration progression", split: "horizontal" as const },
+  { image: mt9.url, alt: "Full smile reconstruction for missing teeth before and after", split: "horizontal" as const },
+  { image: mt10.url, alt: "Central incisor implant crown before and after", split: "horizontal" as const },
+];
 
 const restorativeCases = [
   { image: rest1.url, alt: "Gum recontouring and aesthetic restoration before and after" },
@@ -297,6 +320,51 @@ const BeforeAfter = () => {
           </div>
         </div>
       </section>
+
+      {/* Missing Teeth Before & After */}
+      <section className="relative z-10 py-16 md:py-24 bg-sand/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
+              Missing Teeth
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase mb-6">
+              Implants & Tooth Replacement
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
+              From single-tooth implants to full smile reconstructions — restoring
+              confidence, function, and natural beauty with precision implant dentistry.
+            </p>
+          </motion.div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {missingTeethCases.map((caseItem, index) => (
+              <motion.div
+                key={caseItem.alt}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (index % 3) * 0.1 }}
+              >
+                <BeforeAfterComparison
+                  image={caseItem.image}
+                  alt={caseItem.alt}
+                  split={caseItem.split}
+                  className="border border-border"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
 
 
