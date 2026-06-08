@@ -133,6 +133,16 @@ import ven27 from "@/assets/veneers/ven27.jpg.asset.json";
 import ven28 from "@/assets/veneers/ven28.jpg.asset.json";
 import ven29 from "@/assets/veneers/ven29.jpg.asset.json";
 import ven30 from "@/assets/veneers/ven30.jpg.asset.json";
+import ven31 from "@/assets/veneers/ven31.jpg.asset.json";
+import ven32 from "@/assets/veneers/ven32.jpg.asset.json";
+import ven33 from "@/assets/veneers/ven33.jpg.asset.json";
+import ven34 from "@/assets/veneers/ven34.jpg.asset.json";
+import ven35 from "@/assets/veneers/ven35.jpg.asset.json";
+import ven36 from "@/assets/veneers/ven36.jpg.asset.json";
+import ven37 from "@/assets/veneers/ven37.jpg.asset.json";
+import ven38 from "@/assets/veneers/ven38.jpg.asset.json";
+import ven39 from "@/assets/veneers/ven39.jpg.asset.json";
+import ven40 from "@/assets/veneers/ven40.jpg.asset.json";
 
 const veneersCases = [
   { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" as const },
