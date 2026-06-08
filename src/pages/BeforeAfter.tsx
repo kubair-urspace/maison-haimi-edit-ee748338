@@ -62,6 +62,10 @@ import mt17 from "@/assets/missing-teeth/mt17.jpg.asset.json";
 import mt18 from "@/assets/missing-teeth/mt18.jpg.asset.json";
 import mt19 from "@/assets/missing-teeth/mt19.jpg.asset.json";
 import mt20 from "@/assets/missing-teeth/mt20.jpg.asset.json";
+import mt21 from "@/assets/missing-teeth/mt21.jpg.asset.json";
+import mt22 from "@/assets/missing-teeth/mt22.jpg.asset.json";
+import mt23 from "@/assets/missing-teeth/mt23.jpg.asset.json";
+import mt24 from "@/assets/missing-teeth/mt24.jpg.asset.json";
 
 const missingTeethCases = [
   { image: mt1.url, alt: "Missing front tooth replacement before and after", split: "horizontal" as const },
@@ -84,6 +88,10 @@ const missingTeethCases = [
   { image: mt18.url, alt: "Full upper arch implant restoration before and after", split: "horizontal" as const },
   { image: mt19.url, alt: "Posterior implant restoration before and after", split: "horizontal" as const },
   { image: mt20.url, alt: "Central incisor gap closure with implant before and after", split: "horizontal" as const },
+  { image: mt21.url, alt: "Missing lower front tooth full implant restoration before and after", split: "horizontal" as const },
+  { image: mt22.url, alt: "Missing upper lateral incisor implant restoration before and after", split: "horizontal" as const },
+  { image: mt23.url, alt: "Central incisor gap implant and crown restoration before and after", split: "horizontal" as const },
+  { image: mt24.url, alt: "Missing lateral incisors dual implant restoration before and after", split: "horizontal" as const },
 ];
 
 const restorativeCases = [
