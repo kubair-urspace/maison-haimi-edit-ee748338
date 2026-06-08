@@ -103,6 +103,29 @@ import fmr24 from "@/assets/full-mouth/fmr24.jpg.asset.json";
 import fmr25 from "@/assets/full-mouth/fmr25.jpg.asset.json";
 import fmr26 from "@/assets/full-mouth/fmr26.jpg.asset.json";
 import fmr27 from "@/assets/full-mouth/fmr27.jpg.asset.json";
+import ven1 from "@/assets/veneers/ven1.jpg.asset.json";
+import ven2 from "@/assets/veneers/ven2.jpg.asset.json";
+import ven3 from "@/assets/veneers/ven3.jpg.asset.json";
+import ven4 from "@/assets/veneers/ven4.jpg.asset.json";
+import ven5 from "@/assets/veneers/ven5.jpg.asset.json";
+import ven6 from "@/assets/veneers/ven6.jpg.asset.json";
+import ven7 from "@/assets/veneers/ven7.jpg.asset.json";
+import ven8 from "@/assets/veneers/ven8.jpg.asset.json";
+import ven9 from "@/assets/veneers/ven9.jpg.asset.json";
+import ven10 from "@/assets/veneers/ven10.jpg.asset.json";
+
+const veneersCases = [
+  { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" as const },
+  { image: ven2.url, alt: "Side profile porcelain veneers before and after", split: "vertical" as const },
+  { image: ven3.url, alt: "Chipped and worn teeth restored with veneers before and after", split: "vertical" as const },
+  { image: ven4.url, alt: "Decayed and discolored teeth restored with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven5.url, alt: "Edge bonding and veneer refinement before and after", split: "vertical" as const },
+  { image: ven6.url, alt: "Subtle veneer brightening and smile enhancement before and after", split: "vertical" as const },
+  { image: ven7.url, alt: "Discolored front teeth restored with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven8.url, alt: "Veneer smile makeover with lip enhancement before and after", split: "vertical" as const },
+  { image: ven9.url, alt: "Edge wear and alignment corrected with veneers before and after", split: "vertical" as const },
+  { image: ven10.url, alt: "Full arch upper and lower veneer transformation before and after", split: "vertical" as const },
+];
 
 const fullMouthCases = [
   { image: fmr1.url, alt: "Full mouth reconstruction with implant-supported restoration before and after", split: "vertical" as const },
@@ -340,8 +363,52 @@ const BeforeAfter = () => {
         </div>
       </section>
 
+      {/* Veneers Before & After */}
+      <section className="relative z-10 py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
+              Porcelain
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase mb-6">
+              Veneers
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
+              Hand-crafted porcelain veneers that refine shape, color, and proportion —
+              creating naturally radiant smiles tailored to every face.
+            </p>
+          </motion.div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {veneersCases.map((caseItem, index) => (
+              <motion.div
+                key={caseItem.alt}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (index % 3) * 0.1 }}
+              >
+                <BeforeAfterComparison
+                  image={caseItem.image}
+                  alt={caseItem.alt}
+                  split={caseItem.split}
+                  className="border border-border"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Invisalign Before & After */}
       <section className="relative z-10 py-16 md:py-24 bg-sand/30">
+
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
