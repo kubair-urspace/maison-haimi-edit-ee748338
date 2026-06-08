@@ -27,6 +27,16 @@ import invG from "@/assets/invisalign-gallery/IMG_4802.jpg.asset.json";
 import invH from "@/assets/invisalign-gallery/IMG_4764.jpg.asset.json";
 import invI from "@/assets/invisalign-gallery/IMG_4763.jpg.asset.json";
 import invJ from "@/assets/invisalign-gallery/IMG_9455.jpg.asset.json";
+import invK from "@/assets/invisalign/invisalign-11.jpg.asset.json";
+import invL from "@/assets/invisalign/invisalign-12.jpg.asset.json";
+import invM from "@/assets/invisalign/invisalign-13.jpg.asset.json";
+import invN from "@/assets/invisalign/invisalign-14.jpg.asset.json";
+import invO from "@/assets/invisalign/invisalign-15.jpg.asset.json";
+import invP from "@/assets/invisalign/invisalign-16.jpg.asset.json";
+import invQ from "@/assets/invisalign/invisalign-17.jpg.asset.json";
+import invR from "@/assets/invisalign/invisalign-18.jpg.asset.json";
+import invS from "@/assets/invisalign/invisalign-19.jpg.asset.json";
+import invT from "@/assets/invisalign/invisalign-20.jpg.asset.json";
 
 const beforeAfterCases = [
   { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
