@@ -76,6 +76,29 @@ import mt21 from "@/assets/missing-teeth/mt21.jpg.asset.json";
 import mt22 from "@/assets/missing-teeth/mt22.jpg.asset.json";
 import mt23 from "@/assets/missing-teeth/mt23.jpg.asset.json";
 import mt24 from "@/assets/missing-teeth/mt24.jpg.asset.json";
+import fmr1 from "@/assets/full-mouth/fmr1.jpg.asset.json";
+import fmr2 from "@/assets/full-mouth/fmr2.jpg.asset.json";
+import fmr3 from "@/assets/full-mouth/fmr3.jpg.asset.json";
+import fmr4 from "@/assets/full-mouth/fmr4.jpg.asset.json";
+import fmr5 from "@/assets/full-mouth/fmr5.jpg.asset.json";
+import fmr6 from "@/assets/full-mouth/fmr6.jpg.asset.json";
+import fmr7 from "@/assets/full-mouth/fmr7.jpg.asset.json";
+import fmr8 from "@/assets/full-mouth/fmr8.jpg.asset.json";
+import fmr9 from "@/assets/full-mouth/fmr9.jpg.asset.json";
+import fmr10 from "@/assets/full-mouth/fmr10.jpg.asset.json";
+
+const fullMouthCases = [
+  { image: fmr1.url, alt: "Full mouth reconstruction with implant-supported restoration before and after", split: "horizontal" as const },
+  { image: fmr2.url, alt: "Complete smile rehabilitation with full arch restoration before and after", split: "horizontal" as const },
+  { image: fmr3.url, alt: "Full mouth rehabilitation and bite restoration before and after", split: "horizontal" as const },
+  { image: fmr4.url, alt: "Comprehensive full mouth reconstruction before and after", split: "horizontal" as const },
+  { image: fmr5.url, alt: "Full mouth aesthetic and functional reconstruction before and after", split: "horizontal" as const },
+  { image: fmr6.url, alt: "Full arch restoration and smile rehabilitation before and after", split: "horizontal" as const },
+  { image: fmr7.url, alt: "Full mouth restoration with crowns and veneers before and after", split: "horizontal" as const },
+  { image: fmr8.url, alt: "Full mouth aesthetic reconstruction before and after", split: "horizontal" as const },
+  { image: fmr9.url, alt: "Worn dentition full mouth rehabilitation before and after", split: "horizontal" as const },
+  { image: fmr10.url, alt: "Complete smile transformation with full mouth reconstruction before and after", split: "horizontal" as const },
+];
 
 const missingTeethCases = [
   { image: mt1.url, alt: "Missing front tooth replacement before and after", split: "horizontal" as const },
