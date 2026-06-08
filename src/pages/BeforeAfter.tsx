@@ -384,27 +384,6 @@ const BeforeAfter = () => {
               </motion.div>
             ))}
 
-            {/* Placeholder slots — photos coming soon */}
-            {Array.from({ length: 6 }).map((_, i) => (
-              <motion.div
-                key={`placeholder-${i}`}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: (beforeAfterCases.length + i) * 0.05 }}
-                className="aspect-[4/3] border border-dashed border-gold/40 bg-sand/40 flex flex-col items-center justify-center text-center p-6"
-              >
-                <span className="font-body text-[10px] tracking-[0.3em] uppercase text-gold mb-3">
-                  Coming Soon
-                </span>
-                <p className="font-display text-xl md:text-2xl italic text-charcoal/80 leading-snug">
-                  Before &amp; After
-                </p>
-                <p className="font-body text-xs text-charcoal/70 mt-2">
-                  Photography in progress
-                </p>
-              </motion.div>
-            ))}
           </div>
 
           {/* Curating note */}
