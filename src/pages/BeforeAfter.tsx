@@ -52,6 +52,16 @@ import mt7 from "@/assets/missing-teeth/mt7.jpg.asset.json";
 import mt8 from "@/assets/missing-teeth/mt8.jpg.asset.json";
 import mt9 from "@/assets/missing-teeth/mt9.jpg.asset.json";
 import mt10 from "@/assets/missing-teeth/mt10.jpg.asset.json";
+import mt11 from "@/assets/missing-teeth/mt11.jpg.asset.json";
+import mt12 from "@/assets/missing-teeth/mt12.jpg.asset.json";
+import mt13 from "@/assets/missing-teeth/mt13.jpg.asset.json";
+import mt14 from "@/assets/missing-teeth/mt14.jpg.asset.json";
+import mt15 from "@/assets/missing-teeth/mt15.jpg.asset.json";
+import mt16 from "@/assets/missing-teeth/mt16.jpg.asset.json";
+import mt17 from "@/assets/missing-teeth/mt17.jpg.asset.json";
+import mt18 from "@/assets/missing-teeth/mt18.jpg.asset.json";
+import mt19 from "@/assets/missing-teeth/mt19.jpg.asset.json";
+import mt20 from "@/assets/missing-teeth/mt20.jpg.asset.json";
 
 const missingTeethCases = [
   { image: mt1.url, alt: "Missing front tooth replacement before and after", split: "horizontal" as const },
@@ -64,6 +74,16 @@ const missingTeethCases = [
   { image: mt8.url, alt: "Single tooth implant restoration progression", split: "horizontal" as const },
   { image: mt9.url, alt: "Full smile reconstruction for missing teeth before and after", split: "horizontal" as const },
   { image: mt10.url, alt: "Central incisor implant crown before and after", split: "horizontal" as const },
+  { image: mt11.url, alt: "Lateral incisor implant restoration progression", split: "horizontal" as const },
+  { image: mt12.url, alt: "Full arch implant-supported bridge before and after", split: "horizontal" as const },
+  { image: mt13.url, alt: "Anterior teeth full restoration with implants before and after", split: "horizontal" as const },
+  { image: mt14.url, alt: "Missing lateral incisor implant restoration progression", split: "horizontal" as const },
+  { image: mt15.url, alt: "Missing upper lateral incisors implant restoration before and after", split: "horizontal" as const },
+  { image: mt16.url, alt: "Missing canine implant smile restoration before and after", split: "horizontal" as const },
+  { image: mt17.url, alt: "Central incisor implant and crown restoration before and after", split: "horizontal" as const },
+  { image: mt18.url, alt: "Full upper arch implant restoration before and after", split: "horizontal" as const },
+  { image: mt19.url, alt: "Posterior implant restoration before and after", split: "horizontal" as const },
+  { image: mt20.url, alt: "Central incisor gap closure with implant before and after", split: "horizontal" as const },
 ];
 
 const restorativeCases = [
