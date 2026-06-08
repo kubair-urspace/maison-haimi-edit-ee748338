@@ -95,6 +95,14 @@ import fmr16 from "@/assets/full-mouth/fmr16.jpg.asset.json";
 import fmr17 from "@/assets/full-mouth/fmr17.jpg.asset.json";
 import fmr18 from "@/assets/full-mouth/fmr18.jpg.asset.json";
 import fmr19 from "@/assets/full-mouth/fmr19.jpg.asset.json";
+import fmr20 from "@/assets/full-mouth/fmr20.jpg.asset.json";
+import fmr21 from "@/assets/full-mouth/fmr21.jpg.asset.json";
+import fmr22 from "@/assets/full-mouth/fmr22.jpg.asset.json";
+import fmr23 from "@/assets/full-mouth/fmr23.jpg.asset.json";
+import fmr24 from "@/assets/full-mouth/fmr24.jpg.asset.json";
+import fmr25 from "@/assets/full-mouth/fmr25.jpg.asset.json";
+import fmr26 from "@/assets/full-mouth/fmr26.jpg.asset.json";
+import fmr27 from "@/assets/full-mouth/fmr27.jpg.asset.json";
 
 const fullMouthCases = [
   { image: fmr1.url, alt: "Full mouth reconstruction with implant-supported restoration before and after", split: "vertical" as const },
@@ -116,6 +124,14 @@ const fullMouthCases = [
   { image: fmr17.url, alt: "Decayed and damaged teeth restored with full arch reconstruction before and after", split: "vertical" as const },
   { image: fmr18.url, alt: "Aged dentition rejuvenated with full mouth rehabilitation before and after", split: "vertical" as const },
   { image: fmr19.url, alt: "Missing and decayed teeth restored with full arch fixed bridge before and after", split: "vertical" as const },
+  { image: fmr20.url, alt: "Severely damaged full mouth reconstruction with implant-supported rehabilitation before and after", split: "vertical" as const },
+  { image: fmr21.url, alt: "Upper anterior implant and restorative reconstruction before and after", split: "vertical" as const },
+  { image: fmr22.url, alt: "Worn and discolored smile restored with full mouth rehabilitation before and after", split: "vertical" as const },
+  { image: fmr23.url, alt: "Advanced full mouth rehabilitation for failing dentition before and after", split: "vertical" as const },
+  { image: fmr24.url, alt: "Broken and worn teeth rebuilt with full mouth reconstruction before and after", split: "vertical" as const },
+  { image: fmr25.url, alt: "Complex bite and smile rehabilitation before and after", split: "vertical" as const },
+  { image: fmr26.url, alt: "Comprehensive restorative smile rebuild before and after", split: "vertical" as const },
+  { image: fmr27.url, alt: "Facial full mouth transformation shown side by side before and after", split: "horizontal" as const },
 ];
 
 const missingTeethCases = [
