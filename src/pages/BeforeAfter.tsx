@@ -17,6 +17,16 @@ import inv7 from "@/assets/invisalign/inv7.jpg.asset.json";
 import inv8 from "@/assets/invisalign/inv8.jpg.asset.json";
 import inv9 from "@/assets/invisalign/inv9.jpg.asset.json";
 import inv10 from "@/assets/invisalign/inv10.jpg.asset.json";
+import invA from "@/assets/invisalign-gallery/IMG_6805.jpg.asset.json";
+import invB from "@/assets/invisalign-gallery/IMG_6802.jpg.asset.json";
+import invC from "@/assets/invisalign-gallery/IMG_6801.jpg.asset.json";
+import invD from "@/assets/invisalign-gallery/IMG_6800.jpg.asset.json";
+import invE from "@/assets/invisalign-gallery/IMG_6798.jpg.asset.json";
+import invF from "@/assets/invisalign-gallery/IMG_5172.jpg.asset.json";
+import invG from "@/assets/invisalign-gallery/IMG_4802.jpg.asset.json";
+import invH from "@/assets/invisalign-gallery/IMG_4764.jpg.asset.json";
+import invI from "@/assets/invisalign-gallery/IMG_4763.jpg.asset.json";
+import invJ from "@/assets/invisalign-gallery/IMG_9455.jpg.asset.json";
 
 const beforeAfterCases = [
   { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
@@ -35,7 +45,18 @@ const invisalignCases = [
   { image: inv8.url, alt: "Invisalign midline alignment before and after" },
   { image: inv9.url, alt: "Invisalign crowding correction before and after" },
   { image: inv10.url, alt: "Invisalign spacing correction before and after" },
+  { image: invA.url, alt: "Invisalign full mouth restoration before and after" },
+  { image: invB.url, alt: "Invisalign anterior crowding before and after" },
+  { image: invC.url, alt: "Invisalign edge alignment before and after" },
+  { image: invD.url, alt: "Invisalign upper arch occlusal before and after" },
+  { image: invE.url, alt: "Invisalign lower arch occlusal before and after" },
+  { image: invF.url, alt: "Invisalign bite correction before and after" },
+  { image: invG.url, alt: "Invisalign midline and spacing before and after" },
+  { image: invH.url, alt: "Invisalign smile transformation before and after" },
+  { image: invI.url, alt: "Invisalign anterior reshaping before and after" },
+  { image: invJ.url, alt: "Invisalign lower occlusal before and after" },
 ];
+
 
 const BeforeAfter = () => {
   return (
