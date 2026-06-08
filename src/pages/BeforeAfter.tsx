@@ -7,11 +7,34 @@ import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import smileVeneerImage from "@/assets/before-after-smile-veneer.jpeg";
 import restorationImage from "@/assets/before-after-restoration.jpg";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
+import inv1 from "@/assets/invisalign/inv1.jpg.asset.json";
+import inv2 from "@/assets/invisalign/inv2.jpg.asset.json";
+import inv3 from "@/assets/invisalign/inv3.jpg.asset.json";
+import inv4 from "@/assets/invisalign/inv4.jpg.asset.json";
+import inv5 from "@/assets/invisalign/inv5.jpg.asset.json";
+import inv6 from "@/assets/invisalign/inv6.jpg.asset.json";
+import inv7 from "@/assets/invisalign/inv7.jpg.asset.json";
+import inv8 from "@/assets/invisalign/inv8.jpg.asset.json";
+import inv9 from "@/assets/invisalign/inv9.jpg.asset.json";
+import inv10 from "@/assets/invisalign/inv10.jpg.asset.json";
 
 const beforeAfterCases = [
   { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
   { image: restorationImage, alt: "Tooth restoration before and after", split: "horizontal" as const },
   { image: whiteningImage, alt: "Smile whitening before and after", split: "vertical" as const },
+];
+
+const invisalignCases = [
+  { image: inv1.url, alt: "Invisalign occlusal alignment before and after" },
+  { image: inv2.url, alt: "Invisalign anterior alignment before and after" },
+  { image: inv3.url, alt: "Invisalign overbite correction before and after" },
+  { image: inv4.url, alt: "Invisalign smile alignment before and after" },
+  { image: inv5.url, alt: "Invisalign upper arch before and after" },
+  { image: inv6.url, alt: "Invisalign lateral bite before and after" },
+  { image: inv7.url, alt: "Invisalign side profile before and after" },
+  { image: inv8.url, alt: "Invisalign midline alignment before and after" },
+  { image: inv9.url, alt: "Invisalign crowding correction before and after" },
+  { image: inv10.url, alt: "Invisalign spacing correction before and after" },
 ];
 
 const BeforeAfter = () => {
@@ -134,6 +157,51 @@ const BeforeAfter = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Invisalign Before & After */}
+      <section className="relative z-10 py-16 md:py-24 bg-sand/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
+            <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
+              Invisalign
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase mb-6">
+              Clear Aligner Results
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
+              Discreet, comfortable, and precisely planned — see how Invisalign has
+              transformed our patients' smiles through gentle, progressive movement.
+            </p>
+          </motion.div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {invisalignCases.map((caseItem, index) => (
+              <motion.div
+                key={caseItem.alt}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: (index % 3) * 0.1 }}
+              >
+                <BeforeAfterComparison
+                  image={caseItem.image}
+                  alt={caseItem.alt}
+                  split="vertical"
+                  className="border border-border"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Patient Testimonials */}
       <section className="relative z-10 py-16 md:py-24 bg-background">
