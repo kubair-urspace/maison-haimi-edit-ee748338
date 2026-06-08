@@ -133,6 +133,16 @@ import ven27 from "@/assets/veneers/ven27.jpg.asset.json";
 import ven28 from "@/assets/veneers/ven28.jpg.asset.json";
 import ven29 from "@/assets/veneers/ven29.jpg.asset.json";
 import ven30 from "@/assets/veneers/ven30.jpg.asset.json";
+import ven31 from "@/assets/veneers/ven31.jpg.asset.json";
+import ven32 from "@/assets/veneers/ven32.jpg.asset.json";
+import ven33 from "@/assets/veneers/ven33.jpg.asset.json";
+import ven34 from "@/assets/veneers/ven34.jpg.asset.json";
+import ven35 from "@/assets/veneers/ven35.jpg.asset.json";
+import ven36 from "@/assets/veneers/ven36.jpg.asset.json";
+import ven37 from "@/assets/veneers/ven37.jpg.asset.json";
+import ven38 from "@/assets/veneers/ven38.jpg.asset.json";
+import ven39 from "@/assets/veneers/ven39.jpg.asset.json";
+import ven40 from "@/assets/veneers/ven40.jpg.asset.json";
 
 const veneersCases = [
   { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" as const },
@@ -165,6 +175,16 @@ const veneersCases = [
   { image: ven28.url, alt: "Subtle alignment and brightening with veneers before and after", split: "vertical" as const },
   { image: ven29.url, alt: "Full face smile makeover with porcelain veneers before and after", split: "horizontal" as const },
   { image: ven30.url, alt: "Aged worn dentition fully restored with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven31.url, alt: "Worn and yellowed front teeth brightened with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven32.url, alt: "Midline gap and discoloration corrected with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven33.url, alt: "Uneven front teeth refined and aligned with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven34.url, alt: "Full face smile transformation with porcelain veneers before and after", split: "horizontal" as const },
+  { image: ven35.url, alt: "Gummy smile and discoloration corrected with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven36.url, alt: "Stained and uneven teeth fully restored with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven37.url, alt: "Aged dentition fully rejuvenated with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven38.url, alt: "Discolored worn front teeth brightened with porcelain veneers before and after", split: "vertical" as const },
+  { image: ven39.url, alt: "Retracted view of full upper arch porcelain veneer transformation before and after", split: "vertical" as const },
+  { image: ven40.url, alt: "Side profile veneer transformation with refined alignment before and after", split: "horizontal" as const },
 ];
 
 
