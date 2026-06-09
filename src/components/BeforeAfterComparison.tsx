@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface BeforeAfterComparisonProps {
   image: string;
   alt: string;
@@ -7,70 +5,52 @@ interface BeforeAfterComparisonProps {
   className?: string;
 }
 
+const labelClass =
+  "bg-charcoal/72 px-3 py-2 font-body text-[10px] uppercase tracking-[0.25em] text-cream backdrop-blur-sm";
+
 const BeforeAfterComparison = ({
   image,
   alt,
   split = "vertical",
   className = "",
 }: BeforeAfterComparisonProps) => {
-  const [position, setPosition] = useState(50);
-
-  const updatePosition = (clientX: number, rect: DOMRect) => {
-    const next = ((clientX - rect.left) / rect.width) * 100;
-    setPosition(Math.max(5, Math.min(95, next)));
-  };
-
-  const imageClass =
-    split === "vertical"
-      ? "absolute left-0 h-[200%] w-full max-w-none object-cover"
-      : "absolute top-0 h-full w-[200%] max-w-none object-cover";
+  const isTopBottomLayout = split === "vertical";
 
   return (
-    <div
-      className={`relative aspect-[16/10] overflow-hidden bg-charcoal select-none cursor-ew-resize ${className}`}
-      onPointerDown={(event) => {
-        event.currentTarget.setPointerCapture(event.pointerId);
-        updatePosition(event.clientX, event.currentTarget.getBoundingClientRect());
-      }}
-      onPointerMove={(event) => {
-        if (!event.currentTarget.hasPointerCapture(event.pointerId)) return;
-        updatePosition(event.clientX, event.currentTarget.getBoundingClientRect());
-      }}
+    <figure
+      className={`relative aspect-square overflow-hidden bg-muted/30 ${className}`}
+      aria-label={alt}
     >
-      <div className="absolute inset-0 overflow-hidden">
-        <img
-          src={image}
-          alt={`${alt} after`}
-          draggable={false}
-          className={imageClass}
-          style={split === "vertical" ? { top: "-100%" } : { left: "-100%" }}
-        />
-      </div>
+      <img
+        src={image}
+        alt={alt}
+        draggable={false}
+        loading="lazy"
+        className="h-full w-full object-contain"
+      />
 
-      <div
-        className="absolute inset-0 overflow-hidden"
-        style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
-      >
-        <img
-          src={image}
-          alt={`${alt} before`}
-          draggable={false}
-          className={imageClass}
-          style={split === "vertical" ? { top: 0 } : { left: 0 }}
-        />
-      </div>
-
-      <div className="absolute inset-x-0 top-0 flex justify-between p-4 font-body text-[10px] tracking-[0.25em] uppercase text-cream">
-        <span className="bg-charcoal/60 px-3 py-2 backdrop-blur-sm">Before</span>
-        <span className="bg-charcoal/60 px-3 py-2 backdrop-blur-sm">After</span>
-      </div>
-
-      <div className="absolute top-0 bottom-0 w-px bg-cream" style={{ left: `${position}%` }}>
-        <div className="absolute top-1/2 left-1/2 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-cream text-charcoal shadow-lg">
-          <span className="text-lg leading-none">↔</span>
-        </div>
-      </div>
-    </div>
+      {isTopBottomLayout ? (
+        <>
+          <div className="absolute inset-x-0 top-0 flex justify-center p-4">
+            <span className={labelClass}>Before</span>
+          </div>
+          <div className="absolute inset-x-0 bottom-0 flex justify-center p-4">
+            <span className={labelClass}>After</span>
+          </div>
+          <div className="pointer-events-none absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-border/70" />
+        </>
+      ) : (
+        <>
+          <div className="absolute inset-y-0 left-0 flex items-start p-4">
+            <span className={labelClass}>Before</span>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-start p-4">
+            <span className={labelClass}>After</span>
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-border/70" />
+        </>
+      )}
+    </figure>
   );
 };
 
