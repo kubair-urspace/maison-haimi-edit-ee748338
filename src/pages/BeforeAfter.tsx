@@ -104,7 +104,6 @@ import fmr25 from "@/assets/full-mouth/fmr25.jpg.asset.json";
 import fmr26 from "@/assets/full-mouth/fmr26.jpg.asset.json";
 import fmr27 from "@/assets/full-mouth/fmr27.jpg.asset.json";
 import ven1 from "@/assets/veneers/ven1.jpg.asset.json";
-import ven2 from "@/assets/veneers/ven2.jpg.asset.json";
 import ven3 from "@/assets/veneers/ven3.jpg.asset.json";
 import ven4 from "@/assets/veneers/ven4.jpg.asset.json";
 import ven5 from "@/assets/veneers/ven5.jpg.asset.json";
@@ -113,18 +112,13 @@ import ven7 from "@/assets/veneers/ven7.jpg.asset.json";
 import ven8 from "@/assets/veneers/ven8.jpg.asset.json";
 import ven9 from "@/assets/veneers/ven9.jpg.asset.json";
 import ven10 from "@/assets/veneers/ven10.jpg.asset.json";
-import ven11 from "@/assets/veneers/ven11.jpg.asset.json";
-import ven12 from "@/assets/veneers/ven12.jpg.asset.json";
 import ven13 from "@/assets/veneers/ven13.jpg.asset.json";
 import ven14 from "@/assets/veneers/ven14.jpg.asset.json";
-import ven15 from "@/assets/veneers/ven15.jpg.asset.json";
 import ven16 from "@/assets/veneers/ven16.jpg.asset.json";
-import ven17 from "@/assets/veneers/ven17.jpg.asset.json";
 import ven18 from "@/assets/veneers/ven18.jpg.asset.json";
 import ven19 from "@/assets/veneers/ven19.jpg.asset.json";
 import ven20 from "@/assets/veneers/ven20.jpg.asset.json";
 import ven21 from "@/assets/veneers/ven21.jpg.asset.json";
-import ven22 from "@/assets/veneers/ven22.jpg.asset.json";
 import ven23 from "@/assets/veneers/ven23.jpg.asset.json";
 import ven24 from "@/assets/veneers/ven24.jpg.asset.json";
 import ven25 from "@/assets/veneers/ven25.jpg.asset.json";
@@ -142,7 +136,6 @@ import ven36 from "@/assets/veneers/ven36.jpg.asset.json";
 import ven37 from "@/assets/veneers/ven37.jpg.asset.json";
 import ven38 from "@/assets/veneers/ven38.jpg.asset.json";
 import ven39 from "@/assets/veneers/ven39.jpg.asset.json";
-import ven40 from "@/assets/veneers/ven40.jpg.asset.json";
 
 const veneersCases = [
   { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" as const },
