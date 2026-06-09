@@ -104,7 +104,6 @@ import fmr25 from "@/assets/full-mouth/fmr25.jpg.asset.json";
 import fmr26 from "@/assets/full-mouth/fmr26.jpg.asset.json";
 import fmr27 from "@/assets/full-mouth/fmr27.jpg.asset.json";
 import ven1 from "@/assets/veneers/ven1.jpg.asset.json";
-import ven2 from "@/assets/veneers/ven2.jpg.asset.json";
 import ven3 from "@/assets/veneers/ven3.jpg.asset.json";
 import ven4 from "@/assets/veneers/ven4.jpg.asset.json";
 import ven5 from "@/assets/veneers/ven5.jpg.asset.json";
@@ -113,18 +112,13 @@ import ven7 from "@/assets/veneers/ven7.jpg.asset.json";
 import ven8 from "@/assets/veneers/ven8.jpg.asset.json";
 import ven9 from "@/assets/veneers/ven9.jpg.asset.json";
 import ven10 from "@/assets/veneers/ven10.jpg.asset.json";
-import ven11 from "@/assets/veneers/ven11.jpg.asset.json";
-import ven12 from "@/assets/veneers/ven12.jpg.asset.json";
 import ven13 from "@/assets/veneers/ven13.jpg.asset.json";
 import ven14 from "@/assets/veneers/ven14.jpg.asset.json";
-import ven15 from "@/assets/veneers/ven15.jpg.asset.json";
 import ven16 from "@/assets/veneers/ven16.jpg.asset.json";
-import ven17 from "@/assets/veneers/ven17.jpg.asset.json";
 import ven18 from "@/assets/veneers/ven18.jpg.asset.json";
 import ven19 from "@/assets/veneers/ven19.jpg.asset.json";
 import ven20 from "@/assets/veneers/ven20.jpg.asset.json";
 import ven21 from "@/assets/veneers/ven21.jpg.asset.json";
-import ven22 from "@/assets/veneers/ven22.jpg.asset.json";
 import ven23 from "@/assets/veneers/ven23.jpg.asset.json";
 import ven24 from "@/assets/veneers/ven24.jpg.asset.json";
 import ven25 from "@/assets/veneers/ven25.jpg.asset.json";
@@ -142,11 +136,9 @@ import ven36 from "@/assets/veneers/ven36.jpg.asset.json";
 import ven37 from "@/assets/veneers/ven37.jpg.asset.json";
 import ven38 from "@/assets/veneers/ven38.jpg.asset.json";
 import ven39 from "@/assets/veneers/ven39.jpg.asset.json";
-import ven40 from "@/assets/veneers/ven40.jpg.asset.json";
 
 const veneersCases = [
   { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" as const },
-  { image: ven2.url, alt: "Side profile porcelain veneers before and after", split: "vertical" as const },
   { image: ven3.url, alt: "Chipped and worn teeth restored with veneers before and after", split: "vertical" as const },
   { image: ven4.url, alt: "Decayed and discolored teeth restored with porcelain veneers before and after", split: "vertical" as const },
   { image: ven5.url, alt: "Edge bonding and veneer refinement before and after", split: "vertical" as const },
@@ -155,18 +147,13 @@ const veneersCases = [
   { image: ven8.url, alt: "Veneer smile makeover with lip enhancement before and after", split: "vertical" as const },
   { image: ven9.url, alt: "Edge wear and alignment corrected with veneers before and after", split: "vertical" as const },
   { image: ven10.url, alt: "Full arch upper and lower veneer transformation before and after", split: "vertical" as const },
-  { image: ven11.url, alt: "Upper and lower smile whitening and veneer transformation before and after", split: "vertical" as const },
-  { image: ven12.url, alt: "Bulky old crowns replaced with natural porcelain veneers before and after", split: "vertical" as const },
   { image: ven13.url, alt: "Chipped front teeth restored with seamless veneers before and after", split: "vertical" as const },
   { image: ven14.url, alt: "Discolored lateral incisor corrected with veneers before and after", split: "vertical" as const },
-  { image: ven15.url, alt: "Close-up gum line and veneer shape refinement before and after", split: "vertical" as const },
   { image: ven16.url, alt: "Yellowed front teeth brightened with porcelain veneers before and after", split: "vertical" as const },
-  { image: ven17.url, alt: "Subtle smile enhancement with porcelain veneers before and after", split: "vertical" as const },
   { image: ven18.url, alt: "Worn and translucent edges rebuilt with veneers before and after", split: "vertical" as const },
   { image: ven19.url, alt: "Male smile transformation with full veneer makeover before and after", split: "vertical" as const },
   { image: ven20.url, alt: "Chipped and discolored teeth fully restored with veneers before and after", split: "vertical" as const },
   { image: ven21.url, alt: "Chipped front teeth refined with porcelain veneers before and after", split: "vertical" as const },
-  { image: ven22.url, alt: "Side profile veneer brightening and shape refinement before and after", split: "vertical" as const },
   { image: ven23.url, alt: "Worn translucent edges restored with veneers before and after", split: "vertical" as const },
   { image: ven24.url, alt: "Side view crowding and discoloration corrected with veneers before and after", split: "vertical" as const },
   { image: ven25.url, alt: "Severe staining and gum recession transformed with veneers before and after", split: "vertical" as const },
@@ -184,7 +171,6 @@ const veneersCases = [
   { image: ven37.url, alt: "Aged dentition fully rejuvenated with porcelain veneers before and after", split: "vertical" as const },
   { image: ven38.url, alt: "Discolored worn front teeth brightened with porcelain veneers before and after", split: "vertical" as const },
   { image: ven39.url, alt: "Retracted view of full upper arch porcelain veneer transformation before and after", split: "vertical" as const },
-  { image: ven40.url, alt: "Side profile veneer transformation with refined alignment before and after", split: "horizontal" as const },
 ];
 
 
