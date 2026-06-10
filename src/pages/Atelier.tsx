@@ -4,8 +4,11 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link, useParams } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
+import BeforeAfterComparison from "@/components/BeforeAfterComparison";
+import { galleriesByCategoryId } from "@/data/beforeAfterCases";
 import servicesHero from "@/assets/services-hero.jpg";
 import preventativeHero from "@/assets/preventative-dentistry.jpg";
+
 
 interface ServiceCategory {
   id: string;
@@ -620,9 +623,59 @@ const Atelier = () => {
                 ))}
               </div>
             )}
+
+            {(() => {
+              const gallery = galleriesByCategoryId[category.id];
+              if (!gallery) return null;
+              return (
+                <div className="mt-16 pt-12 border-t border-gold/20">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center max-w-2xl mx-auto mb-12"
+                  >
+                    <span className="font-display text-xl md:text-2xl italic text-gold mb-2 block">
+                      {gallery.eyebrow}
+                    </span>
+                    <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-charcoal tracking-wide uppercase">
+                      {gallery.heading}
+                    </h3>
+                  </motion.div>
+                  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {gallery.cases.map((caseItem, i) => (
+                      <motion.div
+                        key={caseItem.alt + i}
+                        initial={{ opacity: 0, y: 24 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: (i % 3) * 0.08 }}
+                      >
+                        <BeforeAfterComparison
+                          image={caseItem.image}
+                          alt={caseItem.alt}
+                          split={caseItem.split}
+                          className="border border-border"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                  <div className="mt-10 text-center">
+                    <Link
+                      to="/before-after"
+                      className="font-body text-[10px] tracking-[0.3em] uppercase text-gold hover:text-charcoal transition-colors"
+                    >
+                      View the full Before &amp; After gallery →
+                    </Link>
+                  </div>
+                </div>
+              );
+            })()}
           </div>
         </section>
       ))}
+
 
       {isSingleService && matchedCategory && (
         <section className="relative z-10 py-16 md:py-20 bg-cream border-t border-gold/20">
