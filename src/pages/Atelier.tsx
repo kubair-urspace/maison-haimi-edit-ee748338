@@ -627,6 +627,7 @@ const Atelier = () => {
             {(() => {
               const gallery = galleriesByCategoryId[category.id];
               if (!gallery) return null;
+              const previewCases = gallery.cases.slice(0, 4);
               return (
                 <div className="mt-16 pt-12 border-t border-gold/20">
                   <motion.div
@@ -643,14 +644,14 @@ const Atelier = () => {
                       {gallery.heading}
                     </h3>
                   </motion.div>
-                  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {gallery.cases.map((caseItem, i) => (
+                  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    {previewCases.map((caseItem, i) => (
                       <motion.div
                         key={caseItem.alt + i}
                         initial={{ opacity: 0, y: 24 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: (i % 3) * 0.08 }}
+                        transition={{ duration: 0.6, delay: (i % 4) * 0.08 }}
                       >
                         <BeforeAfterComparison
                           image={caseItem.image}
@@ -662,12 +663,9 @@ const Atelier = () => {
                     ))}
                   </div>
                   <div className="mt-10 text-center">
-                    <Link
-                      to="/before-after"
-                      className="font-body text-[10px] tracking-[0.3em] uppercase text-gold hover:text-charcoal transition-colors"
-                    >
-                      View the full Before &amp; After gallery →
-                    </Link>
+                    <Button variant="outline" size="lg" asChild>
+                      <Link to="/before-after">See All Before &amp; Afters</Link>
+                    </Button>
                   </div>
                 </div>
               );
