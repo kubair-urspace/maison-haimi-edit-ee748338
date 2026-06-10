@@ -4,8 +4,11 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link, useParams } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
+import BeforeAfterComparison from "@/components/BeforeAfterComparison";
+import { galleriesByCategoryId } from "@/data/beforeAfterCases";
 import servicesHero from "@/assets/services-hero.jpg";
 import preventativeHero from "@/assets/preventative-dentistry.jpg";
+
 
 interface ServiceCategory {
   id: string;
