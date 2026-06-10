@@ -663,7 +663,7 @@ const Atelier = () => {
                     ))}
                   </div>
                   <div className="mt-10 text-center">
-                    <Button variant="luxury-gold-outline" size="lg" asChild>
+                    <Button variant="outline" size="lg" asChild>
                       <Link to="/before-after">See All Before &amp; Afters</Link>
                     </Button>
                   </div>
