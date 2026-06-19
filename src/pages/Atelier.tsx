@@ -6,7 +6,6 @@ import { Link, useParams } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import { galleriesByCategoryId } from "@/data/beforeAfterCases";
-import servicesHero from "@/assets/services-hero.jpg";
 import preventativeHero from "@/assets/preventative-dentistry.jpg";
 
 
@@ -438,7 +437,6 @@ const Atelier = () => {
     isSingleService && matchedCategory ? [matchedCategory] : serviceCategories;
 
   const heroTitle = matchedCategory ? matchedCategory.title : "Our Dental Services";
-  const heroBackground = matchedCategory?.heroImage || servicesHero;
 
   return (
     <Layout>
