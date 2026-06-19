@@ -4,7 +4,6 @@ import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
-import smileVeneerImage from "@/assets/before-after-smile-veneer.jpeg";
 import restorationImage from "@/assets/before-after-restoration.jpg";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
 import {
@@ -16,7 +15,6 @@ import {
 } from "@/data/beforeAfterCases";
 
 const beforeAfterCases = [
-  { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
   { image: restorationImage, alt: "Tooth restoration before and after", split: "horizontal" as const },
   { image: whiteningImage, alt: "Smile whitening before and after", split: "vertical" as const },
 ];
