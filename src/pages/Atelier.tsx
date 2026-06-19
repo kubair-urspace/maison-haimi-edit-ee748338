@@ -288,7 +288,7 @@ const serviceCategories: ServiceCategory[] = [
   {
     id: "invisalign",
     title: "Invisalign®",
-    subtitle: "Over 15 Years of Experience",
+    subtitle: "",
     description:
       "Invisalign uses a series of custom clear aligners to gradually move teeth into ideal position. In our practice, it's never just a quick cosmetic fix — it's part of a comprehensive plan focused on function, health, and longevity. Proper alignment supports a balanced bite, reduces uneven wear, and helps preserve natural tooth structure over time.",
     keyPoints: [
