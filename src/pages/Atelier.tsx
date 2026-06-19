@@ -344,10 +344,6 @@ const serviceCategories: ServiceCategory[] = [
         description: "Custom oral appliance therapy as a CPAP alternative for mild to moderate apnea.",
       },
       {
-        name: "Snoring Solutions",
-        description: "Effective dental solutions to reduce or eliminate snoring.",
-      },
-      {
         name: "Sleep Assessment",
         description: "Comprehensive evaluation of your sleep health.",
       },
