@@ -16,7 +16,6 @@ import {
 } from "@/data/beforeAfterCases";
 
 const beforeAfterCases = [
-  { image: smileVeneerImage, alt: "Smile makeover before and after", split: "vertical" as const },
   { image: restorationImage, alt: "Tooth restoration before and after", split: "horizontal" as const },
   { image: whiteningImage, alt: "Smile whitening before and after", split: "vertical" as const },
 ];
