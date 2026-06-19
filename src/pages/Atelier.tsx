@@ -313,6 +313,10 @@ const serviceCategories: ServiceCategory[] = [
         name: "Invisalign® for Teens",
         description: "A teen-friendly orthodontic solution that fits an active lifestyle.",
       },
+      {
+        name: "Invisalign® for Retention",
+        description: "Maintain your results with custom retention aligners and long-term smile stability.",
+      },
     ],
   },
   {
