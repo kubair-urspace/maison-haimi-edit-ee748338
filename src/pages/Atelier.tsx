@@ -135,7 +135,7 @@ const serviceCategories: ServiceCategory[] = [
   {
     id: "aesthetic-restorative",
     title: "Aesthetic & Restorative Dentistry",
-    subtitle: "Aesthetic Excellence",
+    subtitle: "",
     description: [
       "Beautiful dentistry should do more than improve appearance. It should strengthen, preserve, and support the long-term health of your smile.",
       "At Haimi Dental Aesthetics, our approach to restorative dentistry is rooted in a minimally invasive philosophy that prioritizes both aesthetics and longevity. Every restoration is carefully designed to blend naturally with your smile while preserving as much healthy tooth structure as possible.",
@@ -521,9 +521,11 @@ const Atelier = () => {
               transition={{ duration: 0.6 }}
               className="mb-12"
             >
-              <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-3 block">
-                {category.subtitle}
-              </span>
+              {category.subtitle && (
+                <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-3 block">
+                  {category.subtitle}
+                </span>
+              )}
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase">
                 {category.title}
               </h2>
