@@ -256,7 +256,7 @@ const serviceCategories: ServiceCategory[] = [
   {
     id: "fullmouth",
     title: "Full Mouth Rehabilitation & Smile Makeover",
-    subtitle: "Complete Transformation",
+    subtitle: "",
     description:
       "A full mouth reconstruction is one of the most transformative treatments in dentistry. In our practice, it's never just \"changing the way teeth look\" — it's a carefully planned process that restores function, health, and natural aesthetics together. Every case is unique, planned in collaboration with the lab and patient. A core principle: preservation of natural tooth structure — for strength, longevity, and a result that never looks overdone.",
     keyPoints: [
