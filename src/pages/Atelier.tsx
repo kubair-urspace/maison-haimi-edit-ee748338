@@ -130,16 +130,7 @@ const serviceCategories: ServiceCategory[] = [
       "A conservative alternative for patients worried about unnecessary tooth reduction",
     ],
     detailedPointsIntro: "Why patients choose Dr. Haimi for smile design:",
-    services: [
-      {
-        name: "Porcelain Veneers",
-        description: "Ultra-thin, custom-crafted shells for a flawless smile while preserving natural tooth structure.",
-      },
-      {
-        name: "Digital Smile Design",
-        description: "Preview your new smile before treatment begins with cutting-edge digital planning.",
-      },
-    ],
+    services: [],
   },
   {
     id: "aesthetic-restorative",
