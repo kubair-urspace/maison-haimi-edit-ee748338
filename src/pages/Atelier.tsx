@@ -6,7 +6,6 @@ import { Link, useParams } from "react-router-dom";
 import ServiceCard from "@/components/services/ServiceCard";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import { galleriesByCategoryId } from "@/data/beforeAfterCases";
-import servicesHero from "@/assets/services-hero.jpg";
 import preventativeHero from "@/assets/preventative-dentistry.jpg";
 
 
@@ -438,7 +437,6 @@ const Atelier = () => {
     isSingleService && matchedCategory ? [matchedCategory] : serviceCategories;
 
   const heroTitle = matchedCategory ? matchedCategory.title : "Our Dental Services";
-  const heroBackground = matchedCategory?.heroImage || servicesHero;
 
   return (
     <Layout>
@@ -452,20 +450,13 @@ const Atelier = () => {
         path={matchedCategory ? `/services/${matchedCategory.id}` : "/services"}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-end">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBackground})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
-        </div>
-
-        <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
+      <section className="relative min-h-[50vh] flex items-center justify-center bg-background">
+        <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
+            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-charcoal tracking-wide uppercase mb-6"
           >
             {heroTitle}
           </motion.h1>
@@ -474,18 +465,18 @@ const Atelier = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center gap-2 font-body text-sm text-white/80"
+            className="flex items-center justify-center gap-2 font-body text-sm text-charcoal/60"
           >
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <Link to="/" className="hover:text-charcoal transition-colors">Home</Link>
             <span>/</span>
             {matchedCategory ? (
               <>
-                <Link to="/services" className="hover:text-white transition-colors">Services</Link>
+                <Link to="/services" className="hover:text-charcoal transition-colors">Services</Link>
                 <span>/</span>
-                <span className="text-white">{matchedCategory.title}</span>
+                <span className="text-charcoal">{matchedCategory.title}</span>
               </>
             ) : (
-              <span className="text-white">Services</span>
+              <span className="text-charcoal">Services</span>
             )}
           </motion.nav>
         </div>
