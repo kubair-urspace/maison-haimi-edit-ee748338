@@ -297,7 +297,7 @@ const serviceCategories: ServiceCategory[] = [
       "Balanced bite, preserved structure",
     ],
     detailedPoints: [
-      "Over 15 years of Invisalign experience",
+      "Over 18 years of Invisalign experience",
       "Every case personally planned by Dr. Haimi software is a tool, never the decision-maker",
       "Dr. Haimi personally oversees every step, from ClinCheck to attachment placement",
       "Complimentary cosmetic contouring after every Invisalign case",
