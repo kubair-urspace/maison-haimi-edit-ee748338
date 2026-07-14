@@ -47,7 +47,7 @@ const Footer = () => {
                 <img src={haimiWordmark} alt="Haimi Dental Aesthetics" className="h-14" />
               </Link>
               <p className="mt-4 text-muted-foreground font-body text-sm leading-relaxed">
-                Premium cosmetic and aesthetic dentistry in Great Neck, NY.
+                Premium Cosmetic, Surgical, and Sleep Medicine Dentistry in Great Neck, NY.
               </p>
               {/* ABDSM Diplomate Seal */}
               <div className="mt-5">
