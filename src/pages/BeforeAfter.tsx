@@ -370,7 +370,7 @@ const BeforeAfter = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="border border-border bg-card p-8 flex flex-col"
+                className="rounded-3xl border border-border hover:border-gold/40 bg-card p-8 flex flex-col transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_hsl(var(--gold)/0.25)]"
               >
                 <div className="flex gap-0.5 mb-4">
                   {Array.from({ length: 5 }).map((_, j) => (

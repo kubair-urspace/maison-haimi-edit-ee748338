@@ -14,7 +14,7 @@ const BeforeAfterComparison = ({
 }: BeforeAfterComparisonProps) => {
   return (
     <figure
-      className={`relative aspect-square overflow-hidden bg-muted/30 ${className}`}
+      className={`group relative aspect-square overflow-hidden rounded-3xl bg-muted/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_50px_-20px_hsl(var(--gold)/0.25)] ${className}`}
       aria-label={alt}
     >
       <img

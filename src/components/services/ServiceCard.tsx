@@ -36,7 +36,8 @@ const ServiceCard = ({ name, description, beforeImage, afterImage, transformatio
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       layout
-      className="group border border-border hover:border-gold/40 transition-all duration-500 hover:shadow-[0_8px_30px_-12px_hsl(var(--gold)/0.15)] bg-background overflow-hidden"
+      whileHover={{ y: -4 }}
+      className="group rounded-3xl border border-border hover:border-gold/40 transition-all duration-500 hover:shadow-[0_20px_50px_-20px_hsl(var(--gold)/0.25)] bg-background overflow-hidden"
     >
       {/* Card Header */}
       <div
