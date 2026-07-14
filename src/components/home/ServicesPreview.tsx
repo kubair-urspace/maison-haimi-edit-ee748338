@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import haimiLogo from "@/assets/haimi-logo-white.png.asset.json";
 
 const services = [
   { title: "Oral Health and Longevity", link: "/services/preventative" },
@@ -47,6 +48,14 @@ const ServicesPreview = () => {
                 className="group relative block aspect-[4/3] overflow-hidden bg-charcoal"
               >
                 <div className="absolute inset-0 bg-charcoal transition-all duration-700 group-hover:bg-charcoal/90" />
+
+                {/* Logo watermark, top-center, integrated but subtle */}
+                <img
+                  src={haimiLogo.url}
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 w-[80%] max-w-[280px] opacity-[0.07] group-hover:opacity-[0.12] transition-opacity duration-500 select-none"
+                />
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
                   <h3 className="font-display text-lg md:text-xl lg:text-2xl text-white tracking-wide uppercase">
