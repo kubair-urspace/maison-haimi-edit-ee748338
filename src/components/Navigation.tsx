@@ -11,7 +11,6 @@ const navLinks = [
   { name: "Meet Us", path: "/meet-us" },
   { name: "Services", path: "/services" },
   { name: "About Us", path: "/about" },
-  { name: "The Practice", path: "/practice" },
   { name: "Before & After", path: "/before-after" },
   { name: "Contact Us", path: "/concierge" },
 ];
