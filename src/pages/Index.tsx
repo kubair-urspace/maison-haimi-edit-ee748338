@@ -3,7 +3,7 @@ import SEO from "@/components/SEO";
 import HeroSection from "@/components/home/HeroSection";
 
 import ServicesPreview from "@/components/home/ServicesPreview";
-import ResultsSection from "@/components/home/ResultsSection";
+
 import AboutSection from "@/components/home/AboutSection";
 
 import TestimonialsSection from "@/components/home/TestimonialsSection";
@@ -20,7 +20,7 @@ const Index = () => {
       <HeroSection heroImage={heroImage} />
       
       <ServicesPreview />
-      <ResultsSection />
+      
       <AboutSection />
       
       <TestimonialsSection />
