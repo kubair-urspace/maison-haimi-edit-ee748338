@@ -14,6 +14,7 @@ const Concierge = lazy(() => import("./pages/Concierge"));
 const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
 const MeetUs = lazy(() => import("./pages/MeetUs"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const About = lazy(() => import("./pages/About"));
 
 const queryClient = new QueryClient();
 
