@@ -46,10 +46,10 @@ const ServicesPreview = () => {
               >
                 <Link
                   to={service.link}
-                  className="group relative block aspect-[4/3] overflow-hidden bg-charcoal"
+                  className="group relative block aspect-[4/3] overflow-hidden bg-espresso"
                 >
                   {/* Base surface + hover lightening */}
-                  <div className="absolute inset-0 bg-charcoal transition-colors duration-700 ease-out group-hover:bg-[hsl(var(--charcoal)/0.82)]" />
+                  <div className="absolute inset-0 bg-espresso transition-colors duration-700 ease-out group-hover:bg-[hsl(var(--espresso)/0.82)]" />
 
                   {/* Soft radial glow that fades in on hover */}
                   <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-out"
