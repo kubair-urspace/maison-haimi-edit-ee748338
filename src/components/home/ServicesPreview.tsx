@@ -44,12 +44,12 @@ const ServicesPreview = () => {
             >
               <Link
                 to={service.link}
-                className="group relative block aspect-[4/5] overflow-hidden bg-charcoal"
+                className="group relative block aspect-[4/3] overflow-hidden bg-charcoal"
               >
                 <div className="absolute inset-0 bg-charcoal transition-all duration-700 group-hover:bg-charcoal/90" />
 
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
-                  <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-white tracking-wide uppercase">
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+                  <h3 className="font-display text-lg md:text-xl lg:text-2xl text-white tracking-wide uppercase">
                     {service.title}
                   </h3>
                 </div>
