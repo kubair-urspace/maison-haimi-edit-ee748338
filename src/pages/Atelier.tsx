@@ -346,6 +346,10 @@ const serviceCategories: ServiceCategory[] = [
         name: "Sleep Assessment",
         description: "Comprehensive evaluation of your sleep health.",
       },
+      {
+        name: "Medical Insurance Coverage",
+        description: "Sleep apnea devices may be covered with your medical insurance.",
+      },
     ],
   },
   {
