@@ -230,13 +230,13 @@ const Practice = () => {
           </div>
 
           {/* Asymmetric magazine grid: large feature on the left, two stacked on the right */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:h-[520px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {facilityItems.map((item, index) => (
               <motion.div
                 key={item.title}
                 layout
                 transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
-                className="aspect-[4/3] lg:aspect-auto"
+                className="aspect-[4/3]"
               >
                 <FacilityCard
                   item={item}
