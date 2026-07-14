@@ -74,7 +74,7 @@ const Navigation = () => {
                         </Link>
                         {/* Dropdown */}
                         <div className="absolute left-1/2 -translate-x-1/2 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                          <div className="w-[320px] bg-background border border-gold/30 shadow-2xl py-3">
+                          <div className="w-[320px] bg-background border border-gold/30 shadow-2xl py-3 rounded-2xl overflow-hidden">
                             {serviceDropdown.map((s) => (
                               <Link
                                 key={s.path}
