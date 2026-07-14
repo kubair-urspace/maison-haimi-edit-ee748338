@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import haimiLogo from "@/assets/haimi-logo-white.png.asset.json";
 
 const services = [
   { title: "Oral Health and Longevity", link: "/services/preventative" },
