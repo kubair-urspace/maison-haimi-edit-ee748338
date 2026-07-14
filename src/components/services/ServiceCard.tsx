@@ -56,7 +56,7 @@ const ServiceCard = ({ name, description, beforeImage, afterImage, transformatio
 
       </div>
 
-      {/* Expandable Before/After Section (disabled — View Results removed) */}
+      {/* Expandable Before/After Section (disabled View Results removed) */}
       <AnimatePresence initial={false}>
         {false && isExpanded && hasImages && (
           <motion.div

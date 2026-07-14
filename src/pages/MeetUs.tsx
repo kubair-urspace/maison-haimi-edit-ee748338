@@ -6,7 +6,7 @@ const MeetUs = () => {
   return (
     <Layout>
       <SEO
-        title="Meet Dr. Eliza Haimi & Team — Haimi Dental"
+        title="Meet Dr. Eliza Haimi & Team Haimi Dental"
         description="Meet Dr. Eliza Haimi, Dr. Nicholas Ahladiotis, and the team behind Haimi Dental Aesthetics in Great Neck, NY."
         path="/meet-us"
       />

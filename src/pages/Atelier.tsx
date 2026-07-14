@@ -104,7 +104,7 @@ const serviceCategories: ServiceCategory[] = [
       {
         heading: "A more personalized experience",
         paragraphs: [
-          "We understand that dental visits can feel stressful for many patients. Our office was designed to feel welcoming, calm, and comfortable — with a patient experience centered around clear communication, individualized care, and attention to detail.",
+          "We understand that dental visits can feel stressful for many patients. Our office was designed to feel welcoming, calm, and comfortable with a patient experience centered around clear communication, individualized care, and attention to detail.",
           "Whether you are maintaining a healthy smile or rebuilding your oral health after years of wear or neglect, we are committed to helping you achieve long-lasting health, function, and aesthetics through thoughtful, comprehensive care.",
         ],
       },
@@ -116,7 +116,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Porcelain Veneers & Smile Design",
     subtitle: "Artful Transformation",
     description:
-      "Dr. Haimi's approach to veneers and smile design is rooted in one core principle: preserve as much natural tooth structure as possible. Patients seek her conservative, minimally invasive philosophy — whether enhancing a single tooth or creating a full smile transformation.",
+      "Dr. Haimi's approach to veneers and smile design is rooted in one core principle: preserve as much natural tooth structure as possible. Patients seek her conservative, minimally invasive philosophy whether enhancing a single tooth or creating a full smile transformation.",
     keyPoints: [
       "Preserve natural tooth structure",
       "Conservative & minimally invasive",
@@ -179,7 +179,7 @@ const serviceCategories: ServiceCategory[] = [
     services: [
       {
         name: "Dental Bonding",
-        description: "Reshape and perfect individual teeth — fixing chips, gaps, and discoloration.",
+        description: "Reshape and perfect individual teeth fixing chips, gaps, and discoloration.",
       },
       {
         name: "Professional Teeth Whitening",
@@ -208,7 +208,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Implant and Surgical Care",
     subtitle: "Surgical Specialists",
     description:
-      "A few years ago, Dr. Haimi brought surgical care in-house — allowing for the collaboration, precision, and continuity that's not possible across multiple locations. Dr. Ahladiotis (Dr. Effie) now practices in a dedicated, state-of-the-art surgical suite. Every surgical case is planned and executed together, so both the health and the aesthetics of the final result are considered from the very beginning.",
+      "A few years ago, Dr. Haimi brought surgical care in-house allowing for the collaboration, precision, and continuity that's not possible across multiple locations. Dr. Ahladiotis (Dr. Effie) now practices in a dedicated, state-of-the-art surgical suite. Every surgical case is planned and executed together, so both the health and the aesthetics of the final result are considered from the very beginning.",
     keyPoints: [
       "Surgical care brought in-house",
       "Dedicated state-of-the-art surgical suite",
@@ -227,7 +227,7 @@ const serviceCategories: ServiceCategory[] = [
     additionalContent: {
       heading: "Materials & Planning",
       paragraphs: [
-        "We use only the highest quality materials for every surgical procedure — implants, bone grafting, and gum grafting. We don't compromise on what supports healing and long-term success.",
+        "We use only the highest quality materials for every surgical procedure implants, bone grafting, and gum grafting. We don't compromise on what supports healing and long-term success.",
         "All extractions and implants are planned with advanced 3D CBCT imaging, letting us evaluate bone and anatomy in detail before treatment for greater accuracy and safety.",
       ],
       keyPoints: [
@@ -248,7 +248,7 @@ const serviceCategories: ServiceCategory[] = [
       },
       {
         name: "All-on-4 / All-on-6 Implants",
-        description: "Full-arch restoration on just 4–6 strategically placed implants.",
+        description: "Full-arch restoration on just 4-6 strategically placed implants.",
       },
     ],
   },
@@ -257,7 +257,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Full Mouth Rehabilitation & Smile Makeover",
     subtitle: "",
     description:
-      "A full mouth reconstruction is one of the most transformative treatments in dentistry. In our practice, it's never just \"changing the way teeth look\" — it's a carefully planned process that restores function, health, and natural aesthetics together. Every case is unique, planned in collaboration with the lab and patient. A core principle: preservation of natural tooth structure — for strength, longevity, and a result that never looks overdone.",
+      "A full mouth reconstruction is one of the most transformative treatments in dentistry. In our practice, it's never just \"changing the way teeth look\" it's a carefully planned process that restores function, health, and natural aesthetics together. Every case is unique, planned in collaboration with the lab and patient. A core principle: preservation of natural tooth structure for strength, longevity, and a result that never looks overdone.",
     keyPoints: [
       "More than how teeth look",
       "Function, health & aesthetics in harmony",
@@ -289,16 +289,16 @@ const serviceCategories: ServiceCategory[] = [
     title: "Invisalign®",
     subtitle: "",
     description:
-      "Invisalign uses a series of custom clear aligners to gradually move teeth into ideal position. In our practice, it's never just a quick cosmetic fix — it's part of a comprehensive plan focused on function, health, and longevity. Proper alignment supports a balanced bite, reduces uneven wear, and helps preserve natural tooth structure over time.",
+      "Invisalign uses a series of custom clear aligners to gradually move teeth into ideal position. In our practice, it's never just a quick cosmetic fix it's part of a comprehensive plan focused on function, health, and longevity. Proper alignment supports a balanced bite, reduces uneven wear, and helps preserve natural tooth structure over time.",
     keyPoints: [
       "Custom clear aligners",
-      "Not a quick fix — a comprehensive plan",
+      "Not a quick fix a comprehensive plan",
       "Function, health & longevity",
       "Balanced bite, preserved structure",
     ],
     detailedPoints: [
       "Over 15 years of Invisalign experience",
-      "Every case personally planned by Dr. Haimi — software is a tool, never the decision-maker",
+      "Every case personally planned by Dr. Haimi software is a tool, never the decision-maker",
       "Dr. Haimi personally oversees every step, from ClinCheck to attachment placement",
       "Complimentary cosmetic contouring after every Invisalign case",
     ],
@@ -306,7 +306,7 @@ const serviceCategories: ServiceCategory[] = [
     services: [
       {
         name: "Invisalign® Treatment",
-        description: "Clear aligner therapy for a straighter smile — discreet and effective.",
+        description: "Clear aligner therapy for a straighter smile discreet and effective.",
       },
       {
         name: "Invisalign® for Teens",
@@ -323,7 +323,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Sleep Apnea & Snoring",
     subtitle: "Rest Better",
     description:
-      "Dr. Haimi is a Diplomate of the American Board of Dental Sleep Medicine — the highest level of training in dental sleep medicine. She is one of a very small number of cosmetic dentists who integrates sleep medicine into everyday dental care, recognizing that airway, function, and aesthetics are closely connected.",
+      "Dr. Haimi is a Diplomate of the American Board of Dental Sleep Medicine the highest level of training in dental sleep medicine. She is one of a very small number of cosmetic dentists who integrates sleep medicine into everyday dental care, recognizing that airway, function, and aesthetics are closely connected.",
     keyPoints: [
       "Diplomate, American Board of Dental Sleep Medicine",
       "Highest level of dental sleep training",
@@ -353,7 +353,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Facial Aesthetics & Therapeutic Botox",
     subtitle: "Beyond the Smile",
     description:
-      "Dentists receive extensive training in full-body anatomy — and even deeper training in the muscles, nerves, and function of the face and jaw. That foundation, combined with Dr. Haimi's expertise in sleep medicine and occlusion, makes therapeutic Botox a natural extension of our care.",
+      "Dentists receive extensive training in full-body anatomy and even deeper training in the muscles, nerves, and function of the face and jaw. That foundation, combined with Dr. Haimi's expertise in sleep medicine and occlusion, makes therapeutic Botox a natural extension of our care.",
     keyPoints: [
       "Extensive anatomy training",
       "Deep focus on face & jaw function",
@@ -362,13 +362,13 @@ const serviceCategories: ServiceCategory[] = [
       heading: "Therapeutic Botox",
       paragraphs: [
         "Botox is used thoughtfully to help with clenching, jaw tension, and muscle discomfort. This approach is guided by Dr. Haimi's training as a Diplomate of the American Board of Dental Sleep Medicine and her work in occlusion and full-mouth rehabilitation.",
-        "Treatments are precise, conservative, and always focused on comfort and balance. While the goal is therapeutic, an understanding of facial aesthetics naturally guides every treatment — never overdone.",
+        "Treatments are precise, conservative, and always focused on comfort and balance. While the goal is therapeutic, an understanding of facial aesthetics naturally guides every treatment never overdone.",
       ],
       keyPoints: [
         "For clenching, jaw tension & discomfort",
         "Guided by occlusion & sleep training",
         "Precise, conservative, never overdone",
-        "Therapeutic first — aesthetic follows",
+        "Therapeutic first aesthetic follows",
       ],
     },
     services: [],
@@ -389,7 +389,7 @@ const serviceCategories: ServiceCategory[] = [
       paragraphs: [
         "Each treatment room has comfortable chairs, TVs, and music for a relaxed, distraction-friendly experience.",
         "Dr. Haimi takes the time to talk through every treatment so patients feel informed and at ease. Her background in psychology shapes a calm, patient approach built on trust.",
-        "Nitrous oxide (laughing gas) is available for those who'd like extra support. Over time, our goal is to change how you feel about dentistry — many of our once-anxious patients now come in calm and at ease.",
+        "Nitrous oxide (laughing gas) is available for those who'd like extra support. Over time, our goal is to change how you feel about dentistry many of our once-anxious patients now come in calm and at ease.",
       ],
       keyPoints: [
         "Comfortable chairs, TVs & music",
@@ -441,7 +441,7 @@ const Atelier = () => {
   return (
     <Layout>
       <SEO
-        title={matchedCategory ? `${matchedCategory.title} — Haimi Dental` : "Dental Services — Haimi Dental Aesthetics"}
+        title={matchedCategory ? `${matchedCategory.title} Haimi Dental` : "Dental Services Haimi Dental Aesthetics"}
         description={(() => {
           const desc = matchedCategory?.description;
           const text = Array.isArray(desc) ? desc[0] : desc;
@@ -675,7 +675,7 @@ const Atelier = () => {
                 Discover Our Full Range of Services
               </h2>
               <p className="font-body text-base text-foreground/80 max-w-xl mx-auto mb-8 leading-relaxed">
-                Browse every treatment we offer — from preventative care to full smile transformations.
+                Browse every treatment we offer from preventative care to full smile transformations.
               </p>
               <Button variant="luxury-gold-filled" size="xl" asChild>
                 <Link to="/services">Additional Services</Link>
