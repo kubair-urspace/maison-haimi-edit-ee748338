@@ -134,9 +134,6 @@ const Footer = () => {
               <p className="text-muted-foreground text-xs">
                 © {new Date().getFullYear()} Eliza Haimi DDS. All rights reserved.
               </p>
-              <p className="text-muted-foreground text-xs">
-                Designed with care in Great Neck, NY
-              </p>
             </div>
           </div>
         </div>
