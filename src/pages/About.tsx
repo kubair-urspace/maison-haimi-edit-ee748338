@@ -121,11 +121,6 @@ const About = () => {
               ))}
             </div>
 
-            <div className="text-center mt-12">
-              <Button variant="luxury" size="lg" asChild>
-                <Link to="/practice">Explore the Full Practice</Link>
-              </Button>
-            </div>
           </div>
         </section>
 
