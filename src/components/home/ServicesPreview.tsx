@@ -65,7 +65,7 @@ const ServicesPreview = () => {
                   </div>
 
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
-                    <h3 className="font-display text-lg md:text-xl lg:text-2xl text-charcoal tracking-wide uppercase transition-transform duration-700 ease-out group-hover:-translate-y-0.5">
+                    <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-charcoal tracking-wide uppercase transition-transform duration-700 ease-out group-hover:-translate-y-0.5">
                       {service.title}
                     </h3>
                     <span className="mt-3 block h-px w-0 bg-gold/70 transition-all duration-700 ease-out group-hover:w-10" />
