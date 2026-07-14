@@ -145,7 +145,7 @@ const ServiceCard = ({ name, description, beforeImage, afterImage, transformatio
                     e.stopPropagation();
                     setShowDetails(!showDetails);
                   }}
-                  className="w-full mt-4 py-3 px-4 border border-gold/30 hover:border-gold/60 bg-transparent hover:bg-gold/5 transition-all duration-500 flex items-center justify-center gap-2 group/btn"
+                  className="w-full mt-4 py-3 px-4 rounded-full border border-gold/30 hover:border-gold/60 bg-transparent hover:bg-gold/5 transition-all duration-500 flex items-center justify-center gap-2 group/btn"
                 >
                   <Sparkles className="h-3.5 w-3.5 text-gold transition-transform duration-500 group-hover/btn:scale-110" />
                   <span className="font-body text-[10px] tracking-[0.25em] uppercase text-gold">
