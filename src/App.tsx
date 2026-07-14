@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import ScrollToTop from "./components/ScrollToTop";
 
 // Code-split secondary routes so the initial load only ships the homepage bundle
-const Practice = lazy(() => import("./pages/Practice"));
+
 const Atelier = lazy(() => import("./pages/Atelier"));
 const Concierge = lazy(() => import("./pages/Concierge"));
 const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
