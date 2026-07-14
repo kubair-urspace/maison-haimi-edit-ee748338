@@ -88,20 +88,20 @@ const TestimonialsSection = () => {
             {doubledTestimonials.map((testimonial, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 w-[150px] md:w-[155px] border border-border bg-card p-3 flex flex-col mx-1"
+                className="flex-shrink-0 w-[320px] md:w-[360px] border border-border bg-card p-8 flex flex-col mx-3"
               >
-                <div className="flex gap-0.5 mb-2">
+                <div className="flex gap-0.5 mb-4">
                   {Array.from({ length: 5 }).map((_, j) => (
-                    <svg key={j} className="w-3 h-3 text-gold fill-current" viewBox="0 0 20 20">
+                    <svg key={j} className="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
                       <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                     </svg>
                   ))}
                 </div>
-                <p className="font-body text-foreground/80 text-[10px] leading-snug italic flex-1 mb-2 line-clamp-6">
+                <p className="font-body text-foreground/80 text-sm leading-relaxed italic flex-1 mb-6">
                   "{testimonial.quote}"
                 </p>
                 <div>
-                  <p className="font-display text-foreground text-xs">
+                  <p className="font-display text-foreground text-base">
                     {(() => {
                       const parts = testimonial.name.trim().split(/\s+/).filter(Boolean);
                       return parts.map((p) => `${p[0].toUpperCase()}.`).join(" ");
