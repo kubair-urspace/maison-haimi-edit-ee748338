@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Eliza Haimi DDS — Great Neck Cosmetic Dentist"
+        title="Eliza Haimi DDS Great Neck Cosmetic Dentist"
         description="Boutique cosmetic and family dentistry in Great Neck, NY. Conservative smile design, Invisalign, veneers, and implants with Dr. Eliza Haimi."
         path="/"
       />

@@ -32,13 +32,13 @@ const facilityItems: FacilityItem[] = [
     images: [facilityReception],
     title: "Reception",
     subtitle: "A Warm Welcome",
-    description: "Our reception area sets the tone for your visit—marble finishes, soft lighting, and a curated atmosphere designed to put you at ease from the moment you arrive.",
+    description: "Our reception area sets the tone for your visit marble finishes, soft lighting, and a curated atmosphere designed to put you at ease from the moment you arrive.",
   },
   {
     images: [facilityTreatment, facilityTreatment2, facilityTreatment3, facilityTreatment4, facilityTreatment5, facilityTreatment6, facilityTreatment7],
     title: "Treatment Suite",
     subtitle: "Precision & Comfort",
-    description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light—creating an environment where advanced care meets total comfort.",
+    description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light creating an environment where advanced care meets total comfort.",
   },
   {
     images: [facilityTechnology, facilityTechnology2, facilityTechnology3, facilityTechnology4, facilityTechnology5],
@@ -172,7 +172,7 @@ const Practice = () => {
   return (
     <Layout>
       <SEO
-        title="The Practice — Haimi Dental Aesthetics"
+        title="The Practice Haimi Dental Aesthetics"
         description="Tour the boutique Great Neck dental office: advanced technology, calming design, and a personalized patient experience."
         path="/practice"
       />
@@ -207,7 +207,7 @@ const Practice = () => {
               className="font-body text-muted-foreground editorial-text"
             >
               Every detail of our Great Neck practice has been thoughtfully designed to provide 
-              an unparalleled patient experience—combining cutting-edge technology with the 
+              an unparalleled patient experience combining cutting-edge technology with the 
               warmth of a private retreat.
             </motion.p>
           </div>

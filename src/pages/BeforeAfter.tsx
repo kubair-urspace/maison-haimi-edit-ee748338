@@ -25,7 +25,7 @@ const BeforeAfter = () => {
   return (
     <Layout>
       <SEO
-        title="Before & After Gallery — Haimi Dental"
+        title="Before & After Gallery Haimi Dental"
         description="Real smile transformations from Haimi Dental Aesthetics: veneers, whitening, and restorative results in Great Neck, NY."
         path="/before-after"
       />
@@ -78,7 +78,7 @@ const BeforeAfter = () => {
               Transformations
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
-              Every smile tells a story. Explore our gallery of transformations—each one
+              Every smile tells a story. Explore our gallery of transformations each one
               a testament to the artistry and precision that defines our practice.
             </p>
           </motion.div>
@@ -123,7 +123,7 @@ const BeforeAfter = () => {
               Veneers
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
-              Hand-crafted porcelain veneers that refine shape, color, and proportion —
+              Hand-crafted porcelain veneers that refine shape, color, and proportion  
               creating naturally radiant smiles tailored to every face.
             </p>
           </motion.div>
@@ -167,7 +167,7 @@ const BeforeAfter = () => {
               Clear Aligner Results
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
-              Discreet, comfortable, and precisely planned — see how Invisalign has
+              Discreet, comfortable, and precisely planned see how Invisalign has
               transformed our patients' smiles through gentle, progressive movement.
             </p>
           </motion.div>
@@ -253,7 +253,7 @@ const BeforeAfter = () => {
               Implants & Tooth Replacement
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
-              From single-tooth implants to full smile reconstructions — restoring
+              From single-tooth implants to full smile reconstructions restoring
               confidence, function, and natural beauty with precision implant dentistry.
             </p>
           </motion.div>
@@ -296,7 +296,7 @@ const BeforeAfter = () => {
               Full Mouth Reconstruction
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed text-base md:text-lg">
-              Complete rehabilitation of form, function, and aesthetics — meticulously
+              Complete rehabilitation of form, function, and aesthetics meticulously
               planned restorations that rebuild the entire smile with lasting beauty.
             </p>
           </motion.div>

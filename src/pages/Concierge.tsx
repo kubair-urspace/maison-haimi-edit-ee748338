@@ -143,7 +143,7 @@ const Concierge = () => {
   return (
     <Layout>
       <SEO
-        title="Request an Appointment — Haimi Dental"
+        title="Request an Appointment Haimi Dental"
         description="Book a consultation with Dr. Eliza Haimi. Personalized cosmetic, restorative, and preventive dental care in Great Neck, NY."
         path="/concierge"
       />
@@ -407,10 +407,10 @@ const Concierge = () => {
                   <div>
                     <p className="font-body text-foreground font-medium">Hours</p>
                     <div className="font-body text-muted-foreground">
-                      <p>Monday & Tuesday: 8:00 AM – 5:00 PM</p>
-                      <p>Wednesday: 8:00 AM – 1:00 PM</p>
-                      <p>Thursday: 8:00 AM – 3:00 PM</p>
-                      <p>Friday – Sunday: Closed</p>
+                      <p>Monday & Tuesday: 8:00 AM to 5:00 PM</p>
+                      <p>Wednesday: 8:00 AM to 1:00 PM</p>
+                      <p>Thursday: 8:00 AM to 3:00 PM</p>
+                      <p>Friday to Sunday: Closed</p>
                     </div>
                   </div>
                 </div>

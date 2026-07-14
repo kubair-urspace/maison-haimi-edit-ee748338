@@ -57,7 +57,7 @@ const Footer = () => {
                   className="h-16 w-16"
                 />
               </div>
-              {/* Social Media — placeholder URLs, replace when provided */}
+              {/* Social Media placeholder URLs, replace when provided */}
               <div className="mt-5 flex gap-3">
                 <a href="https://www.instagram.com/drelizahaimi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 border border-border hover:border-gold rounded-full flex items-center justify-center text-muted-foreground hover:text-gold transition-all duration-300">
                   <Instagram className="h-4 w-4" />
@@ -110,10 +110,10 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />
                   <div>
-                    <p>Monday & Tuesday: 8:00 AM – 5:00 PM</p>
-                    <p>Wednesday: 8:00 AM – 1:00 PM</p>
-                    <p>Thursday: 8:00 AM – 3:00 PM</p>
-                    <p>Friday – Sunday: Closed</p>
+                    <p>Monday & Tuesday: 8:00 AM to 5:00 PM</p>
+                    <p>Wednesday: 8:00 AM to 1:00 PM</p>
+                    <p>Thursday: 8:00 AM to 3:00 PM</p>
+                    <p>Friday to Sunday: Closed</p>
                   </div>
                 </div>
               </div>

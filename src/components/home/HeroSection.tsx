@@ -104,7 +104,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
                 Advanced technology and the highest quality materials are used to create results that are natural, beautiful, and enduring. Patients are never rushed. Options are explained clearly, questions are welcomed, and decisions are made together with the patients.
               </p>
               <p className="font-body text-muted-foreground leading-relaxed italic mb-8">
-                Exceptional dentistry is not about doing more — it is about doing what is right, at the right time.
+                Exceptional dentistry is not about doing more it is about doing what is right, at the right time.
               </p>
               <Button variant="luxury" size="lg" asChild>
                 <Link to="/practice">About Us</Link>

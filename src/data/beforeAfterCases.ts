@@ -279,9 +279,9 @@ export const invisalignCases: BeforeAfterCase[] = [
 ];
 
 export const galleriesByCategoryId: Record<string, { eyebrow: string; heading: string; cases: BeforeAfterCase[] }> = {
-  veneers: { eyebrow: "Porcelain", heading: "Veneers — Before & After", cases: veneersCases },
-  "aesthetic-restorative": { eyebrow: "Restorative", heading: "Restorative — Before & After", cases: restorativeCases },
-  "implant-surgical": { eyebrow: "Implants", heading: "Tooth Replacement — Before & After", cases: missingTeethCases },
-  fullmouth: { eyebrow: "Comprehensive", heading: "Full Mouth — Before & After", cases: fullMouthCases },
-  invisalign: { eyebrow: "Invisalign", heading: "Clear Aligner Results — Before & After", cases: invisalignCases },
+  veneers: { eyebrow: "Porcelain", heading: "Veneers Before & After", cases: veneersCases },
+  "aesthetic-restorative": { eyebrow: "Restorative", heading: "Restorative Before & After", cases: restorativeCases },
+  "implant-surgical": { eyebrow: "Implants", heading: "Tooth Replacement Before & After", cases: missingTeethCases },
+  fullmouth: { eyebrow: "Comprehensive", heading: "Full Mouth Before & After", cases: fullMouthCases },
+  invisalign: { eyebrow: "Invisalign", heading: "Clear Aligner Results Before & After", cases: invisalignCases },
 };

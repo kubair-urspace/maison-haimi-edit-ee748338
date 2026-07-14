@@ -31,7 +31,7 @@ const ResultsSection = () => {
           <BeforeAfterComparison image={smileVeneerImage2} alt="Dental veneer transformation" split="vertical" />
 
           <p className="mt-6 text-center font-body text-sm md:text-base text-charcoal/70 italic leading-relaxed">
-            More amazing before &amp; afters coming soon — stay tuned!
+            More amazing before &amp; afters coming soon stay tuned!
           </p>
         </motion.div>
       </div>
