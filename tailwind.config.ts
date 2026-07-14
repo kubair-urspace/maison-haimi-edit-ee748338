@@ -61,6 +61,7 @@ export default {
         cream: "hsl(var(--cream))",
         sand: "hsl(var(--sand))",
         charcoal: "hsl(var(--charcoal))",
+        espresso: "hsl(var(--espresso))",
         gold: {
           DEFAULT: "hsl(var(--gold))",
           light: "hsl(var(--gold-light))",
