@@ -18,6 +18,7 @@ const navLinks = [
 
 const desktopPrimaryLinks: { name: string; path: string; isServices?: boolean }[] = [
   { name: "Services", path: "/services", isServices: true },
+  { name: "About Us", path: "/about" },
   { name: "The Practice", path: "/practice" },
   { name: "Before & After", path: "/before-after" },
 ];
