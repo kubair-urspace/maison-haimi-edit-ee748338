@@ -51,11 +51,19 @@ const Footer = () => {
               </p>
               {/* ABDSM Diplomate Seal */}
               <div className="mt-5">
-                <img
-                  src={abdsmSeal}
-                  alt="Diplomate, American Board of Dental Sleep Medicine"
-                  className="h-16 w-16"
-                />
+                <a
+                  href="https://www.memberleap.com/members/directory/search_bootstrap.php?org_id=ABDS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Verify Diplomate status on the American Board of Dental Sleep Medicine directory"
+                  className="inline-block transition-opacity duration-300 hover:opacity-80"
+                >
+                  <img
+                    src={abdsmSeal}
+                    alt="Diplomate, American Board of Dental Sleep Medicine"
+                    className="h-16 w-16"
+                  />
+                </a>
               </div>
               {/* Social Media placeholder URLs, replace when provided */}
               <div className="mt-5 flex gap-3">
