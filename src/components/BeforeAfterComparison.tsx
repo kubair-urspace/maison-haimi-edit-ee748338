@@ -29,8 +29,9 @@ const BeforeAfterComparison = ({
         alt=""
         aria-hidden="true"
         draggable={false}
-        className="pointer-events-none absolute bottom-3 right-3 w-24 md:w-28 opacity-70 mix-blend-screen select-none"
+        className="pointer-events-none absolute left-1/2 top-1/2 w-2/3 md:w-3/5 -translate-x-1/2 -translate-y-1/2 opacity-40 mix-blend-screen select-none"
       />
+
     </figure>
   );
 };
