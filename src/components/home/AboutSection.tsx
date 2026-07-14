@@ -89,12 +89,6 @@ const AboutSection = () => {
                 She resides in Great Neck with her husband and their three children.
               </p>
             </div>
-
-            <div className="mt-10">
-              <Button variant="luxury-gold-filled" size="lg" asChild>
-                <Link to="/practice">Learn More</Link>
-              </Button>
-            </div>
           </motion.div>
         </div>
 
@@ -148,12 +142,6 @@ const AboutSection = () => {
                 in modern periodontology. Her approach combines clinical excellence with a patient-focused 
                 philosophy, ensuring every patient receives thoughtful, compassionate care and outstanding results.
               </p>
-            </div>
-
-            <div className="mt-10">
-              <Button variant="luxury-gold-filled" size="lg" asChild>
-                <Link to="/practice">Learn More</Link>
-              </Button>
             </div>
           </motion.div>
         </div>
@@ -211,12 +199,6 @@ const AboutSection = () => {
                 planing, helping patients achieve and maintain healthier gums through a personalized 
                 and compassionate approach.
               </p>
-            </div>
-
-            <div className="mt-10">
-              <Button variant="luxury-gold-filled" size="lg" asChild>
-                <Link to="/practice">Learn More</Link>
-              </Button>
             </div>
           </motion.div>
         </div>
