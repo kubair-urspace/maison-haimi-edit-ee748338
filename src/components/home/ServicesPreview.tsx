@@ -35,7 +35,7 @@ const ServicesPreview = () => {
 
         {/* Premium Image Grid */}
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px] bg-[hsl(var(--sand))] p-[2px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -46,7 +46,7 @@ const ServicesPreview = () => {
               >
                 <Link
                   to={service.link}
-                  className="group relative block aspect-[4/3] overflow-hidden bg-white"
+                  className="group relative block aspect-[4/3] overflow-hidden bg-white rounded-2xl border-[3px] border-[hsl(var(--sand))] transition-colors duration-700 ease-out hover:border-gold/70"
                 >
                   {/* Base surface + hover lightening */}
                   <div className="absolute inset-0 bg-white transition-colors duration-700 ease-out group-hover:bg-[hsl(var(--cream))]" />
@@ -70,13 +70,6 @@ const ServicesPreview = () => {
                     </h3>
                     <span className="mt-3 block h-px w-0 bg-gold/70 transition-all duration-700 ease-out group-hover:w-10" />
                   </div>
-
-                  {/* Beige perimeter frame (always visible) */}
-                  <div className="pointer-events-none absolute inset-3 border border-[hsl(var(--sand))]" />
-                  {/* Gold hover frame */}
-                  <div className="pointer-events-none absolute inset-3 border border-gold/0 group-hover:border-gold/60 transition-[border-color] duration-700 ease-out" />
-                  {/* Inner secondary hover frame */}
-                  <div className="pointer-events-none absolute inset-6 border border-charcoal/0 group-hover:border-charcoal/15 transition-[border-color] duration-1000 ease-out delay-100" />
                 </Link>
               </motion.div>
             ))}
