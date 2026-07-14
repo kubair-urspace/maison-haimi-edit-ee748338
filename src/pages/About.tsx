@@ -56,40 +56,6 @@ const About = () => {
         path="/about"
       />
       <div className="pt-14 md:pt-16 bg-cream">
-        {/* Hero */}
-        <section className="py-20 md:py-28">
-          <div className="container mx-auto px-6 text-center max-w-3xl">
-            <motion.span
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4 block"
-            >
-              About Our Practice
-            </motion.span>
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="font-display text-4xl md:text-5xl lg:text-6xl text-charcoal tracking-wide uppercase leading-tight"
-            >
-              Boutique Dentistry,
-              <br />
-              <span className="text-gold">Thoughtfully Delivered</span>
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mt-8 font-body text-charcoal/75 leading-relaxed text-base md:text-lg"
-            >
-              A private, boutique practice in Great Neck, New York, founded on the belief that
-              dentistry should be personal, unhurried, and guided entirely by what is best for
-              each patient.
-            </motion.p>
-          </div>
-        </section>
-
         {/* Doctors */}
         <AboutSection />
 
