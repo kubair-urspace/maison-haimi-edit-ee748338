@@ -161,9 +161,14 @@ const About = () => {
                   transition={{ duration: 0.6, delay: i * 0.08 }}
                   className="bg-background border border-gold/20 p-8 hover:border-gold/50 transition-colors duration-500"
                 >
-                  <h3 className="font-display text-2xl text-charcoal uppercase tracking-wide mb-4">
+                  <h3 className="font-display text-2xl text-charcoal uppercase tracking-wide mb-2">
                     {t.title}
                   </h3>
+                  {t.subtitle && (
+                    <p className="font-body text-xs tracking-[0.2em] uppercase text-gold mb-4">
+                      {t.subtitle}
+                    </p>
+                  )}
                   <p className="font-body text-charcoal/75 leading-relaxed">{t.body}</p>
                 </motion.div>
               ))}
