@@ -159,7 +159,7 @@ const About = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: i * 0.08 }}
-                  className="bg-background border border-gold/20 p-8 hover:border-gold/50 transition-colors duration-500"
+                  className="bg-background border border-gold/20 rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-xl hover:border-gold/50 hover:-translate-y-1 transition-all duration-500"
                 >
                   <h3 className="font-display text-2xl text-charcoal uppercase tracking-wide mb-2">
                     {t.title}
