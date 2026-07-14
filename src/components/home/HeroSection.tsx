@@ -107,7 +107,7 @@ const HeroSection = ({ heroImage }: HeroSectionProps) => {
                 Exceptional dentistry is not about doing more it is about doing what is right, at the right time.
               </p>
               <Button variant="luxury" size="lg" asChild>
-                <Link to="/practice">About Us</Link>
+                <Link to="/about">About Us</Link>
               </Button>
             </div>
           </motion.div>
