@@ -80,9 +80,6 @@ const Footer = () => {
             <div>
               <h4 className="font-display text-lg mb-6 text-foreground">Explore</h4>
               <nav className="flex flex-col gap-3">
-                <Link to="/practice" className="text-muted-foreground hover:text-gold transition-colors text-sm">
-                  The Practice
-                </Link>
                 <Link to="/services" className="text-muted-foreground hover:text-gold transition-colors text-sm">
                   Services
                 </Link>
