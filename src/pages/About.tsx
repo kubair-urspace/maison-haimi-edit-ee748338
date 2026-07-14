@@ -22,28 +22,44 @@ const practiceImages = [
 
 const technologies = [
   {
-    title: "3D Digital Scanning",
-    body: "High-resolution intraoral scanners replace traditional impressions, delivering precise, comfortable digital models for every treatment plan.",
+    title: "3D CBCT Imaging",
+    subtitle: "See Beyond the Surface",
+    body: "Our 3D Cone Beam CT (CBCT) scanner provides a detailed three-dimensional view of your teeth, jaw, nerves, sinuses, and surrounding bone. Unlike traditional x-rays, it allows us to diagnose problems with exceptional precision and carefully plan implants, root canals, extractions and other complex procedures while minimizing surprises.",
   },
   {
-    title: "CBCT 3D Imaging",
-    body: "Cone-beam computed tomography provides detailed three-dimensional views of teeth, bone, and nerves for safer, more predictable diagnostics.",
+    title: "Low-Dose Digital X-Rays",
+    subtitle: "Precision Imaging with Less Radiation",
+    body: "Our digital radiography system allows us to customize the radiation dose for every patient. Instead of using a one-size-fits-all setting, we adjust the exposure based on your height, body size and the specific area being imaged. This provides exceptionally clear images while using only the amount of radiation necessary for an accurate diagnosis.",
   },
   {
-    title: "CAD/CAM Restorations",
-    body: "Advanced computer-aided design and milling systems allow us to craft custom restorations with exceptional accuracy and aesthetic detail.",
+    title: "Digital Intraoral Scanner",
+    subtitle: "Comfortable, Impression-Free Accuracy",
+    body: "Our digital scanner captures highly accurate 3D images of your teeth in minutes, making procedures more comfortable while improving the precision of inlays, onlays, crowns, nightguards, retainers, and other restorations where regular impression techniques are not necessary.",
   },
   {
-    title: "3D Printer",
-    body: "In-house 3D printing enables rapid fabrication of surgical guides, models, and provisional restorations with exceptional precision and turnaround.",
+    title: "CAD/CAM Digital Design",
+    subtitle: "Designed Digitally. Crafted Precisely.",
+    body: "Every smile begins with thoughtful planning. Our advanced CAD/CAM technology allows us to digitally design restorations with exceptional precision, ensuring a natural fit, ideal function, and beautiful esthetics before they are ever fabricated.",
+  },
+  {
+    title: "In-House Milling Technology",
+    subtitle: "Beautiful Restorations, Made Right Here",
+    body: "Our in-office milling technology allows us to fabricate many custom ceramic restorations right in our practice. This provides outstanding precision, shortens treatment time, and often allows patients to complete treatment in a single visit.",
+  },
+  {
+    title: "3D Printing Technology",
+    subtitle: "Precision Through Digital Innovation",
+    body: "Our medical-grade 3D printers produce highly accurate surgical guides, dental models, nightguards, retainers, and other custom appliances. This technology improves precision, efficiency, and predictability while helping deliver more personalized care.",
+  },
+  {
+    title: "Intraoral Camera",
+    subtitle: "See What We See",
+    body: "Our high-definition intraoral camera allows you to view your teeth and gums on a chairside monitor in real time. By seeing exactly what we see, you'll better understand your diagnosis and treatment options, allowing you to make informed decisions about your oral health.",
   },
   {
     title: "Advanced Sterilization",
+    subtitle: "Safety Without Compromise",
     body: "Hospital-grade sterilization protocols and modern instrumentation ensure the highest standards of safety and infection control.",
-  },
-  {
-    title: "Comfort Technology",
-    body: "Sedation options, noise-canceling headphones, and calming design details create a serene, spa-like experience for every visit.",
   },
 ];
 
