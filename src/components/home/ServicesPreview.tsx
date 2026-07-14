@@ -75,14 +75,6 @@ const ServicesPreview = () => {
             ))}
           </div>
 
-          {/* Single large logo watermark spanning all 9 boxes */}
-          <img
-            src={haimiLogo.url}
-            alt=""
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 m-auto w-[60%] max-w-[720px] h-auto opacity-[0.10] select-none"
-            style={{ filter: "invert(1)" }}
-          />
         </div>
       </div>
     </section>
