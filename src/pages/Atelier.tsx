@@ -208,7 +208,7 @@ const serviceCategories: ServiceCategory[] = [
     title: "Implant and Surgical Care",
     subtitle: "Surgical Specialists",
     description:
-      "A few years ago, Dr. Haimi brought surgical care in-house allowing for the collaboration, precision, and continuity that's not possible across multiple locations. Dr. Ahladiotis (Dr. Effie) now practices in a dedicated, state-of-the-art surgical suite. Every surgical case is planned and executed together, so both the health and the aesthetics of the final result are considered from the very beginning.",
+      "A few years ago, Dr. Haimi brought surgical care in-house allowing for the collaboration, precision, and continuity that's not possible across multiple locations. Dr. Nicholas Ahladiotis (Dr. Effie) now practices in a dedicated, state-of-the-art surgical suite. Every surgical case is planned and executed together, so both the health and the aesthetics of the final result are considered from the very beginning.",
     keyPoints: [
       "Surgical care brought in-house",
       "Dedicated state-of-the-art surgical suite",
