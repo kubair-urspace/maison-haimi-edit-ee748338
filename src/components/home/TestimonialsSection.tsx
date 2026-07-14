@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
             {doubledTestimonials.map((testimonial, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 w-[320px] md:w-[360px] border border-border bg-card p-8 flex flex-col mx-3"
+                className="flex-shrink-0 w-[150px] md:w-[155px] border border-border bg-card p-3 flex flex-col mx-1"
               >
                 <div className="flex gap-0.5 mb-4">
                   {Array.from({ length: 5 }).map((_, j) => (
