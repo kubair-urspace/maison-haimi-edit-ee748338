@@ -69,14 +69,11 @@ const TestimonialsSection = () => {
           className="text-center"
         >
           <span className="font-display text-2xl md:text-3xl italic text-gold mb-2 block">
-            Patient
+            Some of our Patient
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground tracking-wide uppercase">
             Testimonials
           </h2>
-          <p className="font-body text-sm tracking-[0.2em] uppercase text-charcoal/60 mt-4">
-            Real reviews from Google, Facebook &amp; Birdeye
-          </p>
         </motion.div>
       </div>
 
@@ -86,37 +83,34 @@ const TestimonialsSection = () => {
         <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none" />
 
-        <div className="flex animate-marquee hover:[animation-play-state:paused]">
-          {doubledTestimonials.map((testimonial, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-[320px] md:w-[360px] border border-border bg-card p-8 flex flex-col mx-3"
-            >
-              <div className="flex gap-0.5 mb-4">
-                {Array.from({ length: 5 }).map((_, j) => (
-                  <svg key={j} className="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="font-body text-foreground/80 text-sm leading-relaxed italic flex-1 mb-6">
-                "{testimonial.quote}"
-              </p>
-              <div>
-                <p className="font-display text-foreground text-base">
-                  {(() => {
-                    const parts = testimonial.name.trim().split(/\s+/);
-                    return parts.length > 1
-                      ? `${parts[0]} ${parts[parts.length - 1][0]}.`
-                      : parts[0];
-                  })()}
+        <div className="overflow-x-auto overflow-y-hidden scrollbar-thin cursor-grab active:cursor-grabbing">
+          <div className="flex animate-marquee hover:[animation-play-state:paused] w-max">
+            {doubledTestimonials.map((testimonial, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 w-[320px] md:w-[360px] border border-border bg-card p-8 flex flex-col mx-3"
+              >
+                <div className="flex gap-0.5 mb-4">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <svg key={j} className="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="font-body text-foreground/80 text-sm leading-relaxed italic flex-1 mb-6">
+                  "{testimonial.quote}"
                 </p>
-                <p className="font-body text-[10px] tracking-[0.2em] uppercase text-gold mt-1">
-                  via {testimonial.source}
-                </p>
+                <div>
+                  <p className="font-display text-foreground text-base">
+                    {(() => {
+                      const parts = testimonial.name.trim().split(/\s+/).filter(Boolean);
+                      return parts.map((p) => `${p[0].toUpperCase()}.`).join(" ");
+                    })()}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
