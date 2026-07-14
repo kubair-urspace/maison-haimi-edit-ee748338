@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import ScrollToTop from "./components/ScrollToTop";
 
 // Code-split secondary routes so the initial load only ships the homepage bundle
-const Practice = lazy(() => import("./pages/Practice"));
+
 const Atelier = lazy(() => import("./pages/Atelier"));
 const Concierge = lazy(() => import("./pages/Concierge"));
 const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
@@ -29,7 +29,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/meet-us" element={<MeetUs />} />
-            <Route path="/practice" element={<Practice />} />
+            
             <Route path="/services" element={<Atelier />} />
             <Route path="/services/:serviceId" element={<Atelier />} />
             <Route path="/about" element={<About />} />

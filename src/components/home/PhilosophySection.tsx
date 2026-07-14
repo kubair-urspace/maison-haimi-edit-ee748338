@@ -48,7 +48,7 @@ const PhilosophySection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <Button variant="luxury" size="lg" asChild>
-              <Link to="/practice">Discover The Practice</Link>
+              <Link to="/about">Discover Our Practice</Link>
             </Button>
           </motion.div>
         </div>
