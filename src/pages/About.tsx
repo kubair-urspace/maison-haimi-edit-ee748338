@@ -34,8 +34,8 @@ const technologies = [
     body: "Advanced computer-aided design and milling systems allow us to craft custom restorations with exceptional accuracy and aesthetic detail.",
   },
   {
-    title: "Digital Smile Design",
-    body: "Sophisticated smile simulation software allows us to plan and preview aesthetic outcomes together with each patient before treatment begins.",
+    title: "3D Printer",
+    body: "In-house 3D printing enables rapid fabrication of surgical guides, models, and provisional restorations with exceptional precision and turnaround.",
   },
   {
     title: "Advanced Sterilization",
