@@ -30,21 +30,38 @@ interface FacilityItem {
 const facilityItems: FacilityItem[] = [
   {
     images: [facilityReception],
-    title: "Reception",
-    subtitle: "A Warm Welcome",
-    description: "Our reception area sets the tone for your visit marble finishes, soft lighting, and a curated atmosphere designed to put you at ease from the moment you arrive.",
+    title: "Reception & Welcome",
+    subtitle: "A Calm Beginning",
+    description:
+      "From the moment you arrive, you'll notice that Haimi Dental Aesthetics doesn't feel like a typical dental office. Dr. Haimi intentionally designed every detail to create an atmosphere of comfort, warmth, and tranquility, more like a beautifully appointed living room than a clinical space. Relax in our welcoming reception area with complimentary coffee, tea, or bottled water while our team prepares for your visit. Soft lighting, comfortable seating, and a peaceful environment are designed to help you feel at ease before your appointment even begins. Because exceptional dentistry starts with an exceptional patient experience.",
   },
   {
     images: [facilityTreatment, facilityTreatment2, facilityTreatment3, facilityTreatment4, facilityTreatment5, facilityTreatment6, facilityTreatment7],
-    title: "Treatment Suite",
-    subtitle: "Precision & Comfort",
-    description: "Each treatment suite is equipped with the latest digital imaging, ergonomic seating, and natural light creating an environment where advanced care meets total comfort.",
+    title: "Treatment Rooms",
+    subtitle: "Thoughtfully Designed for Comfort & Precision",
+    description:
+      "Every treatment room has been carefully planned and personally selected by Dr. Haimi to create an environment where advanced technology and patient comfort work together seamlessly. Each suite features ceiling-mounted televisions for entertainment during treatment, along with large diagnostic monitors that allow us to review digital images, scans, and treatment options together. We believe patients deserve to clearly understand their oral health and actively participate in every treatment decision. Our operatories are equipped exclusively with premium A-dec® dental chairs and delivery systems, recognized worldwide for exceptional patient comfort, quiet operation, and advanced waterline technology that helps maintain the highest standards of cleanliness. Even the smallest details, from ergonomic positioning to reduced equipment noise, were chosen with your comfort in mind.",
   },
   {
-    images: [facilityTechnology, facilityTechnology2, facilityTechnology3, facilityTechnology4, facilityTechnology5],
+    images: [facilityTechnology3, facilityTechnology4],
+    title: "Surgical Suite",
+    subtitle: "Designed for Excellence in Surgical Care",
+    description:
+      "Our dedicated surgical suite was purposefully designed to provide the ideal environment for advanced periodontal and implant procedures performed by our in-house periodontist, Dr. Effie Ahladiotis. Every aspect of the space, from its layout and equipment to lighting, ergonomics, and technology, was carefully planned to support precision, efficiency, and patient comfort. By creating an environment specifically tailored for surgical excellence, Dr. Effie is able to perform procedures with exceptional accuracy while ensuring patients receive the highest level of care in a calm, comfortable setting. Because outstanding surgical outcomes begin with both exceptional skill and an exceptional environment.",
+  },
+  {
+    images: [facilityTechnology, facilityTechnology2, facilityTechnology5],
     title: "Technology",
     subtitle: "State of the Art",
-    description: "From 3D digital scanning to advanced CAD/CAM systems, we invest in the finest technology to ensure precise diagnostics and exceptional results for every patient.",
+    description:
+      "From 3D digital scanning to advanced CAD/CAM systems, we invest in the finest technology to ensure precise diagnostics and exceptional results for every patient.",
+  },
+  {
+    images: [facilityTechnology5, facilityTechnology2],
+    title: "Sterilization Center",
+    subtitle: "Safety Without Compromise",
+    description:
+      "Behind every beautiful smile is an uncompromising commitment to your health and safety. Our state-of-the-art sterilization center is equipped with advanced sterilization systems and infection-control technology that meet, and often exceed, the highest standards in modern dentistry. Every instrument is meticulously cleaned, sterilized, and monitored through carefully validated protocols before every patient visit. At Haimi Dental Aesthetics, your health is never an afterthought. Investing in the finest sterilization equipment allows us to provide the safest, cleanest environment possible, giving you complete confidence every time you visit our office.",
   },
 ];
 
