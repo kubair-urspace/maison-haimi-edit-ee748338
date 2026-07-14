@@ -35,7 +35,7 @@ const ServicesPreview = () => {
 
         {/* Premium Image Grid */}
         <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[0.5px] bg-[hsl(var(--sand))]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2px] bg-[hsl(var(--sand))] p-[2px]">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
