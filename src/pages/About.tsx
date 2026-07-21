@@ -12,13 +12,24 @@ import facilityTechnology from "@/assets/facility-technology.jpg";
 import facilityTechnology2 from "@/assets/facility-technology-2.jpg";
 import facilityTechnology3 from "@/assets/facility-technology-3.jpg";
 import facilityTechnology4 from "@/assets/facility-technology-4.jpg";
+import practiceTreatmentTeam from "@/assets/practice-gallery/practice-treatment-team.jpg.asset.json";
+import practiceConsultation from "@/assets/practice-gallery/practice-consultation.jpg.asset.json";
+import practiceDsc0391 from "@/assets/practice-gallery/practice-dsc0391.jpg.asset.json";
+import practiceDsc0401 from "@/assets/practice-gallery/practice-dsc0401.jpg.asset.json";
+import practiceDsc0404 from "@/assets/practice-gallery/practice-dsc0404.jpg.asset.json";
 
 const practiceImages = [
   { src: facilityReception, label: "Reception" },
   { src: facilityTreatment, label: "Treatment Suite" },
   { src: facilityTreatment2, label: "Patient Care" },
   { src: facilityTreatment3, label: "Comfort & Design" },
+  { src: practiceTreatmentTeam.url, label: "Chairside Care" },
+  { src: practiceConsultation.url, label: "Consultation Suite" },
+  { src: practiceDsc0391.url, label: "Clinical Detail" },
+  { src: practiceDsc0401.url, label: "Precision Setup" },
+  { src: practiceDsc0404.url, label: "Modern Interiors" },
 ];
+
 
 const technologies = [
   {
