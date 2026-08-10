@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import restorationImage from "@/assets/before-after-restoration.jpg";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
+import heroAsset from "@/assets/before-after-hero.jpg.asset.json";
 import {
   veneersCases,
   fullMouthCases,
