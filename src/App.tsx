@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,15 +6,17 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ScrollToTop from "./components/ScrollToTop";
+import { lazyWithRetry } from "@/lib/lazyWithRetry";
 
 // Code-split secondary routes so the initial load only ships the homepage bundle
 
-const Atelier = lazy(() => import("./pages/Atelier"));
-const Concierge = lazy(() => import("./pages/Concierge"));
-const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
-const MeetUs = lazy(() => import("./pages/MeetUs"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const About = lazy(() => import("./pages/About"));
+const Atelier = lazyWithRetry(() => import("./pages/Atelier"));
+const Concierge = lazyWithRetry(() => import("./pages/Concierge"));
+const BeforeAfter = lazyWithRetry(() => import("./pages/BeforeAfter"));
+const MeetUs = lazyWithRetry(() => import("./pages/MeetUs"));
+const NotFound = lazyWithRetry(() => import("./pages/NotFound"));
+const About = lazyWithRetry(() => import("./pages/About"));
+
 
 const queryClient = new QueryClient();
 
