@@ -31,12 +31,12 @@ const BeforeAfter = () => {
         path="/before-after"
       />
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-end">
+      <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-end overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-[center_22%]"
           style={{ backgroundImage: `url(${receptionHero.url})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/25 to-charcoal/10" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
           <motion.h1
