@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import restorationImage from "@/assets/before-after-restoration.jpg";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
-import heroAsset from "@/assets/before-after-hero.jpg.asset.json";
 import {
   veneersCases,
   fullMouthCases,
@@ -31,41 +30,36 @@ const BeforeAfter = () => {
         path="/before-after"
       />
       {/* Hero */}
-      <section className="relative bg-charcoal">
-        <div className="grid md:grid-cols-2 items-stretch">
-          <div className="order-2 md:order-1 flex items-center">
-            <div className="w-full px-6 md:px-12 lg:px-20 py-14 md:py-24">
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="font-display text-4xl md:text-5xl lg:text-6xl text-white tracking-wide uppercase mb-6"
-              >
-                Before & After
-              </motion.h1>
-              <motion.nav
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="flex items-center gap-2 font-body text-sm text-white/80"
-              >
-                <Link to="/" className="hover:text-white transition-colors">Home</Link>
-                <span>/</span>
-                <span className="text-white">Before & After</span>
-              </motion.nav>
-            </div>
-          </div>
-          <div className="order-1 md:order-2 relative">
-            <img
-              src={heroAsset.url}
-              alt="Modern treatment room at Haimi Dental Aesthetics"
-              className="w-full h-64 sm:h-80 md:h-full md:min-h-[70vh] object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-charcoal/40 to-transparent md:from-charcoal/60 pointer-events-none" />
-          </div>
+      <section className="relative min-h-[60vh] flex items-end">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80)`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
+          >
+            Before & After
+          </motion.h1>
+          <motion.nav
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex items-center gap-2 font-body text-sm text-white/80"
+          >
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-white">Before & After</span>
+          </motion.nav>
         </div>
       </section>
-
 
 
       {/* Veneers Before & After */}
