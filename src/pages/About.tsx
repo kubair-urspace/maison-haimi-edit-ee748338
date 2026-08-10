@@ -16,12 +16,13 @@ import practiceConsultation from "@/assets/practice-gallery/practice-consultatio
 import practiceDsc0391 from "@/assets/practice-gallery/practice-dsc0391.jpg.asset.json";
 import practiceDsc0401 from "@/assets/practice-gallery/practice-dsc0401.jpg.asset.json";
 import practiceDsc0404 from "@/assets/practice-gallery/practice-dsc0404.jpg.asset.json";
+import practiceOperatory from "@/assets/practice-gallery/practice-operatory.jpg.asset.json";
 
 const practiceImages = [
   { src: facilityReception, label: "Reception" },
   { src: facilityTreatment, label: "Treatment Suite" },
   { src: facilityTreatment2, label: "Patient Care" },
-  { src: facilityTreatment3, label: "Comfort & Design" },
+  { src: practiceOperatory.url, label: "Updated Operatory" },
   { src: practiceConsultation.url, label: "Consultation Suite" },
   { src: practiceDsc0391.url, label: "Clinical Detail" },
   { src: practiceDsc0401.url, label: "Precision Setup" },
