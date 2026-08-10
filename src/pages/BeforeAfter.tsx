@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import restorationImage from "@/assets/before-after-restoration.jpg";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
+import heroAsset from "@/assets/before-after-hero.jpg.asset.json";
 import {
   veneersCases,
   fullMouthCases,
@@ -34,7 +35,7 @@ const BeforeAfter = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80)`,
+            backgroundImage: `url(${heroAsset.url})`,
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
