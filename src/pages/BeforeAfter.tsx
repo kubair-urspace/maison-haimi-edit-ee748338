@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import restorationImage from "@/assets/before-after-restoration.jpg";
+import receptionHero from "@/assets/reception-hero.png.asset.json";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
 import {
   veneersCases,
@@ -33,9 +34,7 @@ const BeforeAfter = () => {
       <section className="relative min-h-[60vh] flex items-end">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80)`,
-          }}
+          style={{ backgroundImage: `url(${receptionHero.url})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent" />
         </div>
