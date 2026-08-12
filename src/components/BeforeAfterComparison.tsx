@@ -17,7 +17,7 @@ const BeforeAfterComparison = ({
   const stacked = split === "vertical";
 
   const markClass =
-    "pointer-events-none absolute w-[12%] max-w-[64px] -translate-x-1/2 -translate-y-1/2 opacity-25 mix-blend-screen select-none";
+    "pointer-events-none absolute w-[10%] max-w-[52px] -translate-x-1/2 -translate-y-1/2 opacity-20 mix-blend-screen select-none";
 
   return (
     <figure
@@ -32,22 +32,14 @@ const BeforeAfterComparison = ({
         className="h-full w-full object-contain"
       />
 
-      {/* Watermark centered within each half, kept small and subtle */}
+      {/* Single watermark placed between before & after, centered on the image */}
       <img
         src={mark.url}
         alt=""
         aria-hidden="true"
         draggable={false}
         className={markClass}
-        style={stacked ? { left: "50%", top: "25%" } : { left: "25%", top: "50%" }}
-      />
-      <img
-        src={mark.url}
-        alt=""
-        aria-hidden="true"
-        draggable={false}
-        className={markClass}
-        style={stacked ? { left: "50%", top: "75%" } : { left: "75%", top: "50%" }}
+        style={{ left: "50%", top: "50%" }}
       />
     </figure>
   );
