@@ -17,7 +17,7 @@ const BeforeAfterComparison = ({
   const stacked = split === "vertical";
 
   const markClass =
-    "pointer-events-none absolute w-[10%] max-w-[52px] -translate-x-1/2 -translate-y-1/2 opacity-20 mix-blend-screen select-none";
+    "pointer-events-none absolute w-[12%] max-w-[64px] -translate-x-1/2 -translate-y-1/2 opacity-40 mix-blend-screen select-none";
 
   return (
     <figure
