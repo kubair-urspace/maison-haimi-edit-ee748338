@@ -36,7 +36,7 @@ const BeforeAfter = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${beforeAfterHeroBg.url})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/40 to-charcoal/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-charcoal/10" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
           <motion.h1
