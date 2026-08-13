@@ -454,8 +454,8 @@ const Atelier = () => {
         path={matchedCategory ? `/services/${matchedCategory.id}` : "/services"}
       />
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center bg-background">
-        <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 text-center">
+      <section className="relative min-h-[30vh] flex items-center justify-center bg-background">
+        <div className="relative z-10 container mx-auto px-4 py-10 md:py-14 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
