@@ -137,6 +137,7 @@ export type BeforeAfterCase = {
 
 export const veneersCases: BeforeAfterCase[] = [
   { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" },
+  { image: ven41.url, alt: "Full face smile transformation with porcelain veneers before and after", split: "horizontal" },
   { image: ven3.url, alt: "Chipped and worn teeth restored with veneers before and after", split: "vertical" },
   { image: ven4.url, alt: "Decayed and discolored teeth restored with porcelain veneers before and after", split: "vertical" },
   { image: ven5.url, alt: "Edge bonding and veneer refinement before and after", split: "vertical" },
