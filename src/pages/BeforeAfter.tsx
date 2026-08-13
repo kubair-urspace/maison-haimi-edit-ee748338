@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import restorationImage from "@/assets/before-after-restoration.jpg";
-import receptionHero from "@/assets/reception-hero.png.asset.json";
+import beforeAfterHeroBg from "@/assets/before-after-hero-bg.jpg.asset.json";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
 import {
   veneersCases,
