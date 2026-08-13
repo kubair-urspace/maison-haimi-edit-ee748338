@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import BeforeAfterComparison from "@/components/BeforeAfterComparison";
 import restorationImage from "@/assets/before-after-restoration.jpg";
-import receptionHero from "@/assets/reception-hero.png.asset.json";
+import beforeAfterHeroBg from "@/assets/before-after-hero-bg.jpg.asset.json";
 import whiteningImage from "@/assets/before-after-smile-whitening.jpg";
 import {
   veneersCases,
@@ -33,10 +33,10 @@ const BeforeAfter = () => {
       {/* Hero */}
       <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-end overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-[center_22%]"
-          style={{ backgroundImage: `url(${receptionHero.url})` }}
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${beforeAfterHeroBg.url})` }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/25 to-charcoal/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-charcoal/10" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
           <motion.h1
