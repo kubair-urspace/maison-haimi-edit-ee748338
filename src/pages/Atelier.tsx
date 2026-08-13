@@ -516,16 +516,20 @@ const Atelier = () => {
               transition={{ duration: 0.6 }}
               className="mb-12"
             >
-              {category.subtitle && (
-                <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-3 block">
-                  {category.subtitle}
-                </span>
+              {!isSingleService && (
+                <>
+                  {category.subtitle && (
+                    <span className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-3 block">
+                      {category.subtitle}
+                    </span>
+                  )}
+                  <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase">
+                    {category.title}
+                  </h2>
+                </>
               )}
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide uppercase">
-                {category.title}
-              </h2>
 
-              <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+              <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 ${isSingleService ? '' : 'mt-8'}`}>
                 <div className="lg:col-span-12 space-y-4">
                   {Array.isArray(category.description) ? (
                     category.description.map((paragraph, i) => (
