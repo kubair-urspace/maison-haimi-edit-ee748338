@@ -127,6 +127,7 @@ import ven36 from "@/assets/veneers/ven36.jpg.asset.json";
 import ven37 from "@/assets/veneers/ven37.jpg.asset.json";
 import ven38 from "@/assets/veneers/ven38.jpg.asset.json";
 import ven39 from "@/assets/veneers/ven39.jpg.asset.json";
+import ven41 from "@/assets/veneers/ven41.jpg.asset.json";
 
 export type BeforeAfterCase = {
   image: string;
@@ -136,6 +137,7 @@ export type BeforeAfterCase = {
 
 export const veneersCases: BeforeAfterCase[] = [
   { image: ven1.url, alt: "Porcelain veneers smile transformation before and after", split: "vertical" },
+  { image: ven41.url, alt: "Full face smile transformation with porcelain veneers before and after", split: "horizontal" },
   { image: ven3.url, alt: "Chipped and worn teeth restored with veneers before and after", split: "vertical" },
   { image: ven4.url, alt: "Decayed and discolored teeth restored with porcelain veneers before and after", split: "vertical" },
   { image: ven5.url, alt: "Edge bonding and veneer refinement before and after", split: "vertical" },
