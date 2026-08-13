@@ -32,14 +32,14 @@ const BeforeAfter = () => {
       />
       {/* Hero */}
       <section className="relative bg-charcoal overflow-hidden">
-        <div className="container mx-auto px-4 py-14 md:py-20">
-          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-            <div>
+        <div className="container mx-auto px-4 py-8 md:py-12">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+            <div className="max-w-xl">
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
+                className="font-display text-3xl md:text-4xl lg:text-5xl text-white tracking-wide uppercase mb-4"
               >
                 Before & After
               </motion.h1>
@@ -58,7 +58,7 @@ const BeforeAfter = () => {
               initial={{ opacity: 0, scale: 0.97 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.9, delay: 0.15 }}
-              className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl mx-auto w-full max-w-md"
+              className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl mx-auto w-full max-w-xs md:max-w-sm"
             >
               <img
                 src={beforeAfterHeroBg.url}
