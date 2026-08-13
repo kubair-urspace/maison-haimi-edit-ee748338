@@ -127,6 +127,7 @@ import ven36 from "@/assets/veneers/ven36.jpg.asset.json";
 import ven37 from "@/assets/veneers/ven37.jpg.asset.json";
 import ven38 from "@/assets/veneers/ven38.jpg.asset.json";
 import ven39 from "@/assets/veneers/ven39.jpg.asset.json";
+import ven41 from "@/assets/veneers/ven41.jpg.asset.json";
 
 export type BeforeAfterCase = {
   image: string;
