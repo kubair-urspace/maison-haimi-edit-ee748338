@@ -31,34 +31,46 @@ const BeforeAfter = () => {
         path="/before-after"
       />
       {/* Hero */}
-      <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-end overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${beforeAfterHeroBg.url})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/30 to-charcoal/10" />
-        </div>
-        <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
-          >
-            Before & After
-          </motion.h1>
-          <motion.nav
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex items-center gap-2 font-body text-sm text-white/80"
-          >
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
-            <span>/</span>
-            <span className="text-white">Before & After</span>
-          </motion.nav>
+      <section className="relative bg-charcoal overflow-hidden">
+        <div className="container mx-auto px-4 py-14 md:py-20">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+            <div>
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="font-display text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-wide uppercase mb-6"
+              >
+                Before & After
+              </motion.h1>
+              <motion.nav
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="flex items-center gap-2 font-body text-sm text-white/80"
+              >
+                <Link to="/" className="hover:text-white transition-colors">Home</Link>
+                <span>/</span>
+                <span className="text-white">Before & After</span>
+              </motion.nav>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.9, delay: 0.15 }}
+              className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl mx-auto w-full max-w-md"
+            >
+              <img
+                src={beforeAfterHeroBg.url}
+                alt="Porcelain veneer smile transformation before and after"
+                className="w-full h-auto object-contain"
+                loading="eager"
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
+
 
 
       {/* Veneers Before & After */}
