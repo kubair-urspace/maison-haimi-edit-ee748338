@@ -13,6 +13,6 @@ describe('appointment notification rules', () => {
     const text = notificationText({ id: 'test', created_at: '2026-10-29T12:56:00Z', name: 'Test Patient', email: 'patient@example.com', phone: '5551234567', service: 'Other', preferred_time: 'Flexible', message: null, status: 'new' });
     expect(text.startsWith('Hi Eliza,')).toBe(true);
     expect(text).toContain('Name: Test Patient');
-    expect(text.split('\n').slice(-3)).toEqual(['Message: None', '', 'Thanks,']);
+    expect(text.split('\n').slice(-4)).toEqual(['Message: None', '', 'Thanks,', 'The Urspace Team']);
   });
 });
