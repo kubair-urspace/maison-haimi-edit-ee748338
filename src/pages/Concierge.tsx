@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, ArrowRight, ArrowLeft, Check } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { z } from "zod";
 
 interface FormData {
   name: string;
@@ -107,20 +108,25 @@ const Concierge = () => {
   };
 
   const handleSubmit = async () => {
+    const valid = z.object({ name: z.string().trim().min(1).max(150), email: z.string().trim().email().max(255), phone: z.string().trim().min(7).max(50), message: z.string().max(5000) }).safeParse(formData);
+    if (!valid.success) {
+      toast({ title: "Please check your details", description: "Enter a valid name, email, and phone number.", variant: "destructive" });
+      return;
+    }
     setIsSubmitting(true);
-
-    const { error } = await supabase.from("appointment_requests").insert({
+    try {
+    const { data, error } = await supabase.functions.invoke("submit-appointment", { body: {
       name: formData.name.trim(),
       email: formData.email.trim(),
       phone: formData.phone.trim(),
       service: formData.service,
       preferred_time: formData.preferredTime,
       message: formData.message.trim() || null,
-    });
+    } });
 
     setIsSubmitting(false);
 
-    if (error) {
+    if (error || !data?.saved) {
       toast({
         title: "Submission failed",
         description: "We couldn't send your request. Please try again or call us directly.",
@@ -134,6 +140,11 @@ const Concierge = () => {
       title: "Request Received",
       description: "We'll be in touch shortly to confirm your appointment.",
     });
+    } catch {
+      toast({ title: "Submission failed", description: "Please try again or call us directly.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const currentStepData = steps[currentStep];
