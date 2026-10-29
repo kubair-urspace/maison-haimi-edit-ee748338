@@ -33,7 +33,7 @@ Deno.serve(async (req) => {
       .select().single();
     if (error || !appointment) return respond({ error: 'Could not save appointment request' }, 500);
     const apiKey = Deno.env.get('LOVABLE_API_KEY');
-    const gmailKey = Deno.env.get('GOOGLE_MAIL_API_KEY');
+    const gmailKey = Deno.env.get('GOOGLE_MAIL_API_KEY_1');
     if (!apiKey || !gmailKey) {
       console.error('Appointment saved; Gmail credentials unavailable', appointment.id);
       return respond({ saved: true, notificationSent: false });
