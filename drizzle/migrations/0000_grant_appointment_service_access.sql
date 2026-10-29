@@ -1,0 +1,1 @@
+GRANT ALL ON public.appointment_requests TO service_role;
