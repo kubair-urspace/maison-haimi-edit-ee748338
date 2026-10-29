@@ -25,14 +25,15 @@ export function submissionTime(value: string): string {
 
 export function notificationText(appointment: Appointment): string {
   return [
-    `1. ${appointment.name}`, '',
-    `Submitted: ${submissionTime(appointment.created_at)}`,
+    'Hi Eliza,', '',
+    'You have a new appointment request through your website:', '',
+    `Name: ${appointment.name}`,
     `Email: ${appointment.email}`,
     `Phone: ${appointment.phone}`,
     `Service: ${appointment.service}`,
     `Preferred time: ${appointment.preferred_time}`,
-    `Message: ${appointment.message?.trim() || 'none'}`,
-    `Status: ${appointment.status}`,
+    `Message: ${appointment.message?.trim() || 'None'}`, '',
+    'Thanks,',
   ].join('\n');
 }
 
