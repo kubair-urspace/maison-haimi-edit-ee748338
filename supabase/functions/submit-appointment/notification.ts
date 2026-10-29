@@ -34,6 +34,7 @@ export function notificationText(appointment: Appointment): string {
     `Preferred time: ${appointment.preferred_time}`,
     `Message: ${appointment.message?.trim() || 'None'}`, '',
     'Thanks,',
+    'The Urspace Team',
   ].join('\n');
 }
 
