@@ -1,4 +1,4 @@
-export const NOTIFICATION_RECIPIENT = 'Kubair@urspace.ai';
+export const NOTIFICATION_RECIPIENT = 'DrElizaHaimi@gmail.com';
 
 export interface Appointment {
   id: string;
